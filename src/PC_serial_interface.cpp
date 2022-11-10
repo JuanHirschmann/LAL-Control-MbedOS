@@ -35,3 +35,31 @@ void PC_serial_interface::print(const float float_out, int sig_figures)
     ftoa(float_out, buffer, sig_figures);
     this->uart_interface->write(buffer, strlen(buffer));
 }
+void PC_serial_interface::read(char *string_in, int length)
+{
+    if (string_in[0] != '\0')
+    {
+        for (size_t i = 0; i < strlen(string_in); i++) // Vacio string
+        {
+            string_in[i] = '\0';
+        }
+    }
+    int j = 0;
+    do
+    {
+        this->uart_interface->read(&string_in[j], 1);
+        this->uart_interface->write(&string_in[j], 1); // Imprime lo que escribio el usuario
+        j++;
+    } while (j < length && string_in[j - 1] != '\n');
+    if (length != 1)
+    {
+
+        string_in[j] = '\0';
+    }
+}
+void PC_serial_interface::echo()
+{
+    char buffer[STRING_BUFFER_SIZE];
+    this->read(buffer, STRING_BUFFER_SIZE);
+    this->print(buffer);
+}

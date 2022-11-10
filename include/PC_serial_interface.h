@@ -13,7 +13,9 @@ public:
     ~PC_serial_interface();
     void print(const char *string_out);
     void print(const int int_out);
-    void print(const float float_out, int precision);
+    void print(const float float_out, int sig_figures);
+    void read(char *string, int length);
+    void echo();
 
 private:
     unsigned int baud_rate = 0;
