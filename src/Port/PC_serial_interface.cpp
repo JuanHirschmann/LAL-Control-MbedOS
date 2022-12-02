@@ -1,5 +1,6 @@
 #include "PC_serial_interface.h"
 
+// PC_serial_interface pc_com(USBTX, USBRX, 115200);
 PC_serial_interface::PC_serial_interface(PinName tx, PinName rx, unsigned int baud_rate)
 {
     this->tx_pin = tx;
@@ -35,6 +36,7 @@ void PC_serial_interface::print(const float float_out, int sig_figures)
     ftoa(float_out, buffer, sig_figures);
     this->uart_interface->write(buffer, strlen(buffer));
 }
+
 void PC_serial_interface::read(char *string_in, int length)
 {
     if (string_in[0] != '\0')
