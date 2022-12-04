@@ -36,7 +36,21 @@ void PC_serial_interface::print(const float float_out, int sig_figures)
     ftoa(float_out, buffer, sig_figures);
     this->uart_interface->write(buffer, strlen(buffer));
 }
-
+void PC_serial_interface::println(const char *string_out)
+{
+    this->print(string_out);
+    this->print("\n");
+}
+void PC_serial_interface::println(const int int_out)
+{
+    this->print(int_out);
+    this->print("\n");
+}
+void PC_serial_interface::println(const float float_out, int sig_figures)
+{
+    this->print(float_out, sig_figures);
+    this->print("\n");
+}
 void PC_serial_interface::read(char *string_in, int length)
 {
     if (string_in[0] != '\0')

@@ -9,20 +9,18 @@
  *
  */
 #include "drivers/Motor.h"
-Motor::Motor(int motor_pin) // Tiene que tener pwm en el pinout
+Motor::Motor(PinName motor_pin) : motor_pin(motor_pin) // Tiene que tener pwm en el pinout
 {
-    pinMode(motor_pin, OUTPUT);
-    this->motor_pin = motor_pin;
 }
 void Motor::turn_on()
 {
     this->is_on = true;
-    digitalWrite(this->motor_pin, HIGH);
+    this->motor_pin.write(1);
 };
 void Motor::turn_off()
 {
     this->is_on = false;
-    digitalWrite(this->motor_pin, LOW);
+    this->motor_pin.write(0);
 };
 bool Motor::is_active()
 {

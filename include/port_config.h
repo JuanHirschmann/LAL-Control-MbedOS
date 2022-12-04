@@ -12,12 +12,13 @@
 #define PORT_CONFIG_H
 
 const PinName ONE_WIRE_BUS = D8; // D9 como digital in
-const int BUTTON_PIN = 3;        // D3, tiene que corresponder a una interrupción externa
+const PinName BUTTON_PIN = D7;   // D3, tiene que corresponder a una interrupción externa
 const PinName BUZZER_PIN = D9;   // D9, necesita PWM
 
-const int MOTOR_CONTROL_PIN = 2;
+const PinName MOTOR_CONTROL_PIN = D4;
 const PinName MOTOR_RED_LED_PIN = D5;   // D10
 const PinName MOTOR_GREEN_LED_PIN = D6; // D11, Ambos con PWM
+const PinName MOISTURE_SENSOR_PIN = A0;
 
 // const int MOISTURE_SENSOR_PIN = A6;
 

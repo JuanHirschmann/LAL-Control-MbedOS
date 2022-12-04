@@ -13,7 +13,10 @@ public:
     ~PC_serial_interface();
     void print(const char *string_out);
     void print(const int int_out);
-    void print(const float float_out, int sig_figures);
+    void print(const float float_out, int sig_figures = 1);
+    void println(const char *string_out);
+    void println(const int int_out);
+    void println(const float float_out, int sig_figures = 1);
     void read(char *string, int length);
     void echo();
 

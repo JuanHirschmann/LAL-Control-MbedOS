@@ -10,7 +10,7 @@
  */
 #ifndef MOTOR_H
 #define MOTOR_H
-#include "Arduino.h"
+#include <mbed.h>
 #include "port_config.h"
 
 class Motor
@@ -25,7 +25,7 @@ public:
      *
      * @param motor_pin Pin elegido para conectar el motor, sólo sálida digital.
      */
-    Motor(int motor_pin);
+    Motor(PinName motor_pin);
     /**
      * @brief Enciende el motor con con una duración en milisegundos duration,
      *  por defecto enciende el motor por un tiempo indefinido.
@@ -47,6 +47,6 @@ public:
 
 private:
     bool is_on = false;
-    int motor_pin;
+    DigitalOut motor_pin;
 };
 #endif

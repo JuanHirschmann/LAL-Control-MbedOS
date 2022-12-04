@@ -12,7 +12,7 @@
 #include "drivers/Motor.h"
 #include "drivers/Dual_led.h"
 
-#include "drivers/Cooler.h"
+//#include "drivers/Cooler.h"
 #include "machine_state_pattern/machine_states/Shutdown_state.h"
 class Control_system : public Subject, public Machine
 {

@@ -10,6 +10,7 @@
  */
 #ifndef TYPES_H
 #define TYPES_H
+
 /**
  * @brief Enumeración de pasos a realizar del procedimiento
  *

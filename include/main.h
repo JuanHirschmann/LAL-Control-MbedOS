@@ -22,4 +22,7 @@
 #include "observer_pattern/observers/Moisture_observer.h" */
 #include "drivers/Buzzer.h"
 #include "drivers/Dual_LED.h"
+#include "drivers/Moisture_sensor.h"
+#include "drivers/Motor.h"
+#include "DebounceIn.h"
 #endif

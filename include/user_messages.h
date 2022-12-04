@@ -10,11 +10,10 @@
  */
 #ifndef USER_MESSAGES_H
 #define USER_MESSAGES_H
-#include <avr/pgmspace.h>
 const int MAX_MESSAGE_LENGTH = 70;
 const int MAX_PROCEDURE_STEPS = 8;
 const int ERROR_TYPES = 5;
-static const char PROCEDURE_MESSAGES[MAX_PROCEDURE_STEPS][MAX_MESSAGE_LENGTH] PROGMEM = {
+static const char PROCEDURE_MESSAGES[MAX_PROCEDURE_STEPS][MAX_MESSAGE_LENGTH] = {
     {"LAL: Sistema de control de procedimiento.\0"},
     {"Confirmar funcionamiento de canilla de agua.\0"},
     {"Abrir conexión de vacío/extracción.\0"},
@@ -34,7 +33,7 @@ static const char PROCEDURE_MESSAGES[MAX_PROCEDURE_STEPS][MAX_MESSAGE_LENGTH] PR
     OVERTEMP_WARNING,
     SLOW_FAN_WARNING,
 }; DEFINIR ERROR_MESSAGES EN EL ORDEN DE LOS ALARM TYPES*/
-static const char ERROR_MESSAGES[ERROR_TYPES][MAX_MESSAGE_LENGTH] PROGMEM = {
+static const char ERROR_MESSAGES[ERROR_TYPES][MAX_MESSAGE_LENGTH] = {
     {"No hay alarma\0"},
     {"Exceso de temperatura. El sistema se apagara.\0"},
     {"Humedad en motor. El sistema se apagara.\0"},

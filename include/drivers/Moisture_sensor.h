@@ -10,7 +10,7 @@
  */
 #ifndef MOISTURE_SENSOR_H
 #define MOISTURE_SENSOR_H
-#include "Arduino.h"
+#include <mbed.h>
 /**
  * @brief Clase para el manejo del sensor de humedad analógico.
  *
@@ -23,13 +23,13 @@ public:
      *
      * @param analog_pin pin analógico donde se conecto el sensor
      */
-    Moisture_sensor(int analog_pin);
+    Moisture_sensor(PinName analog_pin);
     /**
      * @brief Devuelve la lectura realizada
      *
      * @return int lectura analógica realizada (0 indica conductividad completa, 1023 indica resistividad completa)
      */
-    int get_reading();
+    float get_reading();
 
 private:
     /**
@@ -41,12 +41,12 @@ private:
      * @brief pin analogico donde se conectó el sensor.
      *
      */
-    int sensor_pin = 0;
+    AnalogIn sensor_pin;
     /**
      * @brief lectura realizada.
      *
      */
-    int reading = 0;
+    float reading = 0.0;
 };
 
 #endif
