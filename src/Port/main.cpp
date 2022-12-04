@@ -79,11 +79,13 @@ int main()
   // control.update();
   //  delay(1000);
   Buzzer buzzer(BUZZER_PIN, 4000);
-  Temperature_sensor temp_sensor();
+  Temperature_sensor temp_sensor(ONE_WIRE_BUS);
   PC_serial_interface pc_com(USBTX, USBRX, 9600);
 
   while (true)
   {
-    pc_com.print()
+    ThisThread::sleep_for(1s);
+    pc_com.print(temp_sensor.get_reading(), 3);
+    pc_com.print("\n");
   }
 };

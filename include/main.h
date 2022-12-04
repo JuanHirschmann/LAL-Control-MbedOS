@@ -13,7 +13,7 @@
 #include <mbed.h>
 #include "port_config.h"
 #include "PC_serial_interface.h"
-#include "Temperature_sensor.h"
+#include "drivers/Temperature_sensor.h"
 /* #include "Control_system.h"
 #include "system_settings.h"
 #include "interrupts.h"

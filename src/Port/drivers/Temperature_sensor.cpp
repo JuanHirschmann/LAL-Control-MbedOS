@@ -16,14 +16,14 @@ Temperature_sensor::Temperature_sensor(PinName one_wire_bus) : DS18B20_sensor(on
 }
 float Temperature_sensor::get_reading()
 {
-
+  this->update_readings();
   return this->reading;
 }
 void Temperature_sensor::update_readings()
 {
   this->available_ds18_devices = 1;
   this->DS18B20_sensor.startConversion();
-  ThisThread::sleep_for(350ms);
+  ThisThread::sleep_for(1000ms);
   for (int i = 0; i < this->available_ds18_devices; i++)
   {
     this->reading = this->DS18B20_sensor.read();

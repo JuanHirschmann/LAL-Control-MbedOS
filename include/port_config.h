@@ -11,9 +11,9 @@
 #ifndef PORT_CONFIG_H
 #define PORT_CONFIG_H
 
-const int ONE_WIRE_BUS = 12;   // D9 como digital in
-const int BUTTON_PIN = 3;      // D3, tiene que corresponder a una interrupción externa
-const PinName BUZZER_PIN = D9; // D9, necesita PWM
+const PinName ONE_WIRE_BUS = D8; // D9 como digital in
+const int BUTTON_PIN = 3;        // D3, tiene que corresponder a una interrupción externa
+const PinName BUZZER_PIN = D9;   // D9, necesita PWM
 
 const int MOTOR_CONTROL_PIN = 2;
 const int MOTOR_RED_LED_PIN = 10;   // D10
