@@ -10,7 +10,7 @@
  */
 #ifndef DUAL_LED_H
 #define DUAL_LED
-#include "Arduino.h"
+#include <mbed.h>
 #include "types.h"
 #include "system_settings.h"
 /**
@@ -26,7 +26,7 @@ public:
      * @param green_led_pin pin donde el led verde esta conectado
      * @param red_led_pin pin donde el led rojo esta conectado
      */
-    Dual_LED(int green_led_pin, int red_led_pin);
+    Dual_LED(PinName green_led_pin, PinName red_led_pin);
     /**
      * @brief Fija el color del led, no enciende el led,
      *
@@ -90,11 +90,11 @@ private:
      * @brief pin asociado al led verde.
      *
      */
-    int green_led_pin = 0;
+    PwmOut green_led;
     /**
      * @brief pin asociado al led rojo.
      *
      */
-    int red_led_pin = 0;
+    PwmOut red_led;
 };
 #endif

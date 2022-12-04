@@ -16,8 +16,8 @@ const int BUTTON_PIN = 3;        // D3, tiene que corresponder a una interrupci√
 const PinName BUZZER_PIN = D9;   // D9, necesita PWM
 
 const int MOTOR_CONTROL_PIN = 2;
-const int MOTOR_RED_LED_PIN = 10;   // D10
-const int MOTOR_GREEN_LED_PIN = 11; // D11, Ambos con PWM
+const PinName MOTOR_RED_LED_PIN = D5;   // D10
+const PinName MOTOR_GREEN_LED_PIN = D6; // D11, Ambos con PWM
 
 // const int MOISTURE_SENSOR_PIN = A6;
 

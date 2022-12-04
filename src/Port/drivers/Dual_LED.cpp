@@ -1,10 +1,8 @@
 #include "drivers/Dual_LED.h"
-Dual_LED::Dual_LED(int green_led_pin, int red_led_pin)
+Dual_LED::Dual_LED(PinName green_led_pin, PinName red_led_pin) : green_led(green_led_pin), red_led(red_led_pin)
 {
-    this->green_led_pin = green_led_pin;
-    this->red_led_pin = red_led_pin;
-    pinMode(green_led_pin, OUTPUT);
-    pinMode(green_led_pin, OUTPUT);
+    green_led.period(0.01);
+    red_led.period(0.01);
 };
 void Dual_LED::set_color(COLOR_TYPES new_color)
 {
@@ -49,10 +47,8 @@ void Dual_LED::turn_yellow()
 void Dual_LED::turn_on()
 {
     this->is_on = true;
-    int value = (this->green_led_duty_cycle * MAX_ANALOG_WRITE_VALUE);
-    analogWrite(this->green_led_pin, value);
-    value = int(this->red_led_duty_cycle * MAX_ANALOG_WRITE_VALUE);
-    analogWrite(this->red_led_pin, value);
+    this->green_led.write(this->green_led_duty_cycle);
+    this->red_led.write(this->red_led_duty_cycle);
 }
 void Dual_LED::toggle()
 {
@@ -68,8 +64,6 @@ void Dual_LED::toggle()
 void Dual_LED::turn_off()
 {
     this->is_on = false;
-    analogWrite(this->green_led_pin, 0);
-    analogWrite(this->red_led_pin, 0);
-    // digitalWrite(this->green_led_pin, LOW);
-    // digitalWrite(this->red_led_pin, LOW);
+    this->green_led.write(0);
+    this->red_led.write(0);
 }

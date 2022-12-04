@@ -81,10 +81,20 @@ int main()
   Buzzer buzzer(BUZZER_PIN, 4000);
   Temperature_sensor temp_sensor(ONE_WIRE_BUS);
   PC_serial_interface pc_com(USBTX, USBRX, 9600);
+  Dual_LED led(MOTOR_GREEN_LED_PIN, MOTOR_RED_LED_PIN);
+  led.turn_on();
 
   while (true)
   {
     ThisThread::sleep_for(1s);
+    led.turn_green();
+    ThisThread::sleep_for(1s);
+    led.turn_yellow();
+    ThisThread::sleep_for(1s);
+    led.turn_red();
+    ThisThread::sleep_for(1s);
+    led.turn_off();
+
     pc_com.print(temp_sensor.get_reading(), 3);
     pc_com.print("\n");
   }
