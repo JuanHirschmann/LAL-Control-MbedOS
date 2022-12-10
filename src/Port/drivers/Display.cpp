@@ -9,14 +9,15 @@
  *
  */
 #include "drivers/Display.h"
-Display::Display()
+#include "port_config.h"
+Display::Display() : screen_interface(SDA, SCL)
 {
     // No inicializar objecto de interfaz de pantalla en el constructor.
 }
 void Display::init()
 {
 
-    this->screen_interface.begin(20, 4);
+    this->screen_interface.begin();
     this->screen_interface.lineWrap();
     this->screen_interface.home();
 }
@@ -29,11 +30,16 @@ void Display::set_temp(float new_temp)
         this->update_needed = true;
     }
 }
-void Display::set_fan_speed_pct(int new_speed_pct)
+void Display::set_fan_speed_pct(float back_speed_pct, float front_speed_pct)
 {
-    if (this->on_screen_fan_speed_pct != new_speed_pct)
+    if (this->on_screen_fan_speed_pct[0] != back_speed_pct)
     {
-        this->on_screen_fan_speed_pct = new_speed_pct;
+        this->on_screen_fan_speed_pct[0] = back_speed_pct;
+        this->update_needed = true;
+    }
+    if (this->on_screen_fan_speed_pct[1] != front_speed_pct)
+    {
+        this->on_screen_fan_speed_pct[1] = front_speed_pct;
         this->update_needed = true;
     }
 }
@@ -54,20 +60,22 @@ void Display::update()
         this->screen_interface.home();
 
         this->screen_interface.print(this->on_screen_text);
-        this->screen_interface.setCursor(TEMP_INDICATOR_CURSOR_OFFSET[0], TEMP_INDICATOR_CURSOR_OFFSET[1]);
+        this->screen_interface.cursor(TEMP_INDICATOR_CURSOR_OFFSET[0], TEMP_INDICATOR_CURSOR_OFFSET[1]);
         this->screen_interface.print(this->on_screen_temp, 1);
-        this->screen_interface.setCursor(FAN_INDICATOR_CURSOR_OFFSET[0], FAN_INDICATOR_CURSOR_OFFSET[1]);
-        this->screen_interface.print(this->on_screen_fan_speed_pct);
+        this->screen_interface.cursor(FAN_INDICATOR_CURSOR_OFFSET[0], FAN_INDICATOR_CURSOR_OFFSET[1]);
+        this->screen_interface.print(this->on_screen_fan_speed_pct[0], 1);
+        this->screen_interface.cursor(FAN_INDICATOR_CURSOR_OFFSET[0] + 5, FAN_INDICATOR_CURSOR_OFFSET[1]);
+
+        this->screen_interface.print(this->on_screen_fan_speed_pct[1], 1);
+
         this->update_needed = false;
     }
 }
 void Display::turn_off()
 {
-    this->screen_interface.clear();
-    this->screen_interface.noBacklight();
+    this->screen_interface.turn_off();
 }
 void Display::turn_on()
 {
-    this->screen_interface.clear();
-    this->screen_interface.backlight();
+    this->screen_interface.turn_on();
 }

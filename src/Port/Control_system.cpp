@@ -3,7 +3,7 @@
 {
     this->current_step = control.current_step;
 } */
-Control_system::Control_system(/* args */) : temp_sensor(ONE_WIRE_BUS), buzzer(BUZZER_PIN, BUZZER_HIGH_FREQ), motor_status_led(MOTOR_GREEN_LED_PIN, MOTOR_RED_LED_PIN), motor(MOTOR_CONTROL_PIN), mois_sensor(MOISTURE_SENSOR_PIN), rear_cooler(REAR_COOLER_CONTROL_PIN, REAR_COOLER_SPEED_MEAS_PIN), front_cooler(FRONT_COOLER_CONTROL_PIN, FRONT_COOLER_SPEED_MEAS_PIN)
+Control_system::Control_system(/* args */) : temp_sensor(ONE_WIRE_BUS), buzzer(BUZZER_PIN, BUZZER_HIGH_FREQ), motor_status_led(MOTOR_GREEN_LED_PIN, MOTOR_RED_LED_PIN), motor(MOTOR_CONTROL_PIN), mois_sensor(MOISTURE_SENSOR_PIN), front_cooler(FRONT_COOLER_CONTROL_PIN, FRONT_COOLER_SPEED_MEAS_PIN), rear_cooler(REAR_COOLER_CONTROL_PIN, REAR_COOLER_SPEED_MEAS_PIN)
 {
 }
 
@@ -22,12 +22,15 @@ void Control_system::update()
 {
     this->transition_state();
     this->current_state->update(this);
+    this->front_cooler.turn_on();
+    this->rear_cooler.turn_off();
 }
 void Control_system::next_step()
 {
 
-    this->buzzer.turn_on(100); // Esto rompe el color del led
-
+    this->buzzer.turn_on(); // Esto rompe el color del led
+    ThisThread::sleep_for(100ms);
+    this->buzzer.turn_off();
     this->context.current_step++;
     if (this->context.current_step < LAST_STEP + 1)
     {

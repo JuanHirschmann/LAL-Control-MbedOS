@@ -23,7 +23,7 @@ void Temperature_sensor::update_readings()
 {
   this->available_ds18_devices = 1;
   this->DS18B20_sensor.startConversion();
-  ThisThread::sleep_for(1000ms);
+  ThisThread::sleep_for(350ms);
   for (int i = 0; i < this->available_ds18_devices; i++)
   {
     this->reading = this->DS18B20_sensor.read();

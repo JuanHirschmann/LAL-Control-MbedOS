@@ -1,6 +1,9 @@
+#ifndef _HD44780_I2CEXP_H
+#define _HD44780_I2CEXP_H
 #include <mbed.h>
 #include <stdlib.h>
 #include "hd44780_instruction_set.h"
+#include "utils.h"
 const int LCD_ROWS = 4;
 const int LCD_COLS = 20;
 typedef struct
@@ -121,7 +124,7 @@ private:
     }
 
 public:
-    void enable_line_wrap()
+    void lineWrap()
     {
         this->line_wrap = true;
     }
@@ -228,7 +231,7 @@ public:
                     string_length--;
                     available_space--;
                 }
-                this->cursor(0, this->cursor_position.y_pos+1);
+                this->cursor(0, this->cursor_position.y_pos + 1);
                 available_rows--;
             }
         }
@@ -291,14 +294,7 @@ public:
             break;
         }
     };
-    hd44780_I2Cexp(PinName sda, PinName scl);
-    ~hd44780_I2Cexp();
+    hd44780_I2Cexp(PinName sda, PinName scl) : pcf8574_i2c(sda, scl){};
 };
 
-hd44780_I2Cexp::hd44780_I2Cexp(PinName sda, PinName scl) : pcf8574_i2c(sda, scl)
-{
-}
-
-hd44780_I2Cexp::~hd44780_I2Cexp()
-{
-}
+#endif

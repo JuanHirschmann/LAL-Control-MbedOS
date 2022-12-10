@@ -18,7 +18,7 @@ void Buzzer::turn_on(unsigned long duration)
 {
     this->is_ringing = true;
 
-    buzzer.write(0.5);
+    buzzer.write(1);
 };
 void Buzzer::turn_off()
 {
@@ -43,11 +43,11 @@ void Buzzer::set_frequency(unsigned int new_frequency)
     if (this->frequency != 0)
     {
 
-        buzzer.period(1 / this->frequency);
+        // buzzer.period(1 / this->frequency);
     }
     else
     {
-        buzzer.period(1);
+        // buzzer.period(1);
     }
 };
 bool Buzzer::is_active()

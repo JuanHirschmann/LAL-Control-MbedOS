@@ -5,7 +5,6 @@ void Shutdown_state::update(Control_system *machine)
 void Shutdown_state::enter(Control_system *machine)
 {
 
-    Serial.println("Estado shutdown");
     // poner no bloqueante
     machine->display.turn_off();
     machine->motor_status_led.turn_off();

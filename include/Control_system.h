@@ -11,8 +11,7 @@
 #include "drivers/Buzzer.h"
 #include "drivers/Motor.h"
 #include "drivers/Dual_led.h"
-
-//#include "drivers/Cooler.h"
+#include "drivers/Cooler.h"
 #include "machine_state_pattern/machine_states/Shutdown_state.h"
 class Control_system : public Subject, public Machine
 {
@@ -73,24 +72,34 @@ public:
         this->context.warning_request = false;
         this->context.next_step_request = false;
     }
-    void count_cooler_rotation()
+    size_t get_cooler_rotation(int cooler)
     {
-        if (this->front_cooler.rotation_detected() == HIGH)
+        if (cooler == 0)
         {
-            this->front_cooler.count_rotation();
+            return this->rear_cooler.get_rotation();
         }
+        return this->front_cooler.get_rotation();
+    }
+    bool is_cooler_on(int cooler)
+    {
+        if (cooler == 0)
+        {
+            return this->rear_cooler.is_on();
+        }
+        return this->front_cooler.is_on();
+    }
+    void set_cooler_speed(float rear_cooler_speed, float front_cooler_speed)
+    {
+        this->display.set_fan_speed_pct(rear_cooler_speed, front_cooler_speed);
     }
     void show_current_step()
     {
-        char buf[MAX_MESSAGE_LENGTH];
-        strncpy_P(buf, PROCEDURE_MESSAGES[this->context.current_step], MAX_MESSAGE_LENGTH);
-        this->display.set_text(buf);
+        this->display.set_text(PROCEDURE_MESSAGES[this->context.current_step]);
     }
     void show_error_msg()
     {
-        char buf[MAX_MESSAGE_LENGTH];
-        strncpy_P(buf, ERROR_MESSAGES[this->context.current_alarm], MAX_MESSAGE_LENGTH);
-        this->display.set_text(buf);
+
+        this->display.set_text(ERROR_MESSAGES[this->context.current_alarm]);
     }
     void next_step();
     void print(const char *string_out);
@@ -125,8 +134,8 @@ private:
     Motor motor;
     Moisture_sensor mois_sensor;
     Dual_LED motor_status_led;
-    Cooler rear_cooler;
     Cooler front_cooler;
+    Cooler rear_cooler;
 };
 
 #endif

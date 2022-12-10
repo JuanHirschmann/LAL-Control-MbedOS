@@ -21,7 +21,6 @@ void Temperature_observer::update(Control_system *subject)
         }
         else if (temperature > OVERTEMP_ALARM_THRESHOLD)
         {
-            Serial.println(temperature);
             subject->request_alarm(OVERTEMP_ALARM);
         }
         else if (temperature > OVERTEMP_WARNING_THRESHOLD)

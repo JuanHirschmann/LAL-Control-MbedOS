@@ -62,7 +62,7 @@ public:
     bool is_active();
 
 private:
-    PwmOut buzzer;
+    DigitalOut buzzer;
     bool is_ringing = false;
     PinName buzzer_pin;
     float frequency = 0;
