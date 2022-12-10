@@ -25,4 +25,5 @@
 #include "drivers/Moisture_sensor.h"
 #include "drivers/Motor.h"
 #include "DebounceIn.h"
+#include "drivers/hd44780_I2Cexp.h"
 #endif

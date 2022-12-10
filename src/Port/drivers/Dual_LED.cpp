@@ -1,8 +1,8 @@
 #include "drivers/Dual_LED.h"
 Dual_LED::Dual_LED(PinName green_led_pin, PinName red_led_pin) : green_led(green_led_pin), red_led(red_led_pin)
 {
-    green_led.period(0.01);
-    red_led.period(0.01);
+    green_led.period(0.001);
+    red_led.period(0.001);
 };
 void Dual_LED::set_color(COLOR_TYPES new_color)
 {

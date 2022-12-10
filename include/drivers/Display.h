@@ -10,10 +10,8 @@
  */
 #ifndef _DISPLAY_H
 #define _DISPLAY_H
-#include "Wire.h"
-#include <hd44780.h>
-#include <hd44780ioClass/hd44780_I2Cexp.h>
 #include "display_settings.h"
+// #include ".h"
 /**
  * @brief Clase Display, internamente utiliza la clase hd44780ioClass para resolver
  * la interfaz i2c con el monitor.
