@@ -22,8 +22,10 @@ void button_pressed()
     control.set_next_step_flag(true);
   }
 }
+
 int main()
 {
+
   control.init();
   control.attach(&inst_obs);
   control.attach(&temp_obs);
@@ -37,6 +39,5 @@ int main()
   while (true)
   {
     control.update();
-    ThisThread::sleep_for(1000ms);
   }
 }

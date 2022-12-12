@@ -10,6 +10,8 @@
  */
 #include "drivers/Display.h"
 #include "port_config.h"
+#include "PC_serial_interface.h"
+
 Display::Display() : screen_interface(SDA, SCL)
 {
     // No inicializar objecto de interfaz de pantalla en el constructor.
@@ -32,12 +34,30 @@ void Display::set_temp(float new_temp)
 }
 void Display::set_fan_speed_pct(float back_speed_pct, float front_speed_pct)
 {
-    if (this->on_screen_fan_speed_pct[0] != back_speed_pct)
+
+    float cooler_speed_variation = 1;
+    if (back_speed_pct != 0)
+    {
+        cooler_speed_variation = abs(this->on_screen_fan_speed_pct[0] - back_speed_pct) / back_speed_pct;
+    }
+    else if (this->on_screen_fan_speed_pct[0] == 0)
+    {
+        cooler_speed_variation = 0;
+    }
+    if (cooler_speed_variation > 0.1)
     {
         this->on_screen_fan_speed_pct[0] = back_speed_pct;
         this->update_needed = true;
     }
-    if (this->on_screen_fan_speed_pct[1] != front_speed_pct)
+    if (front_speed_pct != 0)
+    {
+        cooler_speed_variation = abs(this->on_screen_fan_speed_pct[1] - front_speed_pct) / front_speed_pct;
+    }
+    else if (this->on_screen_fan_speed_pct[1] == 0)
+    {
+        cooler_speed_variation = 0;
+    }
+    if (cooler_speed_variation > 0.1)
     {
         this->on_screen_fan_speed_pct[1] = front_speed_pct;
         this->update_needed = true;
@@ -64,7 +84,7 @@ void Display::update()
         this->screen_interface.print(this->on_screen_temp, 1);
         this->screen_interface.cursor(FAN_INDICATOR_CURSOR_OFFSET[0], FAN_INDICATOR_CURSOR_OFFSET[1]);
         this->screen_interface.print(this->on_screen_fan_speed_pct[0], 1);
-        this->screen_interface.cursor(FAN_INDICATOR_CURSOR_OFFSET[0] + 5, FAN_INDICATOR_CURSOR_OFFSET[1]);
+        this->screen_interface.cursor(FAN_INDICATOR_CURSOR_OFFSET[0] + 7, FAN_INDICATOR_CURSOR_OFFSET[1]);
 
         this->screen_interface.print(this->on_screen_fan_speed_pct[1], 1);
 

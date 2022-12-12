@@ -1,7 +1,7 @@
 #include "observer_pattern/observers/Temperature_observer.h"
 void Temperature_observer::update(Control_system *subject)
 {
-    if (subject->is_poll_sensors_requested()) // Agregar histéresis?
+    if (subject->is_poll_sensors_requested()) 
     {
 
         float temperature = subject->measure_temperature();

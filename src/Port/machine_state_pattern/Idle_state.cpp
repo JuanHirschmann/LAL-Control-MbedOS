@@ -11,8 +11,8 @@ void Idle_state::update(Control_system *machine)
 }
 void Idle_state::exit(Control_system *machine)
 {
-    machine->buzzer.turn_off();
-    machine->motor_status_led.turn_off();
+    // machine->buzzer.turn_off();
+    //  machine->motor_status_led.turn_off();
 }
 Abstract_state *Idle_state::transition(Control_system *machine)
 {
@@ -23,15 +23,15 @@ Abstract_state *Idle_state::transition(Control_system *machine)
         this->exit(machine);
         return new Motor_control_state();
     }
-    else if ((machine->context.current_step >= MOTOR_ON_STEP && machine->context.current_step < MOTOR_COOLDOWN_STEP))
+    else if (machine->context.next_step_request)
     {
         this->exit(machine);
-        return new Motor_control_state();
+        return new Check_instruction_state();
     }
-    else if (machine->context.shutdown_request)
+    /* else if (machine->context.shutdown_request)
     {
         this->exit(machine);
         return new Shutdown_state();
-    }
+    } */
     return nullptr;
 }

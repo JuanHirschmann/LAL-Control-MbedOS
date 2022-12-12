@@ -1,17 +1,23 @@
 #include "observer_pattern/observers/Cooler_observer.h"
 #include <stdlib.h>
 
-#include "PC_serial_interface.h"
-
-PC_serial_interface pc_com(USBTX, USBRX, 9600);
 void Cooler_observer::update(Control_system *subject)
 {
-    this->update_speed(subject);
-    for (int i = 0; i < MAX_COOLERS; i++)
+    if (subject->is_poll_sensors_requested())
     {
-        if (this->speed[i] == 0 && subject->is_cooler_on(i) == true)
+        this->update_speed(subject);
+        for (int i = 0; i < MAX_COOLERS; i++)
         {
-            subject->request_alarm(HALTED_FAN_ALARM);
+
+            if (this->speed[i] == 0 && subject->is_cooler_on(i) == true)
+            {
+                // ThisThread::sleep_for(100ms);
+                this->update_speed(subject);
+                if (this->speed[i] == 0 && subject->is_cooler_on(i) == true)
+                {
+                    subject->request_alarm(HALTED_FAN_ALARM);
+                }
+            }
         }
     }
 };
@@ -29,8 +35,7 @@ void Cooler_observer::update_speed(Control_system *subject)
 
         prev_rotations[i] = rotations[i];
     }
-    pc_com.println((float)this->speed[1]);
     this->timer.reset();
     this->timer.start();
-    subject->set_cooler_speed(this->speed[0], speed[1]);
+    subject->display_cooler_speed(this->speed[0], speed[1]);
 }

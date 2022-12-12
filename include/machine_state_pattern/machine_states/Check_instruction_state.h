@@ -12,7 +12,7 @@ public:
 
     virtual void enter(Control_system *machine);
 
-    virtual void exit(Control_system *machine){};
+    virtual void exit(Control_system *machine);
 
     virtual Abstract_state *transition(Control_system *machine);
 };
