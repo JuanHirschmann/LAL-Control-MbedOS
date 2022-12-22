@@ -25,9 +25,12 @@ const PinName SCL = D15;
 // const int MOISTURE_SENSOR_PIN = A6;
 
 const PinName MOISTURE_SENSOR_PIN = A4; // F401RE no tiene el equivalente a A6
-const int FAN_2_STATE_RED_LED = A3;
-const int FAN_2_STATE_GREEN_LED = A2;
-const int FAN_1_STATE_RED_LED = A1;
-const int FAN_1_STATE_GREEN_LED = A0;
+const PinName WATER_INTAKE_STATE_RED_LED = D4;
+const PinName WATER_INTAKE_STATE_GREEN_LED = D13;
+
+const PinName REAR_COOLER_STATE_RED_LED = A3;
+const PinName REAR_COOLER_STATE_GREEN_LED = PA_15;
+const PinName FRONT_COOLER_STATE_RED_LED = A1;
+const PinName FRONT_COOLER_STATE_GREEN_LED = A0;
 
 #endif

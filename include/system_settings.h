@@ -21,8 +21,8 @@ const int BUZZER_HIGH_FREQ = 1500;
 const int BUZZER_LOW_FREQ = 200;
 /* Sensor de temperatura*/
 const int MAX_SENSORS = 10;
-const float OVERTEMP_WARNING_THRESHOLD = 30;
-const float OVERTEMP_ALARM_THRESHOLD = 34;
+const float OVERTEMP_WARNING_THRESHOLD = 28;
+const float OVERTEMP_ALARM_THRESHOLD = 29;
 const float ERROR_TEMPERATURE = -127;
 const float HYSTERESIS_PERCENT = 0.95;
 const int FAN_SPEED_SAMPLE_PERIOD = 1000; //[ms]
@@ -34,6 +34,6 @@ const float YELLOW_COLOR_DUTY_CYCLE[] = {0.25, 1};
 const float GREEN_COLOR_DUTY_CYCLE[] = {1, 0}; //{1, 0};
 const int MAX_ANALOG_WRITE_VALUE = 255;
 
-const float FAN_MINIMUM_DUTY_CYCLE = 0.5;     // Ciclo de trabajo a partir del cual el cooler puede mantener su rotación si ya estaba encendido.
-const float FAN_AUTONOMOUS_DUTY_CYCLE = 0.77; // Ciclo de trabajo a partir del cual el cooler puede mantener su rotación partiendo del reposo.
+const float FAN_MINIMUM_DUTY_CYCLE = 0.15;   // Ciclo de trabajo a partir del cual el cooler puede mantener su rotación si ya estaba encendido.
+const float FAN_AUTONOMOUS_DUTY_CYCLE = 0.4; // Ciclo de trabajo a partir del cual el cooler puede mantener su rotación partiendo del reposo.
 #endif

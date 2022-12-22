@@ -5,6 +5,7 @@
 #include "config.h"
 #include <string.h>
 #include "utils.h"
+
 class PC_serial_interface
 {
 public:

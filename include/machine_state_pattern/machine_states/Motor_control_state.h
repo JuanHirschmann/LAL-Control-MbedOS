@@ -13,6 +13,7 @@
 #include "Control_system.h"
 #include "machine_state_pattern/machine_states/Abstract_state.h"
 #include "machine_state_pattern/machine_states/Idle_state.h"
+#include "machine_state_pattern/machine_states/Check_instruction_state.h"
 class Motor_control_state : public Abstract_state
 {
 private:

@@ -26,7 +26,10 @@ void Temperature_sensor::update_readings()
   ThisThread::sleep_for(350ms);
   for (int i = 0; i < this->available_ds18_devices; i++)
   {
-    this->reading = this->DS18B20_sensor.read();
+    if (this->DS18B20_sensor.read(this->reading) != 0)
+    {
+      this->reading = ERROR_TEMPERATURE;
+    }
   }
 }
 void Temperature_sensor::init_sensors()
