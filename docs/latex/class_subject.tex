@@ -1,0 +1,77 @@
+\hypertarget{class_subject}{}\doxysection{Subject Class Reference}
+\label{class_subject}\index{Subject@{Subject}}
+
+
+Clase base para crear sujetos a observar, hereda de la interfaz \mbox{\hyperlink{class_subject__interface}{Subject\+\_\+interface}}.  
+
+
+
+
+{\ttfamily \#include $<$Subject.\+h$>$}
+
+Inheritance diagram for Subject\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_subject}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_subject_a61903187e6f9740640c32d880bd2cd6c}{attach}} (\mbox{\hyperlink{class_observer__interface}{Observer\+\_\+interface}} $\ast$obs)
+\begin{DoxyCompactList}\small\item\em Método para agregar observadores al sujeto a implementar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_subject_a156c54b0ef570d0439f2347643192dc3}{notify\+\_\+observers}} ()
+\begin{DoxyCompactList}\small\item\em Método que actualiza a todos los observadores presentes en el sujeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_subject_aabc286db049bbd0f0a20037156b0b1e4}\label{class_subject_aabc286db049bbd0f0a20037156b0b1e4}} 
+int {\bfseries current\+\_\+observers} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase base para crear sujetos a observar, hereda de la interfaz \mbox{\hyperlink{class_subject__interface}{Subject\+\_\+interface}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_subject_a61903187e6f9740640c32d880bd2cd6c}\label{class_subject_a61903187e6f9740640c32d880bd2cd6c}} 
+\index{Subject@{Subject}!attach@{attach}}
+\index{attach@{attach}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily void Subject\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observer__interface}{Observer\+\_\+interface}} $\ast$}]{obs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Método para agregar observadores al sujeto a implementar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obs} & Observador recibido como puntero. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_subject__interface_a6167416fcf891796e974f65318fca8d3}{Subject\+\_\+interface}}.
+
+\mbox{\Hypertarget{class_subject_a156c54b0ef570d0439f2347643192dc3}\label{class_subject_a156c54b0ef570d0439f2347643192dc3}} 
+\index{Subject@{Subject}!notify\_observers@{notify\_observers}}
+\index{notify\_observers@{notify\_observers}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{notify\_observers()}{notify\_observers()}}
+{\footnotesize\ttfamily void Subject\+::notify\+\_\+observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Método que actualiza a todos los observadores presentes en el sujeto. 
+
+
+
+Implements \mbox{\hyperlink{class_subject__interface_a0ccc901c01cb515babedaaeec8c4cbe3}{Subject\+\_\+interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/observer\+\_\+pattern/subjects/\mbox{\hyperlink{_subject_8h}{Subject.\+h}}\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/observer\+\_\+pattern/\mbox{\hyperlink{_subject_8cpp}{Subject.\+cpp}}\end{DoxyCompactItemize}

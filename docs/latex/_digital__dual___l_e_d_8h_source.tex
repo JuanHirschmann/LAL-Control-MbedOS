@@ -1,0 +1,27 @@
+\hypertarget{_digital__dual___l_e_d_8h_source}{}\doxysection{Digital\+\_\+dual\+\_\+\+LED.\+h}
+\label{_digital__dual___l_e_d_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Digital\_dual\_LED.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Digital\_dual\_LED.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef BINARY\_LED\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define BINARY\_LED\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <mbed.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_digital__dual___l_e_d}{Digital\_dual\_LED}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_digital__dual___l_e_d}{Digital\_dual\_LED}}(PinName green\_led\_pin, PinName red\_led\_pin);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_digital__dual___l_e_d_a601fc70878c221a056d74dc643806a91}{turn\_red}}();}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_digital__dual___l_e_d_a50e4648932cd01835f25e627cbe93ba6}{turn\_green}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_digital__dual___l_e_d_a8223be2e90f9f9d052db1e1b9de6b4ab}{turn\_off}}();}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{keyword}{private}:}
+\DoxyCodeLine{43     \textcolor{keywordtype}{bool} is\_on = \textcolor{keyword}{true};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{49     DigitalOut green\_led;}
+\DoxyCodeLine{54     DigitalOut red\_led;}
+\DoxyCodeLine{55 \};}
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

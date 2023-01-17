@@ -1,0 +1,4 @@
+<map id="Control_system::is_next_step_requested" name="Control_system::is_next_step_requested">
+<area shape="rect" id="node1" title="Devuelve el estado de solicitud de próxima instrucción." coords="216,5,367,45"/>
+<area shape="rect" id="node2" href="$class_check__instruction__state.html#a324b5fc23fd203eda7a4e1c7e0b9925d" title="Transición de estados. Sólo permite la transición a estado neutro si existe una solicitud de paso sig..." coords="5,5,168,45"/>
+</map>

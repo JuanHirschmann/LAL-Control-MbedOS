@@ -1,0 +1,31 @@
+\hypertarget{_display_8h_source}{}\doxysection{Display.\+h}
+\label{_display_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Display.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Display.h}}
+\mbox{\hyperlink{_display_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef \_DISPLAY\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define \_DISPLAY\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{display__settings_8h}{display\_settings.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}drivers/hd44780\_I2Cexp.h"{}}}
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{class_display}{Display}}}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_display_aacbf91b9f8c57fc2cb892c45fd44e655}{init}}();}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_display_ae972fffea6f7ca1d627ef48c3d841bb3}{Display}}();}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_display_abe8e63e4def12a48cde5679ce008f402}{set\_temp}}(\textcolor{keywordtype}{float} new\_temperature);}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_display_a4c22cf2f0125cb737bf93136caa32de3}{set\_fan\_speed\_pct}}(\textcolor{keywordtype}{float} back\_speed\_pct, \textcolor{keywordtype}{float} front\_speed\_pct);}
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_display_a87d1e7bf73a1d14b5e76c9ab647a9e93}{set\_text}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *string\_out);}
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_display_ad2740b779d61e461c4dcaaf34f1fcd8f}{update}}();}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_display_a140c7f61de37b0b01e29d36005dc0048}{turn\_off}}();}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_display_ac2763dd7748bd3de2c0c24bc6d89011e}{turn\_on}}();}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{keyword}{private}:}
+\DoxyCodeLine{76     \mbox{\hyperlink{classhd44780___i2_cexp}{hd44780\_I2Cexp}} screen\_interface;}
+\DoxyCodeLine{81     \textcolor{keywordtype}{bool} update\_needed = \textcolor{keyword}{false};}
+\DoxyCodeLine{82     \textcolor{keywordtype}{char} on\_screen\_text[MAX\_DISPLAY\_STRING\_LENGTH];}
+\DoxyCodeLine{87     \textcolor{keywordtype}{float} on\_screen\_temp = 0.0;}
+\DoxyCodeLine{92     \textcolor{keywordtype}{float} on\_screen\_fan\_speed\_pct[2] = \{(float)0.0, (\textcolor{keywordtype}{float})0.0\}; \textcolor{comment}{// Porcentaje de velocidad en el ventilador (100 es máximo, 0 es apagado)}}
+\DoxyCodeLine{93 \};}
+\DoxyCodeLine{94 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,204 @@
+\hypertarget{_control__system_8h_source}{}\doxysection{Control\+\_\+system.\+h}
+\label{_control__system_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/Control\_system.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/Control\_system.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CONTROL\_SYSTEM\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CONTROL\_SYSTEM\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_subject_8h}{observer\_pattern/subjects/Subject.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_machine_8h}{machine\_state\_pattern/Machine.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_display_8h}{drivers/Display.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{user__messages_8h}{user\_messages.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_system__observer_8h}{observer\_pattern/observers/System\_observer.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_temperature__sensor_8h}{drivers/Temperature\_sensor.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_moisture__sensor_8h}{drivers/Moisture\_sensor.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_buzzer_8h}{drivers/Buzzer.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_motor_8h}{drivers/Motor.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_dual___l_e_d_8h}{drivers/Dual\_led.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}drivers/Digital\_dual\_led.h"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_cooler_8h}{drivers/Cooler.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_shutdown__state_8h}{machine\_state\_pattern/machine\_states/Shutdown\_state.h}}"{}}}
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_control__system}{Control\_system}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_subject}{Subject}}, \textcolor{keyword}{public} \mbox{\hyperlink{class_machine}{Machine}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_idle__state}{Idle\_state}};}
+\DoxyCodeLine{20     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_motor__control__state}{Motor\_control\_state}};}
+\DoxyCodeLine{21     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_shutdown__state}{Shutdown\_state}};}
+\DoxyCodeLine{22     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_check__instruction__state}{Check\_instruction\_state}};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} init();}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} handle\_alarm()}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         \textcolor{keywordflow}{switch} (this-\/>context.current\_alarm)}
+\DoxyCodeLine{29         \{}
+\DoxyCodeLine{30         \textcolor{keywordflow}{case} OVERTEMP\_ALARM:}
+\DoxyCodeLine{31             this-\/>context.shutdown\_request = \textcolor{keyword}{true};}
+\DoxyCodeLine{32             this-\/>rear\_cooler.turn\_on(1);}
+\DoxyCodeLine{33             this-\/>front\_cooler.turn\_on(1);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35             this-\/>motor\_status\_led.\mbox{\hyperlink{class_dual___l_e_d_a8734a816df04661d86e3ccbf88159eb0}{turn\_red}}();}
+\DoxyCodeLine{36             this-\/>motor.\mbox{\hyperlink{class_motor_a9a1613b24a5dd07a8c515e82d8e0edeb}{turn\_off}}();}
+\DoxyCodeLine{37             this-\/>show\_error\_msg();}
+\DoxyCodeLine{38             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40         \textcolor{keywordflow}{case} HUMIDITY\_ALARM:}
+\DoxyCodeLine{41             this-\/>motor.\mbox{\hyperlink{class_motor_a9a1613b24a5dd07a8c515e82d8e0edeb}{turn\_off}}();}
+\DoxyCodeLine{42             this-\/>motor\_status\_led.\mbox{\hyperlink{class_dual___l_e_d_a8734a816df04661d86e3ccbf88159eb0}{turn\_red}}();}
+\DoxyCodeLine{43             this-\/>context.shutdown\_request = \textcolor{keyword}{true};}
+\DoxyCodeLine{44             this-\/>rear\_cooler.turn\_off();}
+\DoxyCodeLine{45             this-\/>front\_cooler.turn\_off();}
+\DoxyCodeLine{46             this-\/>show\_error\_msg();}
+\DoxyCodeLine{47             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{48         \textcolor{keywordflow}{case} HALTED\_FAN\_ALARM:}
+\DoxyCodeLine{49             this-\/>motor.\mbox{\hyperlink{class_motor_a9a1613b24a5dd07a8c515e82d8e0edeb}{turn\_off}}();}
+\DoxyCodeLine{50             this-\/>motor\_status\_led.\mbox{\hyperlink{class_dual___l_e_d_a8734a816df04661d86e3ccbf88159eb0}{turn\_red}}();}
+\DoxyCodeLine{51             this-\/>context.shutdown\_request = \textcolor{keyword}{true};}
+\DoxyCodeLine{52             this-\/>rear\_cooler.turn\_off();}
+\DoxyCodeLine{53             this-\/>front\_cooler.turn\_off();}
+\DoxyCodeLine{54             this-\/>show\_error\_msg();}
+\DoxyCodeLine{55             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{56         \textcolor{keywordflow}{case} NO\_TEMP\_SENSOR\_ALARM:}
+\DoxyCodeLine{57             this-\/>motor.\mbox{\hyperlink{class_motor_a9a1613b24a5dd07a8c515e82d8e0edeb}{turn\_off}}();}
+\DoxyCodeLine{58             this-\/>motor\_status\_led.\mbox{\hyperlink{class_dual___l_e_d_a8734a816df04661d86e3ccbf88159eb0}{turn\_red}}();}
+\DoxyCodeLine{59             this-\/>show\_error\_msg();}
+\DoxyCodeLine{60             this-\/>context.shutdown\_request = \textcolor{keyword}{true};}
+\DoxyCodeLine{61             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{62         \textcolor{keywordflow}{case} OVERTEMP\_WARNING:}
+\DoxyCodeLine{63             this-\/>motor\_status\_led.\mbox{\hyperlink{class_dual___l_e_d_aabc0462521bcc08ea7f6f04642f7e89d}{turn\_yellow}}();}
+\DoxyCodeLine{64             this-\/>rear\_cooler.turn\_on(0.75);}
+\DoxyCodeLine{65             this-\/>front\_cooler.turn\_on(0.75);}
+\DoxyCodeLine{66             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{67         \textcolor{keywordflow}{case} SLOW\_FAN\_WARNING:}
+\DoxyCodeLine{68             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{69         \textcolor{keywordflow}{case} NO\_ALARM:}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71             this-\/>motor\_status\_led.\mbox{\hyperlink{class_dual___l_e_d_ab1cd238e00901ca9556914a38d3a064c}{turn\_green}}();}
+\DoxyCodeLine{72             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{73         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{74             this-\/>display.\mbox{\hyperlink{class_display_a87d1e7bf73a1d14b5e76c9ab647a9e93}{set\_text}}(\textcolor{stringliteral}{"{}No se reconoció el error"{}});}
+\DoxyCodeLine{75             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{76         \}}
+\DoxyCodeLine{77     \}}
+\DoxyCodeLine{78     \textcolor{keywordtype}{void} update();}
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} wake()}
+\DoxyCodeLine{80     \{}
+\DoxyCodeLine{81         this-\/>context.shutdown\_request = \textcolor{keyword}{false};}
+\DoxyCodeLine{82     \};}
+\DoxyCodeLine{83     \textcolor{keywordtype}{bool} is\_off()}
+\DoxyCodeLine{84     \{}
+\DoxyCodeLine{85         \textcolor{keywordflow}{return} this-\/>context.shutdown\_request;}
+\DoxyCodeLine{86     \}}
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} reset\_context()}
+\DoxyCodeLine{88     \{}
+\DoxyCodeLine{89         this-\/>context.alarm\_request = \textcolor{keyword}{false};}
+\DoxyCodeLine{90         this-\/>context.warning\_request = \textcolor{keyword}{false};}
+\DoxyCodeLine{91         this-\/>context.current\_step = 0;}
+\DoxyCodeLine{92         this-\/>context.current\_alarm = NO\_ALARM;}
+\DoxyCodeLine{93         this-\/>context.override\_next\_step = \textcolor{keyword}{false};}
+\DoxyCodeLine{94         this-\/>context.shutdown\_request = \textcolor{keyword}{false};}
+\DoxyCodeLine{95         this-\/>context.warning\_request = \textcolor{keyword}{false};}
+\DoxyCodeLine{96         this-\/>context.next\_step\_request = \textcolor{keyword}{false};}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98         this-\/>front\_cooler.turn\_off();}
+\DoxyCodeLine{99         this-\/>rear\_cooler.turn\_off();}
+\DoxyCodeLine{100         this-\/>front\_cooler\_led.\mbox{\hyperlink{class_digital__dual___l_e_d_a601fc70878c221a056d74dc643806a91}{turn\_red}}();}
+\DoxyCodeLine{101         this-\/>rear\_cooler\_led.\mbox{\hyperlink{class_digital__dual___l_e_d_a601fc70878c221a056d74dc643806a91}{turn\_red}}();}
+\DoxyCodeLine{102         this-\/>motor\_status\_led.\mbox{\hyperlink{class_dual___l_e_d_a4226b64f8b1c00f3e4c649a8be2e64c9}{turn\_off}}();}
+\DoxyCodeLine{103         this-\/>water\_intake\_led.\mbox{\hyperlink{class_digital__dual___l_e_d_a601fc70878c221a056d74dc643806a91}{turn\_red}}();}
+\DoxyCodeLine{104     \}}
+\DoxyCodeLine{105     \textcolor{keywordtype}{size\_t} get\_cooler\_rotation(\textcolor{keywordtype}{int} cooler)}
+\DoxyCodeLine{106     \{}
+\DoxyCodeLine{107         \textcolor{keywordflow}{if} (cooler == 0)}
+\DoxyCodeLine{108         \{}
+\DoxyCodeLine{109             \textcolor{keywordflow}{return} this-\/>rear\_cooler.get\_rotation();}
+\DoxyCodeLine{110         \}}
+\DoxyCodeLine{111         \textcolor{keywordflow}{return} this-\/>front\_cooler.get\_rotation();}
+\DoxyCodeLine{112     \}}
+\DoxyCodeLine{113     \mbox{\hyperlink{struct_context__t}{Context\_t}} get\_context()}
+\DoxyCodeLine{114     \{}
+\DoxyCodeLine{115         \textcolor{keywordflow}{return} this-\/>context;}
+\DoxyCodeLine{116     \}}
+\DoxyCodeLine{117     \textcolor{keywordtype}{bool} is\_cooler\_on(\textcolor{keywordtype}{int} cooler)}
+\DoxyCodeLine{118     \{}
+\DoxyCodeLine{119         \textcolor{keywordflow}{if} (cooler == 0)}
+\DoxyCodeLine{120         \{}
+\DoxyCodeLine{121             \textcolor{keywordflow}{return} this-\/>rear\_cooler.is\_on();}
+\DoxyCodeLine{122         \}}
+\DoxyCodeLine{123         \textcolor{keywordflow}{return} this-\/>front\_cooler.is\_on();}
+\DoxyCodeLine{124     \}}
+\DoxyCodeLine{125     \textcolor{keywordtype}{void} display\_cooler\_speed(\textcolor{keywordtype}{float} rear\_cooler\_speed, \textcolor{keywordtype}{float} front\_cooler\_speed)}
+\DoxyCodeLine{126     \{}
+\DoxyCodeLine{127         this-\/>display.\mbox{\hyperlink{class_display_a4c22cf2f0125cb737bf93136caa32de3}{set\_fan\_speed\_pct}}(rear\_cooler\_speed, front\_cooler\_speed);}
+\DoxyCodeLine{128     \}}
+\DoxyCodeLine{129     \textcolor{keywordtype}{void} set\_cooler\_speed(\textcolor{keywordtype}{float} rear\_cooler\_speed, \textcolor{keywordtype}{float} front\_cooler\_speed)}
+\DoxyCodeLine{130     \{}
+\DoxyCodeLine{131         this-\/>front\_cooler.turn\_on(front\_cooler\_speed);}
+\DoxyCodeLine{132         this-\/>rear\_cooler.turn\_on(rear\_cooler\_speed);}
+\DoxyCodeLine{133         \textcolor{keywordflow}{if} (rear\_cooler\_speed == 0)}
+\DoxyCodeLine{134         \{}
+\DoxyCodeLine{135             this-\/>rear\_cooler\_led.\mbox{\hyperlink{class_digital__dual___l_e_d_a601fc70878c221a056d74dc643806a91}{turn\_red}}();}
+\DoxyCodeLine{136         \}}
+\DoxyCodeLine{137         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{138         \{}
+\DoxyCodeLine{139             this-\/>rear\_cooler\_led.\mbox{\hyperlink{class_digital__dual___l_e_d_a50e4648932cd01835f25e627cbe93ba6}{turn\_green}}();}
+\DoxyCodeLine{140         \}}
+\DoxyCodeLine{141         \textcolor{keywordflow}{if} (front\_cooler\_speed == 0)}
+\DoxyCodeLine{142         \{}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144             this-\/>front\_cooler\_led.\mbox{\hyperlink{class_digital__dual___l_e_d_a601fc70878c221a056d74dc643806a91}{turn\_red}}();}
+\DoxyCodeLine{145         \}}
+\DoxyCodeLine{146         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{147         \{}
+\DoxyCodeLine{148             this-\/>front\_cooler\_led.\mbox{\hyperlink{class_digital__dual___l_e_d_a50e4648932cd01835f25e627cbe93ba6}{turn\_green}}();}
+\DoxyCodeLine{149         \}}
+\DoxyCodeLine{150     \}}
+\DoxyCodeLine{151     \textcolor{keywordtype}{void} show\_current\_step()}
+\DoxyCodeLine{152     \{}
+\DoxyCodeLine{153         this-\/>display.\mbox{\hyperlink{class_display_a87d1e7bf73a1d14b5e76c9ab647a9e93}{set\_text}}(PROCEDURE\_MESSAGES[this-\/>context.current\_step]);}
+\DoxyCodeLine{154     \}}
+\DoxyCodeLine{155     \textcolor{keywordtype}{void} show\_error\_msg()}
+\DoxyCodeLine{156     \{}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158         this-\/>display.\mbox{\hyperlink{class_display_a87d1e7bf73a1d14b5e76c9ab647a9e93}{set\_text}}(ERROR\_MESSAGES[this-\/>context.current\_alarm]);}
+\DoxyCodeLine{159     \}}
+\DoxyCodeLine{160     \textcolor{keywordtype}{void} next\_step();}
+\DoxyCodeLine{161     \textcolor{keywordtype}{void} print(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *string\_out);}
+\DoxyCodeLine{162     \textcolor{keywordtype}{void} init\_display();}
+\DoxyCodeLine{163     \mbox{\hyperlink{class_control__system}{Control\_system}}(\textcolor{comment}{/* args */});}
+\DoxyCodeLine{164     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_control__system_ab7912068a11d44b07eef3b3f56ce0598}{notify\_observers}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{165     \textcolor{keywordtype}{float} measure\_temperature();}
+\DoxyCodeLine{166     \textcolor{keywordtype}{int} measure\_moisture();}
+\DoxyCodeLine{167     \textcolor{keywordtype}{void} set\_next\_step\_flag(\textcolor{keywordtype}{bool} new\_state);}
+\DoxyCodeLine{168     \textcolor{keywordtype}{bool} is\_next\_step\_requested();}
+\DoxyCodeLine{169     \textcolor{keywordtype}{void} set\_poll\_sensors\_flag(\textcolor{keywordtype}{bool} new\_state);}
+\DoxyCodeLine{170     \textcolor{keywordtype}{bool} is\_poll\_sensors\_requested();}
+\DoxyCodeLine{171     \textcolor{keywordtype}{void} set\_alarm\_flag(\textcolor{keywordtype}{bool} new\_state);}
+\DoxyCodeLine{172     \textcolor{keywordtype}{bool} is\_alarm\_requested();}
+\DoxyCodeLine{173     \textcolor{keywordtype}{void} request\_alarm(\mbox{\hyperlink{types_8h_a71ef44a7b1de581d625d82b37bed6c80}{ALARM\_TYPES}} type\_of\_alarm);}
+\DoxyCodeLine{174     \textcolor{keywordtype}{void} request\_warning(\mbox{\hyperlink{types_8h_a71ef44a7b1de581d625d82b37bed6c80}{ALARM\_TYPES}} type\_of\_warning);}
+\DoxyCodeLine{175     \textcolor{keywordtype}{void} set\_warning\_flag(\textcolor{keywordtype}{bool} new\_state);}
+\DoxyCodeLine{176     \textcolor{keywordtype}{bool} is\_warning\_requested();}
+\DoxyCodeLine{177     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_control__system_ab3a3e36bda029f2a5d0c4ffdf8ff984c}{transition\_state}}();}
+\DoxyCodeLine{178     \mbox{\hyperlink{class_control__system}{\string~Control\_system}}();}
+\DoxyCodeLine{179     \textcolor{keywordtype}{bool} is\_next\_step\_overriden() \{ \textcolor{keywordflow}{return} this-\/>context.override\_next\_step; \};}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181 \textcolor{keyword}{private}:}
+\DoxyCodeLine{182     \mbox{\hyperlink{struct_context__t}{Context\_t}} context;}
+\DoxyCodeLine{183 }
+\DoxyCodeLine{184     \mbox{\hyperlink{class_display}{Display}} display;}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186     \mbox{\hyperlink{class_temperature__sensor}{Temperature\_sensor}} temp\_sensor;}
+\DoxyCodeLine{187     \mbox{\hyperlink{class_buzzer}{Buzzer}} buzzer;}
+\DoxyCodeLine{188     \mbox{\hyperlink{class_motor}{Motor}} motor;}
+\DoxyCodeLine{189     \mbox{\hyperlink{class_moisture__sensor}{Moisture\_sensor}} mois\_sensor;}
+\DoxyCodeLine{190     \mbox{\hyperlink{class_dual___l_e_d}{Dual\_LED}} motor\_status\_led;}
+\DoxyCodeLine{191     \mbox{\hyperlink{class_digital__dual___l_e_d}{Digital\_dual\_LED}} water\_intake\_led;}
+\DoxyCodeLine{192     \mbox{\hyperlink{class_digital__dual___l_e_d}{Digital\_dual\_LED}} rear\_cooler\_led;}
+\DoxyCodeLine{193     \mbox{\hyperlink{class_digital__dual___l_e_d}{Digital\_dual\_LED}} front\_cooler\_led;}
+\DoxyCodeLine{194     \mbox{\hyperlink{class_cooler}{Cooler}} front\_cooler;}
+\DoxyCodeLine{195     \mbox{\hyperlink{class_cooler}{Cooler}} rear\_cooler;}
+\DoxyCodeLine{196 \};}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

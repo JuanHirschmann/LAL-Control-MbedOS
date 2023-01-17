@@ -1,0 +1,4 @@
+<map id="Check_instruction_state" name="Check_instruction_state">
+<area shape="rect" id="node1" title=" " coords="5,79,168,104"/>
+<area shape="rect" id="node2" href="$class_abstract__state.html" title="Clase base para implementar los estados de Control_system. Cada estado se debe ocupar de su comportam..." coords="33,5,140,31"/>
+</map>

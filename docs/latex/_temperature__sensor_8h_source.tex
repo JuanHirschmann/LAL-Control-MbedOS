@@ -1,0 +1,28 @@
+\hypertarget{_temperature__sensor_8h_source}{}\doxysection{Temperature\+\_\+sensor.\+h}
+\label{_temperature__sensor_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Temperature\_sensor.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Temperature\_sensor.h}}
+\mbox{\hyperlink{_temperature__sensor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef TEMPERATURE\_SENSOR}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define TEMPERATURE\_SENSOR}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{system__settings_8h}{system\_settings.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <DS1820.h>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_temperature__sensor}{Temperature\_sensor}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22   \textcolor{comment}{// Temperature\_sensor()\{\};}}
+\DoxyCodeLine{28 \textcolor{comment}{}  \mbox{\hyperlink{class_temperature__sensor}{Temperature\_sensor}}(PinName one\_wire\_bus);}
+\DoxyCodeLine{34   \textcolor{keywordtype}{float} \mbox{\hyperlink{class_temperature__sensor_a43bcc39aa92d0bdb58defd6e4aefb3d5}{get\_reading}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{private}:}
+\DoxyCodeLine{42   \textcolor{keywordtype}{void} init\_sensors();}
+\DoxyCodeLine{47   \textcolor{keywordtype}{void} update\_readings();}
+\DoxyCodeLine{52   \textcolor{keywordtype}{int} available\_ds18\_devices = 0;}
+\DoxyCodeLine{57   \textcolor{keywordtype}{float} reading;}
+\DoxyCodeLine{62   DS1820 DS18B20\_sensor;}
+\DoxyCodeLine{63 \};}
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

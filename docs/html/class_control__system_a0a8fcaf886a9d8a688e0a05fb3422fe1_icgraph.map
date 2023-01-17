@@ -1,0 +1,4 @@
+<map id="Control_system::is_cooler_active" name="Control_system::is_cooler_active">
+<area shape="rect" id="node1" title="Devuelve el estado del ventilador." coords="215,5,345,45"/>
+<area shape="rect" id="node2" href="$class_cooler__observer.html#aca9bdbbc11981c1ec178090622caaee4" title="Si el indicador de próximo paso del usuario está activo y el acceso a la próxima instrucción no esté ..." coords="5,13,167,38"/>
+</map>

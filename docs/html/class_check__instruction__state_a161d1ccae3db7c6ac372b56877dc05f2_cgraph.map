@@ -1,0 +1,14 @@
+<map id="Check_instruction_state::update" name="Check_instruction_state::update">
+<area shape="rect" id="node1" title="Actualización de estado, si existe una solicitud de apagado el sistema se resetea." coords="5,141,168,181"/>
+<area shape="rect" id="node2" href="$class_control__system.html#ab7912068a11d44b07eef3b3f56ce0598" title="Itera sobre todos los observadores, llamando a su método de actualización." coords="216,63,368,103"/>
+<area shape="rect" id="node6" href="$class_control__system.html#a4704fee6ca6fe180a5dc292315ec3b31" title="Apaga todos los periféricos a excepción del display. Asigna false a solictudes de alarma,..." coords="217,149,367,174"/>
+<area shape="rect" id="node12" href="$class_display.html#ad2740b779d61e461c4dcaaf34f1fcd8f" title="Actualiza los valores en pantalla con los parámetros previamente fijados. Solo actualiza la pantalla ..." coords="236,198,348,223"/>
+<area shape="rect" id="node3" href="$class_control__system.html#a251677ee7c18269d85579da7a000ceab" title="Fija el valor del flag de muestro de sensores." coords="427,5,565,45"/>
+<area shape="rect" id="node4" href="$class_control__system.html#a4bfd2d8427f35a8cd4e4e10573aa5604" title="Actualización del sistema. De ser necesario realiza la transición de estados y actualiza el estado ac..." coords="416,70,576,95"/>
+<area shape="rect" id="node5" href="$class_abstract__state.html#a993232854cd166a601b6c5b4ba7befcc" title="Método para actualizar el estado." coords="624,70,779,95"/>
+<area shape="rect" id="node7" href="$class_cooler.html#a3aa26bc227fa7a2bdcff9fe607990104" title="Apaga el ventilador." coords="441,119,551,145"/>
+<area shape="rect" id="node8" href="$class_dual___l_e_d.html#a4226b64f8b1c00f3e4c649a8be2e64c9" title="Apaga el LED." coords="431,169,561,194"/>
+<area shape="rect" id="node9" href="$class_dual___l_e_d.html#a8734a816df04661d86e3ccbf88159eb0" title="Enciende el LED en rojo." coords="429,218,563,243"/>
+<area shape="rect" id="node10" href="$class_dual___l_e_d.html#aeb163748acf071a1652c56ae1dff9d52" title="Fija el color del led, no enciende el led,." coords="631,193,772,218"/>
+<area shape="rect" id="node11" href="$class_dual___l_e_d.html#a8b13294b883897eb83f91bf90a3a11cd" title="Enciende el LED en el color actual." coords="636,242,767,267"/>
+</map>

@@ -1,0 +1,95 @@
+\hypertarget{class_machine}{}\doxysection{Machine Class Reference}
+\label{class_machine}\index{Machine@{Machine}}
+
+
+Clase para base para la implementación de una máquina de estados finita.  
+
+
+
+
+{\ttfamily \#include $<$Machine.\+h$>$}
+
+Inheritance diagram for Machine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_machine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_machine_a99427b767b7c15ceb33e391166cd7d68}{Machine}} ()
+\begin{DoxyCompactList}\small\item\em Construye un nuevo objecto \mbox{\hyperlink{class_machine}{Machine}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_machine_ac24c7b8e9ad18361306a5c4862a695ed}{transition\+\_\+state}} ()=0
+\begin{DoxyCompactList}\small\item\em Método virtual para llamar al método de transición del estado actual. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_machine_a18ba54cbad39e992fb62dac4e054c6fb}{$\sim$\+Machine}} ()=0
+\begin{DoxyCompactList}\small\item\em Destruye el objecto \mbox{\hyperlink{class_machine}{Machine}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract__state}{Abstract\+\_\+state}} $\ast$ \mbox{\hyperlink{class_machine_a56eaaa6f43995782642f8d2002fec6d2}{current\+\_\+state}} = nullptr
+\begin{DoxyCompactList}\small\item\em Puntero al estado actual del objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase para base para la implementación de una máquina de estados finita. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_machine_a99427b767b7c15ceb33e391166cd7d68}\label{class_machine_a99427b767b7c15ceb33e391166cd7d68}} 
+\index{Machine@{Machine}!Machine@{Machine}}
+\index{Machine@{Machine}!Machine@{Machine}}
+\doxysubsubsection{\texorpdfstring{Machine()}{Machine()}}
+{\footnotesize\ttfamily Machine\+::\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construye un nuevo objecto \mbox{\hyperlink{class_machine}{Machine}}. 
+
+\mbox{\Hypertarget{class_machine_a18ba54cbad39e992fb62dac4e054c6fb}\label{class_machine_a18ba54cbad39e992fb62dac4e054c6fb}} 
+\index{Machine@{Machine}!````~Machine@{$\sim$Machine}}
+\index{````~Machine@{$\sim$Machine}!Machine@{Machine}}
+\doxysubsubsection{\texorpdfstring{$\sim$Machine()}{~Machine()}}
+{\footnotesize\ttfamily Machine\+::$\sim$\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destruye el objecto \mbox{\hyperlink{class_machine}{Machine}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_machine_ac24c7b8e9ad18361306a5c4862a695ed}\label{class_machine_ac24c7b8e9ad18361306a5c4862a695ed}} 
+\index{Machine@{Machine}!transition\_state@{transition\_state}}
+\index{transition\_state@{transition\_state}!Machine@{Machine}}
+\doxysubsubsection{\texorpdfstring{transition\_state()}{transition\_state()}}
+{\footnotesize\ttfamily virtual void Machine\+::transition\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Método virtual para llamar al método de transición del estado actual. 
+
+
+
+Implemented in \mbox{\hyperlink{class_control__system_ab3a3e36bda029f2a5d0c4ffdf8ff984c}{Control\+\_\+system}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_machine_a56eaaa6f43995782642f8d2002fec6d2}\label{class_machine_a56eaaa6f43995782642f8d2002fec6d2}} 
+\index{Machine@{Machine}!current\_state@{current\_state}}
+\index{current\_state@{current\_state}!Machine@{Machine}}
+\doxysubsubsection{\texorpdfstring{current\_state}{current\_state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract__state}{Abstract\+\_\+state}}$\ast$ Machine\+::current\+\_\+state = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Puntero al estado actual del objeto. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/machine\+\_\+state\+\_\+pattern/\mbox{\hyperlink{_machine_8h}{Machine.\+h}}\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/machine\+\_\+state\+\_\+pattern/Machine.\+cpp\end{DoxyCompactItemize}

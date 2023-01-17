@@ -1,0 +1,53 @@
+\hypertarget{types_8h_source}{}\doxysection{types.\+h}
+\label{types_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/types.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/types.h}}
+\mbox{\hyperlink{types_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef TYPES\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define TYPES\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{18 \textcolor{keyword}{enum} \mbox{\hyperlink{types_8h_a6a683993505efb97736f5eebe34f3206}{STEPS}}}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20     WELCOME\_STEP = 0,}
+\DoxyCodeLine{21     WATER\_ON\_STEP = 1,}
+\DoxyCodeLine{22     OPEN\_FAUCET\_STEP = 2,}
+\DoxyCodeLine{23     MOTOR\_ON\_STEP = 3,}
+\DoxyCodeLine{24     MOTOR\_OFF\_STEP = 4,}
+\DoxyCodeLine{25     MOTOR\_COOLDOWN\_STEP = 5,}
+\DoxyCodeLine{26     WATER\_OFF\_STEP = 6,}
+\DoxyCodeLine{27     LAST\_STEP = 7,}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{33 \textcolor{keyword}{enum} \mbox{\hyperlink{types_8h_a71ef44a7b1de581d625d82b37bed6c80}{ALARM\_TYPES}}}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35     NO\_ALARM = 0,}
+\DoxyCodeLine{36     OVERTEMP\_ALARM,}
+\DoxyCodeLine{37     HUMIDITY\_ALARM,}
+\DoxyCodeLine{38     HALTED\_FAN\_ALARM,}
+\DoxyCodeLine{39     NO\_TEMP\_SENSOR\_ALARM,}
+\DoxyCodeLine{40     OVERTEMP\_WARNING,}
+\DoxyCodeLine{41     SLOW\_FAN\_WARNING,}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{56 \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
+\DoxyCodeLine{57 \{}
+\DoxyCodeLine{58     \textcolor{keywordtype}{float} temperature;}
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} current\_step;}
+\DoxyCodeLine{60     \textcolor{keywordtype}{bool} shutdown\_request;}
+\DoxyCodeLine{61     \textcolor{keywordtype}{bool} warning\_request;}
+\DoxyCodeLine{62     \textcolor{keywordtype}{bool} alarm\_request;}
+\DoxyCodeLine{63     \textcolor{keywordtype}{bool} next\_step\_request;}
+\DoxyCodeLine{64     \textcolor{keywordtype}{bool} poll\_sensors\_request;}
+\DoxyCodeLine{65     \textcolor{keywordtype}{bool} override\_next\_step;}
+\DoxyCodeLine{66     \mbox{\hyperlink{types_8h_a71ef44a7b1de581d625d82b37bed6c80}{ALARM\_TYPES}} current\_alarm;}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \} \mbox{\hyperlink{struct_context__t}{Context\_t}};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \textcolor{keyword}{enum} COLOR\_TYPES}
+\DoxyCodeLine{71 \{}
+\DoxyCodeLine{72     RED,}
+\DoxyCodeLine{73     YELLOW,}
+\DoxyCodeLine{74     GREEN,}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \};}
+\DoxyCodeLine{77 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

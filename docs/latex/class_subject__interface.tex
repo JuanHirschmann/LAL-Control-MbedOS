@@ -1,0 +1,88 @@
+\hypertarget{class_subject__interface}{}\doxysection{Subject\+\_\+interface Class Reference}
+\label{class_subject__interface}\index{Subject\_interface@{Subject\_interface}}
+
+
+Clase interfaz para implementar el patrón de diseño \mbox{\hyperlink{class_observer}{Observer}}.  
+
+
+
+
+{\ttfamily \#include $<$Subject\+\_\+interface.\+h$>$}
+
+Inheritance diagram for Subject\+\_\+interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_subject__interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_subject__interface_a6167416fcf891796e974f65318fca8d3}{attach}} (\mbox{\hyperlink{class_observer__interface}{Observer\+\_\+interface}} $\ast$obs)=0
+\begin{DoxyCompactList}\small\item\em Método virtual puro para que las clases herederas implementen el agregado de observadores. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_subject__interface_a0ccc901c01cb515babedaaeec8c4cbe3}{notify\+\_\+observers}} ()=0
+\begin{DoxyCompactList}\small\item\em Método virtual puro para que las clases herederas implementen la actualización de observadores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_observer__interface}{Observer\+\_\+interface}} $\ast$ \mbox{\hyperlink{class_subject__interface_a283b443a975a65e2f7f73e3377750df2}{observers}} \mbox{[}MAX\+\_\+\+OBSERVERS\mbox{]}
+\begin{DoxyCompactList}\small\item\em Vector de punteros a los observadores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase interfaz para implementar el patrón de diseño \mbox{\hyperlink{class_observer}{Observer}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_subject__interface_a6167416fcf891796e974f65318fca8d3}\label{class_subject__interface_a6167416fcf891796e974f65318fca8d3}} 
+\index{Subject\_interface@{Subject\_interface}!attach@{attach}}
+\index{attach@{attach}!Subject\_interface@{Subject\_interface}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily virtual void Subject\+\_\+interface\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observer__interface}{Observer\+\_\+interface}} $\ast$}]{obs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Método virtual puro para que las clases herederas implementen el agregado de observadores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obs} & Observador a agregar, recibido como puntero. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_subject_a61903187e6f9740640c32d880bd2cd6c}{Subject}}.
+
+\mbox{\Hypertarget{class_subject__interface_a0ccc901c01cb515babedaaeec8c4cbe3}\label{class_subject__interface_a0ccc901c01cb515babedaaeec8c4cbe3}} 
+\index{Subject\_interface@{Subject\_interface}!notify\_observers@{notify\_observers}}
+\index{notify\_observers@{notify\_observers}!Subject\_interface@{Subject\_interface}}
+\doxysubsubsection{\texorpdfstring{notify\_observers()}{notify\_observers()}}
+{\footnotesize\ttfamily virtual void Subject\+\_\+interface\+::notify\+\_\+observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Método virtual puro para que las clases herederas implementen la actualización de observadores. 
+
+
+
+Implemented in \mbox{\hyperlink{class_subject_a156c54b0ef570d0439f2347643192dc3}{Subject}}, and \mbox{\hyperlink{class_control__system_ab7912068a11d44b07eef3b3f56ce0598}{Control\+\_\+system}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_subject__interface_a283b443a975a65e2f7f73e3377750df2}\label{class_subject__interface_a283b443a975a65e2f7f73e3377750df2}} 
+\index{Subject\_interface@{Subject\_interface}!observers@{observers}}
+\index{observers@{observers}!Subject\_interface@{Subject\_interface}}
+\doxysubsubsection{\texorpdfstring{observers}{observers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_observer__interface}{Observer\+\_\+interface}}$\ast$ Subject\+\_\+interface\+::observers\mbox{[}MAX\+\_\+\+OBSERVERS\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Vector de punteros a los observadores. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/observer\+\_\+pattern/subjects/\mbox{\hyperlink{_subject__interface_8h}{Subject\+\_\+interface.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,22 @@
+\hypertarget{_idle__state_8h_source}{}\doxysection{Idle\+\_\+state.\+h}
+\label{_idle__state_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/machine\_state\_pattern/machine\_states/Idle\_state.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/machine\_state\_pattern/machine\_states/Idle\_state.h}}
+\mbox{\hyperlink{_idle__state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef IDLE\_STATE\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define IDLE\_STATE\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}Control\_system.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_abstract__state_8h}{machine\_state\_pattern/machine\_states/Abstract\_state.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_motor__control__state_8h}{machine\_state\_pattern/machine\_states/Motor\_control\_state.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}machine\_state\_pattern/machine\_states/Check\_instruction\_state.h"{}}}
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{class_idle__state}{Idle\_state}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_abstract__state}{Abstract\_state}}}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_idle__state_a92217c98eda8e3bd47eb3a8ff602efc2}{update}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{38     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_idle__state_ad6d70e591dd39da724656a4261013e4f}{enter}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{44     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_idle__state_aad83cf5a4d37cbb4b45b64dd6d632c53}{exit}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{56     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_abstract__state}{Abstract\_state}} *\mbox{\hyperlink{class_idle__state_a422b51d100fee2411f6ea972b13cc2e8}{transition}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{57 \};}
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

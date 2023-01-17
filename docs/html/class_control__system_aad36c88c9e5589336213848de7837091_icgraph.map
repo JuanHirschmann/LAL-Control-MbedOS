@@ -1,0 +1,5 @@
+<map id="Control_system::init_display" name="Control_system::init_display">
+<area shape="rect" id="node1" title="Inicializa el display lcd del sistema." coords="421,5,560,45"/>
+<area shape="rect" id="node2" href="$class_shutdown__state.html#accbc4c856709e26453e2e23c5c1e4f8e" title="Salida del estado, resetea las variables del sistema e incializa la pantalla." coords="229,13,373,38"/>
+<area shape="rect" id="node3" href="$class_shutdown__state.html#ae02b2fd80173aa50afcd73faba01b9be" title="Transicion de estados." coords="5,13,181,38"/>
+</map>

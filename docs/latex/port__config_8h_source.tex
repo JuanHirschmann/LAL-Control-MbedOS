@@ -1,0 +1,33 @@
+\hypertarget{port__config_8h_source}{}\doxysection{port\+\_\+config.\+h}
+\label{port__config_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/port\_config.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/port\_config.h}}
+\mbox{\hyperlink{port__config_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef PORT\_CONFIG\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define PORT\_CONFIG\_H}}
+\DoxyCodeLine{13 \textcolor{keyword}{const} PinName BUTTON\_PIN = D2; \textcolor{comment}{// D3, tiene que corresponder a una interrupción externa}}
+\DoxyCodeLine{14 \textcolor{keyword}{const} PinName MOTOR\_CONTROL\_PIN = D3;}
+\DoxyCodeLine{15 \textcolor{keyword}{const} PinName FRONT\_COOLER\_CONTROL\_PIN = D5; \textcolor{comment}{// Con PWM}}
+\DoxyCodeLine{16 \textcolor{keyword}{const} PinName REAR\_COOLER\_CONTROL\_PIN = D6;  \textcolor{comment}{// Con PWM}}
+\DoxyCodeLine{17 \textcolor{keyword}{const} PinName ONE\_WIRE\_BUS = D7;             \textcolor{comment}{// D9 como digital in}}
+\DoxyCodeLine{18 \textcolor{keyword}{const} PinName REAR\_COOLER\_SPEED\_MEAS\_PIN = D8;}
+\DoxyCodeLine{19 \textcolor{keyword}{const} PinName FRONT\_COOLER\_SPEED\_MEAS\_PIN = D9;}
+\DoxyCodeLine{20 \textcolor{keyword}{const} PinName MOTOR\_GREEN\_LED\_PIN = D10; \textcolor{comment}{// D11, Ambos con PWM}}
+\DoxyCodeLine{21 \textcolor{keyword}{const} PinName MOTOR\_RED\_LED\_PIN = D11;   \textcolor{comment}{// D10}}
+\DoxyCodeLine{22 \textcolor{keyword}{const} PinName BUZZER\_PIN = D12;          \textcolor{comment}{// D9, necesita PWM}}
+\DoxyCodeLine{23 \textcolor{keyword}{const} PinName SDA = D14;}
+\DoxyCodeLine{24 \textcolor{keyword}{const} PinName SCL = D15;}
+\DoxyCodeLine{25 \textcolor{comment}{// const int MOISTURE\_SENSOR\_PIN = A6;}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{const} PinName MOISTURE\_SENSOR\_PIN = A4; \textcolor{comment}{// F401RE no tiene el equivalente a A6}}
+\DoxyCodeLine{28 \textcolor{keyword}{const} PinName WATER\_INTAKE\_STATE\_RED\_LED = D4;}
+\DoxyCodeLine{29 \textcolor{keyword}{const} PinName WATER\_INTAKE\_STATE\_GREEN\_LED = D13;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{const} PinName REAR\_COOLER\_STATE\_RED\_LED = A3;}
+\DoxyCodeLine{32 \textcolor{keyword}{const} PinName REAR\_COOLER\_STATE\_GREEN\_LED = PA\_15;}
+\DoxyCodeLine{33 \textcolor{keyword}{const} PinName FRONT\_COOLER\_STATE\_RED\_LED = A1;}
+\DoxyCodeLine{34 \textcolor{keyword}{const} PinName FRONT\_COOLER\_STATE\_GREEN\_LED = A0;}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

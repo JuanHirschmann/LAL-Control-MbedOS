@@ -1,0 +1,17 @@
+<map id="Check_instruction_state::enter" name="Check_instruction_state::enter">
+<area shape="rect" id="node1" title="Entrada del estado, resuelve las instrucciones a realizar en cada paso: &#45;WELCOME_STEP: Primer paso,..." coords="5,221,168,261"/>
+<area shape="rect" id="node2" href="$class_control__system.html#aa98b33b5c57a47fb55e211516e49088b" title="Enciende el buzzer por 100ms (bloqueante) y, si no esta anulado el próximo paso, avanza hacia la sigu..." coords="216,70,395,95"/>
+<area shape="rect" id="node7" href="$class_control__system.html#a46298a6a5f4ba43857baa6ae23d00dbc" title="Fija el valor de velocidad del ventilador." coords="236,221,375,261"/>
+<area shape="rect" id="node8" href="$class_dual___l_e_d.html#ab1cd238e00901ca9556914a38d3a064c" title="Enciende el LED en verde." coords="443,119,593,145"/>
+<area shape="rect" id="node12" href="$class_cooler.html#a3aa26bc227fa7a2bdcff9fe607990104" title="Apaga el ventilador." coords="657,267,767,293"/>
+<area shape="rect" id="node13" href="$class_dual___l_e_d.html#a8734a816df04661d86e3ccbf88159eb0" title="Enciende el LED en rojo." coords="451,169,585,194"/>
+<area shape="rect" id="node14" href="$class_motor.html#a9a1613b24a5dd07a8c515e82d8e0edeb" title="Apaga el motor." coords="253,343,358,369"/>
+<area shape="rect" id="node15" href="$class_motor.html#a3a871f05d0b017ff32052eb946a56f38" title="Enciende el motor con con una duración en milisegundos duration, por defecto enciende el motor por un..." coords="252,393,359,418"/>
+<area shape="rect" id="node3" href="$class_control__system.html#ac1cd148e897c5ce2ef405dd45ddf964f" title="Muestra en pantalla el paso del procedimientoa actual." coords="443,5,593,45"/>
+<area shape="rect" id="node5" href="$class_buzzer.html#a9ba28d9ca8b3dd80541d9a13a8b0f625" title="Enciende el buzzer con con una duración en milisegundos duration, por defecto enciende el buzzer por ..." coords="461,70,575,95"/>
+<area shape="rect" id="node4" href="$class_display.html#a87d1e7bf73a1d14b5e76c9ab647a9e93" title="Fija el el texto a actualizar, no lo imprime en pantalla. La ubicación se da con las constantes de of..." coords="652,13,772,38"/>
+<area shape="rect" id="node6" href="$class_buzzer.html#a5809a2b7b52e74f509c31214257f3af0" title="Apaga el buzzer." coords="655,70,769,95"/>
+<area shape="rect" id="node11" href="$class_cooler.html#aa98fd302dc7933fc21c046ca3ea48346" title="Enciende el ventilador. Si el ciclo de trabajo deseado es menor que FAN_MINIMUM_DUTY_CYCLE apaga el v..." coords="463,242,573,267"/>
+<area shape="rect" id="node9" href="$class_dual___l_e_d.html#aeb163748acf071a1652c56ae1dff9d52" title="Fija el color del led, no enciende el led,." coords="641,119,783,145"/>
+<area shape="rect" id="node10" href="$class_dual___l_e_d.html#a8b13294b883897eb83f91bf90a3a11cd" title="Enciende el LED en el color actual." coords="647,169,777,194"/>
+</map>

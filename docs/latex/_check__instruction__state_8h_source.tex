@@ -1,0 +1,25 @@
+\hypertarget{_check__instruction__state_8h_source}{}\doxysection{Check\+\_\+instruction\+\_\+state.\+h}
+\label{_check__instruction__state_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/machine\_state\_pattern/machine\_states/Check\_instruction\_state.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/machine\_state\_pattern/machine\_states/Check\_instruction\_state.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef CHECK\_INSTRUCTION\_STATE\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define CHECK\_INSTRUCTION\_STATE\_H}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Control\_system.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_abstract__state_8h}{machine\_state\_pattern/machine\_states/Abstract\_state.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_motor__control__state_8h}{machine\_state\_pattern/machine\_states/Motor\_control\_state.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_check__instruction__state}{Check\_instruction\_state}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_abstract__state}{Abstract\_state}}}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{11     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_check__instruction__state_a161d1ccae3db7c6ac372b56877dc05f2}{update}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_check__instruction__state_ae13ba3789ab274a7dddf19be0a413b55}{enter}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_check__instruction__state_afeb2e9157050c1c98616340af2e3f8ec}{exit}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_abstract__state}{Abstract\_state}} *\mbox{\hyperlink{class_check__instruction__state_a324b5fc23fd203eda7a4e1c7e0b9925d}{transition}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,7 @@
+<map id="Abstract_state" name="Abstract_state">
+<area shape="rect" id="node1" title="Clase base para implementar los estados de Control_system. Cada estado se debe ocupar de su comportam..." coords="222,5,329,31"/>
+<area shape="rect" id="node2" href="$class_alarm__state.html" title=" " coords="5,79,97,104"/>
+<area shape="rect" id="node3" href="$class_check__instruction__state.html" title=" " coords="122,79,285,104"/>
+<area shape="rect" id="node4" href="$class_idle__state.html" title="Clase para implementar el estado de reposo del sistema (Sin alarmas ni advertencias,..." coords="309,79,388,104"/>
+<area shape="rect" id="node5" href="$class_shutdown__state.html" title=" " coords="413,79,527,104"/>
+</map>

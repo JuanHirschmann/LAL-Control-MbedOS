@@ -1,0 +1,6 @@
+<map id="Control_system::notify_observers" name="Control_system::notify_observers">
+<area shape="rect" id="node1" title="Itera sobre todos los observadores, llamando a su método de actualización." coords="5,35,157,75"/>
+<area shape="rect" id="node2" href="$class_control__system.html#a251677ee7c18269d85579da7a000ceab" title="Fija el valor del flag de muestro de sensores." coords="216,5,355,45"/>
+<area shape="rect" id="node3" href="$class_control__system.html#a4bfd2d8427f35a8cd4e4e10573aa5604" title="Actualización del sistema. De ser necesario realiza la transición de estados y actualiza el estado ac..." coords="205,70,365,95"/>
+<area shape="rect" id="node4" href="$class_abstract__state.html#a993232854cd166a601b6c5b4ba7befcc" title="Método para actualizar el estado." coords="413,70,568,95"/>
+</map>

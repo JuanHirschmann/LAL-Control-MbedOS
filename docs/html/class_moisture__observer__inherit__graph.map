@@ -1,0 +1,6 @@
+<map id="Moisture_observer" name="Moisture_observer">
+<area shape="rect" id="node1" title="Clase heredera de System_observer, creada para observar el estado de los sensores de humedad." coords="7,225,133,251"/>
+<area shape="rect" id="node2" href="$class_system__observer.html" title="Clase interfaz para implementar observadores para sujetos de la clase Control_system." coords="9,152,131,177"/>
+<area shape="rect" id="node3" href="$class_observer.html" title="Clase Observer, utilizada como base del observador en una implementación del patrón de diseño Observe..." coords="33,79,107,104"/>
+<area shape="rect" id="node4" href="$class_observer__interface.html" title="Interfaz para implementar el patrón de diseño Observer." coords="5,5,135,31"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Check_instruction_state::transition" name="Check_instruction_state::transition">
+<area shape="rect" id="node1" title="Transición de estados. Sólo permite la transición a estado neutro si existe una solicitud de paso sig..." coords="5,37,168,77"/>
+<area shape="rect" id="node2" href="$class_check__instruction__state.html#afeb2e9157050c1c98616340af2e3f8ec" title="Salida del estado. No realiza ninguna acción." coords="216,5,379,45"/>
+<area shape="rect" id="node3" href="$class_control__system.html#a8b637df1ff92042b105b0ff0b607ffd3" title="Devuelve el estado de solicitud de próxima instrucción." coords="222,69,373,109"/>
+</map>

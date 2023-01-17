@@ -1,0 +1,64 @@
+\hypertarget{_debounce_in_8h_source}{}\doxysection{Debounce\+In.\+h}
+\label{_debounce_in_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/DebounceIn.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/DebounceIn.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{MIT License}}
+\DoxyCodeLine{3 \textcolor{comment}{Copyright (c) 2020 Pavel Slama}}
+\DoxyCodeLine{4 \textcolor{comment}{Permission is hereby granted, free of charge, to any person obtaining a copy}}
+\DoxyCodeLine{5 \textcolor{comment}{of this software and associated documentation files (the "{}Software"{}), to deal}}
+\DoxyCodeLine{6 \textcolor{comment}{in the Software without restriction, including without limitation the rights}}
+\DoxyCodeLine{7 \textcolor{comment}{to use, copy, modify, merge, publish, distribute, sublicense, and/or sell}}
+\DoxyCodeLine{8 \textcolor{comment}{copies of the Software, and to permit persons to whom the Software is}}
+\DoxyCodeLine{9 \textcolor{comment}{furnished to do so, subject to the following conditions:}}
+\DoxyCodeLine{10 \textcolor{comment}{The above copyright notice and this permission notice shall be included in all}}
+\DoxyCodeLine{11 \textcolor{comment}{copies or substantial portions of the Software.}}
+\DoxyCodeLine{12 \textcolor{comment}{THE SOFTWARE IS PROVIDED "{}AS IS"{}, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR}}
+\DoxyCodeLine{13 \textcolor{comment}{IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,}}
+\DoxyCodeLine{14 \textcolor{comment}{FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE}}
+\DoxyCodeLine{15 \textcolor{comment}{AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER}}
+\DoxyCodeLine{16 \textcolor{comment}{LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,}}
+\DoxyCodeLine{17 \textcolor{comment}{OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE}}
+\DoxyCodeLine{18 \textcolor{comment}{SOFTWARE.}}
+\DoxyCodeLine{19 \textcolor{comment}{*/}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#ifndef DEBOUNCEIN\_H}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define DEBOUNCEIN\_H}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include "{}mbed.h"{}}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{26 \textcolor{keyword}{using namespace }std::chrono;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define DEFAULT\_DEBOUNCE 40ms}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{class }\mbox{\hyperlink{class_debounce_in}{DebounceIn}}}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33   \textcolor{keyword}{typedef} \textcolor{keyword}{enum}}
+\DoxyCodeLine{34   \{}
+\DoxyCodeLine{35     None = 0,}
+\DoxyCodeLine{36     Rise,}
+\DoxyCodeLine{37     Fall}
+\DoxyCodeLine{38   \} Type;}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40   \mbox{\hyperlink{class_debounce_in}{DebounceIn}}(PinName pin, PinMode mode = PullNone);}
+\DoxyCodeLine{41   \textcolor{keywordtype}{void} rise(Callback<\textcolor{keywordtype}{void}()> cb, microseconds timeout = DEFAULT\_DEBOUNCE);}
+\DoxyCodeLine{42   \textcolor{keywordtype}{void} fall(Callback<\textcolor{keywordtype}{void}()> cb, microseconds timeout = DEFAULT\_DEBOUNCE);}
+\DoxyCodeLine{43   int32\_t read();}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45   \textcolor{keyword}{operator} int();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{keyword}{private}:}
+\DoxyCodeLine{48   InterruptIn \_interrupt;}
+\DoxyCodeLine{49   Timeout \_timeout[2];}
+\DoxyCodeLine{50   Callback<void()> \_cb[2];}
+\DoxyCodeLine{51   \textcolor{keywordtype}{void} intRiseCb();}
+\DoxyCodeLine{52   \textcolor{keywordtype}{void} intFallCb();}
+\DoxyCodeLine{53   \textcolor{keywordtype}{void} timeoutRiseCb();}
+\DoxyCodeLine{54   \textcolor{keywordtype}{void} timeoutFallCb();}
+\DoxyCodeLine{55   microseconds \_timeout\_interval[2];}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,4 @@
+<map id="Control_system::init_display" name="Control_system::init_display">
+<area shape="rect" id="node1" title="Inicializa el display lcd del sistema." coords="5,5,144,45"/>
+<area shape="rect" id="node2" href="$class_display.html#aacbf91b9f8c57fc2cb892c45fd44e655" title="Método para inicializar el objeto, sólo se puede luego o en setup()." coords="192,13,283,38"/>
+</map>

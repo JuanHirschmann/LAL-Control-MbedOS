@@ -1,0 +1,4 @@
+<map id="Control_system::is_cooler_active" name="Control_system::is_cooler_active">
+<area shape="rect" id="node1" title="Devuelve el estado del ventilador." coords="5,5,136,45"/>
+<area shape="rect" id="node2" href="$class_cooler.html#a18f58f8d6ffd3a78be821a0cc5d9e4f1" title="Estado del ventilador. No utiliza la medición de velocidad si no que, si se llamó a la función turn_o..." coords="184,13,301,38"/>
+</map>

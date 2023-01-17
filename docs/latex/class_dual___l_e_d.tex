@@ -1,0 +1,139 @@
+\hypertarget{class_dual___l_e_d}{}\doxysection{Dual\+\_\+\+LED Class Reference}
+\label{class_dual___l_e_d}\index{Dual\_LED@{Dual\_LED}}
+
+
+Clase para el manejo de un indicador LED RG.  
+
+
+
+
+{\ttfamily \#include $<$Dual\+\_\+\+LED.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dual___l_e_d_ad7eba9900b6a80ef2c26ae76b19adc0a}{Dual\+\_\+\+LED}} (Pin\+Name green\+\_\+led\+\_\+pin, Pin\+Name red\+\_\+led\+\_\+pin)
+\begin{DoxyCompactList}\small\item\em Construye un nuevo objecto \mbox{\hyperlink{class_dual___l_e_d}{Dual\+\_\+\+LED}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dual___l_e_d_aeb163748acf071a1652c56ae1dff9d52}{set\+\_\+color}} (COLOR\+\_\+\+TYPES new\+\_\+color)
+\begin{DoxyCompactList}\small\item\em Fija el color del led, no enciende el led,. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dual___l_e_d_a8734a816df04661d86e3ccbf88159eb0}{turn\+\_\+red}} ()
+\begin{DoxyCompactList}\small\item\em Enciende el LED en rojo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dual___l_e_d_ab1cd238e00901ca9556914a38d3a064c}{turn\+\_\+green}} ()
+\begin{DoxyCompactList}\small\item\em Enciende el LED en verde. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dual___l_e_d_aabc0462521bcc08ea7f6f04642f7e89d}{turn\+\_\+yellow}} ()
+\begin{DoxyCompactList}\small\item\em Enciende el LED en amarillo. El comportamiento es indefinido para pines no PWM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dual___l_e_d_a8b13294b883897eb83f91bf90a3a11cd}{turn\+\_\+on}} ()
+\begin{DoxyCompactList}\small\item\em Enciende el LED en el color actual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dual___l_e_d_ac56cb66fdbb2a682a90091f2f9a0d385}{toggle}} ()
+\begin{DoxyCompactList}\small\item\em Permuta el estado del LED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dual___l_e_d_a4226b64f8b1c00f3e4c649a8be2e64c9}{turn\+\_\+off}} ()
+\begin{DoxyCompactList}\small\item\em Apaga el LED. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase para el manejo de un indicador LED RG. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dual___l_e_d_ad7eba9900b6a80ef2c26ae76b19adc0a}\label{class_dual___l_e_d_ad7eba9900b6a80ef2c26ae76b19adc0a}} 
+\index{Dual\_LED@{Dual\_LED}!Dual\_LED@{Dual\_LED}}
+\index{Dual\_LED@{Dual\_LED}!Dual\_LED@{Dual\_LED}}
+\doxysubsubsection{\texorpdfstring{Dual\_LED()}{Dual\_LED()}}
+{\footnotesize\ttfamily Dual\+\_\+\+LED\+::\+Dual\+\_\+\+LED (\begin{DoxyParamCaption}\item[{Pin\+Name}]{green\+\_\+led\+\_\+pin,  }\item[{Pin\+Name}]{red\+\_\+led\+\_\+pin }\end{DoxyParamCaption})}
+
+
+
+Construye un nuevo objecto \mbox{\hyperlink{class_dual___l_e_d}{Dual\+\_\+\+LED}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em green\+\_\+led\+\_\+pin} & pin donde el led verde esta conectado \\
+\hline
+{\em red\+\_\+led\+\_\+pin} & pin donde el led rojo esta conectado \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dual___l_e_d_aeb163748acf071a1652c56ae1dff9d52}\label{class_dual___l_e_d_aeb163748acf071a1652c56ae1dff9d52}} 
+\index{Dual\_LED@{Dual\_LED}!set\_color@{set\_color}}
+\index{set\_color@{set\_color}!Dual\_LED@{Dual\_LED}}
+\doxysubsubsection{\texorpdfstring{set\_color()}{set\_color()}}
+{\footnotesize\ttfamily void Dual\+\_\+\+LED\+::set\+\_\+color (\begin{DoxyParamCaption}\item[{COLOR\+\_\+\+TYPES}]{new\+\_\+color }\end{DoxyParamCaption})}
+
+
+
+Fija el color del led, no enciende el led,. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dual___l_e_d_ac56cb66fdbb2a682a90091f2f9a0d385}\label{class_dual___l_e_d_ac56cb66fdbb2a682a90091f2f9a0d385}} 
+\index{Dual\_LED@{Dual\_LED}!toggle@{toggle}}
+\index{toggle@{toggle}!Dual\_LED@{Dual\_LED}}
+\doxysubsubsection{\texorpdfstring{toggle()}{toggle()}}
+{\footnotesize\ttfamily void Dual\+\_\+\+LED\+::toggle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Permuta el estado del LED. 
+
+\mbox{\Hypertarget{class_dual___l_e_d_ab1cd238e00901ca9556914a38d3a064c}\label{class_dual___l_e_d_ab1cd238e00901ca9556914a38d3a064c}} 
+\index{Dual\_LED@{Dual\_LED}!turn\_green@{turn\_green}}
+\index{turn\_green@{turn\_green}!Dual\_LED@{Dual\_LED}}
+\doxysubsubsection{\texorpdfstring{turn\_green()}{turn\_green()}}
+{\footnotesize\ttfamily void Dual\+\_\+\+LED\+::turn\+\_\+green (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enciende el LED en verde. 
+
+\mbox{\Hypertarget{class_dual___l_e_d_a4226b64f8b1c00f3e4c649a8be2e64c9}\label{class_dual___l_e_d_a4226b64f8b1c00f3e4c649a8be2e64c9}} 
+\index{Dual\_LED@{Dual\_LED}!turn\_off@{turn\_off}}
+\index{turn\_off@{turn\_off}!Dual\_LED@{Dual\_LED}}
+\doxysubsubsection{\texorpdfstring{turn\_off()}{turn\_off()}}
+{\footnotesize\ttfamily void Dual\+\_\+\+LED\+::turn\+\_\+off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apaga el LED. 
+
+\mbox{\Hypertarget{class_dual___l_e_d_a8b13294b883897eb83f91bf90a3a11cd}\label{class_dual___l_e_d_a8b13294b883897eb83f91bf90a3a11cd}} 
+\index{Dual\_LED@{Dual\_LED}!turn\_on@{turn\_on}}
+\index{turn\_on@{turn\_on}!Dual\_LED@{Dual\_LED}}
+\doxysubsubsection{\texorpdfstring{turn\_on()}{turn\_on()}}
+{\footnotesize\ttfamily void Dual\+\_\+\+LED\+::turn\+\_\+on (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enciende el LED en el color actual. 
+
+\mbox{\Hypertarget{class_dual___l_e_d_a8734a816df04661d86e3ccbf88159eb0}\label{class_dual___l_e_d_a8734a816df04661d86e3ccbf88159eb0}} 
+\index{Dual\_LED@{Dual\_LED}!turn\_red@{turn\_red}}
+\index{turn\_red@{turn\_red}!Dual\_LED@{Dual\_LED}}
+\doxysubsubsection{\texorpdfstring{turn\_red()}{turn\_red()}}
+{\footnotesize\ttfamily void Dual\+\_\+\+LED\+::turn\+\_\+red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enciende el LED en rojo. 
+
+\mbox{\Hypertarget{class_dual___l_e_d_aabc0462521bcc08ea7f6f04642f7e89d}\label{class_dual___l_e_d_aabc0462521bcc08ea7f6f04642f7e89d}} 
+\index{Dual\_LED@{Dual\_LED}!turn\_yellow@{turn\_yellow}}
+\index{turn\_yellow@{turn\_yellow}!Dual\_LED@{Dual\_LED}}
+\doxysubsubsection{\texorpdfstring{turn\_yellow()}{turn\_yellow()}}
+{\footnotesize\ttfamily void Dual\+\_\+\+LED\+::turn\+\_\+yellow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enciende el LED en amarillo. El comportamiento es indefinido para pines no PWM. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/drivers/\mbox{\hyperlink{_dual___l_e_d_8h}{Dual\+\_\+\+LED.\+h}}\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/drivers/Dual\+\_\+\+LED.\+cpp\end{DoxyCompactItemize}

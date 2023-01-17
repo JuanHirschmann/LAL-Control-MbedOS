@@ -1,0 +1,5 @@
+<map id="Dual_LED::turn_yellow" name="Dual_LED::turn_yellow">
+<area shape="rect" id="node1" title="Enciende el LED en amarillo. El comportamiento es indefinido para pines no PWM." coords="5,31,159,56"/>
+<area shape="rect" id="node2" href="$class_dual___l_e_d.html#aeb163748acf071a1652c56ae1dff9d52" title="Fija el color del led, no enciende el led,." coords="207,5,348,31"/>
+<area shape="rect" id="node3" href="$class_dual___l_e_d.html#a8b13294b883897eb83f91bf90a3a11cd" title="Enciende el LED en el color actual." coords="212,55,343,80"/>
+</map>

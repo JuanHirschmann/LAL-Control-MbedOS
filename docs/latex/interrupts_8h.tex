@@ -1,0 +1,69 @@
+\hypertarget{interrupts_8h}{}\doxysection{C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/interrupts.h File Reference}
+\label{interrupts_8h}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/interrupts.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/interrupts.h}}
+
+
+Configuración de interrupciones.  
+
+
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interrupts_8h_a7151cd85a371816bdc91bbf05ae1825f}{setup\+\_\+int0\+\_\+interrupt}} (uint8\+\_\+t pin, uint8\+\_\+t mode, void($\ast$callback)(), int interrupt\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em configura la interrupción interna en int0 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interrupts_8h_a7677b0aead77a2f0b17f45fca7f6b0c5}{setup\+\_\+timer1\+\_\+interrupt}} ()
+\begin{DoxyCompactList}\small\item\em Configura la interrupción del timer 1 para realizarse cada 1 segundo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interrupts_8h_a170c14b4a8721745f9816e7a7824c711}\label{interrupts_8h_a170c14b4a8721745f9816e7a7824c711}} 
+void {\bfseries setup\+\_\+pinct\+\_\+portb\+\_\+interrupt} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configuración de interrupciones. 
+
+\begin{DoxyAuthor}{Author}
+Juan Hirschmann (\href{mailto:jhirschmann@fi.uba.ar}{\texttt{ jhirschmann@fi.\+uba.\+ar}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/11-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{interrupts_8h_a7151cd85a371816bdc91bbf05ae1825f}\label{interrupts_8h_a7151cd85a371816bdc91bbf05ae1825f}} 
+\index{interrupts.h@{interrupts.h}!setup\_int0\_interrupt@{setup\_int0\_interrupt}}
+\index{setup\_int0\_interrupt@{setup\_int0\_interrupt}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{setup\_int0\_interrupt()}{setup\_int0\_interrupt()}}
+{\footnotesize\ttfamily void setup\+\_\+int0\+\_\+interrupt (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{uint8\+\_\+t}]{mode,  }\item[{void($\ast$)()}]{callback,  }\item[{int}]{interrupt\+\_\+mode }\end{DoxyParamCaption})}
+
+
+
+configura la interrupción interna en int0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & \\
+\hline
+{\em mode} & modo del pin \\
+\hline
+{\em callback} & función a llamar cuando sucede la interrupción \\
+\hline
+{\em interrupt\+\_\+mode} & modo de la interrupción (HIGH,LOW,RISING,FALLING) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interrupts_8h_a7677b0aead77a2f0b17f45fca7f6b0c5}\label{interrupts_8h_a7677b0aead77a2f0b17f45fca7f6b0c5}} 
+\index{interrupts.h@{interrupts.h}!setup\_timer1\_interrupt@{setup\_timer1\_interrupt}}
+\index{setup\_timer1\_interrupt@{setup\_timer1\_interrupt}!interrupts.h@{interrupts.h}}
+\doxysubsubsection{\texorpdfstring{setup\_timer1\_interrupt()}{setup\_timer1\_interrupt()}}
+{\footnotesize\ttfamily void setup\+\_\+timer1\+\_\+interrupt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Configura la interrupción del timer 1 para realizarse cada 1 segundo. 
+

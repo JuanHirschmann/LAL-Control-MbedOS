@@ -1,0 +1,7 @@
+<map id="Cooler_observer::update" name="Cooler_observer::update">
+<area shape="rect" id="node1" title="Si el indicador de próximo paso del usuario está activo y el acceso a la próxima instrucción no esté ..." coords="5,77,167,102"/>
+<area shape="rect" id="node2" href="$class_control__system.html#a0a8fcaf886a9d8a688e0a05fb3422fe1" title="Devuelve el estado del ventilador." coords="233,5,363,45"/>
+<area shape="rect" id="node4" href="$class_control__system.html#af7e1048dcc938de30589f961d0b14ee1" title="Devuelve el estado del indicador de muestreo de sensores." coords="215,69,381,109"/>
+<area shape="rect" id="node5" href="$class_control__system.html#af5985ea3ad848a1631ff6c12ef4b3941" title="Solicita una alarma." coords="216,133,380,173"/>
+<area shape="rect" id="node3" href="$class_cooler.html#a18f58f8d6ffd3a78be821a0cc5d9e4f1" title="Estado del ventilador. No utiliza la medición de velocidad si no que, si se llamó a la función turn_o..." coords="429,13,547,38"/>
+</map>

@@ -1,0 +1,84 @@
+\hypertarget{types_8h}{}\doxysection{C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/types.h File Reference}
+\label{types_8h}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/types.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/types.h}}
+
+
+Archivo de definición de tipos de dato.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_context__t}{Context\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Variables de contexto del sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{types_8h_a6a683993505efb97736f5eebe34f3206}{STEPS}} \{ \newline
+{\bfseries WELCOME\+\_\+\+STEP} = 0
+, {\bfseries WATER\+\_\+\+ON\+\_\+\+STEP} = 1
+, {\bfseries OPEN\+\_\+\+FAUCET\+\_\+\+STEP} = 2
+, {\bfseries MOTOR\+\_\+\+ON\+\_\+\+STEP} = 3
+, \newline
+{\bfseries MOTOR\+\_\+\+OFF\+\_\+\+STEP} = 4
+, {\bfseries MOTOR\+\_\+\+COOLDOWN\+\_\+\+STEP} = 5
+, {\bfseries WATER\+\_\+\+OFF\+\_\+\+STEP} = 6
+, {\bfseries LAST\+\_\+\+STEP} = 7
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeración de pasos a realizar del procedimiento. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{types_8h_a71ef44a7b1de581d625d82b37bed6c80}{ALARM\+\_\+\+TYPES}} \{ \newline
+{\bfseries NO\+\_\+\+ALARM} = 0
+, {\bfseries OVERTEMP\+\_\+\+ALARM}
+, {\bfseries HUMIDITY\+\_\+\+ALARM}
+, {\bfseries HALTED\+\_\+\+FAN\+\_\+\+ALARM}
+, \newline
+{\bfseries NO\+\_\+\+TEMP\+\_\+\+SENSOR\+\_\+\+ALARM}
+, {\bfseries OVERTEMP\+\_\+\+WARNING}
+, {\bfseries SLOW\+\_\+\+FAN\+\_\+\+WARNING}
+ \}
+\begin{DoxyCompactList}\small\item\em Tipos de alarmas y advertencias del sistema. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{types_8h_a7a38abec0d745e50d649352055373441}\label{types_8h_a7a38abec0d745e50d649352055373441}} 
+enum {\bfseries COLOR\+\_\+\+TYPES} \{ {\bfseries RED}
+, {\bfseries YELLOW}
+, {\bfseries GREEN}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Archivo de definición de tipos de dato. 
+
+\begin{DoxyAuthor}{Author}
+Juan Hirschmann (\href{mailto:jhirschmann@fi.uba.ar}{\texttt{ jhirschmann@fi.\+uba.\+ar}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/11-\/16
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{types_8h_a71ef44a7b1de581d625d82b37bed6c80}\label{types_8h_a71ef44a7b1de581d625d82b37bed6c80}} 
+\index{types.h@{types.h}!ALARM\_TYPES@{ALARM\_TYPES}}
+\index{ALARM\_TYPES@{ALARM\_TYPES}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{ALARM\_TYPES}{ALARM\_TYPES}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{types_8h_a71ef44a7b1de581d625d82b37bed6c80}{ALARM\+\_\+\+TYPES}}}
+
+
+
+Tipos de alarmas y advertencias del sistema. 
+
+\mbox{\Hypertarget{types_8h_a6a683993505efb97736f5eebe34f3206}\label{types_8h_a6a683993505efb97736f5eebe34f3206}} 
+\index{types.h@{types.h}!STEPS@{STEPS}}
+\index{STEPS@{STEPS}!types.h@{types.h}}
+\doxysubsubsection{\texorpdfstring{STEPS}{STEPS}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{types_8h_a6a683993505efb97736f5eebe34f3206}{STEPS}}}
+
+
+
+Enumeración de pasos a realizar del procedimiento. 
+

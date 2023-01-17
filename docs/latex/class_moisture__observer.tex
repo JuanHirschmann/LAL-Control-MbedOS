@@ -1,0 +1,55 @@
+\hypertarget{class_moisture__observer}{}\doxysection{Moisture\+\_\+observer Class Reference}
+\label{class_moisture__observer}\index{Moisture\_observer@{Moisture\_observer}}
+
+
+Clase heredera de \mbox{\hyperlink{class_system__observer}{System\+\_\+observer}}, creada para observar el estado de los sensores de humedad.  
+
+
+
+
+{\ttfamily \#include $<$Moisture\+\_\+observer.\+h$>$}
+
+Inheritance diagram for Moisture\+\_\+observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_moisture__observer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_moisture__observer_a84cf4888942ad6ce66a9baaf337d9994}{update}} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$subject)
+\begin{DoxyCompactList}\small\item\em Actualización del observador, mide la humedad y, si excede el umbral MOISTURE\+\_\+\+ALARM\+\_\+\+THRESHOLD, solicita una alarma del tipo HUMIDITY\+\_\+\+ALARM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase heredera de \mbox{\hyperlink{class_system__observer}{System\+\_\+observer}}, creada para observar el estado de los sensores de humedad. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_moisture__observer_a84cf4888942ad6ce66a9baaf337d9994}\label{class_moisture__observer_a84cf4888942ad6ce66a9baaf337d9994}} 
+\index{Moisture\_observer@{Moisture\_observer}!update@{update}}
+\index{update@{update}!Moisture\_observer@{Moisture\_observer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Moisture\+\_\+observer\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$}]{subject }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Actualización del observador, mide la humedad y, si excede el umbral MOISTURE\+\_\+\+ALARM\+\_\+\+THRESHOLD, solicita una alarma del tipo HUMIDITY\+\_\+\+ALARM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subject} & sujeto a observar \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_system__observer}{System\+\_\+observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/observer\+\_\+pattern/observers/\mbox{\hyperlink{_moisture__observer_8h}{Moisture\+\_\+observer.\+h}}\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/observer\+\_\+pattern/Moisture\+\_\+observer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,21 @@
+\hypertarget{_subject__interface_8h_source}{}\doxysection{Subject\+\_\+interface.\+h}
+\label{_subject__interface_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/observer\_pattern/subjects/Subject\_interface.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/observer\_pattern/subjects/Subject\_interface.h}}
+\mbox{\hyperlink{_subject__interface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef \_SUBJECT\_INTERFACE\_H\_}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define \_SUBJECT\_INTERFACE\_H\_}}
+\DoxyCodeLine{13 \textcolor{keyword}{const} \textcolor{keywordtype}{int} MAX\_OBSERVERS = 10;}
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_observer__interface}{Observer\_interface}};}
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{class_subject__interface}{Subject\_interface}}}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_observer__interface}{Observer\_interface}} *\mbox{\hyperlink{class_subject__interface_a283b443a975a65e2f7f73e3377750df2}{observers}}[MAX\_OBSERVERS];}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{public}:}
+\DoxyCodeLine{36     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_subject__interface_a6167416fcf891796e974f65318fca8d3}{attach}}(\mbox{\hyperlink{class_observer__interface}{Observer\_interface}} *obs) = 0;}
+\DoxyCodeLine{42     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_subject__interface_a0ccc901c01cb515babedaaeec8c4cbe3}{notify\_observers}}() = 0;}
+\DoxyCodeLine{43 \};}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

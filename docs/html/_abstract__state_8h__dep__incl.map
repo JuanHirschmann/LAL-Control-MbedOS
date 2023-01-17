@@ -1,0 +1,14 @@
+<map id="C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/include/machine_state_pattern/machine_states/Abstract_state.h" name="C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/include/machine_state_pattern/machine_states/Abstract_state.h">
+<area shape="rect" id="node1" title="Clase de estado abstracta." coords="159,5,377,89"/>
+<area shape="rect" id="node2" href="$_machine_8h.html" title="Clase de máquina abstracta." coords="451,137,653,221"/>
+<area shape="rect" id="node4" href="$_alarm__state_8h.html" title="Clase de estado de control del motor." coords="28,387,231,471"/>
+<area shape="rect" id="node5" href="$_check__instruction__state_8h_source.html" title=" " coords="306,519,579,603"/>
+<area shape="rect" id="node6" href="$_idle__state_8h.html" title="Clase de estado de reposo." coords="28,519,231,603"/>
+<area shape="rect" id="node7" href="$_shutdown__state_8h.html" title="Clase de estado de apagado del sistema." coords="336,651,563,735"/>
+<area shape="rect" id="node3" href="$_control__system_8h.html" title="Clase para el sistema de control." coords="530,269,729,339"/>
+<area shape="rect" id="node8" href="$main_8h.html" title="Archivo principal del programa." coords="1066,658,1265,727"/>
+<area shape="rect" id="node9" href="$_cooler__observer_8h_source.html" title=" " coords="929,519,1154,603"/>
+<area shape="rect" id="node10" href="$_moisture__observer_8h.html" title="Observador del sensor de temperatura." coords="1178,519,1403,603"/>
+<area shape="rect" id="node11" href="$_system__observer_8h.html" title="Clase observador del sistema de control." coords="730,387,955,471"/>
+<area shape="rect" id="node12" href="$_temperature__observer_8h.html" title="Observador del sensor de temperatura." coords="679,519,905,603"/>
+</map>

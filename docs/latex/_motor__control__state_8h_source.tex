@@ -1,0 +1,23 @@
+\hypertarget{_motor__control__state_8h_source}{}\doxysection{Motor\+\_\+control\+\_\+state.\+h}
+\label{_motor__control__state_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/machine\_state\_pattern/machine\_states/Motor\_control\_state.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/machine\_state\_pattern/machine\_states/Motor\_control\_state.h}}
+\mbox{\hyperlink{_motor__control__state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef MOTOR\_CONTROL\_STATE\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define MOTOR\_CONTROL\_STATE\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}Control\_system.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_abstract__state_8h}{machine\_state\_pattern/machine\_states/Abstract\_state.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_idle__state_8h}{machine\_state\_pattern/machine\_states/Idle\_state.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}machine\_state\_pattern/machine\_states/Check\_instruction\_state.h"{}}}
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_motor__control__state}{Motor\_control\_state}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_abstract__state}{Abstract\_state}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19 \textcolor{keyword}{private}:}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor__control__state_a958e3393b9937ddea35e85efdd21e342}{update}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{34     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor__control__state_af0415304cf9bd1ac5c8de677c6156793}{enter}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{40     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor__control__state_aad1d65bba61eca448757e07e4e7dcb2b}{exit}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{51     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_abstract__state}{Abstract\_state}} *\mbox{\hyperlink{class_motor__control__state_a399ab3c70b5a5d98f7b6ca5f5dfd5ecb}{transition}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{52 \};}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

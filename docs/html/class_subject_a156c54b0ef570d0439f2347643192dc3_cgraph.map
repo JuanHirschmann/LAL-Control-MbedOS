@@ -1,0 +1,4 @@
+<map id="Subject::notify_observers" name="Subject::notify_observers">
+<area shape="rect" id="node1" title="Método que actualiza a todos los observadores presentes en el sujeto." coords="5,13,172,38"/>
+<area shape="rect" id="node2" href="$class_observer__interface.html#abbc07c9eddf709e2ed7c950b0e64421b" title="Método virtual puro para que las clases herederas implementen la actualización de observadores polimó..." coords="220,5,349,45"/>
+</map>

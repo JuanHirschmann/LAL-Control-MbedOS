@@ -1,0 +1,30 @@
+\hypertarget{utils_8h_source}{}\doxysection{utils.\+h}
+\label{utils_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/utils.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/utils.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef  UTILS\_H }}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define UTILS\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define MAX\_PRECISION   (10)}}
+\DoxyCodeLine{8 \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} rounders[MAX\_PRECISION + 1] =}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     0.5,                \textcolor{comment}{// 0}}
+\DoxyCodeLine{11     0.05,               \textcolor{comment}{// 1}}
+\DoxyCodeLine{12     0.005,              \textcolor{comment}{// 2}}
+\DoxyCodeLine{13     0.0005,             \textcolor{comment}{// 3}}
+\DoxyCodeLine{14     0.00005,            \textcolor{comment}{// 4}}
+\DoxyCodeLine{15     0.000005,           \textcolor{comment}{// 5}}
+\DoxyCodeLine{16     0.0000005,          \textcolor{comment}{// 6}}
+\DoxyCodeLine{17     0.00000005,         \textcolor{comment}{// 7}}
+\DoxyCodeLine{18     0.000000005,        \textcolor{comment}{// 8}}
+\DoxyCodeLine{19     0.0000000005,       \textcolor{comment}{// 9}}
+\DoxyCodeLine{20     0.00000000005       \textcolor{comment}{// 10}}
+\DoxyCodeLine{21 \};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keywordtype}{char} * ftoa(\textcolor{keywordtype}{double} f, \textcolor{keywordtype}{char} * buf, \textcolor{keywordtype}{int} precision);}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

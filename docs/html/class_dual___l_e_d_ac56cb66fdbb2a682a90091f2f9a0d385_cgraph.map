@@ -1,0 +1,5 @@
+<map id="Dual_LED::toggle" name="Dual_LED::toggle">
+<area shape="rect" id="node1" title="Permuta el estado del LED." coords="5,31,128,56"/>
+<area shape="rect" id="node2" href="$class_dual___l_e_d.html#a4226b64f8b1c00f3e4c649a8be2e64c9" title="Apaga el LED." coords="176,5,307,31"/>
+<area shape="rect" id="node3" href="$class_dual___l_e_d.html#a8b13294b883897eb83f91bf90a3a11cd" title="Enciende el LED en el color actual." coords="176,55,307,80"/>
+</map>

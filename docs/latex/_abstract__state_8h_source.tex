@@ -1,0 +1,22 @@
+\hypertarget{_abstract__state_8h_source}{}\doxysection{Abstract\+\_\+state.\+h}
+\label{_abstract__state_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/machine\_state\_pattern/machine\_states/Abstract\_state.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/machine\_state\_pattern/machine\_states/Abstract\_state.h}}
+\mbox{\hyperlink{_abstract__state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef ABSTRACT\_STATE\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define ABSTRACT\_STATE\_H}}
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_control__system}{Control\_system}};}
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{class_abstract__state}{Abstract\_state}}}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_abstract__state_a993232854cd166a601b6c5b4ba7befcc}{update}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine) = 0;}
+\DoxyCodeLine{34     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_abstract__state_a1c001b0cb46c11126cb9ff77f8ad3016}{enter}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine) = 0;}
+\DoxyCodeLine{40     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_abstract__state_ae91c3148b1f2337e1f9465bc27f7ef63}{exit}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine) = 0;}
+\DoxyCodeLine{47     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_abstract__state}{Abstract\_state}} *\mbox{\hyperlink{class_abstract__state_a130d61765e2fcdf3bb0500943221efbe}{transition}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine) = 0;}
+\DoxyCodeLine{48     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_abstract__state}{\string~Abstract\_state}}()\{\};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{keyword}{private}:}
+\DoxyCodeLine{51 \};}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

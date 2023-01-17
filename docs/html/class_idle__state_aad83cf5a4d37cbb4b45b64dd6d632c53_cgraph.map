@@ -1,0 +1,5 @@
+<map id="Idle_state::exit" name="Idle_state::exit">
+<area shape="rect" id="node1" title="Método llamada al salir del estado. Apaga los led indicadores y el buzzer." coords="5,31,112,56"/>
+<area shape="rect" id="node2" href="$class_buzzer.html#a5809a2b7b52e74f509c31214257f3af0" title="Apaga el buzzer." coords="169,5,282,31"/>
+<area shape="rect" id="node3" href="$class_dual___l_e_d.html#a4226b64f8b1c00f3e4c649a8be2e64c9" title="Apaga el LED." coords="160,55,291,80"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Motor_control_state::enter" name="Motor_control_state::enter">
+<area shape="rect" id="node1" title="Entrada al estado, enciende el LED de estado del motor." coords="5,23,143,63"/>
+<area shape="rect" id="node2" href="$class_dual___l_e_d.html#a8734a816df04661d86e3ccbf88159eb0" title="Enciende el LED en rojo." coords="191,31,325,56"/>
+<area shape="rect" id="node3" href="$class_dual___l_e_d.html#aeb163748acf071a1652c56ae1dff9d52" title="Fija el color del led, no enciende el led,." coords="373,5,515,31"/>
+<area shape="rect" id="node4" href="$class_dual___l_e_d.html#a8b13294b883897eb83f91bf90a3a11cd" title="Enciende el LED en el color actual." coords="379,55,509,80"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Control_system::count_cooler_rotation" name="Control_system::count_cooler_rotation">
+<area shape="rect" id="node1" title="Cuenta revoluciones en el ventilador que esté activo." coords="5,23,159,63"/>
+<area shape="rect" id="node2" href="$class_cooler.html#a9802a2d1e34a4b377280fd3369f68d58" title="Increment el contador de mediciones." coords="215,5,365,31"/>
+<area shape="rect" id="node3" href="$class_cooler.html#ad41634aa63d31e334815f35eebdcf5b2" title="Lectura el pin de medición de velocidad." coords="207,55,373,80"/>
+</map>

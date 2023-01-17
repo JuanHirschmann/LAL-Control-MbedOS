@@ -1,0 +1,36 @@
+\hypertarget{system__settings_8h_source}{}\doxysection{system\+\_\+settings.\+h}
+\label{system__settings_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/system\_settings.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/system\_settings.h}}
+\mbox{\hyperlink{system__settings_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef SYSTEM\_SETTINGS\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define SYSTEM\_SETTINGS\_H}}
+\DoxyCodeLine{13 \textcolor{comment}{/* Constantes temporales*/}}
+\DoxyCodeLine{14 \textcolor{keyword}{const} \textcolor{keywordtype}{int} DEBOUNCE\_CONSTANT = 200; \textcolor{comment}{//[ms]}}
+\DoxyCodeLine{15 \textcolor{keyword}{const} \textcolor{keywordtype}{int} DEFAULT\_DELAY = 100;}
+\DoxyCodeLine{16 \textcolor{comment}{/* Comunicación serie*/}}
+\DoxyCodeLine{17 \textcolor{keyword}{const} \textcolor{keywordtype}{int} DEFAULT\_BAUD\_RATE = 9600;}
+\DoxyCodeLine{18 \textcolor{keyword}{const} \textcolor{keywordtype}{bool} DEBUGGING = \textcolor{keyword}{true};}
+\DoxyCodeLine{19 \textcolor{comment}{/* Tonos del buzzer*/}}
+\DoxyCodeLine{20 \textcolor{keyword}{const} \textcolor{keywordtype}{int} BUZZER\_HIGH\_FREQ = 1500;}
+\DoxyCodeLine{21 \textcolor{keyword}{const} \textcolor{keywordtype}{int} BUZZER\_LOW\_FREQ = 200;}
+\DoxyCodeLine{22 \textcolor{comment}{/* Sensor de temperatura*/}}
+\DoxyCodeLine{23 \textcolor{keyword}{const} \textcolor{keywordtype}{int} MAX\_SENSORS = 10;}
+\DoxyCodeLine{24 \textcolor{keyword}{const} \textcolor{keywordtype}{float} OVERTEMP\_WARNING\_THRESHOLD = 28;}
+\DoxyCodeLine{25 \textcolor{keyword}{const} \textcolor{keywordtype}{float} OVERTEMP\_ALARM\_THRESHOLD = 29;}
+\DoxyCodeLine{26 \textcolor{keyword}{const} \textcolor{keywordtype}{float} ERROR\_TEMPERATURE = -\/127;}
+\DoxyCodeLine{27 \textcolor{keyword}{const} \textcolor{keywordtype}{float} HYSTERESIS\_PERCENT = 0.95;}
+\DoxyCodeLine{28 \textcolor{keyword}{const} \textcolor{keywordtype}{int} FAN\_SPEED\_SAMPLE\_PERIOD = 1000; \textcolor{comment}{//[ms]}}
+\DoxyCodeLine{29 \textcolor{comment}{/* Sensor de humedad*/}}
+\DoxyCodeLine{30 \textcolor{keyword}{const} \textcolor{keywordtype}{float} MOISTURE\_ALARM\_THRESHOLD = 0.25;}
+\DoxyCodeLine{31 \textcolor{comment}{/* LED dual*/}}
+\DoxyCodeLine{32 \textcolor{keyword}{const} \textcolor{keywordtype}{float} RED\_COLOR\_DUTY\_CYCLE[] = \{0, 1\}; \textcolor{comment}{//\{0, 1\};}}
+\DoxyCodeLine{33 \textcolor{keyword}{const} \textcolor{keywordtype}{float} YELLOW\_COLOR\_DUTY\_CYCLE[] = \{0.25, 1\};}
+\DoxyCodeLine{34 \textcolor{keyword}{const} \textcolor{keywordtype}{float} GREEN\_COLOR\_DUTY\_CYCLE[] = \{1, 0\}; \textcolor{comment}{//\{1, 0\};}}
+\DoxyCodeLine{35 \textcolor{keyword}{const} \textcolor{keywordtype}{int} MAX\_ANALOG\_WRITE\_VALUE = 255;}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{const} \textcolor{keywordtype}{float} FAN\_MINIMUM\_DUTY\_CYCLE = 0.15;   \textcolor{comment}{// Ciclo de trabajo a partir del cual el cooler puede mantener su rotación si ya estaba encendido.}}
+\DoxyCodeLine{38 \textcolor{keyword}{const} \textcolor{keywordtype}{float} FAN\_AUTONOMOUS\_DUTY\_CYCLE = 0.4; \textcolor{comment}{// Ciclo de trabajo a partir del cual el cooler puede mantener su rotación partiendo del reposo.}}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

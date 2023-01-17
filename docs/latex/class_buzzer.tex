@@ -1,0 +1,131 @@
+\hypertarget{class_buzzer}{}\doxysection{Buzzer Class Reference}
+\label{class_buzzer}\index{Buzzer@{Buzzer}}
+
+
+Clase para el manejo del buzzer por PWM manual, no utiliza pines PWM de Arduino. Sólo admite pines digitales.  
+
+
+
+
+{\ttfamily \#include $<$Buzzer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_buzzer_a24280bb0f3ca7e716f71a65fed10446c}{Buzzer}} (Pin\+Name buzzer\+\_\+pin, unsigned int frequency)
+\begin{DoxyCompactList}\small\item\em Construye un nuevo objecto \mbox{\hyperlink{class_buzzer}{Buzzer}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buzzer_a9ba28d9ca8b3dd80541d9a13a8b0f625}{turn\+\_\+on}} (unsigned long duration=0)
+\begin{DoxyCompactList}\small\item\em Enciende el buzzer con con una duración en milisegundos duration, por defecto enciende el buzzer por un tiempo indefinido. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buzzer_a5809a2b7b52e74f509c31214257f3af0}{turn\+\_\+off}} ()
+\begin{DoxyCompactList}\small\item\em Apaga el buzzer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buzzer_a7d0275af89ab487903752edc29a5bf2c}{toggle}} (unsigned int duration=0)
+\begin{DoxyCompactList}\small\item\em Permuta el estado del led, si estaba encendido pasará a apagado y viceversa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buzzer_a867957295569b6b67cd8266288f68fe7}{set\+\_\+frequency}} (unsigned int new\+\_\+frequency)
+\begin{DoxyCompactList}\small\item\em Fija la nueva frequencia, no emite el sonido. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_buzzer_a84d72ddf080ab87d9f13885edb5ac5d9}{is\+\_\+active}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el estado del buzzer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase para el manejo del buzzer por PWM manual, no utiliza pines PWM de Arduino. Sólo admite pines digitales. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_buzzer_a24280bb0f3ca7e716f71a65fed10446c}\label{class_buzzer_a24280bb0f3ca7e716f71a65fed10446c}} 
+\index{Buzzer@{Buzzer}!Buzzer@{Buzzer}}
+\index{Buzzer@{Buzzer}!Buzzer@{Buzzer}}
+\doxysubsubsection{\texorpdfstring{Buzzer()}{Buzzer()}}
+{\footnotesize\ttfamily Buzzer\+::\+Buzzer (\begin{DoxyParamCaption}\item[{Pin\+Name}]{buzzer\+\_\+pin,  }\item[{unsigned int}]{frequency }\end{DoxyParamCaption})}
+
+
+
+Construye un nuevo objecto \mbox{\hyperlink{class_buzzer}{Buzzer}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buzzer\+\_\+pin} & Pin elegido para conectar el buzzer, sólo sálida digital. \\
+\hline
+{\em frequency} & Frecuencia del tono a emitir. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_buzzer_a84d72ddf080ab87d9f13885edb5ac5d9}\label{class_buzzer_a84d72ddf080ab87d9f13885edb5ac5d9}} 
+\index{Buzzer@{Buzzer}!is\_active@{is\_active}}
+\index{is\_active@{is\_active}!Buzzer@{Buzzer}}
+\doxysubsubsection{\texorpdfstring{is\_active()}{is\_active()}}
+{\footnotesize\ttfamily bool Buzzer\+::is\+\_\+active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el estado del buzzer. 
+
+\begin{DoxyReturn}{Returns}
+true El buzzer está activo. 
+
+false El buzzer está inactivo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_buzzer_a867957295569b6b67cd8266288f68fe7}\label{class_buzzer_a867957295569b6b67cd8266288f68fe7}} 
+\index{Buzzer@{Buzzer}!set\_frequency@{set\_frequency}}
+\index{set\_frequency@{set\_frequency}!Buzzer@{Buzzer}}
+\doxysubsubsection{\texorpdfstring{set\_frequency()}{set\_frequency()}}
+{\footnotesize\ttfamily void Buzzer\+::set\+\_\+frequency (\begin{DoxyParamCaption}\item[{unsigned int}]{new\+\_\+frequency }\end{DoxyParamCaption})}
+
+
+
+Fija la nueva frequencia, no emite el sonido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+frequency} & nueva frecuencia a emitir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_buzzer_a7d0275af89ab487903752edc29a5bf2c}\label{class_buzzer_a7d0275af89ab487903752edc29a5bf2c}} 
+\index{Buzzer@{Buzzer}!toggle@{toggle}}
+\index{toggle@{toggle}!Buzzer@{Buzzer}}
+\doxysubsubsection{\texorpdfstring{toggle()}{toggle()}}
+{\footnotesize\ttfamily void Buzzer\+::toggle (\begin{DoxyParamCaption}\item[{unsigned int}]{duration = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Permuta el estado del led, si estaba encendido pasará a apagado y viceversa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & Duración del encendido en milisegundos. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_buzzer_a5809a2b7b52e74f509c31214257f3af0}\label{class_buzzer_a5809a2b7b52e74f509c31214257f3af0}} 
+\index{Buzzer@{Buzzer}!turn\_off@{turn\_off}}
+\index{turn\_off@{turn\_off}!Buzzer@{Buzzer}}
+\doxysubsubsection{\texorpdfstring{turn\_off()}{turn\_off()}}
+{\footnotesize\ttfamily void Buzzer\+::turn\+\_\+off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apaga el buzzer. 
+
+\mbox{\Hypertarget{class_buzzer_a9ba28d9ca8b3dd80541d9a13a8b0f625}\label{class_buzzer_a9ba28d9ca8b3dd80541d9a13a8b0f625}} 
+\index{Buzzer@{Buzzer}!turn\_on@{turn\_on}}
+\index{turn\_on@{turn\_on}!Buzzer@{Buzzer}}
+\doxysubsubsection{\texorpdfstring{turn\_on()}{turn\_on()}}
+{\footnotesize\ttfamily void Buzzer\+::turn\+\_\+on (\begin{DoxyParamCaption}\item[{unsigned long}]{duration = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Enciende el buzzer con con una duración en milisegundos duration, por defecto enciende el buzzer por un tiempo indefinido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & Duración del encendido en milisegundos. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/drivers/\mbox{\hyperlink{_buzzer_8h}{Buzzer.\+h}}\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/drivers/\mbox{\hyperlink{src_2_port_2drivers_2_buzzer_8cpp}{Buzzer.\+cpp}}\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/test/drivers/\mbox{\hyperlink{test_2drivers_2_buzzer_8cpp}{Buzzer.\+cpp}}\end{DoxyCompactItemize}

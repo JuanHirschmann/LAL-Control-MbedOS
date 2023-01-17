@@ -1,0 +1,7 @@
+<map id="Moisture_observer::update" name="Moisture_observer::update">
+<area shape="rect" id="node1" title="Actualización del observador, mide la humedad y, si excede el umbral MOISTURE_ALARM_THRESHOLD,..." coords="5,69,140,109"/>
+<area shape="rect" id="node2" href="$class_control__system.html#af7e1048dcc938de30589f961d0b14ee1" title="Devuelve el estado del indicador de muestreo de sensores." coords="190,5,357,45"/>
+<area shape="rect" id="node3" href="$class_control__system.html#ac57cf749db659ed80fa4a37b1f27c284" title="Obtiene la humedad del objeto mois_sensor." coords="188,69,359,109"/>
+<area shape="rect" id="node5" href="$class_control__system.html#af5985ea3ad848a1631ff6c12ef4b3941" title="Solicita una alarma." coords="191,133,355,173"/>
+<area shape="rect" id="node4" href="$class_moisture__sensor.html#acd72c51f63ca144ecb419b7cca849974" title="Devuelve la lectura realizada." coords="407,69,551,109"/>
+</map>

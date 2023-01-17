@@ -1,0 +1,4 @@
+<map id="Control_system::next_step" name="Control_system::next_step">
+<area shape="rect" id="node1" title="Enciende el buzzer por 100ms (bloqueante) y, si no esta anulado el próximo paso, avanza hacia la sigu..." coords="216,13,395,38"/>
+<area shape="rect" id="node2" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Entrada del estado, resuelve las instrucciones a realizar en cada paso: &#45;WELCOME_STEP: Primer paso,..." coords="5,5,168,45"/>
+</map>

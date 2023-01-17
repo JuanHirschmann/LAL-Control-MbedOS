@@ -1,0 +1,107 @@
+\hypertarget{class_check__instruction__state}{}\doxysection{Check\+\_\+instruction\+\_\+state Class Reference}
+\label{class_check__instruction__state}\index{Check\_instruction\_state@{Check\_instruction\_state}}
+Inheritance diagram for Check\+\_\+instruction\+\_\+state\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_check__instruction__state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_check__instruction__state_a161d1ccae3db7c6ac372b56877dc05f2}{update}} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$machine)
+\begin{DoxyCompactList}\small\item\em Método para actualizar el estado. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_check__instruction__state_ae13ba3789ab274a7dddf19be0a413b55}{enter}} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$machine)
+\begin{DoxyCompactList}\small\item\em Método que se llama al ingresar al estado. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_check__instruction__state_afeb2e9157050c1c98616340af2e3f8ec}{exit}} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$machine)
+\begin{DoxyCompactList}\small\item\em Método que se llama al salir del estado. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_abstract__state}{Abstract\+\_\+state}} $\ast$ \mbox{\hyperlink{class_check__instruction__state_a324b5fc23fd203eda7a4e1c7e0b9925d}{transition}} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$machine)
+\begin{DoxyCompactList}\small\item\em Método para cambiar de estado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_check__instruction__state_ae13ba3789ab274a7dddf19be0a413b55}\label{class_check__instruction__state_ae13ba3789ab274a7dddf19be0a413b55}} 
+\index{Check\_instruction\_state@{Check\_instruction\_state}!enter@{enter}}
+\index{enter@{enter}!Check\_instruction\_state@{Check\_instruction\_state}}
+\doxysubsubsection{\texorpdfstring{enter()}{enter()}}
+{\footnotesize\ttfamily void Check\+\_\+instruction\+\_\+state\+::enter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Método que se llama al ingresar al estado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em machine} & máquina de estados. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract__state_a1c001b0cb46c11126cb9ff77f8ad3016}{Abstract\+\_\+state}}.
+
+\mbox{\Hypertarget{class_check__instruction__state_afeb2e9157050c1c98616340af2e3f8ec}\label{class_check__instruction__state_afeb2e9157050c1c98616340af2e3f8ec}} 
+\index{Check\_instruction\_state@{Check\_instruction\_state}!exit@{exit}}
+\index{exit@{exit}!Check\_instruction\_state@{Check\_instruction\_state}}
+\doxysubsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily void Check\+\_\+instruction\+\_\+state\+::exit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Método que se llama al salir del estado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em machine} & máquina de estados. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract__state_ae91c3148b1f2337e1f9465bc27f7ef63}{Abstract\+\_\+state}}.
+
+\mbox{\Hypertarget{class_check__instruction__state_a324b5fc23fd203eda7a4e1c7e0b9925d}\label{class_check__instruction__state_a324b5fc23fd203eda7a4e1c7e0b9925d}} 
+\index{Check\_instruction\_state@{Check\_instruction\_state}!transition@{transition}}
+\index{transition@{transition}!Check\_instruction\_state@{Check\_instruction\_state}}
+\doxysubsubsection{\texorpdfstring{transition()}{transition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract__state}{Abstract\+\_\+state}} $\ast$ Check\+\_\+instruction\+\_\+state\+::transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Método para cambiar de estado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em machine} & máquina de estados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Abstract\+\_\+state$\ast$ Nuevo estado 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract__state_a130d61765e2fcdf3bb0500943221efbe}{Abstract\+\_\+state}}.
+
+\mbox{\Hypertarget{class_check__instruction__state_a161d1ccae3db7c6ac372b56877dc05f2}\label{class_check__instruction__state_a161d1ccae3db7c6ac372b56877dc05f2}} 
+\index{Check\_instruction\_state@{Check\_instruction\_state}!update@{update}}
+\index{update@{update}!Check\_instruction\_state@{Check\_instruction\_state}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Check\+\_\+instruction\+\_\+state\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Método para actualizar el estado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em machine} & máquina de estados. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract__state_a993232854cd166a601b6c5b4ba7befcc}{Abstract\+\_\+state}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/machine\+\_\+state\+\_\+pattern/machine\+\_\+states/Check\+\_\+instruction\+\_\+state.\+h\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/machine\+\_\+state\+\_\+pattern/Check\+\_\+instruction\+\_\+state.\+cpp\end{DoxyCompactItemize}

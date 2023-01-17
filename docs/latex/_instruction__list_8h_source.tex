@@ -1,0 +1,33 @@
+\hypertarget{_instruction__list_8h_source}{}\doxysection{Instruction\+\_\+list.\+h}
+\label{_instruction__list_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/Instruction\_list.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/Instruction\_list.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef INSTRUCTION\_LIST\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define INSTRUCTION\_LIST\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}stdio.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Instruction\_node.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_instruction__list}{Instruction\_list}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_instruction__list}{Instruction\_list}}();}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_instruction__list}{Instruction\_list}}(\mbox{\hyperlink{class_instruction__node}{Instruction\_node}} first\_instruction);}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_instruction__list}{Instruction\_list}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_instruction__list}{Instruction\_list}} \&target\_list);}
+\DoxyCodeLine{12     \textcolor{keywordtype}{void} operator=(\textcolor{keyword}{const} \mbox{\hyperlink{class_instruction__list}{Instruction\_list}} \&target\_list);}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_instruction__list}{\string~Instruction\_list}}();}
+\DoxyCodeLine{14     \textcolor{keywordtype}{void} append(\textcolor{keyword}{const} \mbox{\hyperlink{class_instruction__node}{Instruction\_node}} last\_instruction);}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_instruction__node}{Instruction\_node}} *next\_instruction();}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_instruction__node}{Instruction\_node}} *get\_current\_instruction();}
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} reset();}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} print();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{private}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_instruction__node}{Instruction\_node}} *first\_instruction = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_instruction__node}{Instruction\_node}} *current\_instruction = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_instruction__node}{Instruction\_node}} *last\_instruction = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} clear\_list();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} copy(\textcolor{keyword}{const} \mbox{\hyperlink{class_instruction__list}{Instruction\_list}} \&target\_list);}
+\DoxyCodeLine{26 \};}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

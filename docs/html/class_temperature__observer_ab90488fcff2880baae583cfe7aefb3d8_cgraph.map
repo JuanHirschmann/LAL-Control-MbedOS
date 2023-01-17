@@ -1,0 +1,10 @@
+<map id="Temperature_observer::update" name="Temperature_observer::update">
+<area shape="rect" id="node1" title="Actualización del observador, mide la temperatura: si excede el umbral OVERTEMP_ALARM_TRESHOLD,..." coords="5,133,155,173"/>
+<area shape="rect" id="node2" href="$class_control__system.html#af7e1048dcc938de30589f961d0b14ee1" title="Devuelve el estado del indicador de muestreo de sensores." coords="205,5,371,45"/>
+<area shape="rect" id="node3" href="$class_control__system.html#a4c3ebc85aafb8c9b8c0d7554bc7d6058" title="Obtiene la temperatura del objeto temp_sensor." coords="203,69,373,109"/>
+<area shape="rect" id="node6" href="$class_control__system.html#af5985ea3ad848a1631ff6c12ef4b3941" title="Solicita una alarma." coords="206,133,370,173"/>
+<area shape="rect" id="node7" href="$class_control__system.html#a331f6ac8aca48fcc0b7cd23a3510911c" title="Solicita una advertencia." coords="206,197,370,237"/>
+<area shape="rect" id="node8" href="$class_control__system.html#a2d34912d34a642c819356bf566612686" title="Fija el valor del indicador de advertencia." coords="219,261,357,301"/>
+<area shape="rect" id="node4" href="$class_temperature__sensor.html#a43bcc39aa92d0bdb58defd6e4aefb3d5" title="Obtiene la Temperatura de todos los sensores como un promedio simple (Celsius)." coords="421,41,561,81"/>
+<area shape="rect" id="node5" href="$class_display.html#abe8e63e4def12a48cde5679ce008f402" title="Fija el valor de temperatura a actualizar (no la imprime en pantalla), la ubicación se da con las con..." coords="428,106,555,131"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Idle_state::enter" name="Idle_state::enter">
+<area shape="rect" id="node1" title="Método llamado al ingresar al estado. Actualiza la pantalla con el paso del procedimiento actual." coords="5,13,120,38"/>
+<area shape="rect" id="node2" href="$class_control__system.html#ac1cd148e897c5ce2ef405dd45ddf964f" title="Muestra en pantalla el paso del procedimientoa actual." coords="168,5,319,45"/>
+<area shape="rect" id="node3" href="$class_display.html#a87d1e7bf73a1d14b5e76c9ab647a9e93" title="Fija el el texto a actualizar, no lo imprime en pantalla. La ubicación se da con las constantes de of..." coords="367,13,487,38"/>
+</map>

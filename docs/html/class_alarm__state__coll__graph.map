@@ -1,0 +1,4 @@
+<map id="Alarm_state" name="Alarm_state">
+<area shape="rect" id="node1" title=" " coords="13,79,105,104"/>
+<area shape="rect" id="node2" href="$class_abstract__state.html" title="Clase base para implementar los estados de Control_system. Cada estado se debe ocupar de su comportam..." coords="5,5,112,31"/>
+</map>

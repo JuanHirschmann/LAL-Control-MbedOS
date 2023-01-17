@@ -1,0 +1,33 @@
+\hypertarget{_dual___l_e_d_8h_source}{}\doxysection{Dual\+\_\+\+LED.\+h}
+\label{_dual___l_e_d_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Dual\_LED.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Dual\_LED.h}}
+\mbox{\hyperlink{_dual___l_e_d_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef DUAL\_LED\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define DUAL\_LED}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <mbed.h>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{system__settings_8h}{system\_settings.h}}"{}}}
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{class_dual___l_e_d}{Dual\_LED}}}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_dual___l_e_d}{Dual\_LED}}(PinName green\_led\_pin, PinName red\_led\_pin);}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dual___l_e_d_aeb163748acf071a1652c56ae1dff9d52}{set\_color}}(COLOR\_TYPES new\_color);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dual___l_e_d_a8734a816df04661d86e3ccbf88159eb0}{turn\_red}}();}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dual___l_e_d_ab1cd238e00901ca9556914a38d3a064c}{turn\_green}}();}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dual___l_e_d_aabc0462521bcc08ea7f6f04642f7e89d}{turn\_yellow}}();}
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dual___l_e_d_a8b13294b883897eb83f91bf90a3a11cd}{turn\_on}}();}
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dual___l_e_d_ac56cb66fdbb2a682a90091f2f9a0d385}{toggle}}();}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dual___l_e_d_a4226b64f8b1c00f3e4c649a8be2e64c9}{turn\_off}}();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{keyword}{private}:}
+\DoxyCodeLine{73     \textcolor{keywordtype}{bool} is\_on = \textcolor{keyword}{true};}
+\DoxyCodeLine{78     COLOR\_TYPES current\_color = GREEN;}
+\DoxyCodeLine{83     \textcolor{keywordtype}{float} green\_led\_duty\_cycle = 0;}
+\DoxyCodeLine{88     \textcolor{keywordtype}{float} red\_led\_duty\_cycle = 0;}
+\DoxyCodeLine{93     PwmOut green\_led;}
+\DoxyCodeLine{98     PwmOut red\_led;}
+\DoxyCodeLine{99 \};}
+\DoxyCodeLine{100 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

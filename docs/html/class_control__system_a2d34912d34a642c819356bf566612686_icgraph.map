@@ -1,0 +1,4 @@
+<map id="Control_system::set_warning_flag" name="Control_system::set_warning_flag">
+<area shape="rect" id="node1" title="Fija el valor del indicador de advertencia." coords="203,5,341,45"/>
+<area shape="rect" id="node2" href="$class_temperature__observer.html#ab90488fcff2880baae583cfe7aefb3d8" title="Actualización del observador, mide la temperatura: si excede el umbral OVERTEMP_ALARM_TRESHOLD,..." coords="5,5,155,45"/>
+</map>

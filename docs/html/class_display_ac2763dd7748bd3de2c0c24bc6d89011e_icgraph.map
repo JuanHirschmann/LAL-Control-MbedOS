@@ -1,0 +1,5 @@
+<map id="Display::turn_on" name="Display::turn_on">
+<area shape="rect" id="node1" title="Enciende la retroiluminación y limpia los caracteres de la pantalla." coords="421,5,537,31"/>
+<area shape="rect" id="node2" href="$class_shutdown__state.html#accbc4c856709e26453e2e23c5c1e4f8e" title="Método que se llama al salir del estado." coords="229,5,373,31"/>
+<area shape="rect" id="node3" href="$class_shutdown__state.html#ae02b2fd80173aa50afcd73faba01b9be" title="Método para cambiar de estado." coords="5,5,181,31"/>
+</map>

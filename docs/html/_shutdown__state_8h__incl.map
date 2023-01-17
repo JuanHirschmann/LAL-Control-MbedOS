@@ -1,0 +1,33 @@
+<map id="C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/include/machine_state_pattern/machine_states/Shutdown_state.h" name="C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/include/machine_state_pattern/machine_states/Shutdown_state.h">
+<area shape="rect" id="node1" title="Clase de estado de apagado del sistema." coords="1037,5,1264,89"/>
+<area shape="rect" id="node2" href="$_control__system_8h.html" title="Clase para el sistema de control." coords="1089,137,1213,163"/>
+<area shape="rect" id="node7" href="$_abstract__state_8h.html" title="Clase de estado abstracta." coords="163,519,333,573"/>
+<area shape="rect" id="node31" href="$_idle__state_8h.html" title="Clase de estado de reposo." coords="5,416,160,471"/>
+<area shape="rect" id="node3" href="$_subject_8h.html" title=" " coords="1907,321,2077,361"/>
+<area shape="rect" id="node6" href="$_machine_8h.html" title="Clase de máquina abstracta." coords="2005,423,2160,463"/>
+<area shape="rect" id="node8" href="$_display_8h.html" title="Controlador de LCD hd44780 por interfaz I2C." coords="595,225,712,251"/>
+<area shape="rect" id="node14" href="$user__messages_8h.html" title="Archivo para la configuración de interfaz con el usuario." coords="1701,225,1827,251"/>
+<area shape="rect" id="node16" href="$_system__observer_8h.html" title="Clase observador del sistema de control." coords="1851,218,2027,258"/>
+<area shape="rect" id="node18" href="$_temperature__sensor_8h.html" title="Controlador para sensor de temperatura DS18B20." coords="743,218,878,258"/>
+<area shape="rect" id="node21" href="$_moisture__sensor_8h.html" title="Controlador de sensor de humedad analógico." coords="1237,225,1408,251"/>
+<area shape="rect" id="node23" href="$types_8h.html" title="Archivo de definición de tipos de dato." coords="1246,328,1311,353"/>
+<area shape="rect" id="node24" href="$_buzzer_8h.html" title="Controlador de Buzzer de 12 milimetros." coords="1432,225,1547,251"/>
+<area shape="rect" id="node26" href="$_motor_8h.html" title="Controlador de motor de 220 VAC." coords="1571,225,1677,251"/>
+<area shape="rect" id="node27" href="$_dual___l_e_d_8h.html" title="Controlador de LED RG." coords="1089,225,1213,251"/>
+<area shape="rect" id="node28" href="$_cooler_8h.html" title="Controlador de ventilador de 12 volts y 5 milímteros." coords="902,225,1013,251"/>
+<area shape="rect" id="node29" href="$_check__instruction__state_8h_source.html" title=" " coords="353,211,511,265"/>
+<area shape="rect" id="node4" href="$_subject__interface_8h.html" title="Clase para interfaz para implementar el sujeto." coords="1811,423,1981,463"/>
+<area shape="rect" id="node5" href="$_observer__interface_8h.html" title="Clase para interfaz para implementar el observador." coords="1611,423,1787,463"/>
+<area shape="rect" id="node9" title=" " coords="734,328,794,353"/>
+<area shape="rect" id="node10" title=" " coords="285,328,368,353"/>
+<area shape="rect" id="node11" title=" " coords="393,321,559,361"/>
+<area shape="rect" id="node12" href="$display__settings_8h.html" title="Archivo de configuración de la pantalla." coords="583,328,710,353"/>
+<area shape="rect" id="node13" href="$system__settings_8h.html" title="Archivo para la definición de constantes del sistema." coords="1093,328,1222,353"/>
+<area shape="rect" id="node15" title=" " coords="1569,328,1682,353"/>
+<area shape="rect" id="node17" href="$_observer_8h.html" title="Clase observador." coords="1707,321,1883,361"/>
+<area shape="rect" id="node19" title=" " coords="985,328,1069,353"/>
+<area shape="rect" id="node20" title=" " coords="819,328,960,353"/>
+<area shape="rect" id="node22" title=" " coords="1336,328,1413,353"/>
+<area shape="rect" id="node25" href="$port__config_8h.html" title="Archivo de configuración para los puertos de la placa donde se implementará el sistema." coords="1445,328,1541,353"/>
+<area shape="rect" id="node30" href="$_alarm__state_8h.html" title="Clase de estado de control del motor." coords="54,313,210,368"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Display::init" name="Display::init">
+<area shape="rect" id="node1" title="Método para inicializar el objeto, sólo se puede luego o en setup()." coords="608,13,699,38"/>
+<area shape="rect" id="node2" href="$class_control__system.html#aad36c88c9e5589336213848de7837091" title="Inicializa el display lcd del sistema." coords="421,5,560,45"/>
+<area shape="rect" id="node3" href="$class_shutdown__state.html#accbc4c856709e26453e2e23c5c1e4f8e" title="Salida del estado, resetea las variables del sistema e incializa la pantalla." coords="229,13,373,38"/>
+<area shape="rect" id="node4" href="$class_shutdown__state.html#ae02b2fd80173aa50afcd73faba01b9be" title="Transicion de estados." coords="5,13,181,38"/>
+</map>

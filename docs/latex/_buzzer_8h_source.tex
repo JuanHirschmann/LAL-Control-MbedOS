@@ -1,0 +1,29 @@
+\hypertarget{_buzzer_8h_source}{}\doxysection{Buzzer.\+h}
+\label{_buzzer_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Buzzer.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Buzzer.h}}
+\mbox{\hyperlink{_buzzer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef BUZZER\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define BUZZER\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <mbed.h>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{port__config_8h}{port\_config.h}}"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_buzzer}{Buzzer}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_buzzer}{Buzzer}}(PinName buzzer\_pin, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} frequency);}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_buzzer_a9ba28d9ca8b3dd80541d9a13a8b0f625}{turn\_on}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} duration = 0);}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_buzzer_a5809a2b7b52e74f509c31214257f3af0}{turn\_off}}();}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_buzzer_a7d0275af89ab487903752edc29a5bf2c}{toggle}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} duration = 0);}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_buzzer_a867957295569b6b67cd8266288f68fe7}{set\_frequency}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} new\_frequency);}
+\DoxyCodeLine{62     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_buzzer_a84d72ddf080ab87d9f13885edb5ac5d9}{is\_active}}();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{keyword}{private}:}
+\DoxyCodeLine{65     DigitalOut buzzer;}
+\DoxyCodeLine{66     \textcolor{keywordtype}{bool} is\_ringing = \textcolor{keyword}{false};}
+\DoxyCodeLine{67     PinName buzzer\_pin;}
+\DoxyCodeLine{68     \textcolor{keywordtype}{float} frequency = 0;}
+\DoxyCodeLine{69 \};}
+\DoxyCodeLine{70 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

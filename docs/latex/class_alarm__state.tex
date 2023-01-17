@@ -1,0 +1,153 @@
+\hypertarget{class_alarm__state}{}\doxysection{Alarm\+\_\+state Class Reference}
+\label{class_alarm__state}\index{Alarm\_state@{Alarm\_state}}
+
+
+Inheritance diagram for Alarm\+\_\+state\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_alarm__state__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alarm\+\_\+state\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_alarm__state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_alarm__state_acea6eee2b8d267b67192bbce9e495038}{update}} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$machine)
+\begin{DoxyCompactList}\small\item\em Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma. Si no hay alarma muestra el texto de la actualización. Enciende o apaga el motor según en que paso del procedimiento se encuentra. BLOQUEA LA INTERFAZ HASTA QUE LA TEMPERATURA EN EL MOTOR SE REDUZCA POR DEBAJO DEL UMBRAL DE ADVERTENCIA. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_alarm__state_a6e52898825f53fe1e7b0e22f5191bc04}{enter}} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$machine)
+\begin{DoxyCompactList}\small\item\em Entrada al estado, enciende el LED de estado del motor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_alarm__state_acf39d27a3ccd1c25ade55e08918650f8}{exit}} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$machine)
+\begin{DoxyCompactList}\small\item\em Salida del estado, apaga LEDs y \mbox{\hyperlink{class_buzzer}{Buzzer}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_abstract__state}{Abstract\+\_\+state}} $\ast$ \mbox{\hyperlink{class_alarm__state_adb40defa4c50d289290b44b2a4f41189}{transition}} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$machine)
+\begin{DoxyCompactList}\small\item\em Transición de estados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_alarm__state_a6e52898825f53fe1e7b0e22f5191bc04}\label{class_alarm__state_a6e52898825f53fe1e7b0e22f5191bc04}} 
+\index{Alarm\_state@{Alarm\_state}!enter@{enter}}
+\index{enter@{enter}!Alarm\_state@{Alarm\_state}}
+\doxysubsubsection{\texorpdfstring{enter()}{enter()}}
+{\footnotesize\ttfamily void Alarm\+\_\+state\+::enter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Entrada al estado, enciende el LED de estado del motor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em machine} & Máquina de estados. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract__state_a1c001b0cb46c11126cb9ff77f8ad3016}{Abstract\+\_\+state}}.
+
+\mbox{\Hypertarget{class_alarm__state_acf39d27a3ccd1c25ade55e08918650f8}\label{class_alarm__state_acf39d27a3ccd1c25ade55e08918650f8}} 
+\index{Alarm\_state@{Alarm\_state}!exit@{exit}}
+\index{exit@{exit}!Alarm\_state@{Alarm\_state}}
+\doxysubsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily void Alarm\+\_\+state\+::exit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Salida del estado, apaga LEDs y \mbox{\hyperlink{class_buzzer}{Buzzer}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em machine} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract__state_ae91c3148b1f2337e1f9465bc27f7ef63}{Abstract\+\_\+state}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_alarm__state_acf39d27a3ccd1c25ade55e08918650f8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_alarm__state_acf39d27a3ccd1c25ade55e08918650f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarm__state_adb40defa4c50d289290b44b2a4f41189}\label{class_alarm__state_adb40defa4c50d289290b44b2a4f41189}} 
+\index{Alarm\_state@{Alarm\_state}!transition@{transition}}
+\index{transition@{transition}!Alarm\_state@{Alarm\_state}}
+\doxysubsubsection{\texorpdfstring{transition()}{transition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract__state}{Abstract\+\_\+state}} $\ast$ Alarm\+\_\+state\+::transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Transición de estados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em machine} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Abstract\+\_\+state$\ast$ Transiciones posibles\+: Si existe una alarma el sistema transiciona hacia \mbox{\hyperlink{class_shutdown__state}{Shutdown\+\_\+state}}. Si no existe alarama, cuando se supere el paso de enfriamiento del motor o no haya advertencia el sistema transiciona hacia \mbox{\hyperlink{class_idle__state}{Idle\+\_\+state}}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_abstract__state_a130d61765e2fcdf3bb0500943221efbe}{Abstract\+\_\+state}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarm__state_adb40defa4c50d289290b44b2a4f41189_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarm__state_acea6eee2b8d267b67192bbce9e495038}\label{class_alarm__state_acea6eee2b8d267b67192bbce9e495038}} 
+\index{Alarm\_state@{Alarm\_state}!update@{update}}
+\index{update@{update}!Alarm\_state@{Alarm\_state}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Alarm\+\_\+state\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma. Si no hay alarma muestra el texto de la actualización. Enciende o apaga el motor según en que paso del procedimiento se encuentra. BLOQUEA LA INTERFAZ HASTA QUE LA TEMPERATURA EN EL MOTOR SE REDUZCA POR DEBAJO DEL UMBRAL DE ADVERTENCIA. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em machine} & Máquina de estados. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract__state_a993232854cd166a601b6c5b4ba7befcc}{Abstract\+\_\+state}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarm__state_acea6eee2b8d267b67192bbce9e495038_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Facultad/\+Beca/\+Proyecto/\+LAL Control Arduino/include/machine\+\_\+state\+\_\+pattern/machine\+\_\+states/\mbox{\hyperlink{_alarm__state_8h}{Alarm\+\_\+state.\+h}}\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Facultad/\+Beca/\+Proyecto/\+LAL Control Arduino/src/machine\+\_\+state\+\_\+pattern/Alarm\+\_\+state.\+cpp\end{DoxyCompactItemize}

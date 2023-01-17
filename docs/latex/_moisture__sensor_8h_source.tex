@@ -1,0 +1,23 @@
+\hypertarget{_moisture__sensor_8h_source}{}\doxysection{Moisture\+\_\+sensor.\+h}
+\label{_moisture__sensor_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Moisture\_sensor.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Moisture\_sensor.h}}
+\mbox{\hyperlink{_moisture__sensor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef MOISTURE\_SENSOR\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define MOISTURE\_SENSOR\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <mbed.h>}}
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_moisture__sensor}{Moisture\_sensor}}}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_moisture__sensor}{Moisture\_sensor}}(PinName analog\_pin);}
+\DoxyCodeLine{32     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_moisture__sensor_a8d58285011777c1d6c0596032e46448b}{get\_reading}}();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{private}:}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} update\_reading();}
+\DoxyCodeLine{44     AnalogIn sensor\_pin;}
+\DoxyCodeLine{49     \textcolor{keywordtype}{float} reading = 0.0;}
+\DoxyCodeLine{50 \};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

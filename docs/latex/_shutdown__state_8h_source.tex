@@ -1,0 +1,22 @@
+\hypertarget{_shutdown__state_8h_source}{}\doxysection{Shutdown\+\_\+state.\+h}
+\label{_shutdown__state_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/machine\_state\_pattern/machine\_states/Shutdown\_state.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/machine\_state\_pattern/machine\_states/Shutdown\_state.h}}
+\mbox{\hyperlink{_shutdown__state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef SHUTDOWN\_STATE\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define SHUTDOWN\_STATE\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}Control\_system.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_abstract__state_8h}{machine\_state\_pattern/machine\_states/Abstract\_state.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_idle__state_8h}{machine\_state\_pattern/machine\_states/Idle\_state.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_shutdown__state}{Shutdown\_state}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_abstract__state}{Abstract\_state}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shutdown__state_abcd870b0687903912a3df5151464236f}{update}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{31     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shutdown__state_a2756e0a67cb9371a3c8d722b2a661efa}{enter}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{37     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shutdown__state_accbc4c856709e26453e2e23c5c1e4f8e}{exit}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{47     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_abstract__state}{Abstract\_state}} *\mbox{\hyperlink{class_shutdown__state_ae02b2fd80173aa50afcd73faba01b9be}{transition}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{48 \};}
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

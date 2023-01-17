@@ -1,0 +1,5 @@
+<map id="Alarm_state::transition" name="Alarm_state::transition">
+<area shape="rect" id="node1" title="Transición de estados." coords="5,5,159,31"/>
+<area shape="rect" id="node2" href="$class_alarm__state.html#acf39d27a3ccd1c25ade55e08918650f8" title="Salida del estado, apaga LEDs y Buzzer." coords="207,5,328,31"/>
+<area shape="rect" id="node3" href="$class_buzzer.html#a5809a2b7b52e74f509c31214257f3af0" title="Apaga el buzzer." coords="376,5,489,31"/>
+</map>

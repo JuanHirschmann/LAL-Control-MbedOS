@@ -1,0 +1,4 @@
+<map id="Motor::is_active" name="Motor::is_active">
+<area shape="rect" id="node1" title="Devuelve el estado del motor." coords="205,5,319,31"/>
+<area shape="rect" id="node2" href="$class_shutdown__state.html#a2756e0a67cb9371a3c8d722b2a661efa" title="Entrada al estado, apaga los LEDS, la pantalla y apaga el motor." coords="5,5,157,31"/>
+</map>

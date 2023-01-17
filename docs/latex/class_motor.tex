@@ -1,0 +1,89 @@
+\hypertarget{class_motor}{}\doxysection{Motor Class Reference}
+\label{class_motor}\index{Motor@{Motor}}
+
+
+Clase para el manejo del motor salida digital.  
+
+
+
+
+{\ttfamily \#include $<$Motor.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_motor_a791d24cc6b227b863f15fc772bec805c}{Motor}} (Pin\+Name motor\+\_\+pin)
+\begin{DoxyCompactList}\small\item\em Construye un nuevo objecto \mbox{\hyperlink{class_motor}{Motor}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motor_a3a871f05d0b017ff32052eb946a56f38}{turn\+\_\+on}} ()
+\begin{DoxyCompactList}\small\item\em Enciende el motor con con una duración en milisegundos duration, por defecto enciende el motor por un tiempo indefinido. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motor_a9a1613b24a5dd07a8c515e82d8e0edeb}{turn\+\_\+off}} ()
+\begin{DoxyCompactList}\small\item\em Apaga el motor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_motor_a20180eb7ef0d0bce876ee0ab220451f0}{is\+\_\+active}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el estado del motor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase para el manejo del motor salida digital. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_motor_a791d24cc6b227b863f15fc772bec805c}\label{class_motor_a791d24cc6b227b863f15fc772bec805c}} 
+\index{Motor@{Motor}!Motor@{Motor}}
+\index{Motor@{Motor}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Motor()}{Motor()}}
+{\footnotesize\ttfamily Motor\+::\+Motor (\begin{DoxyParamCaption}\item[{Pin\+Name}]{motor\+\_\+pin }\end{DoxyParamCaption})}
+
+
+
+Construye un nuevo objecto \mbox{\hyperlink{class_motor}{Motor}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em motor\+\_\+pin} & Pin elegido para conectar el motor, sólo sálida digital. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_motor_a20180eb7ef0d0bce876ee0ab220451f0}\label{class_motor_a20180eb7ef0d0bce876ee0ab220451f0}} 
+\index{Motor@{Motor}!is\_active@{is\_active}}
+\index{is\_active@{is\_active}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{is\_active()}{is\_active()}}
+{\footnotesize\ttfamily bool Motor\+::is\+\_\+active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el estado del motor. 
+
+\begin{DoxyReturn}{Returns}
+true El motor está activo. 
+
+false El motor está inactivo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_motor_a9a1613b24a5dd07a8c515e82d8e0edeb}\label{class_motor_a9a1613b24a5dd07a8c515e82d8e0edeb}} 
+\index{Motor@{Motor}!turn\_off@{turn\_off}}
+\index{turn\_off@{turn\_off}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{turn\_off()}{turn\_off()}}
+{\footnotesize\ttfamily void Motor\+::turn\+\_\+off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apaga el motor. 
+
+\mbox{\Hypertarget{class_motor_a3a871f05d0b017ff32052eb946a56f38}\label{class_motor_a3a871f05d0b017ff32052eb946a56f38}} 
+\index{Motor@{Motor}!turn\_on@{turn\_on}}
+\index{turn\_on@{turn\_on}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{turn\_on()}{turn\_on()}}
+{\footnotesize\ttfamily void Motor\+::turn\+\_\+on (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enciende el motor con con una duración en milisegundos duration, por defecto enciende el motor por un tiempo indefinido. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/drivers/\mbox{\hyperlink{_motor_8h}{Motor.\+h}}\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/drivers/\mbox{\hyperlink{_motor_8cpp}{Motor.\+cpp}}\end{DoxyCompactItemize}

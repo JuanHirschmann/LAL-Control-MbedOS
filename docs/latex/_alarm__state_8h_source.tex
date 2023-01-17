@@ -1,0 +1,22 @@
+\hypertarget{_alarm__state_8h_source}{}\doxysection{Alarm\+\_\+state.\+h}
+\label{_alarm__state_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/include/machine\_state\_pattern/machine\_states/Alarm\_state.h@{C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/include/machine\_state\_pattern/machine\_states/Alarm\_state.h}}
+\mbox{\hyperlink{_alarm__state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef MOTOR\_CONTROL\_STATE\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define MOTOR\_CONTROL\_STATE\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_control__system_8h}{Control\_system.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_abstract__state_8h}{machine\_state\_pattern/machine\_states/Abstract\_state.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_idle__state_8h}{machine\_state\_pattern/machine\_states/Idle\_state.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_alarm__state}{Alarm\_state}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_abstract__state}{Abstract\_state}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_alarm__state_acea6eee2b8d267b67192bbce9e495038}{update}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{33     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_alarm__state_a6e52898825f53fe1e7b0e22f5191bc04}{enter}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{39     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_alarm__state_acf39d27a3ccd1c25ade55e08918650f8}{exit}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{50     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_abstract__state}{Abstract\_state}} *\mbox{\hyperlink{class_alarm__state_adb40defa4c50d289290b44b2a4f41189}{transition}}(\mbox{\hyperlink{class_control__system}{Control\_system}} *machine);}
+\DoxyCodeLine{51 \};}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

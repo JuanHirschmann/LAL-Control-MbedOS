@@ -1,0 +1,7 @@
+<map id="Cooler::turn_on" name="Cooler::turn_on">
+<area shape="rect" id="node1" title="Enciende el ventilador. Si el ciclo de trabajo deseado es menor que FAN_MINIMUM_DUTY_CYCLE apaga el v..." coords="423,45,533,70"/>
+<area shape="rect" id="node2" href="$class_control__system.html#ab4bd82b7c907b415fdc102ed1fa89c7c" title="Según la variable context.current_alarm resuelve el comportamiento de la alarma." coords="216,5,375,45"/>
+<area shape="rect" id="node4" href="$class_control__system.html#a46298a6a5f4ba43857baa6ae23d00dbc" title="Fija el valor de velocidad del ventilador." coords="226,69,365,109"/>
+<area shape="rect" id="node3" href="$class_alarm__state.html#acea6eee2b8d267b67192bbce9e495038" title="Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma...." coords="17,13,156,38"/>
+<area shape="rect" id="node5" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Entrada del estado, resuelve las instrucciones a realizar en cada paso: &#45;WELCOME_STEP: Primer paso,..." coords="5,69,168,109"/>
+</map>
