@@ -1,6 +1,6 @@
 var class_dual___l_e_d =
 [
-    [ "Dual_LED", "class_dual___l_e_d.html#a65de2d03435b8b0db30985bb9370b817", null ],
+    [ "Dual_LED", "class_dual___l_e_d.html#ad7eba9900b6a80ef2c26ae76b19adc0a", null ],
     [ "set_color", "class_dual___l_e_d.html#aeb163748acf071a1652c56ae1dff9d52", null ],
     [ "toggle", "class_dual___l_e_d.html#ac56cb66fdbb2a682a90091f2f9a0d385", null ],
     [ "turn_green", "class_dual___l_e_d.html#ab1cd238e00901ca9556914a38d3a064c", null ],

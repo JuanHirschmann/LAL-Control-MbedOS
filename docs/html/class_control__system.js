@@ -1,30 +1,5 @@
 var class_control__system =
 [
-    [ "Control_system", "class_control__system.html#adcad523150aadd0ca8521779d2befd3d", null ],
-    [ "count_cooler_rotation", "class_control__system.html#af5cf3969d3f7b995cc7b9421839db415", null ],
-    [ "display_cooler_speed", "class_control__system.html#a914b54af513cf38a2600b3c710ab5c87", null ],
-    [ "get_cooler_count", "class_control__system.html#aa6929312cc42f67207d6d5e74f6fe83a", null ],
-    [ "handle_alarm", "class_control__system.html#ab4bd82b7c907b415fdc102ed1fa89c7c", null ],
-    [ "init", "class_control__system.html#a660ab5ac86df7cdefbbfe0942b00e13b", null ],
-    [ "init_display", "class_control__system.html#aad36c88c9e5589336213848de7837091", null ],
-    [ "is_alarm_requested", "class_control__system.html#a4bbd333dc3ac0d042222ea93a1075b76", null ],
-    [ "is_cooler_active", "class_control__system.html#a0a8fcaf886a9d8a688e0a05fb3422fe1", null ],
-    [ "is_next_step_requested", "class_control__system.html#a8b637df1ff92042b105b0ff0b607ffd3", null ],
-    [ "is_off", "class_control__system.html#acdd97ce514b54c273ebfb56a1a29e020", null ],
-    [ "is_poll_sensors_requested", "class_control__system.html#af7e1048dcc938de30589f961d0b14ee1", null ],
-    [ "measure_moisture", "class_control__system.html#ac57cf749db659ed80fa4a37b1f27c284", null ],
-    [ "measure_temperature", "class_control__system.html#a4c3ebc85aafb8c9b8c0d7554bc7d6058", null ],
-    [ "next_step", "class_control__system.html#aa98b33b5c57a47fb55e211516e49088b", null ],
     [ "notify_observers", "class_control__system.html#ab7912068a11d44b07eef3b3f56ce0598", null ],
-    [ "request_alarm", "class_control__system.html#af5985ea3ad848a1631ff6c12ef4b3941", null ],
-    [ "request_next_step", "class_control__system.html#a5c9777c9da51d24b615c1a72933db148", null ],
-    [ "request_warning", "class_control__system.html#a331f6ac8aca48fcc0b7cd23a3510911c", null ],
-    [ "reset", "class_control__system.html#a4704fee6ca6fe180a5dc292315ec3b31", null ],
-    [ "set_cooler_speed", "class_control__system.html#a46298a6a5f4ba43857baa6ae23d00dbc", null ],
-    [ "set_poll_sensors_flag", "class_control__system.html#a251677ee7c18269d85579da7a000ceab", null ],
-    [ "set_warning_flag", "class_control__system.html#a2d34912d34a642c819356bf566612686", null ],
-    [ "show_current_step", "class_control__system.html#ac1cd148e897c5ce2ef405dd45ddf964f", null ],
-    [ "show_error_msg", "class_control__system.html#a62a2c6a8167ade6a6ae054393b91d381", null ],
-    [ "update", "class_control__system.html#a4bfd2d8427f35a8cd4e4e10573aa5604", null ],
-    [ "wake", "class_control__system.html#a1a879a0b587423d7e485de333f35a566", null ]
+    [ "transition_state", "class_control__system.html#ab3a3e36bda029f2a5d0c4ffdf8ff984c", null ]
 ];

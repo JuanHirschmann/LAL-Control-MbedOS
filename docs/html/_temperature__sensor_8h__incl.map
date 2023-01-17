@@ -1,6 +1,5 @@
-<map id="C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/include/drivers/Temperature_sensor.h" name="C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/include/drivers/Temperature_sensor.h">
-<area shape="rect" id="node1" title="Controlador para sensor de temperatura DS18B20." coords="101,5,300,89"/>
+<map id="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Temperature_sensor.h" name="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Temperature_sensor.h">
+<area shape="rect" id="node1" title="Controlador para sensor de temperatura DS18B20." coords="15,5,253,89"/>
 <area shape="rect" id="node2" href="$system__settings_8h.html" title="Archivo para la definición de constantes del sistema." coords="5,137,135,163"/>
-<area shape="rect" id="node3" title=" " coords="159,137,243,163"/>
-<area shape="rect" id="node4" title=" " coords="267,137,409,163"/>
+<area shape="rect" id="node3" title=" " coords="159,137,237,163"/>
 </map>

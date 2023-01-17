@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "LAL_control", "index.html", [
+  [ "LAL Control Mbed OS", "index.html", [
     [ "LAL Control", "index.html#autotoc_md0", [
       [ "Sistema de control de procedimiento y monitoreo para un láser de ablación pulsada.", "index.html#autotoc_md1", null ],
       [ "Características del sistema", "index.html#autotoc_md2", null ],

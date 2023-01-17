@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bug_20list_0',['Bug List',['../bug.html',1,'']]]
+  ['lal_20control_20mbed_20os_0',['LAL Control Mbed OS',['../index.html',1,'']]]
 ];

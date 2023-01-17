@@ -1,10 +1,6 @@
 <map id="Buzzer::turn_off" name="Buzzer::turn_off">
-<area shape="rect" id="node1" title="Apaga el buzzer." coords="612,56,725,81"/>
-<area shape="rect" id="node2" href="$class_alarm__state.html#acf39d27a3ccd1c25ade55e08918650f8" title="Salida del estado, apaga LEDs y Buzzer." coords="443,5,564,31"/>
-<area shape="rect" id="node4" href="$class_buzzer.html#a7d0275af89ab487903752edc29a5bf2c" title="Permuta el estado del led, si estaba encendido pasará a apagado y viceversa." coords="252,56,359,81"/>
-<area shape="rect" id="node5" href="$class_buzzer.html#a9ba28d9ca8b3dd80541d9a13a8b0f625" title="Enciende el buzzer con con una duración en milisegundos duration, por defecto enciende el buzzer por ..." coords="446,107,561,132"/>
-<area shape="rect" id="node3" href="$class_alarm__state.html#adb40defa4c50d289290b44b2a4f41189" title="Transición de estados." coords="229,5,382,31"/>
-<area shape="rect" id="node6" href="$class_control__system.html#aa98b33b5c57a47fb55e211516e49088b" title="Enciende el buzzer por 100ms (bloqueante) y, si no esta anulado el próximo paso, avanza hacia la sigu..." coords="216,105,395,131"/>
-<area shape="rect" id="node8" href="$class_alarm__state.html#acea6eee2b8d267b67192bbce9e495038" title="Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma...." coords="236,155,375,180"/>
-<area shape="rect" id="node7" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Entrada del estado, resuelve las instrucciones a realizar en cada paso: &#45;WELCOME_STEP: Primer paso,..." coords="5,98,168,138"/>
+<area shape="rect" id="node1" title="Apaga el buzzer." coords="376,42,489,67"/>
+<area shape="rect" id="node2" href="$class_motor__control__state.html#aad1d65bba61eca448757e07e4e7dcb2b" title="Salida del estado, apaga LEDs y Buzzer." coords="191,5,328,45"/>
+<area shape="rect" id="node4" href="$class_buzzer.html#a7d0275af89ab487903752edc29a5bf2c" title="Permuta el estado del led, si estaba encendido pasará a apagado y viceversa." coords="206,70,313,95"/>
+<area shape="rect" id="node3" href="$class_motor__control__state.html#a399ab3c70b5a5d98f7b6ca5f5dfd5ecb" title="Transición de estados." coords="5,5,143,45"/>
 </map>

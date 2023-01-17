@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Salida del estado. No realiza ninguna acción.">
+<g id="a_node1"><a xlink:title="Método que se llama al salir del estado.">
 <polygon fill="#999999" stroke="#666666" points="280,-30 158,-30 158,0 280,0 280,-30"/>
 <text text-anchor="start" x="166" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Check_instruction_state</text>
 <text text-anchor="middle" x="219" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::exit</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_check__instruction__state.html#a324b5fc23fd203eda7a4e1c7e0b9925d" target="_top" xlink:title="Transición de estados. Sólo permite la transición a estado neutro si existe una solicitud de paso sig...">
+<g id="a_node2"><a xlink:href="class_check__instruction__state.html#a324b5fc23fd203eda7a4e1c7e0b9925d" target="_top" xlink:title="Método para cambiar de estado.">
 <polygon fill="white" stroke="#666666" points="122,-30 0,-30 0,0 122,0 122,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Check_instruction_state</text>
 <text text-anchor="middle" x="61" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::transition</text>

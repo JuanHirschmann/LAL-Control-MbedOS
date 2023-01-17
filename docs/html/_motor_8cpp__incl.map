@@ -1,6 +1,6 @@
-<map id="C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/src/drivers/Motor.cpp" name="C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/src/drivers/Motor.cpp">
-<area shape="rect" id="node1" title=" " coords="5,5,204,75"/>
-<area shape="rect" id="node2" href="$_motor_8h.html" title="Controlador de motor de 220 VAC." coords="51,123,158,148"/>
-<area shape="rect" id="node3" title=" " coords="11,196,89,221"/>
-<area shape="rect" id="node4" href="$port__config_8h.html" title="Archivo de configuración para los puertos de la placa donde se implementará el sistema." coords="113,196,209,221"/>
+<map id="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/src/Port/drivers/Motor.cpp" name="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/src/Port/drivers/Motor.cpp">
+<area shape="rect" id="node1" title=" " coords="5,5,236,75"/>
+<area shape="rect" id="node2" href="$_motor_8h.html" title="Controlador de motor de 220 VAC." coords="67,123,174,148"/>
+<area shape="rect" id="node3" title=" " coords="36,196,101,221"/>
+<area shape="rect" id="node4" href="$port__config_8h.html" title="Archivo de configuración para los puertos de la placa donde se implementará el sistema." coords="126,196,222,221"/>
 </map>

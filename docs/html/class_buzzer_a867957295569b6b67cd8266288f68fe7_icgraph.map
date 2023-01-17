@@ -1,0 +1,4 @@
+<map id="Buzzer::set_frequency" name="Buzzer::set_frequency">
+<area shape="rect" id="node1" title="Fija la nueva frequencia, no emite el sonido." coords="165,5,317,31"/>
+<area shape="rect" id="node2" href="$class_buzzer.html#a24280bb0f3ca7e716f71a65fed10446c" title="Construye un nuevo objecto Buzzer." coords="5,5,117,31"/>
+</map>

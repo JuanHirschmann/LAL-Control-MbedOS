@@ -1,5 +1,5 @@
-<map id="C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/include/drivers/Buzzer.h" name="C:/Users/juanh/OneDrive/Escritorio/Facultad/Beca/Proyecto/LAL Control Arduino/include/drivers/Buzzer.h">
-<area shape="rect" id="node1" title="Controlador de Buzzer de 12 milimetros." coords="5,5,204,75"/>
-<area shape="rect" id="node2" title=" " coords="11,123,89,148"/>
-<area shape="rect" id="node3" href="$port__config_8h.html" title="Archivo de configuración para los puertos de la placa donde se implementará el sistema." coords="113,123,209,148"/>
+<map id="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Buzzer.h" name="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Buzzer.h">
+<area shape="rect" id="node1" title="Controlador de Buzzer de 12 milimetros sin oscilador." coords="5,5,224,75"/>
+<area shape="rect" id="node2" title=" " coords="30,123,95,148"/>
+<area shape="rect" id="node3" href="$port__config_8h.html" title="Archivo de configuración para los puertos de la placa donde se implementará el sistema." coords="120,123,216,148"/>
 </map>

@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="class_display.html#a140c7f61de37b0b01e29d36005dc0048" target="_top" xlink:title="limpia los caracteres de la pantalla y apaga la retroiluminación, no inhabilita la escritura en panta...">
+<g id="a_node3"><a xlink:href="class_display.html#a140c7f61de37b0b01e29d36005dc0048" target="_top" xlink:title="limpia los caracteres de la pantalla y apaga la retroiluminación, no inhibe la escritura en pantalla.">
 <polygon fill="white" stroke="#666666" points="242,-93 156,-93 156,-74 242,-74 242,-93"/>
 <text text-anchor="middle" x="199" y="-81" font-family="Helvetica,sans-Serif" font-size="10.00">Display::turn_off</text>
 </a>

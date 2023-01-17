@@ -1,8 +1,9 @@
 <map id="Observer_interface" name="Observer_interface">
-<area shape="rect" id="node1" title="Interfaz para implementar el patrón de diseño Observer." coords="143,5,273,31"/>
-<area shape="rect" id="node2" href="$class_observer.html" title="Clase Observer, utilizada como base del observador en una implementación del patrón de diseño Observe..." coords="171,79,245,104"/>
-<area shape="rect" id="node3" href="$class_system__observer.html" title="Clase interfaz para implementar observadores para sujetos de la clase Control_system." coords="147,152,269,177"/>
+<area shape="rect" id="node1" title="Interfaz para implementar el patrón de diseño Observer." coords="226,5,355,31"/>
+<area shape="rect" id="node2" href="$class_observer.html" title="Clase Observer, utilizada como base del observador en una implementación del patrón de diseño Observe..." coords="254,79,327,104"/>
+<area shape="rect" id="node3" href="$class_system__observer.html" title="Clase interfaz para implementar observadores para sujetos de la clase Control_system." coords="229,152,352,177"/>
 <area shape="rect" id="node4" href="$class_cooler__observer.html" title="Clase heredera de System_observer, creada para observar el estado de las instrucciones." coords="5,225,120,251"/>
-<area shape="rect" id="node5" href="$class_moisture__observer.html" title="Clase heredera de System_observer, creada para observar el estado de los sensores de humedad." coords="145,225,271,251"/>
-<area shape="rect" id="node6" href="$class_temperature__observer.html" title="Clase heredera de System_observer, creada para observar el estado de los sensores de temperatura." coords="296,225,445,251"/>
+<area shape="rect" id="node5" href="$class_instruction__observer.html" title="Clase heredera de System_observer, creada para observar el estado de las instrucciones." coords="145,225,282,251"/>
+<area shape="rect" id="node6" href="$class_moisture__observer.html" title="Clase heredera de System_observer, creada para observar el estado de los sensores de humedad." coords="306,225,433,251"/>
+<area shape="rect" id="node7" href="$class_temperature__observer.html" title="Clase heredera de System_observer, creada para observar el estado de los sensores de temperatura." coords="457,225,607,251"/>
 </map>

@@ -20,8 +20,8 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_control__system.html" target="_top" xlink:title="Clase control_system. Tiene de clases amigas todos los estados del sistema.">
-<polygon fill="white" stroke="#666666" points="85,-19 0,-19 0,0 85,0 85,-19"/>
+<g id="a_node2"><a xlink:href="class_control__system.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="85,-19 0,-19 0,0 85,0 85,-19"/>
 <text text-anchor="middle" x="42.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Control_system</text>
 </a>
 </g>

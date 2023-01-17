@@ -1,0 +1,4 @@
+<map id="Buzzer::Buzzer" name="Buzzer::Buzzer">
+<area shape="rect" id="node1" title="Construye un nuevo objecto Buzzer." coords="5,5,117,31"/>
+<area shape="rect" id="node2" href="$class_buzzer.html#a867957295569b6b67cd8266288f68fe7" title="Fija la nueva frequencia, no emite el sonido." coords="165,5,317,31"/>
+</map>

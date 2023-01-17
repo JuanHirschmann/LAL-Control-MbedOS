@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="limpia los caracteres de la pantalla y apaga la retroiluminación, no inhabilita la escritura en panta...">
+<g id="a_node1"><a xlink:title="limpia los caracteres de la pantalla y apaga la retroiluminación, no inhibe la escritura en pantalla.">
 <polygon fill="#999999" stroke="#666666" points="236,-19 150,-19 150,0 236,0 236,-19"/>
 <text text-anchor="middle" x="193" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Display::turn_off</text>
 </a>

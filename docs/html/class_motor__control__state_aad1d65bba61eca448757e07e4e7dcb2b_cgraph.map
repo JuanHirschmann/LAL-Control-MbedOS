@@ -1,5 +1,4 @@
 <map id="Motor_control_state::exit" name="Motor_control_state::exit">
-<area shape="rect" id="node1" title="Salida del estado, apaga LEDs y Buzzer." coords="5,23,143,63"/>
-<area shape="rect" id="node2" href="$class_buzzer.html#a5809a2b7b52e74f509c31214257f3af0" title="Apaga el buzzer." coords="199,5,313,31"/>
-<area shape="rect" id="node3" href="$class_dual___l_e_d.html#a4226b64f8b1c00f3e4c649a8be2e64c9" title="Apaga el LED." coords="191,55,321,80"/>
+<area shape="rect" id="node1" title="Salida del estado, apaga LEDs y Buzzer." coords="5,5,143,45"/>
+<area shape="rect" id="node2" href="$class_buzzer.html#a5809a2b7b52e74f509c31214257f3af0" title="Apaga el buzzer." coords="191,13,304,38"/>
 </map>

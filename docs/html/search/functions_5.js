@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['get_5freading_0',['get_reading',['../class_moisture__sensor.html#a8d58285011777c1d6c0596032e46448b',1,'Moisture_sensor::get_reading()'],['../class_temperature__sensor.html#a43bcc39aa92d0bdb58defd6e4aefb3d5',1,'Temperature_sensor::get_reading()']]]
+  ['init_0',['init',['../class_display.html#aacbf91b9f8c57fc2cb892c45fd44e655',1,'Display']]],
+  ['is_5factive_1',['is_active',['../class_buzzer.html#a84d72ddf080ab87d9f13885edb5ac5d9',1,'Buzzer::is_active()'],['../class_motor.html#a20180eb7ef0d0bce876ee0ab220451f0',1,'Motor::is_active()']]]
 ];

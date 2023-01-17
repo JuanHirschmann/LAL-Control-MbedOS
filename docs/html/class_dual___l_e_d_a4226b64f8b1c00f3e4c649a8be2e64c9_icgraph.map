@@ -1,10 +1,5 @@
 <map id="Dual_LED::turn_off" name="Dual_LED::turn_off">
-<area shape="rect" id="node1" title="Apaga el LED." coords="640,55,771,80"/>
-<area shape="rect" id="node2" href="$class_shutdown__state.html#a2756e0a67cb9371a3c8d722b2a661efa" title="Entrada al estado, apaga los LEDS, la pantalla y apaga el motor." coords="440,5,592,31"/>
-<area shape="rect" id="node3" href="$class_control__system.html#a4704fee6ca6fe180a5dc292315ec3b31" title="Apaga todos los periféricos a excepción del display. Asigna false a solictudes de alarma,..." coords="441,55,591,80"/>
-<area shape="rect" id="node8" href="$class_dual___l_e_d.html#ac56cb66fdbb2a682a90091f2f9a0d385" title="Permuta el estado del LED." coords="455,104,577,129"/>
-<area shape="rect" id="node4" href="$class_shutdown__state.html#accbc4c856709e26453e2e23c5c1e4f8e" title="Salida del estado, resetea las variables del sistema e incializa la pantalla." coords="239,5,383,31"/>
-<area shape="rect" id="node6" href="$class_control__system.html#a660ab5ac86df7cdefbbfe0942b00e13b" title="Inicializa el sistema en estado apagado." coords="241,55,380,80"/>
-<area shape="rect" id="node7" href="$class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2" title="Actualización de estado, si existe una solicitud de apagado el sistema se resetea." coords="229,105,392,145"/>
-<area shape="rect" id="node5" href="$class_shutdown__state.html#ae02b2fd80173aa50afcd73faba01b9be" title="Transicion de estados." coords="5,5,181,31"/>
+<area shape="rect" id="node1" title="Apaga el LED." coords="205,31,336,56"/>
+<area shape="rect" id="node2" href="$class_shutdown__state.html#a2756e0a67cb9371a3c8d722b2a661efa" title="Entrada al estado, apaga los LEDS, la pantalla y apaga el motor." coords="5,5,157,31"/>
+<area shape="rect" id="node3" href="$class_dual___l_e_d.html#ac56cb66fdbb2a682a90091f2f9a0d385" title="Permuta el estado del LED." coords="20,55,143,80"/>
 </map>
