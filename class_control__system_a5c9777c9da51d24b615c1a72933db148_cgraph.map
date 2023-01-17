@@ -1,0 +1,4 @@
+<map id="Control_system::request_next_step" name="Control_system::request_next_step">
+<area shape="rect" id="node1" title="Solicita avanzar hacia la siguiente instrucción. Si no hay alguna alarma activa la solicitud se hará ..." coords="5,5,169,45"/>
+<area shape="rect" id="node2" href="$class_control__system.html#a4bbd333dc3ac0d042222ea93a1075b76" title="Devuelve el estado del indicador de alarma." coords="217,5,348,45"/>
+</map>

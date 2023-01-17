@@ -1,0 +1,6 @@
+<map id="Display::update" name="Display::update">
+<area shape="rect" id="node1" title="Actualiza los valores en pantalla con los parámetros previamente fijados. Solo actualiza la pantalla ..." coords="216,70,328,95"/>
+<area shape="rect" id="node2" href="$class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2" title="Método para actualizar el estado." coords="5,5,168,45"/>
+<area shape="rect" id="node3" href="$class_idle__state.html#a92217c98eda8e3bd47eb3a8ff602efc2" title="Método para actualizar el sistema cuando está en estado de reposo. Actualiza la pantalla y los observ..." coords="24,70,149,95"/>
+<area shape="rect" id="node4" href="$class_motor__control__state.html#a958e3393b9937ddea35e85efdd21e342" title="Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma...." coords="18,120,155,160"/>
+</map>

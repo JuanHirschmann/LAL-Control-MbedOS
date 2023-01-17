@@ -1,0 +1,11 @@
+<map id="Display::set_text" name="Display::set_text">
+<area shape="rect" id="node1" title="Fija el el texto a actualizar, no lo imprime en pantalla. La ubicación se da con las constantes de of..." coords="641,63,761,89"/>
+<area shape="rect" id="node2" href="$class_control__system.html#ab4bd82b7c907b415fdc102ed1fa89c7c" title="Según la variable context.current_alarm resuelve el comportamiento de la alarma." coords="226,5,385,45"/>
+<area shape="rect" id="node4" href="$class_control__system.html#ac1cd148e897c5ce2ef405dd45ddf964f" title="Muestra en pantalla el paso del procedimientoa actual." coords="443,120,593,160"/>
+<area shape="rect" id="node9" href="$class_control__system.html#a62a2c6a8167ade6a6ae054393b91d381" title="Muestra el mensaje de error por pantalla." coords="443,56,593,96"/>
+<area shape="rect" id="node3" href="$class_alarm__state.html#acea6eee2b8d267b67192bbce9e495038" title="Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma...." coords="17,42,156,67"/>
+<area shape="rect" id="node5" href="$class_idle__state.html#ad6d70e591dd39da724656a4261013e4f" title="Método llamado al ingresar al estado. Actualiza la pantalla con el paso del procedimiento actual." coords="248,121,363,146"/>
+<area shape="rect" id="node6" href="$class_control__system.html#aa98b33b5c57a47fb55e211516e49088b" title="Enciende el buzzer por 100ms (bloqueante) y, si no esta anulado el próximo paso, avanza hacia la sigu..." coords="216,170,395,195"/>
+<area shape="rect" id="node8" href="$class_idle__state.html#a92217c98eda8e3bd47eb3a8ff602efc2" title="Método para actualizar el sistema cuando está en estado de reposo. Actualiza la pantalla y los observ..." coords="243,219,368,245"/>
+<area shape="rect" id="node7" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Entrada del estado, resuelve las instrucciones a realizar en cada paso: &#45;WELCOME_STEP: Primer paso,..." coords="5,163,168,203"/>
+</map>

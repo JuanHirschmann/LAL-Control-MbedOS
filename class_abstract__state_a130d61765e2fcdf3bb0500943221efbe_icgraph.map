@@ -1,0 +1,4 @@
+<map id="Abstract_state::transition" name="Abstract_state::transition">
+<area shape="rect" id="node1" title="Método para cambiar de estado." coords="228,13,396,38"/>
+<area shape="rect" id="node2" href="$class_control__system.html#ab3a3e36bda029f2a5d0c4ffdf8ff984c" title="Método virtual para llamar al método de transición del estado actual." coords="5,5,180,45"/>
+</map>

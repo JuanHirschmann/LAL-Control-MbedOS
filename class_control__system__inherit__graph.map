@@ -1,0 +1,6 @@
+<map id="Control_system" name="Control_system">
+<area shape="rect" id="node1" title=" " coords="57,152,170,177"/>
+<area shape="rect" id="node2" href="$class_subject.html" title="Clase base para crear sujetos a observar, hereda de la interfaz Subject_interface." coords="33,79,100,104"/>
+<area shape="rect" id="node3" href="$class_subject__interface.html" title="Clase interfaz para implementar el patrón de diseño Observer." coords="5,5,128,31"/>
+<area shape="rect" id="node4" href="$class_machine.html" title="Clase para base para la implementación de una máquina de estados finita." coords="125,79,195,104"/>
+</map>

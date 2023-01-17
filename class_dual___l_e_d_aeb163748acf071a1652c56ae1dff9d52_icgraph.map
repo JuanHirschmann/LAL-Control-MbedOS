@@ -1,0 +1,8 @@
+<map id="Dual_LED::set_color" name="Dual_LED::set_color">
+<area shape="rect" id="node1" title="Fija el color del led, no enciende el led,." coords="417,94,559,119"/>
+<area shape="rect" id="node2" href="$class_dual___l_e_d.html#ab1cd238e00901ca9556914a38d3a064c" title="Enciende el LED en verde." coords="218,45,367,70"/>
+<area shape="rect" id="node5" href="$class_dual___l_e_d.html#a8734a816df04661d86e3ccbf88159eb0" title="Enciende el LED en rojo." coords="225,94,360,119"/>
+<area shape="rect" id="node6" href="$class_dual___l_e_d.html#aabc0462521bcc08ea7f6f04642f7e89d" title="Enciende el LED en amarillo. El comportamiento es indefinido para pines no PWM." coords="216,143,369,169"/>
+<area shape="rect" id="node3" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Método que se llama al ingresar al estado." coords="5,5,168,45"/>
+<area shape="rect" id="node4" href="$class_motor__control__state.html#a958e3393b9937ddea35e85efdd21e342" title="Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma...." coords="18,69,155,109"/>
+</map>

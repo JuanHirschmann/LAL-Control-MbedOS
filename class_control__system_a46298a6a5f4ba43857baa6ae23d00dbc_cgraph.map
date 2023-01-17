@@ -1,0 +1,9 @@
+<map id="Control_system::set_cooler_speed" name="Control_system::set_cooler_speed">
+<area shape="rect" id="node1" title="Fija el valor de velocidad del ventilador." coords="5,47,144,87"/>
+<area shape="rect" id="node2" href="$class_dual___l_e_d.html#ab1cd238e00901ca9556914a38d3a064c" title="Enciende el LED en verde." coords="192,55,341,80"/>
+<area shape="rect" id="node5" href="$class_cooler.html#aa98fd302dc7933fc21c046ca3ea48346" title="Enciende el ventilador. Si el ciclo de trabajo deseado es menor que FAN_MINIMUM_DUTY_CYCLE apaga el v..." coords="211,128,322,153"/>
+<area shape="rect" id="node7" href="$class_dual___l_e_d.html#a8734a816df04661d86e3ccbf88159eb0" title="Enciende el LED en rojo." coords="199,5,334,31"/>
+<area shape="rect" id="node3" href="$class_dual___l_e_d.html#aeb163748acf071a1652c56ae1dff9d52" title="Fija el color del led, no enciende el led,." coords="389,55,531,80"/>
+<area shape="rect" id="node4" href="$class_dual___l_e_d.html#a8b13294b883897eb83f91bf90a3a11cd" title="Enciende el LED en el color actual." coords="395,5,525,31"/>
+<area shape="rect" id="node6" href="$class_cooler.html#a3aa26bc227fa7a2bdcff9fe607990104" title="Apaga el ventilador." coords="405,128,515,153"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Cooler::count_rotation" name="Cooler::count_rotation">
+<area shape="rect" id="node1" title="Increment el contador de mediciones." coords="207,13,356,38"/>
+<area shape="rect" id="node2" href="$class_control__system.html#af5cf3969d3f7b995cc7b9421839db415" title="Cuenta revoluciones en el ventilador que esté activo." coords="5,5,159,45"/>
+</map>

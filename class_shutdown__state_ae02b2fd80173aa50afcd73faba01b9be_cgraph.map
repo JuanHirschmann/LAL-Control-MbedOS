@@ -1,0 +1,4 @@
+<map id="Shutdown_state::transition" name="Shutdown_state::transition">
+<area shape="rect" id="node1" title="Transicion de estados." coords="5,5,181,31"/>
+<area shape="rect" id="node2" href="$class_shutdown__state.html#accbc4c856709e26453e2e23c5c1e4f8e" title="Salida del estado, resetea las variables del sistema e incializa la pantalla." coords="229,5,373,31"/>
+</map>

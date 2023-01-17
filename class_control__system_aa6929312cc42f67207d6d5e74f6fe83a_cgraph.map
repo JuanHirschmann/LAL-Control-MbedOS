@@ -1,0 +1,4 @@
+<map id="Control_system::get_cooler_count" name="Control_system::get_cooler_count">
+<area shape="rect" id="node1" title="Devuelve la cantidad de rotaciones del ventilador desde el último llamado de la función." coords="5,5,144,45"/>
+<area shape="rect" id="node2" href="$class_cooler.html#ad02531fc9e59b2ddd7f618703e99871b" title="Devuelve la cantidad de rotaciones desde el último llamado de la función." coords="192,5,327,45"/>
+</map>

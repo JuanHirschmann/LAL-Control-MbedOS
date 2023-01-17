@@ -1,0 +1,7 @@
+<map id="Control_system::reset" name="Control_system::reset">
+<area shape="rect" id="node1" title="Apaga todos los periféricos a excepción del display. Asigna false a solictudes de alarma,..." coords="440,55,591,80"/>
+<area shape="rect" id="node2" href="$class_shutdown__state.html#accbc4c856709e26453e2e23c5c1e4f8e" title="Salida del estado, resetea las variables del sistema e incializa la pantalla." coords="239,5,383,31"/>
+<area shape="rect" id="node4" href="$class_control__system.html#a660ab5ac86df7cdefbbfe0942b00e13b" title="Inicializa el sistema en estado apagado." coords="241,55,380,80"/>
+<area shape="rect" id="node5" href="$class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2" title="Actualización de estado, si existe una solicitud de apagado el sistema se resetea." coords="229,105,392,145"/>
+<area shape="rect" id="node3" href="$class_shutdown__state.html#ae02b2fd80173aa50afcd73faba01b9be" title="Transicion de estados." coords="5,5,181,31"/>
+</map>

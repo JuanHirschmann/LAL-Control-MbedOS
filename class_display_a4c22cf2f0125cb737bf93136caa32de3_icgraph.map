@@ -1,0 +1,4 @@
+<map id="Display::set_fan_speed_pct" name="Display::set_fan_speed_pct">
+<area shape="rect" id="node1" title="Fija la velocidad en RPS, no lo imprie en pantalla excepto que la variación de velocidades sea lo suf..." coords="216,13,399,38"/>
+<area shape="rect" id="node2" href="$class_control__system.html#a914b54af513cf38a2600b3c710ab5c87" title="Fija velocidades en el display de los ventiladores." coords="5,5,168,45"/>
+</map>

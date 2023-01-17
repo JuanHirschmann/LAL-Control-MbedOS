@@ -1,0 +1,5 @@
+<map id="Cooler::is_active" name="Cooler::is_active">
+<area shape="rect" id="node1" title="Estado del ventilador. No utiliza la medición de velocidad si no que, si se llamó a la función turn_o..." coords="393,13,511,38"/>
+<area shape="rect" id="node2" href="$class_control__system.html#a0a8fcaf886a9d8a688e0a05fb3422fe1" title="Devuelve el estado del ventilador." coords="215,5,345,45"/>
+<area shape="rect" id="node3" href="$class_cooler__observer.html#aca9bdbbc11981c1ec178090622caaee4" title="Si el indicador de próximo paso del usuario está activo y el acceso a la próxima instrucción no esté ..." coords="5,13,167,38"/>
+</map>

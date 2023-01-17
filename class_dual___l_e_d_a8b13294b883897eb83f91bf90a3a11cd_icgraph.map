@@ -1,0 +1,9 @@
+<map id="Dual_LED::turn_on" name="Dual_LED::turn_on">
+<area shape="rect" id="node1" title="Enciende el LED en el color actual." coords="417,80,548,105"/>
+<area shape="rect" id="node2" href="$class_dual___l_e_d.html#ac56cb66fdbb2a682a90091f2f9a0d385" title="Permuta el estado del LED." coords="231,5,354,31"/>
+<area shape="rect" id="node3" href="$class_dual___l_e_d.html#ab1cd238e00901ca9556914a38d3a064c" title="Enciende el LED en verde." coords="218,55,367,80"/>
+<area shape="rect" id="node6" href="$class_dual___l_e_d.html#a8734a816df04661d86e3ccbf88159eb0" title="Enciende el LED en rojo." coords="225,104,360,129"/>
+<area shape="rect" id="node7" href="$class_dual___l_e_d.html#aabc0462521bcc08ea7f6f04642f7e89d" title="Enciende el LED en amarillo. El comportamiento es indefinido para pines no PWM." coords="216,153,369,179"/>
+<area shape="rect" id="node4" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Método que se llama al ingresar al estado." coords="5,15,168,55"/>
+<area shape="rect" id="node5" href="$class_motor__control__state.html#a958e3393b9937ddea35e85efdd21e342" title="Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma...." coords="18,79,155,119"/>
+</map>

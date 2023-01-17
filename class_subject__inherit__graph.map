@@ -1,0 +1,5 @@
+<map id="Subject" name="Subject">
+<area shape="rect" id="node1" title="Clase base para crear sujetos a observar, hereda de la interfaz Subject_interface." coords="33,79,100,104"/>
+<area shape="rect" id="node3" href="$class_control__system.html" title=" " coords="10,152,123,177"/>
+<area shape="rect" id="node2" href="$class_subject__interface.html" title="Clase interfaz para implementar el patrón de diseño Observer." coords="5,5,128,31"/>
+</map>

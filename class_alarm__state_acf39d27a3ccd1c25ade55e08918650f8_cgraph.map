@@ -1,0 +1,4 @@
+<map id="Alarm_state::exit" name="Alarm_state::exit">
+<area shape="rect" id="node1" title="Salida del estado, apaga LEDs y Buzzer." coords="5,5,127,31"/>
+<area shape="rect" id="node2" href="$class_buzzer.html#a5809a2b7b52e74f509c31214257f3af0" title="Apaga el buzzer." coords="175,5,288,31"/>
+</map>

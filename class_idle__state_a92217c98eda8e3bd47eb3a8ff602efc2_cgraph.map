@@ -1,0 +1,5 @@
+<map id="Idle_state::update" name="Idle_state::update">
+<area shape="rect" id="node1" title="Método para actualizar el sistema cuando está en estado de reposo. Actualiza la pantalla y los observ..." coords="5,42,131,67"/>
+<area shape="rect" id="node2" href="$class_control__system.html#ab7912068a11d44b07eef3b3f56ce0598" title="Método virtual puro para que las clases herederas implementen la actualización de observadores." coords="179,5,331,45"/>
+<area shape="rect" id="node3" href="$class_display.html#ad2740b779d61e461c4dcaaf34f1fcd8f" title="Actualiza los valores en pantalla con los parámetros previamente fijados. Solo actualiza la pantalla ..." coords="199,70,311,95"/>
+</map>

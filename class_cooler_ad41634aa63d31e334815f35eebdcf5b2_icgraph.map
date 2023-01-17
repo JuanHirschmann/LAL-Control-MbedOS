@@ -1,0 +1,4 @@
+<map id="Cooler::rotation_detected" name="Cooler::rotation_detected">
+<area shape="rect" id="node1" title="Lectura el pin de medición de velocidad." coords="207,13,373,38"/>
+<area shape="rect" id="node2" href="$class_control__system.html#af5cf3969d3f7b995cc7b9421839db415" title="Cuenta revoluciones en el ventilador que esté activo." coords="5,5,159,45"/>
+</map>

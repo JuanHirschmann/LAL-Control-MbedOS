@@ -1,0 +1,5 @@
+<map id="Control_system::measure_temperature" name="Control_system::measure_temperature">
+<area shape="rect" id="node1" title="Obtiene la temperatura del objeto temp_sensor." coords="5,35,176,75"/>
+<area shape="rect" id="node2" href="$class_temperature__sensor.html#a43bcc39aa92d0bdb58defd6e4aefb3d5" title="Obtiene la Temperatura de todos los sensores como un promedio simple (Celsius)." coords="224,5,364,45"/>
+<area shape="rect" id="node3" href="$class_display.html#abe8e63e4def12a48cde5679ce008f402" title="Fija el valor de temperatura a actualizar (no la imprime en pantalla), la ubicación se da con las con..." coords="231,70,357,95"/>
+</map>

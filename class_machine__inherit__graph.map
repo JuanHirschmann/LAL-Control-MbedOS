@@ -1,0 +1,4 @@
+<map id="Machine" name="Machine">
+<area shape="rect" id="node1" title="Clase para base para la implementación de una máquina de estados finita." coords="27,5,97,31"/>
+<area shape="rect" id="node2" href="$class_control__system.html" title=" " coords="5,79,119,104"/>
+</map>

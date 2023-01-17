@@ -1,0 +1,10 @@
+<map id="Check_instruction_state::enter" name="Check_instruction_state::enter">
+<area shape="rect" id="node1" title="Método que se llama al ingresar al estado." coords="5,112,168,152"/>
+<area shape="rect" id="node2" href="$class_digital__dual___l_e_d.html#a50e4648932cd01835f25e627cbe93ba6" title="Enciende el LED en verde." coords="229,5,379,45"/>
+<area shape="rect" id="node3" href="$class_dual___l_e_d.html#ab1cd238e00901ca9556914a38d3a064c" title="Enciende el LED en verde." coords="229,70,379,95"/>
+<area shape="rect" id="node6" href="$class_motor.html#a9a1613b24a5dd07a8c515e82d8e0edeb" title="Apaga el motor." coords="251,119,357,145"/>
+<area shape="rect" id="node7" href="$class_motor.html#a3a871f05d0b017ff32052eb946a56f38" title="Enciende el motor con con una duración en milisegundos duration, por defecto enciende el motor por un..." coords="251,169,357,194"/>
+<area shape="rect" id="node8" href="$class_digital__dual___l_e_d.html#a601fc70878c221a056d74dc643806a91" title="Fija el color del led, no enciende el led,." coords="216,218,392,243"/>
+<area shape="rect" id="node4" href="$class_dual___l_e_d.html#aeb163748acf071a1652c56ae1dff9d52" title="Fija el color del led, no enciende el led,." coords="440,46,581,71"/>
+<area shape="rect" id="node5" href="$class_dual___l_e_d.html#a8b13294b883897eb83f91bf90a3a11cd" title="Enciende el LED en el color actual." coords="445,95,576,121"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Control_system::show_current_step" name="Control_system::show_current_step">
+<area shape="rect" id="node1" title="Muestra en pantalla el paso del procedimientoa actual." coords="5,5,156,45"/>
+<area shape="rect" id="node2" href="$class_display.html#a87d1e7bf73a1d14b5e76c9ab647a9e93" title="Fija el el texto a actualizar, no lo imprime en pantalla. La ubicación se da con las constantes de of..." coords="204,13,324,38"/>
+</map>

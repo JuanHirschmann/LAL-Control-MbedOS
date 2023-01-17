@@ -1,0 +1,5 @@
+<map id="Temperature_sensor::get_reading" name="Temperature_sensor::get_reading">
+<area shape="rect" id="node1" title="Obtiene la Temperatura de todos los sensores como un promedio simple (Celsius)." coords="421,5,561,45"/>
+<area shape="rect" id="node2" href="$class_control__system.html#a4c3ebc85aafb8c9b8c0d7554bc7d6058" title="Obtiene la temperatura del objeto temp_sensor." coords="203,5,373,45"/>
+<area shape="rect" id="node3" href="$class_temperature__observer.html#ab90488fcff2880baae583cfe7aefb3d8" title="Actualización del observador, mide la temperatura: si excede el umbral OVERTEMP_ALARM_TRESHOLD,..." coords="5,5,155,45"/>
+</map>

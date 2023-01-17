@@ -1,0 +1,4 @@
+<map id="Buzzer::toggle" name="Buzzer::toggle">
+<area shape="rect" id="node1" title="Permuta el estado del led, si estaba encendido pasará a apagado y viceversa." coords="191,13,297,38"/>
+<area shape="rect" id="node2" href="$class_motor__control__state.html#a958e3393b9937ddea35e85efdd21e342" title="Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma...." coords="5,5,143,45"/>
+</map>

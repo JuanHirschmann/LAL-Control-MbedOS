@@ -1,0 +1,4 @@
+<map id="Cooler::turn_on" name="Cooler::turn_on">
+<area shape="rect" id="node1" title="Enciende el ventilador. Si el ciclo de trabajo deseado es menor que FAN_MINIMUM_DUTY_CYCLE apaga el v..." coords="5,29,116,55"/>
+<area shape="rect" id="node2" href="$class_cooler.html#a3aa26bc227fa7a2bdcff9fe607990104" title="Apaga el ventilador." coords="164,29,273,55"/>
+</map>

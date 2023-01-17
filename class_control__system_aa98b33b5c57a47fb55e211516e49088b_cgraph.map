@@ -1,0 +1,7 @@
+<map id="Control_system::next_step" name="Control_system::next_step">
+<area shape="rect" id="node1" title="Enciende el buzzer por 100ms (bloqueante) y, si no esta anulado el próximo paso, avanza hacia la sigu..." coords="5,42,184,67"/>
+<area shape="rect" id="node2" href="$class_control__system.html#ac1cd148e897c5ce2ef405dd45ddf964f" title="Muestra en pantalla el paso del procedimientoa actual." coords="232,5,383,45"/>
+<area shape="rect" id="node4" href="$class_buzzer.html#a9ba28d9ca8b3dd80541d9a13a8b0f625" title="Enciende el buzzer con con una duración en milisegundos duration, por defecto enciende el buzzer por ..." coords="250,70,365,95"/>
+<area shape="rect" id="node3" href="$class_display.html#a87d1e7bf73a1d14b5e76c9ab647a9e93" title="Fija el el texto a actualizar, no lo imprime en pantalla. La ubicación se da con las constantes de of..." coords="431,13,551,38"/>
+<area shape="rect" id="node5" href="$class_buzzer.html#a5809a2b7b52e74f509c31214257f3af0" title="Apaga el buzzer." coords="434,70,547,95"/>
+</map>

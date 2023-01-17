@@ -1,0 +1,5 @@
+<map id="Buzzer::toggle" name="Buzzer::toggle">
+<area shape="rect" id="node1" title="Permuta el estado del led, si estaba encendido pasará a apagado y viceversa." coords="5,31,112,56"/>
+<area shape="rect" id="node2" href="$class_buzzer.html#a5809a2b7b52e74f509c31214257f3af0" title="Apaga el buzzer." coords="161,5,274,31"/>
+<area shape="rect" id="node3" href="$class_buzzer.html#a9ba28d9ca8b3dd80541d9a13a8b0f625" title="Enciende el buzzer con con una duración en milisegundos duration, por defecto enciende el buzzer por ..." coords="160,55,275,80"/>
+</map>

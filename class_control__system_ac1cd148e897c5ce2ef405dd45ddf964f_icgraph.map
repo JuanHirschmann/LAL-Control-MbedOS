@@ -1,0 +1,8 @@
+<map id="Control_system::show_current_step" name="Control_system::show_current_step">
+<area shape="rect" id="node1" title="Muestra en pantalla el paso del procedimientoa actual." coords="443,73,593,113"/>
+<area shape="rect" id="node2" href="$class_idle__state.html#ad6d70e591dd39da724656a4261013e4f" title="Método llamado al ingresar al estado. Actualiza la pantalla con el paso del procedimiento actual." coords="248,5,363,31"/>
+<area shape="rect" id="node3" href="$class_control__system.html#aa98b33b5c57a47fb55e211516e49088b" title="Enciende el buzzer por 100ms (bloqueante) y, si no esta anulado el próximo paso, avanza hacia la sigu..." coords="216,55,395,80"/>
+<area shape="rect" id="node5" href="$class_alarm__state.html#acea6eee2b8d267b67192bbce9e495038" title="Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma...." coords="236,104,375,129"/>
+<area shape="rect" id="node6" href="$class_idle__state.html#a92217c98eda8e3bd47eb3a8ff602efc2" title="Método para actualizar el sistema cuando está en estado de reposo. Actualiza la pantalla y los observ..." coords="243,153,368,179"/>
+<area shape="rect" id="node4" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Entrada del estado, resuelve las instrucciones a realizar en cada paso: &#45;WELCOME_STEP: Primer paso,..." coords="5,47,168,87"/>
+</map>

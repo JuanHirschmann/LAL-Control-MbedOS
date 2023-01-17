@@ -1,0 +1,5 @@
+<map id="Dual_LED::turn_green" name="Dual_LED::turn_green">
+<area shape="rect" id="node1" title="Enciende el LED en verde." coords="216,45,365,70"/>
+<area shape="rect" id="node2" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Método que se llama al ingresar al estado." coords="5,5,168,45"/>
+<area shape="rect" id="node3" href="$class_motor__control__state.html#a958e3393b9937ddea35e85efdd21e342" title="Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma...." coords="18,69,155,109"/>
+</map>

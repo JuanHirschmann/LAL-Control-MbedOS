@@ -1,0 +1,5 @@
+<map id="Dual_LED::turn_red" name="Dual_LED::turn_red">
+<area shape="rect" id="node1" title="Enciende el LED en rojo." coords="5,31,140,56"/>
+<area shape="rect" id="node2" href="$class_dual___l_e_d.html#aeb163748acf071a1652c56ae1dff9d52" title="Fija el color del led, no enciende el led,." coords="188,5,329,31"/>
+<area shape="rect" id="node3" href="$class_dual___l_e_d.html#a8b13294b883897eb83f91bf90a3a11cd" title="Enciende el LED en el color actual." coords="193,55,324,80"/>
+</map>

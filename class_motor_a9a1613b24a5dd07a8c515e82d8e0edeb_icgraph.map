@@ -1,0 +1,5 @@
+<map id="Motor::turn_off" name="Motor::turn_off">
+<area shape="rect" id="node1" title="Apaga el motor." coords="216,42,321,67"/>
+<area shape="rect" id="node2" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Método que se llama al ingresar al estado." coords="5,5,168,45"/>
+<area shape="rect" id="node3" href="$class_shutdown__state.html#a2756e0a67cb9371a3c8d722b2a661efa" title="Entrada al estado, apaga los LEDS, la pantalla y apaga el motor." coords="11,70,163,95"/>
+</map>

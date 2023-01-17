@@ -1,0 +1,5 @@
+<map id="Control_system::show_error_msg" name="Control_system::show_error_msg">
+<area shape="rect" id="node1" title="Muestra el mensaje de error por pantalla." coords="399,5,549,45"/>
+<area shape="rect" id="node2" href="$class_control__system.html#ab4bd82b7c907b415fdc102ed1fa89c7c" title="Según la variable context.current_alarm resuelve el comportamiento de la alarma." coords="192,5,351,45"/>
+<area shape="rect" id="node3" href="$class_alarm__state.html#acea6eee2b8d267b67192bbce9e495038" title="Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma...." coords="5,13,144,38"/>
+</map>

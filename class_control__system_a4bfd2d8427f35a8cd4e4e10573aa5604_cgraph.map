@@ -1,0 +1,4 @@
+<map id="Control_system::update" name="Control_system::update">
+<area shape="rect" id="node1" title="Actualización del sistema. De ser necesario realiza la transición de estados y actualiza el estado ac..." coords="5,5,165,31"/>
+<area shape="rect" id="node2" href="$class_abstract__state.html#a993232854cd166a601b6c5b4ba7befcc" title="Método para actualizar el estado." coords="213,5,368,31"/>
+</map>

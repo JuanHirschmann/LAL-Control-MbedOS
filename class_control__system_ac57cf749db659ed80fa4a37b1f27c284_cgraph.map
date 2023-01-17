@@ -1,0 +1,4 @@
+<map id="Control_system::measure_moisture" name="Control_system::measure_moisture">
+<area shape="rect" id="node1" title="Obtiene la humedad del objeto mois_sensor." coords="5,5,176,45"/>
+<area shape="rect" id="node2" href="$class_moisture__sensor.html#acd72c51f63ca144ecb419b7cca849974" title="Devuelve la lectura realizada." coords="224,5,368,45"/>
+</map>

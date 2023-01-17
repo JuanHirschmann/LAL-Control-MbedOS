@@ -1,0 +1,5 @@
+<map id="Dual_LED::turn_off" name="Dual_LED::turn_off">
+<area shape="rect" id="node1" title="Apaga el LED." coords="205,31,336,56"/>
+<area shape="rect" id="node2" href="$class_shutdown__state.html#a2756e0a67cb9371a3c8d722b2a661efa" title="Entrada al estado, apaga los LEDS, la pantalla y apaga el motor." coords="5,5,157,31"/>
+<area shape="rect" id="node3" href="$class_dual___l_e_d.html#ac56cb66fdbb2a682a90091f2f9a0d385" title="Permuta el estado del LED." coords="20,55,143,80"/>
+</map>
