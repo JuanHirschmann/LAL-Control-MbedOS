@@ -21,7 +21,7 @@ LAL Control es un sistema para el control del procedimiento para operar el láse
 Para ser cargado en la placa de desarrollo el sistema requiere utilizar el plugin de Visual Studio Code [PlatformIO](https://platformio.org/). Una vez instalado PlatfomIO se debe abrir la carpeta con el sistema como un proyecto e instalarlo en la placa objetivo.
 
 ## Documentación
-Toda la documentación del código está disponible en este [enlace](https://juanhirschmann.github.io/LAL_Control/index.html).
+Toda la documentación del código está disponible en este [enlace](https://juanhirschmann.github.io/LAL-Control-MbedOS/index.html).
 
 
 ## Licencia
