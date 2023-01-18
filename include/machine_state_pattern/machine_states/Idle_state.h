@@ -12,7 +12,7 @@
 #define IDLE_STATE_H
 #include "Control_system.h"
 #include "machine_state_pattern/machine_states/Abstract_state.h"
-#include "machine_state_pattern/machine_states/Motor_control_state.h"
+#include "machine_state_pattern/machine_states/Alarm_state.h"
 #include "machine_state_pattern/machine_states/Check_instruction_state.h"
 /**
  * @brief Clase para implementar el estado de reposo del sistema
@@ -47,8 +47,8 @@ public:
      *
      * Transiciones posibles:
      * Si se solicito una advertencia, una alarma o el sistema se encuentra entre los pasos
-     * MOTOR_ON_STEP y MOTOR_COOLDOWN_STEP la transición es hacia Motor_control_state.
-     * Si se solicitó un apagado del sistema y no se transiciona hacia Motor_control_state,
+     * MOTOR_ON_STEP y MOTOR_COOLDOWN_STEP la transición es hacia Alarm_state.
+     * Si se solicitó un apagado del sistema y no se transiciona hacia Alarm_state,
      * la transición es hacia Shutdown_state.
      * @param machine máquina de estados.
      * @return Abstract_state* Nuevo estado

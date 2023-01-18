@@ -1,3 +1,13 @@
+/**
+ * @file PC_serial_interface.cpp
+ * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
+ * @brief Implementación de PC_serial_interface.h
+ * @version 0.1
+ * @date 2023-01-18
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
 #include "PC_serial_interface.h"
 
 // PC_serial_interface pc_com(USBTX, USBRX, 115200);

@@ -3,7 +3,7 @@
 #define CHECK_INSTRUCTION_STATE_H
 #include "Control_system.h"
 #include "machine_state_pattern/machine_states/Abstract_state.h"
-#include "machine_state_pattern/machine_states/Motor_control_state.h"
+#include "machine_state_pattern/machine_states/Alarm_state.h"
 
 class Check_instruction_state : public Abstract_state
 {

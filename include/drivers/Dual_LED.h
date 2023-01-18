@@ -1,7 +1,7 @@
 /**
  * @file Dual_LED.h
  * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
- * @brief Controlador de LED RG.
+ * @brief Controlador de LED RG con PWM.
  * @version 0.1
  * @date 2022-11-23
  *

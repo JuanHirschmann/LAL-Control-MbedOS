@@ -1,3 +1,13 @@
+/**
+ * @file Machine.cpp
+ * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
+ * @brief Implementación de Machine.h
+ * @version 0.1
+ * @date 2023-01-18
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
 #include "machine_state_pattern/Machine.h"
 Machine::Machine()
 {

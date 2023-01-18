@@ -7,7 +7,7 @@ const int MAX_COOLERS = 2;
 const int SAMPLE_PERIOD = 1; //[s]
 /**
  * @brief Clase heredera de System_observer, creada para observar
- *  el estado de las instrucciones.
+ *  la velocidad de los ventiladores.
  *
  */
 class Cooler_observer : public System_observer
@@ -25,6 +25,11 @@ public:
      * @param subject sujeto a observar.
      */
     void update(Control_system *subject);
+    /**
+     * @brief Actualiza la medición de velocidad.
+     *
+     * @param subject sujeto a observar.
+     */
     void update_speed(Control_system *subject);
 
 private:

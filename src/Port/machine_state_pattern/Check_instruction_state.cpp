@@ -1,3 +1,13 @@
+/**
+ * @file Check_instruction_state.cpp
+ * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
+ * @brief Implementación de Check_instruction_state.h
+ * @version 0.1
+ * @date 2023-01-18
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
 #include "machine_state_pattern/machine_states/Check_instruction_state.h"
 #include "PC_serial_interface.h"
 PC_serial_interface pc_com(USBTX, USBRX, 9600);

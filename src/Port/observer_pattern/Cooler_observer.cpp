@@ -1,3 +1,13 @@
+/**
+ * @file Cooler_observer.cpp
+ * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
+ * @brief Implementación de Cooler_observer.h
+ * @version 0.1
+ * @date 2023-01-18
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
 #include "observer_pattern/observers/Cooler_observer.h"
 #include <stdlib.h>
 

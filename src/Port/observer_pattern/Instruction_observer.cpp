@@ -1,7 +1,7 @@
 /**
  * @file Instruction_observer.cpp
  * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
- * @brief
+ * @brief Implementación de Instruction_observer.h
  * @version 0.1
  * @date 2022-11-16
  *

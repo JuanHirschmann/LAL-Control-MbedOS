@@ -1,3 +1,13 @@
+/**
+ * @file Idle_state.cpp
+ * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
+ * @brief Implementación de Idle_state.h
+ * @version 0.1
+ * @date 2023-01-18
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
 #include "machine_state_pattern/machine_states/Idle_state.h"
 void Idle_state::enter(Control_system *machine)
 {
@@ -21,7 +31,7 @@ Abstract_state *Idle_state::transition(Control_system *machine)
     { /*Estado de warning*/
 
         this->exit(machine);
-        return new Motor_control_state();
+        return new Alarm_state();
     }
     else if (machine->context.next_step_request)
     {

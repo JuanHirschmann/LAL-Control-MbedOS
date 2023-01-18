@@ -1,3 +1,13 @@
+/**
+ * @file hd44780_instruction_set.h
+ * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
+ * @brief Set de instrucciones del LCD HD44780
+ * @version 0.1
+ * @date 2023-01-17
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #ifndef _HD44780_INSTRUCTION_SET_H
 #define _HD44780_INSTRUCTION_SET_H
 #include <mbed.h>

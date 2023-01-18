@@ -15,11 +15,46 @@
 class Cooler
 {
 public:
+    /**
+     * @brief Construye un nuevo objecto Cooler
+     *
+     * @param power_pin Pin de control de velocidad, con PWM
+     * @param speed_measurement_pin Pin de medición de velocidad, salida digital.
+     */
     Cooler(PinName power_pin, PinName speed_measurement_pin);
+    /**
+     * @brief Enciende el ventilador. Si el ciclo de trabajo deseado es menor que
+     * FAN_MINIMUM_DUTY_CYCLE apaga el ventilador. Si el ciclo de trabajo es mayor al
+     * umbral mínimo pero menor a FAN_AUTONOMOUS_DUTY_CYCLE enciende el ventilador durante
+     * DEFAULT_DELAY milisegundos a máximo ciclo de trabajo (bloqueante) y luego reduce la velocidad.
+     *
+     * @param duty_cycle Ciclo de trabajo
+     */
     void turn_on(float duty_cycle = 1.0);
+    /**
+     * @brief Apaga el ventilador
+     *
+     */
     void turn_off();
+    /**
+     * @brief Devuelve la cantidad de rotaciones desde el último llamado de la función
+     *
+     * @return Rotaciones desde último llamado.
+     */
     size_t get_rotation();
+    /**
+     * @brief Incrementa el contador de mediciones.
+     *
+     */
     void count_rotation();
+    /**
+     * @brief Estado del ventilador. No utiliza la medición de velocidad si no que,
+     * si se llamó a la función turn_on(), el estado del ventilador será true independientemente de
+     * si este está rotando o no.
+     *
+     * @return true El ventilador esta encendido.
+     * @return false El ventilador está apagado.
+     */
     bool is_on()
     {
         return _is_on;

@@ -1,8 +1,18 @@
-#include "machine_state_pattern/machine_states/Motor_control_state.h"
-void Motor_control_state::enter(Control_system *machine)
+/**
+ * @file Alarm.cpp
+ * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
+ * @brief Implementación de Alarm_state.h
+ * @version 0.1
+ * @date 2023-01-18
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
+#include "machine_state_pattern/machine_states/Alarm_state.h"
+void Alarm_state::enter(Control_system *machine)
 {
 }
-void Motor_control_state::update(Control_system *machine)
+void Alarm_state::update(Control_system *machine)
 {
     machine->context.override_next_step = true;
     if (!machine->context.alarm_request)
@@ -25,11 +35,11 @@ void Motor_control_state::update(Control_system *machine)
     machine->notify_observers();
     machine->display.update();
 }
-void Motor_control_state::exit(Control_system *machine)
+void Alarm_state::exit(Control_system *machine)
 {
     machine->buzzer.turn_off();
 }
-Abstract_state *Motor_control_state::transition(Control_system *machine)
+Abstract_state *Alarm_state::transition(Control_system *machine)
 {
 
     if (!machine->context.alarm_request)

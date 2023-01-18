@@ -1,7 +1,17 @@
+/**
+ * @file Temperature_observer.cpp
+ * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
+ * @brief Implementación de Temperature_observer.h
+ * @version 0.1
+ * @date 2023-01-18
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
 #include "observer_pattern/observers/Temperature_observer.h"
 void Temperature_observer::update(Control_system *subject)
 {
-    if (subject->is_poll_sensors_requested()) 
+    if (subject->is_poll_sensors_requested())
     {
 
         float temperature = subject->measure_temperature();

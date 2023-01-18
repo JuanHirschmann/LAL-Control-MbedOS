@@ -4,7 +4,7 @@
 #include <mbed.h>
 #include "types.h"
 /**
- * @brief Clase para el manejo de un indicador LED RG.
+ * @brief Clase para el manejo de un indicador LED RG sin PWM.
  *
  */
 class Digital_dual_LED

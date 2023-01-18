@@ -1,3 +1,13 @@
+/**
+ * @file Shutdown_state.cpp
+ * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
+ * @brief Implementación de Shutdown_state.h
+ * @version 0.1
+ * @date 2023-01-18
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
 #include "machine_state_pattern/machine_states/Shutdown_state.h"
 void Shutdown_state::update(Control_system *machine)
 {

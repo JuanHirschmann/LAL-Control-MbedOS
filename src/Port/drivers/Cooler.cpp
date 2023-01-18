@@ -1,3 +1,13 @@
+/**
+ * @file Cooler.cpp
+ * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
+ * @brief Implementación de Cooler.h
+ * @version 0.1
+ * @date 2023-01-18
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
 #include "drivers/Cooler.h"
 #include <functional>
 
