@@ -21,24 +21,18 @@ Collaboration diagram for Control\+\_\+system\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_control__system_a660ab5ac86df7cdefbbfe0942b00e13b}\label{class_control__system_a660ab5ac86df7cdefbbfe0942b00e13b}} 
-void {\bfseries init} ()
-\item 
-\mbox{\Hypertarget{class_control__system_ab4bd82b7c907b415fdc102ed1fa89c7c}\label{class_control__system_ab4bd82b7c907b415fdc102ed1fa89c7c}} 
-void {\bfseries handle\+\_\+alarm} ()
-\item 
-\mbox{\Hypertarget{class_control__system_a4bfd2d8427f35a8cd4e4e10573aa5604}\label{class_control__system_a4bfd2d8427f35a8cd4e4e10573aa5604}} 
-void {\bfseries update} ()
-\item 
-\mbox{\Hypertarget{class_control__system_a1a879a0b587423d7e485de333f35a566}\label{class_control__system_a1a879a0b587423d7e485de333f35a566}} 
-void {\bfseries wake} ()
-\item 
-\mbox{\Hypertarget{class_control__system_acdd97ce514b54c273ebfb56a1a29e020}\label{class_control__system_acdd97ce514b54c273ebfb56a1a29e020}} 
-bool {\bfseries is\+\_\+off} ()
-\item 
-\mbox{\Hypertarget{class_control__system_aeb1d67b1383d77bd11276f0eef97228b}\label{class_control__system_aeb1d67b1383d77bd11276f0eef97228b}} 
-void {\bfseries reset\+\_\+context} ()
-\item 
+void \mbox{\hyperlink{class_control__system_a660ab5ac86df7cdefbbfe0942b00e13b}{init}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el sistema con el estado de apagado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_ab4bd82b7c907b415fdc102ed1fa89c7c}{handle\+\_\+alarm}} ()
+\begin{DoxyCompactList}\small\item\em Según la variable context.\+current\+\_\+alarm resuelve el comportamiento de la alarma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_a4bfd2d8427f35a8cd4e4e10573aa5604}{update}} ()
+\begin{DoxyCompactList}\small\item\em Realiza la transición de estados y actualiza el estado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_a1a879a0b587423d7e485de333f35a566}{wake}} ()
+\begin{DoxyCompactList}\small\item\em Setea la solicitud de apagado a falso. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_control__system_acdd97ce514b54c273ebfb56a1a29e020}{is\+\_\+off}} ()
+\begin{DoxyCompactList}\small\item\em Informa si el sistema está apagado o no. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_aeb1d67b1383d77bd11276f0eef97228b}{reset\+\_\+context}} ()
+\begin{DoxyCompactList}\small\item\em Resetea las variables de contexto. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_control__system_aa73b3bd238acbe3d42df70ae749f3dea}\label{class_control__system_aa73b3bd238acbe3d42df70ae749f3dea}} 
 size\+\_\+t {\bfseries get\+\_\+cooler\+\_\+rotation} (int cooler)
 \item 
@@ -48,67 +42,46 @@ size\+\_\+t {\bfseries get\+\_\+cooler\+\_\+rotation} (int cooler)
 \mbox{\Hypertarget{class_control__system_adf7da2b4bea9a785ac3e0280b03309de}\label{class_control__system_adf7da2b4bea9a785ac3e0280b03309de}} 
 bool {\bfseries is\+\_\+cooler\+\_\+on} (int cooler)
 \item 
-\mbox{\Hypertarget{class_control__system_a914b54af513cf38a2600b3c710ab5c87}\label{class_control__system_a914b54af513cf38a2600b3c710ab5c87}} 
-void {\bfseries display\+\_\+cooler\+\_\+speed} (float rear\+\_\+cooler\+\_\+speed, float front\+\_\+cooler\+\_\+speed)
-\item 
-\mbox{\Hypertarget{class_control__system_a46298a6a5f4ba43857baa6ae23d00dbc}\label{class_control__system_a46298a6a5f4ba43857baa6ae23d00dbc}} 
-void {\bfseries set\+\_\+cooler\+\_\+speed} (float rear\+\_\+cooler\+\_\+speed, float front\+\_\+cooler\+\_\+speed)
-\item 
-\mbox{\Hypertarget{class_control__system_ac1cd148e897c5ce2ef405dd45ddf964f}\label{class_control__system_ac1cd148e897c5ce2ef405dd45ddf964f}} 
-void {\bfseries show\+\_\+current\+\_\+step} ()
-\item 
-\mbox{\Hypertarget{class_control__system_a62a2c6a8167ade6a6ae054393b91d381}\label{class_control__system_a62a2c6a8167ade6a6ae054393b91d381}} 
-void {\bfseries show\+\_\+error\+\_\+msg} ()
-\item 
-\mbox{\Hypertarget{class_control__system_aa98b33b5c57a47fb55e211516e49088b}\label{class_control__system_aa98b33b5c57a47fb55e211516e49088b}} 
-void {\bfseries next\+\_\+step} ()
-\item 
-\mbox{\Hypertarget{class_control__system_a524f547a1df837389626c36b1ba9b0c4}\label{class_control__system_a524f547a1df837389626c36b1ba9b0c4}} 
-void {\bfseries print} (const char $\ast$string\+\_\+out)
-\item 
-\mbox{\Hypertarget{class_control__system_aad36c88c9e5589336213848de7837091}\label{class_control__system_aad36c88c9e5589336213848de7837091}} 
-void {\bfseries init\+\_\+display} ()
-\item 
+void \mbox{\hyperlink{class_control__system_a914b54af513cf38a2600b3c710ab5c87}{display\+\_\+cooler\+\_\+speed}} (float rear\+\_\+cooler\+\_\+speed, float front\+\_\+cooler\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Fija velocidades en el display de los ventiladores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_a46298a6a5f4ba43857baa6ae23d00dbc}{set\+\_\+cooler\+\_\+speed}} (float rear\+\_\+cooler\+\_\+speed, float front\+\_\+cooler\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Fija el valor de velocidad del ventilador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_ac1cd148e897c5ce2ef405dd45ddf964f}{show\+\_\+current\+\_\+step}} ()
+\begin{DoxyCompactList}\small\item\em Muestra en pantalla el paso del procedimientoa actual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_a62a2c6a8167ade6a6ae054393b91d381}{show\+\_\+error\+\_\+msg}} ()
+\begin{DoxyCompactList}\small\item\em Muestra el mensaje de error por pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_aa98b33b5c57a47fb55e211516e49088b}{next\+\_\+step}} ()
+\begin{DoxyCompactList}\small\item\em Enciende el buzzer por 100ms (bloqueante) y, si no esta anulado el próximo paso, avanza hacia la siguiente instrucción. Si no hay siguiente instrucción se apagará el sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_aad36c88c9e5589336213848de7837091}{init\+\_\+display}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el display lcd del sistema. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_control__system_ab7912068a11d44b07eef3b3f56ce0598}{notify\+\_\+observers}} () override
-\begin{DoxyCompactList}\small\item\em Método virtual puro para que las clases herederas implementen la actualización de observadores. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_control__system_a4c3ebc85aafb8c9b8c0d7554bc7d6058}\label{class_control__system_a4c3ebc85aafb8c9b8c0d7554bc7d6058}} 
-float {\bfseries measure\+\_\+temperature} ()
-\item 
-\mbox{\Hypertarget{class_control__system_ac57cf749db659ed80fa4a37b1f27c284}\label{class_control__system_ac57cf749db659ed80fa4a37b1f27c284}} 
-int {\bfseries measure\+\_\+moisture} ()
-\item 
-\mbox{\Hypertarget{class_control__system_a6289863f552cb60bd99746ff36cafb2a}\label{class_control__system_a6289863f552cb60bd99746ff36cafb2a}} 
-void {\bfseries set\+\_\+next\+\_\+step\+\_\+flag} (bool new\+\_\+state)
-\item 
-\mbox{\Hypertarget{class_control__system_a8b637df1ff92042b105b0ff0b607ffd3}\label{class_control__system_a8b637df1ff92042b105b0ff0b607ffd3}} 
-bool {\bfseries is\+\_\+next\+\_\+step\+\_\+requested} ()
-\item 
-\mbox{\Hypertarget{class_control__system_a251677ee7c18269d85579da7a000ceab}\label{class_control__system_a251677ee7c18269d85579da7a000ceab}} 
-void {\bfseries set\+\_\+poll\+\_\+sensors\+\_\+flag} (bool new\+\_\+state)
-\item 
-\mbox{\Hypertarget{class_control__system_af7e1048dcc938de30589f961d0b14ee1}\label{class_control__system_af7e1048dcc938de30589f961d0b14ee1}} 
-bool {\bfseries is\+\_\+poll\+\_\+sensors\+\_\+requested} ()
-\item 
-\mbox{\Hypertarget{class_control__system_a9eee92fefef8d49728d2a65020e97869}\label{class_control__system_a9eee92fefef8d49728d2a65020e97869}} 
-void {\bfseries set\+\_\+alarm\+\_\+flag} (bool new\+\_\+state)
-\item 
-\mbox{\Hypertarget{class_control__system_a4bbd333dc3ac0d042222ea93a1075b76}\label{class_control__system_a4bbd333dc3ac0d042222ea93a1075b76}} 
-bool {\bfseries is\+\_\+alarm\+\_\+requested} ()
-\item 
-\mbox{\Hypertarget{class_control__system_af5985ea3ad848a1631ff6c12ef4b3941}\label{class_control__system_af5985ea3ad848a1631ff6c12ef4b3941}} 
-void {\bfseries request\+\_\+alarm} (\mbox{\hyperlink{types_8h_a71ef44a7b1de581d625d82b37bed6c80}{ALARM\+\_\+\+TYPES}} type\+\_\+of\+\_\+alarm)
-\item 
-\mbox{\Hypertarget{class_control__system_a331f6ac8aca48fcc0b7cd23a3510911c}\label{class_control__system_a331f6ac8aca48fcc0b7cd23a3510911c}} 
-void {\bfseries request\+\_\+warning} (\mbox{\hyperlink{types_8h_a71ef44a7b1de581d625d82b37bed6c80}{ALARM\+\_\+\+TYPES}} type\+\_\+of\+\_\+warning)
-\item 
-\mbox{\Hypertarget{class_control__system_a2d34912d34a642c819356bf566612686}\label{class_control__system_a2d34912d34a642c819356bf566612686}} 
-void {\bfseries set\+\_\+warning\+\_\+flag} (bool new\+\_\+state)
-\item 
-\mbox{\Hypertarget{class_control__system_acfcc891b90593fc70af6514da2ee7ba8}\label{class_control__system_acfcc891b90593fc70af6514da2ee7ba8}} 
-bool {\bfseries is\+\_\+warning\+\_\+requested} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Itera sobre todos los observadores, llamando a su método de actualización. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_control__system_a4c3ebc85aafb8c9b8c0d7554bc7d6058}{measure\+\_\+temperature}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la temperatura del objeto temp\+\_\+sensor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_control__system_ac57cf749db659ed80fa4a37b1f27c284}{measure\+\_\+moisture}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la humedad del objeto mois\+\_\+sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_a6289863f552cb60bd99746ff36cafb2a}{set\+\_\+next\+\_\+step\+\_\+flag}} (bool new\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Solicita avanzar hacia la siguiente instrucción. Si no hay alguna alarma activa la solicitud se hará efectiva. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_control__system_a8b637df1ff92042b105b0ff0b607ffd3}{is\+\_\+next\+\_\+step\+\_\+requested}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el estado de solicitud de próxima instrucción. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_a251677ee7c18269d85579da7a000ceab}{set\+\_\+poll\+\_\+sensors\+\_\+flag}} (bool new\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Fija el valor del flag de muestro de sensores. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_control__system_af7e1048dcc938de30589f961d0b14ee1}{is\+\_\+poll\+\_\+sensors\+\_\+requested}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el estado del indicador de muestreo de sensores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_a9eee92fefef8d49728d2a65020e97869}{set\+\_\+alarm\+\_\+flag}} (bool new\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Fija el valor del indicador de alarma. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_control__system_a4bbd333dc3ac0d042222ea93a1075b76}{is\+\_\+alarm\+\_\+requested}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el estado del indicador de alarma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_a2f7771547e0b22acc6da22340fed6f50}{request\+\_\+alarm}} (\mbox{\hyperlink{types_8h_a66f3272b5e86a5f8ecc7ad6a31732aee}{Alarm\+\_\+types}} type\+\_\+of\+\_\+alarm)
+\begin{DoxyCompactList}\small\item\em Solicita una alarma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_a3385a8c58aec4675347b495c4a8b63f1}{request\+\_\+warning}} (\mbox{\hyperlink{types_8h_a66f3272b5e86a5f8ecc7ad6a31732aee}{Alarm\+\_\+types}} type\+\_\+of\+\_\+warning)
+\begin{DoxyCompactList}\small\item\em Solicita una advertencia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control__system_a2d34912d34a642c819356bf566612686}{set\+\_\+warning\+\_\+flag}} (bool new\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Fija el valor del indicador de advertencia. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_control__system_acfcc891b90593fc70af6514da2ee7ba8}{is\+\_\+warning\+\_\+requested}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el estado de solicitud de advertencia. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_control__system_ab3a3e36bda029f2a5d0c4ffdf8ff984c}{transition\+\_\+state}} ()
-\begin{DoxyCompactList}\small\item\em Método virtual para llamar al método de transición del estado actual. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Realiza la transición de estados en caso de ser necesario. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_control__system_a5a191316124e48f726b5c378c3f660c7}\label{class_control__system_a5a191316124e48f726b5c378c3f660c7}} 
 bool {\bfseries is\+\_\+next\+\_\+step\+\_\+overriden} ()
 \end{DoxyCompactItemize}
@@ -118,8 +91,8 @@ bool {\bfseries is\+\_\+next\+\_\+step\+\_\+overriden} ()
 \mbox{\Hypertarget{class_control__system_af8d0c6f3d381186dd501a568404ad7c7}\label{class_control__system_af8d0c6f3d381186dd501a568404ad7c7}} 
 class {\bfseries Idle\+\_\+state}
 \item 
-\mbox{\Hypertarget{class_control__system_a300efca785e0f4d2e820e0a0c23b65b2}\label{class_control__system_a300efca785e0f4d2e820e0a0c23b65b2}} 
-class {\bfseries Motor\+\_\+control\+\_\+state}
+\mbox{\Hypertarget{class_control__system_a15fd229445269a767b03e54825acb11e}\label{class_control__system_a15fd229445269a767b03e54825acb11e}} 
+class {\bfseries Alarm\+\_\+state}
 \item 
 \mbox{\Hypertarget{class_control__system_a61aa9c32dee69521c25a75ef9758d469}\label{class_control__system_a61aa9c32dee69521c25a75ef9758d469}} 
 class {\bfseries Shutdown\+\_\+state}
@@ -131,6 +104,294 @@ class {\bfseries Check\+\_\+instruction\+\_\+state}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_control__system_a914b54af513cf38a2600b3c710ab5c87}\label{class_control__system_a914b54af513cf38a2600b3c710ab5c87}} 
+\index{Control\_system@{Control\_system}!display\_cooler\_speed@{display\_cooler\_speed}}
+\index{display\_cooler\_speed@{display\_cooler\_speed}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{display\_cooler\_speed()}{display\_cooler\_speed()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::display\+\_\+cooler\+\_\+speed (\begin{DoxyParamCaption}\item[{float}]{rear\+\_\+cooler\+\_\+speed,  }\item[{float}]{front\+\_\+cooler\+\_\+speed }\end{DoxyParamCaption})}
+
+
+
+Fija velocidades en el display de los ventiladores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rear\+\_\+cooler\+\_\+speed} & velocidad del ventilador trasero \mbox{[}RPS\mbox{]} \\
+\hline
+{\em front\+\_\+cooler\+\_\+speed} & velocidad del ventilador frontal \mbox{[}RPS\mbox{]} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a914b54af513cf38a2600b3c710ab5c87_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a914b54af513cf38a2600b3c710ab5c87_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_ab4bd82b7c907b415fdc102ed1fa89c7c}\label{class_control__system_ab4bd82b7c907b415fdc102ed1fa89c7c}} 
+\index{Control\_system@{Control\_system}!handle\_alarm@{handle\_alarm}}
+\index{handle\_alarm@{handle\_alarm}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{handle\_alarm()}{handle\_alarm()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::handle\+\_\+alarm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Según la variable context.\+current\+\_\+alarm resuelve el comportamiento de la alarma. 
+
+
+\begin{DoxyItemize}
+\item OVERTEMP\+\_\+\+ALARM\+: Enciende los ventiladores a tope, la luz de estado del motor en rojo y el buzzer. Apaga el motor.
+\item HUMIDITY\+\_\+\+ALARM\+: apaga motor, enciende luz de estado del motor en rojo y apaga ventiladores.
+\item HALTED\+\_\+\+FAN\+\_\+\+ALARM\+: apaga motor, enciende luz de estado del motor y los ventiladores en rojo y apaga ventiladores.
+\item NO\+\_\+\+TEMP\+\_\+\+SENSOR\+\_\+\+ALARM\+: apaga el motor, enciende luz de estado del motor en rojo.
+\item OVERTEMP\+\_\+\+WARNING\+: Fija la velocidad de los ventiladores y enciende la luz de estado del motor en amarillo.
+\item SLOW\+\_\+\+FAN\+\_\+\+WARNING\+: No implementado
+\item NO\+\_\+\+ALARM\+: No realiza ninguna acción 
+\end{DoxyItemize}Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_ab4bd82b7c907b415fdc102ed1fa89c7c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_control__system_ab4bd82b7c907b415fdc102ed1fa89c7c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a660ab5ac86df7cdefbbfe0942b00e13b}\label{class_control__system_a660ab5ac86df7cdefbbfe0942b00e13b}} 
+\index{Control\_system@{Control\_system}!init@{init}}
+\index{init@{init}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa el sistema con el estado de apagado. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a660ab5ac86df7cdefbbfe0942b00e13b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_aad36c88c9e5589336213848de7837091}\label{class_control__system_aad36c88c9e5589336213848de7837091}} 
+\index{Control\_system@{Control\_system}!init\_display@{init\_display}}
+\index{init\_display@{init\_display}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{init\_display()}{init\_display()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::init\+\_\+display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa el display lcd del sistema. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_aad36c88c9e5589336213848de7837091_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_aad36c88c9e5589336213848de7837091_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a4bbd333dc3ac0d042222ea93a1075b76}\label{class_control__system_a4bbd333dc3ac0d042222ea93a1075b76}} 
+\index{Control\_system@{Control\_system}!is\_alarm\_requested@{is\_alarm\_requested}}
+\index{is\_alarm\_requested@{is\_alarm\_requested}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{is\_alarm\_requested()}{is\_alarm\_requested()}}
+{\footnotesize\ttfamily bool Control\+\_\+system\+::is\+\_\+alarm\+\_\+requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el estado del indicador de alarma. 
+
+\begin{DoxyReturn}{Returns}
+true Se solicitó una alarma. 
+
+false No se solicitó una alarma. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_control__system_a4bbd333dc3ac0d042222ea93a1075b76_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a8b637df1ff92042b105b0ff0b607ffd3}\label{class_control__system_a8b637df1ff92042b105b0ff0b607ffd3}} 
+\index{Control\_system@{Control\_system}!is\_next\_step\_requested@{is\_next\_step\_requested}}
+\index{is\_next\_step\_requested@{is\_next\_step\_requested}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{is\_next\_step\_requested()}{is\_next\_step\_requested()}}
+{\footnotesize\ttfamily bool Control\+\_\+system\+::is\+\_\+next\+\_\+step\+\_\+requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el estado de solicitud de próxima instrucción. 
+
+\begin{DoxyReturn}{Returns}
+true Existe una solicitud de siguiente instrucción activa. 
+
+false No existe una solicitud de siguiente instrucció activa. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a8b637df1ff92042b105b0ff0b607ffd3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_acdd97ce514b54c273ebfb56a1a29e020}\label{class_control__system_acdd97ce514b54c273ebfb56a1a29e020}} 
+\index{Control\_system@{Control\_system}!is\_off@{is\_off}}
+\index{is\_off@{is\_off}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{is\_off()}{is\_off()}}
+{\footnotesize\ttfamily bool Control\+\_\+system\+::is\+\_\+off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Informa si el sistema está apagado o no. 
+
+\begin{DoxyReturn}{Returns}
+true El sistema está apagado. 
+
+false El sistema está encendido 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control__system_af7e1048dcc938de30589f961d0b14ee1}\label{class_control__system_af7e1048dcc938de30589f961d0b14ee1}} 
+\index{Control\_system@{Control\_system}!is\_poll\_sensors\_requested@{is\_poll\_sensors\_requested}}
+\index{is\_poll\_sensors\_requested@{is\_poll\_sensors\_requested}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{is\_poll\_sensors\_requested()}{is\_poll\_sensors\_requested()}}
+{\footnotesize\ttfamily bool Control\+\_\+system\+::is\+\_\+poll\+\_\+sensors\+\_\+requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el estado del indicador de muestreo de sensores. 
+
+\begin{DoxyReturn}{Returns}
+true Se solicitó un muestreo de sensores. 
+
+false No se solicitó un muestreo de sensores. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_af7e1048dcc938de30589f961d0b14ee1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_acfcc891b90593fc70af6514da2ee7ba8}\label{class_control__system_acfcc891b90593fc70af6514da2ee7ba8}} 
+\index{Control\_system@{Control\_system}!is\_warning\_requested@{is\_warning\_requested}}
+\index{is\_warning\_requested@{is\_warning\_requested}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{is\_warning\_requested()}{is\_warning\_requested()}}
+{\footnotesize\ttfamily bool Control\+\_\+system\+::is\+\_\+warning\+\_\+requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el estado de solicitud de advertencia. 
+
+\begin{DoxyReturn}{Returns}
+true Existe una solicitud activa. 
+
+false No existe una solicitud activa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control__system_ac57cf749db659ed80fa4a37b1f27c284}\label{class_control__system_ac57cf749db659ed80fa4a37b1f27c284}} 
+\index{Control\_system@{Control\_system}!measure\_moisture@{measure\_moisture}}
+\index{measure\_moisture@{measure\_moisture}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{measure\_moisture()}{measure\_moisture()}}
+{\footnotesize\ttfamily int Control\+\_\+system\+::measure\+\_\+moisture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene la humedad del objeto mois\+\_\+sensor. 
+
+\begin{DoxyReturn}{Returns}
+int Valor analógico de la medición. (0 indica humedad, 255 sequedad máxima) 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_ac57cf749db659ed80fa4a37b1f27c284_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_control__system_ac57cf749db659ed80fa4a37b1f27c284_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a4c3ebc85aafb8c9b8c0d7554bc7d6058}\label{class_control__system_a4c3ebc85aafb8c9b8c0d7554bc7d6058}} 
+\index{Control\_system@{Control\_system}!measure\_temperature@{measure\_temperature}}
+\index{measure\_temperature@{measure\_temperature}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{measure\_temperature()}{measure\_temperature()}}
+{\footnotesize\ttfamily float Control\+\_\+system\+::measure\+\_\+temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene la temperatura del objeto temp\+\_\+sensor. 
+
+\begin{DoxyReturn}{Returns}
+float Temperatura en Celsius de la medición un error se indica con el valor -\/127°C 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_control__system_a4c3ebc85aafb8c9b8c0d7554bc7d6058_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a4c3ebc85aafb8c9b8c0d7554bc7d6058_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_aa98b33b5c57a47fb55e211516e49088b}\label{class_control__system_aa98b33b5c57a47fb55e211516e49088b}} 
+\index{Control\_system@{Control\_system}!next\_step@{next\_step}}
+\index{next\_step@{next\_step}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{next\_step()}{next\_step()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::next\+\_\+step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enciende el buzzer por 100ms (bloqueante) y, si no esta anulado el próximo paso, avanza hacia la siguiente instrucción. Si no hay siguiente instrucción se apagará el sistema. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_aa98b33b5c57a47fb55e211516e49088b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_aa98b33b5c57a47fb55e211516e49088b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_control__system_ab7912068a11d44b07eef3b3f56ce0598}\label{class_control__system_ab7912068a11d44b07eef3b3f56ce0598}} 
 \index{Control\_system@{Control\_system}!notify\_observers@{notify\_observers}}
 \index{notify\_observers@{notify\_observers}!Control\_system@{Control\_system}}
@@ -139,17 +400,258 @@ class {\bfseries Check\+\_\+instruction\+\_\+state}
 
 
 
-Método virtual puro para que las clases herederas implementen la actualización de observadores. 
+Itera sobre todos los observadores, llamando a su método de actualización. 
 
 
 
 Implements \mbox{\hyperlink{class_subject__interface_a0ccc901c01cb515babedaaeec8c4cbe3}{Subject\+\_\+interface}}.
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_ab7912068a11d44b07eef3b3f56ce0598_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_control__system_ab7912068a11d44b07eef3b3f56ce0598_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a2f7771547e0b22acc6da22340fed6f50}\label{class_control__system_a2f7771547e0b22acc6da22340fed6f50}} 
+\index{Control\_system@{Control\_system}!request\_alarm@{request\_alarm}}
+\index{request\_alarm@{request\_alarm}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{request\_alarm()}{request\_alarm()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::request\+\_\+alarm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a66f3272b5e86a5f8ecc7ad6a31732aee}{Alarm\+\_\+types}}}]{type\+\_\+of\+\_\+alarm }\end{DoxyParamCaption})}
+
+
+
+Solicita una alarma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+\_\+of\+\_\+alarm} & Tipo de alarma a solicitar. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a2f7771547e0b22acc6da22340fed6f50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a3385a8c58aec4675347b495c4a8b63f1}\label{class_control__system_a3385a8c58aec4675347b495c4a8b63f1}} 
+\index{Control\_system@{Control\_system}!request\_warning@{request\_warning}}
+\index{request\_warning@{request\_warning}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{request\_warning()}{request\_warning()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::request\+\_\+warning (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a66f3272b5e86a5f8ecc7ad6a31732aee}{Alarm\+\_\+types}}}]{type\+\_\+of\+\_\+warning }\end{DoxyParamCaption})}
+
+
+
+Solicita una advertencia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+\_\+of\+\_\+alarm} & Tipo de advertencia a solicitar. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a3385a8c58aec4675347b495c4a8b63f1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_aeb1d67b1383d77bd11276f0eef97228b}\label{class_control__system_aeb1d67b1383d77bd11276f0eef97228b}} 
+\index{Control\_system@{Control\_system}!reset\_context@{reset\_context}}
+\index{reset\_context@{reset\_context}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{reset\_context()}{reset\_context()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::reset\+\_\+context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resetea las variables de contexto. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_aeb1d67b1383d77bd11276f0eef97228b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_aeb1d67b1383d77bd11276f0eef97228b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a9eee92fefef8d49728d2a65020e97869}\label{class_control__system_a9eee92fefef8d49728d2a65020e97869}} 
+\index{Control\_system@{Control\_system}!set\_alarm\_flag@{set\_alarm\_flag}}
+\index{set\_alarm\_flag@{set\_alarm\_flag}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{set\_alarm\_flag()}{set\_alarm\_flag()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::set\+\_\+alarm\+\_\+flag (\begin{DoxyParamCaption}\item[{bool}]{new\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Fija el valor del indicador de alarma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+state} & Nuevo estado para el indicador de alarma. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_control__system_a46298a6a5f4ba43857baa6ae23d00dbc}\label{class_control__system_a46298a6a5f4ba43857baa6ae23d00dbc}} 
+\index{Control\_system@{Control\_system}!set\_cooler\_speed@{set\_cooler\_speed}}
+\index{set\_cooler\_speed@{set\_cooler\_speed}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{set\_cooler\_speed()}{set\_cooler\_speed()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::set\+\_\+cooler\+\_\+speed (\begin{DoxyParamCaption}\item[{float}]{rear\+\_\+cooler\+\_\+speed,  }\item[{float}]{front\+\_\+cooler\+\_\+speed }\end{DoxyParamCaption})}
+
+
+
+Fija el valor de velocidad del ventilador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rear\+\_\+cooler\+\_\+speed} & velocidad ventilador trasero \mbox{[}RPS\mbox{]} \\
+\hline
+{\em front\+\_\+cooler\+\_\+speed} & velocidad ventilador delantero \mbox{[}RPS\mbox{]} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a46298a6a5f4ba43857baa6ae23d00dbc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_control__system_a46298a6a5f4ba43857baa6ae23d00dbc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a6289863f552cb60bd99746ff36cafb2a}\label{class_control__system_a6289863f552cb60bd99746ff36cafb2a}} 
+\index{Control\_system@{Control\_system}!set\_next\_step\_flag@{set\_next\_step\_flag}}
+\index{set\_next\_step\_flag@{set\_next\_step\_flag}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{set\_next\_step\_flag()}{set\_next\_step\_flag()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::set\+\_\+next\+\_\+step\+\_\+flag (\begin{DoxyParamCaption}\item[{bool}]{new\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Solicita avanzar hacia la siguiente instrucción. Si no hay alguna alarma activa la solicitud se hará efectiva. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_control__system_a6289863f552cb60bd99746ff36cafb2a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a251677ee7c18269d85579da7a000ceab}\label{class_control__system_a251677ee7c18269d85579da7a000ceab}} 
+\index{Control\_system@{Control\_system}!set\_poll\_sensors\_flag@{set\_poll\_sensors\_flag}}
+\index{set\_poll\_sensors\_flag@{set\_poll\_sensors\_flag}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{set\_poll\_sensors\_flag()}{set\_poll\_sensors\_flag()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::set\+\_\+poll\+\_\+sensors\+\_\+flag (\begin{DoxyParamCaption}\item[{bool}]{new\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Fija el valor del flag de muestro de sensores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+state} & Nuevo estado para el flag. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a251677ee7c18269d85579da7a000ceab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a2d34912d34a642c819356bf566612686}\label{class_control__system_a2d34912d34a642c819356bf566612686}} 
+\index{Control\_system@{Control\_system}!set\_warning\_flag@{set\_warning\_flag}}
+\index{set\_warning\_flag@{set\_warning\_flag}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{set\_warning\_flag()}{set\_warning\_flag()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::set\+\_\+warning\+\_\+flag (\begin{DoxyParamCaption}\item[{bool}]{new\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Fija el valor del indicador de advertencia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+state} & nuevo valor del indicador de advertencia \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_control__system_a2d34912d34a642c819356bf566612686_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_ac1cd148e897c5ce2ef405dd45ddf964f}\label{class_control__system_ac1cd148e897c5ce2ef405dd45ddf964f}} 
+\index{Control\_system@{Control\_system}!show\_current\_step@{show\_current\_step}}
+\index{show\_current\_step@{show\_current\_step}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{show\_current\_step()}{show\_current\_step()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::show\+\_\+current\+\_\+step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Muestra en pantalla el paso del procedimientoa actual. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{class_control__system_ac1cd148e897c5ce2ef405dd45ddf964f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_ac1cd148e897c5ce2ef405dd45ddf964f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a62a2c6a8167ade6a6ae054393b91d381}\label{class_control__system_a62a2c6a8167ade6a6ae054393b91d381}} 
+\index{Control\_system@{Control\_system}!show\_error\_msg@{show\_error\_msg}}
+\index{show\_error\_msg@{show\_error\_msg}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{show\_error\_msg()}{show\_error\_msg()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::show\+\_\+error\+\_\+msg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Muestra el mensaje de error por pantalla. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{class_control__system_a62a2c6a8167ade6a6ae054393b91d381_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a62a2c6a8167ade6a6ae054393b91d381_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_control__system_ab3a3e36bda029f2a5d0c4ffdf8ff984c}\label{class_control__system_ab3a3e36bda029f2a5d0c4ffdf8ff984c}} 
@@ -160,22 +662,67 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Método virtual para llamar al método de transición del estado actual. 
+Realiza la transición de estados en caso de ser necesario. 
 
 
 
 Implements \mbox{\hyperlink{class_machine_ac24c7b8e9ad18361306a5c4862a695ed}{Machine}}.
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_control__system_ab3a3e36bda029f2a5d0c4ffdf8ff984c_cgraph}
 \end{center}
 \end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_ab3a3e36bda029f2a5d0c4ffdf8ff984c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a4bfd2d8427f35a8cd4e4e10573aa5604}\label{class_control__system_a4bfd2d8427f35a8cd4e4e10573aa5604}} 
+\index{Control\_system@{Control\_system}!update@{update}}
+\index{update@{update}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Realiza la transición de estados y actualiza el estado. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a4bfd2d8427f35a8cd4e4e10573aa5604_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_control__system_a4bfd2d8427f35a8cd4e4e10573aa5604_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_control__system_a1a879a0b587423d7e485de333f35a566}\label{class_control__system_a1a879a0b587423d7e485de333f35a566}} 
+\index{Control\_system@{Control\_system}!wake@{wake}}
+\index{wake@{wake}!Control\_system@{Control\_system}}
+\doxysubsubsection{\texorpdfstring{wake()}{wake()}}
+{\footnotesize\ttfamily void Control\+\_\+system\+::wake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Setea la solicitud de apagado a falso. 
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/Control\+\_\+system.\+h\item 
-C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/Control\+\_\+system.\+cpp\end{DoxyCompactItemize}
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/\mbox{\hyperlink{_control__system_8cpp}{Control\+\_\+system.\+cpp}}\end{DoxyCompactItemize}

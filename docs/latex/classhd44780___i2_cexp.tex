@@ -3,41 +3,289 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classhd44780___i2_cexp_afa96f48e955041cedc9cb4ccc7dc1c6c}\label{classhd44780___i2_cexp_afa96f48e955041cedc9cb4ccc7dc1c6c}} 
-void {\bfseries line\+Wrap} ()
-\item 
-\mbox{\Hypertarget{classhd44780___i2_cexp_ab25b744a9de62f700d5736864640d21b}\label{classhd44780___i2_cexp_ab25b744a9de62f700d5736864640d21b}} 
-void {\bfseries home} ()
-\item 
-\mbox{\Hypertarget{classhd44780___i2_cexp_a9f885fdf91ca52fd05158387ee4bedcd}\label{classhd44780___i2_cexp_a9f885fdf91ca52fd05158387ee4bedcd}} 
-void {\bfseries clear} ()
-\item 
-\mbox{\Hypertarget{classhd44780___i2_cexp_a11909704f0608b3f7cbc4877c40eb15c}\label{classhd44780___i2_cexp_a11909704f0608b3f7cbc4877c40eb15c}} 
-void {\bfseries turn\+\_\+on} ()
-\item 
-\mbox{\Hypertarget{classhd44780___i2_cexp_af598cd1e4f7112c0b315db260d168e92}\label{classhd44780___i2_cexp_af598cd1e4f7112c0b315db260d168e92}} 
-void {\bfseries turn\+\_\+off} ()
-\item 
-\mbox{\Hypertarget{classhd44780___i2_cexp_a54aa9784edbb1d73b80951e2f0c061fa}\label{classhd44780___i2_cexp_a54aa9784edbb1d73b80951e2f0c061fa}} 
-void {\bfseries begin} ()
-\item 
-\mbox{\Hypertarget{classhd44780___i2_cexp_a284e20a480ae9d5ae529fc4676d14dd3}\label{classhd44780___i2_cexp_a284e20a480ae9d5ae529fc4676d14dd3}} 
-void {\bfseries print} (const char $\ast$str)
-\item 
-\mbox{\Hypertarget{classhd44780___i2_cexp_a09bc6db023d62c79fe753d85cc0567ee}\label{classhd44780___i2_cexp_a09bc6db023d62c79fe753d85cc0567ee}} 
-void {\bfseries print} (const int value)
-\item 
-\mbox{\Hypertarget{classhd44780___i2_cexp_a4621bf11f3c62cbde42a253043c8b205}\label{classhd44780___i2_cexp_a4621bf11f3c62cbde42a253043c8b205}} 
-void {\bfseries print} (const float value, int precision)
-\item 
-\mbox{\Hypertarget{classhd44780___i2_cexp_a13020db13c26b6d7ba6ff2ebb42e4053}\label{classhd44780___i2_cexp_a13020db13c26b6d7ba6ff2ebb42e4053}} 
-void {\bfseries cursor} (uint8\+\_\+t char\+PositionX, uint8\+\_\+t char\+PositionY)
-\item 
+void \mbox{\hyperlink{classhd44780___i2_cexp_afa96f48e955041cedc9cb4ccc7dc1c6c}{line\+Wrap}} ()
+\begin{DoxyCompactList}\small\item\em Habilita la envoltura de líneas automática. Cualquier oración que sea demasiado larga como para mostrarse en una única línea será recortada y continuada en la fila directamente inferior. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhd44780___i2_cexp_ab25b744a9de62f700d5736864640d21b}{home}} ()
+\begin{DoxyCompactList}\small\item\em Lleva el cursor al origen de coordenadas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhd44780___i2_cexp_a9f885fdf91ca52fd05158387ee4bedcd}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Borra el texto de la pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhd44780___i2_cexp_a11909704f0608b3f7cbc4877c40eb15c}{turn\+\_\+on}} ()
+\begin{DoxyCompactList}\small\item\em Activa la retroiluminación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhd44780___i2_cexp_af598cd1e4f7112c0b315db260d168e92}{turn\+\_\+off}} ()
+\begin{DoxyCompactList}\small\item\em Desactiva la retroiluminación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhd44780___i2_cexp_a54aa9784edbb1d73b80951e2f0c061fa}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Ejecuta la secuencia de inicialización del display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhd44780___i2_cexp_a284e20a480ae9d5ae529fc4676d14dd3}{print}} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Imprime una cadena de texto en la posición actual del cursor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhd44780___i2_cexp_a09bc6db023d62c79fe753d85cc0567ee}{print}} (const int value)
+\begin{DoxyCompactList}\small\item\em Imprime un número entero en la posición actual del cursor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhd44780___i2_cexp_a4621bf11f3c62cbde42a253043c8b205}{print}} (const float value, int precision)
+\begin{DoxyCompactList}\small\item\em Imprime un número flotante en la posición actual del cursor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhd44780___i2_cexp_a13020db13c26b6d7ba6ff2ebb42e4053}{cursor}} (uint8\+\_\+t char\+PositionX, uint8\+\_\+t char\+PositionY)
+\begin{DoxyCompactList}\small\item\em Mueve el cursor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhd44780___i2_cexp_ad24e117db66cd2be999a02b698996c14}{hd44780\+\_\+\+I2\+Cexp}} (Pin\+Name sda, Pin\+Name scl)
+\begin{DoxyCompactList}\small\item\em Construye un nuevo objecto hd44780 I2\+Cexp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classhd44780___i2_cexp_ad24e117db66cd2be999a02b698996c14}\label{classhd44780___i2_cexp_ad24e117db66cd2be999a02b698996c14}} 
-{\bfseries hd44780\+\_\+\+I2\+Cexp} (Pin\+Name sda, Pin\+Name scl)
-\end{DoxyCompactItemize}
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\doxysubsubsection{\texorpdfstring{hd44780\_I2Cexp()}{hd44780\_I2Cexp()}}
+{\footnotesize\ttfamily hd44780\+\_\+\+I2\+Cexp\+::hd44780\+\_\+\+I2\+Cexp (\begin{DoxyParamCaption}\item[{Pin\+Name}]{sda,  }\item[{Pin\+Name}]{scl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construye un nuevo objecto hd44780 I2\+Cexp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sda} & pin con el system data de la interfaz I2C. \\
+\hline
+{\em scl} & pin con el system clock de la interfaz I2C. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classhd44780___i2_cexp_a54aa9784edbb1d73b80951e2f0c061fa}\label{classhd44780___i2_cexp_a54aa9784edbb1d73b80951e2f0c061fa}} 
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!begin@{begin}}
+\index{begin@{begin}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void hd44780\+\_\+\+I2\+Cexp\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ejecuta la secuencia de inicialización del display. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_a54aa9784edbb1d73b80951e2f0c061fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classhd44780___i2_cexp_a9f885fdf91ca52fd05158387ee4bedcd}\label{classhd44780___i2_cexp_a9f885fdf91ca52fd05158387ee4bedcd}} 
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!clear@{clear}}
+\index{clear@{clear}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void hd44780\+\_\+\+I2\+Cexp\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Borra el texto de la pantalla. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_a9f885fdf91ca52fd05158387ee4bedcd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classhd44780___i2_cexp_a13020db13c26b6d7ba6ff2ebb42e4053}\label{classhd44780___i2_cexp_a13020db13c26b6d7ba6ff2ebb42e4053}} 
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!cursor@{cursor}}
+\index{cursor@{cursor}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\doxysubsubsection{\texorpdfstring{cursor()}{cursor()}}
+{\footnotesize\ttfamily void hd44780\+\_\+\+I2\+Cexp\+::cursor (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{char\+PositionX,  }\item[{uint8\+\_\+t}]{char\+PositionY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Mueve el cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char\+PositionX} & Nueva columna a ocupar. No debe ser mayor que LCD\+\_\+\+COLS \\
+\hline
+{\em char\+PositionY} & Nueva fila a ocupar. No debe ser mayor que LCD\+\_\+\+ROWS. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_a13020db13c26b6d7ba6ff2ebb42e4053_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classhd44780___i2_cexp_ab25b744a9de62f700d5736864640d21b}\label{classhd44780___i2_cexp_ab25b744a9de62f700d5736864640d21b}} 
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!home@{home}}
+\index{home@{home}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\doxysubsubsection{\texorpdfstring{home()}{home()}}
+{\footnotesize\ttfamily void hd44780\+\_\+\+I2\+Cexp\+::home (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Lleva el cursor al origen de coordenadas. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_ab25b744a9de62f700d5736864640d21b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_ab25b744a9de62f700d5736864640d21b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classhd44780___i2_cexp_afa96f48e955041cedc9cb4ccc7dc1c6c}\label{classhd44780___i2_cexp_afa96f48e955041cedc9cb4ccc7dc1c6c}} 
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!lineWrap@{lineWrap}}
+\index{lineWrap@{lineWrap}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\doxysubsubsection{\texorpdfstring{lineWrap()}{lineWrap()}}
+{\footnotesize\ttfamily void hd44780\+\_\+\+I2\+Cexp\+::line\+Wrap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Habilita la envoltura de líneas automática. Cualquier oración que sea demasiado larga como para mostrarse en una única línea será recortada y continuada en la fila directamente inferior. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_afa96f48e955041cedc9cb4ccc7dc1c6c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classhd44780___i2_cexp_a284e20a480ae9d5ae529fc4676d14dd3}\label{classhd44780___i2_cexp_a284e20a480ae9d5ae529fc4676d14dd3}} 
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!print@{print}}
+\index{print@{print}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void hd44780\+\_\+\+I2\+Cexp\+::print (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Imprime una cadena de texto en la posición actual del cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Cadena de texto a imprimir \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_a284e20a480ae9d5ae529fc4676d14dd3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_a284e20a480ae9d5ae529fc4676d14dd3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classhd44780___i2_cexp_a4621bf11f3c62cbde42a253043c8b205}\label{classhd44780___i2_cexp_a4621bf11f3c62cbde42a253043c8b205}} 
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!print@{print}}
+\index{print@{print}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void hd44780\+\_\+\+I2\+Cexp\+::print (\begin{DoxyParamCaption}\item[{const float}]{value,  }\item[{int}]{precision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Imprime un número flotante en la posición actual del cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & número flotante a imprimir. \\
+\hline
+{\em precision} & Cantidad de decimales luego de la coma. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_a4621bf11f3c62cbde42a253043c8b205_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classhd44780___i2_cexp_a09bc6db023d62c79fe753d85cc0567ee}\label{classhd44780___i2_cexp_a09bc6db023d62c79fe753d85cc0567ee}} 
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!print@{print}}
+\index{print@{print}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void hd44780\+\_\+\+I2\+Cexp\+::print (\begin{DoxyParamCaption}\item[{const int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Imprime un número entero en la posición actual del cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & número entero a imprimir. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_a09bc6db023d62c79fe753d85cc0567ee_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classhd44780___i2_cexp_af598cd1e4f7112c0b315db260d168e92}\label{classhd44780___i2_cexp_af598cd1e4f7112c0b315db260d168e92}} 
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!turn\_off@{turn\_off}}
+\index{turn\_off@{turn\_off}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\doxysubsubsection{\texorpdfstring{turn\_off()}{turn\_off()}}
+{\footnotesize\ttfamily void hd44780\+\_\+\+I2\+Cexp\+::turn\+\_\+off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Desactiva la retroiluminación. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_af598cd1e4f7112c0b315db260d168e92_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_af598cd1e4f7112c0b315db260d168e92_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classhd44780___i2_cexp_a11909704f0608b3f7cbc4877c40eb15c}\label{classhd44780___i2_cexp_a11909704f0608b3f7cbc4877c40eb15c}} 
+\index{hd44780\_I2Cexp@{hd44780\_I2Cexp}!turn\_on@{turn\_on}}
+\index{turn\_on@{turn\_on}!hd44780\_I2Cexp@{hd44780\_I2Cexp}}
+\doxysubsubsection{\texorpdfstring{turn\_on()}{turn\_on()}}
+{\footnotesize\ttfamily void hd44780\+\_\+\+I2\+Cexp\+::turn\+\_\+on (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Activa la retroiluminación. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhd44780___i2_cexp_a11909704f0608b3f7cbc4877c40eb15c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classhd44780___i2_cexp_a11909704f0608b3f7cbc4877c40eb15c_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/drivers/hd44780\+\_\+\+I2\+Cexp.\+h\end{DoxyCompactItemize}
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/drivers/\mbox{\hyperlink{hd44780___i2_cexp_8h}{hd44780\+\_\+\+I2\+Cexp.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="Display::init" name="Display::init">
+<area shape="rect" id="node1" title="Método para inicializar el objeto, sólo se puede luego o en setup()." coords="5,55,96,80"/>
+<area shape="rect" id="node2" href="$classhd44780___i2_cexp.html#a54aa9784edbb1d73b80951e2f0c061fa" title="Ejecuta la secuencia de inicialización del display." coords="154,5,311,31"/>
+<area shape="rect" id="node3" href="$classhd44780___i2_cexp.html#ab25b744a9de62f700d5736864640d21b" title="Lleva el cursor al origen de coordenadas." coords="153,55,312,80"/>
+<area shape="rect" id="node5" href="$classhd44780___i2_cexp.html#afa96f48e955041cedc9cb4ccc7dc1c6c" title="Habilita la envoltura de líneas automática. Cualquier oración que sea demasiado larga como para mostr..." coords="144,104,321,129"/>
+<area shape="rect" id="node4" href="$classhd44780___i2_cexp.html#a13020db13c26b6d7ba6ff2ebb42e4053" title="Mueve el cursor." coords="369,55,532,80"/>
+</map>

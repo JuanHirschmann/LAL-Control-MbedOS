@@ -53,7 +53,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="class_control__system.html#af5985ea3ad848a1631ff6c12ef4b3941" target="_top" xlink:title="Solicita una alarma.">
+<g id="a_node6"><a xlink:href="class_control__system.html#a2f7771547e0b22acc6da22340fed6f50" target="_top" xlink:title="Solicita una alarma.">
 <polygon fill="white" stroke="#666666" points="273.5,-126 150.5,-126 150.5,-96 273.5,-96 273.5,-126"/>
 <text text-anchor="start" x="158.5" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Control_system::request</text>
 <text text-anchor="middle" x="212" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">_alarm</text>
@@ -69,7 +69,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="class_control__system.html#a331f6ac8aca48fcc0b7cd23a3510911c" target="_top" xlink:title="Solicita una advertencia.">
+<g id="a_node7"><a xlink:href="class_control__system.html#a3385a8c58aec4675347b495c4a8b63f1" target="_top" xlink:title="Solicita una advertencia.">
 <polygon fill="white" stroke="#666666" points="273.5,-78 150.5,-78 150.5,-48 273.5,-48 273.5,-78"/>
 <text text-anchor="start" x="158.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Control_system::request</text>
 <text text-anchor="middle" x="212" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">_warning</text>

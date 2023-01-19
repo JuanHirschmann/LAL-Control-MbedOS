@@ -10,24 +10,24 @@
 \DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_cooler}{Cooler}}}
 \DoxyCodeLine{16 \{}
 \DoxyCodeLine{17 \textcolor{keyword}{public}:}
-\DoxyCodeLine{18     \mbox{\hyperlink{class_cooler}{Cooler}}(PinName power\_pin, PinName speed\_measurement\_pin);}
-\DoxyCodeLine{19     \textcolor{keywordtype}{void} turn\_on(\textcolor{keywordtype}{float} duty\_cycle = 1.0);}
-\DoxyCodeLine{20     \textcolor{keywordtype}{void} turn\_off();}
-\DoxyCodeLine{21     \textcolor{keywordtype}{size\_t} get\_rotation();}
-\DoxyCodeLine{22     \textcolor{keywordtype}{void} count\_rotation();}
-\DoxyCodeLine{23     \textcolor{keywordtype}{bool} is\_on()}
-\DoxyCodeLine{24     \{}
-\DoxyCodeLine{25         \textcolor{keywordflow}{return} \_is\_on;}
-\DoxyCodeLine{26     \}}
-\DoxyCodeLine{27 }
-\DoxyCodeLine{28 \textcolor{keyword}{private}:}
-\DoxyCodeLine{29     \textcolor{keywordtype}{bool} \_is\_on = \textcolor{keyword}{false};}
-\DoxyCodeLine{30     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \textcolor{keywordtype}{int} rotations\_in\_sample\_period = 0;}
-\DoxyCodeLine{31     PwmOut power\_pin;}
-\DoxyCodeLine{32     InterruptIn speed\_measurement\_pin;}
-\DoxyCodeLine{33     \textcolor{keywordtype}{float} current\_duty\_cycle = 0;}
-\DoxyCodeLine{34     \textcolor{keywordtype}{float} current\_RPS = 0;}
-\DoxyCodeLine{35 \};}
-\DoxyCodeLine{36 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_cooler}{Cooler}}(PinName power\_pin, PinName speed\_measurement\_pin);}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cooler_aa98fd302dc7933fc21c046ca3ea48346}{turn\_on}}(\textcolor{keywordtype}{float} duty\_cycle = 1.0);}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cooler_a3aa26bc227fa7a2bdcff9fe607990104}{turn\_off}}();}
+\DoxyCodeLine{44     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_cooler_a54cf52e0b8387e17b5ec130aad7e479d}{get\_rotation}}();}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cooler_a9802a2d1e34a4b377280fd3369f68d58}{count\_rotation}}();}
+\DoxyCodeLine{58     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_cooler_a5bb33d816baacab07096456f524ac24a}{is\_on}}()}
+\DoxyCodeLine{59     \{}
+\DoxyCodeLine{60         \textcolor{keywordflow}{return} \_is\_on;}
+\DoxyCodeLine{61     \}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{keyword}{private}:}
+\DoxyCodeLine{64     \textcolor{keywordtype}{bool} \_is\_on = \textcolor{keyword}{false};}
+\DoxyCodeLine{65     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \textcolor{keywordtype}{int} rotations\_in\_sample\_period = 0;}
+\DoxyCodeLine{66     PwmOut power\_pin;}
+\DoxyCodeLine{67     InterruptIn speed\_measurement\_pin;}
+\DoxyCodeLine{68     \textcolor{keywordtype}{float} current\_duty\_cycle = 0;}
+\DoxyCodeLine{69     \textcolor{keywordtype}{float} current\_RPS = 0;}
+\DoxyCodeLine{70 \};}
+\DoxyCodeLine{71 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

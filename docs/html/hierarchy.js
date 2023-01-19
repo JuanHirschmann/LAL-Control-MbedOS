@@ -1,9 +1,9 @@
 var hierarchy =
 [
     [ "Abstract_state", "class_abstract__state.html", [
+      [ "Alarm_state", "class_alarm__state.html", null ],
       [ "Check_instruction_state", "class_check__instruction__state.html", null ],
       [ "Idle_state", "class_idle__state.html", null ],
-      [ "Motor_control_state", "class_motor__control__state.html", null ],
       [ "Shutdown_state", "class_shutdown__state.html", null ]
     ] ],
     [ "Buzzer", "class_buzzer.html", null ],
@@ -15,8 +15,6 @@ var hierarchy =
     [ "Display", "class_display.html", null ],
     [ "Dual_LED", "class_dual___l_e_d.html", null ],
     [ "hd44780_I2Cexp", "classhd44780___i2_cexp.html", null ],
-    [ "Instruction_list", "class_instruction__list.html", null ],
-    [ "Instruction_node", "class_instruction__node.html", null ],
     [ "Machine", "class_machine.html", [
       [ "Control_system", "class_control__system.html", null ]
     ] ],

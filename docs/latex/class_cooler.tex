@@ -3,27 +3,146 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_cooler_ad32b9257d45acdef4197ac43bd2727c2}{Cooler}} (Pin\+Name power\+\_\+pin, Pin\+Name speed\+\_\+measurement\+\_\+pin)
+\begin{DoxyCompactList}\small\item\em Construye un nuevo objecto \mbox{\hyperlink{class_cooler}{Cooler}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cooler_aa98fd302dc7933fc21c046ca3ea48346}{turn\+\_\+on}} (float duty\+\_\+cycle=1.\+0)
+\begin{DoxyCompactList}\small\item\em Enciende el ventilador. Si el ciclo de trabajo deseado es menor que FAN\+\_\+\+MINIMUM\+\_\+\+DUTY\+\_\+\+CYCLE apaga el ventilador. Si el ciclo de trabajo es mayor al umbral mínimo pero menor a FAN\+\_\+\+AUTONOMOUS\+\_\+\+DUTY\+\_\+\+CYCLE enciende el ventilador durante DEFAULT\+\_\+\+DELAY milisegundos a máximo ciclo de trabajo (bloqueante) y luego reduce la velocidad. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cooler_a3aa26bc227fa7a2bdcff9fe607990104}{turn\+\_\+off}} ()
+\begin{DoxyCompactList}\small\item\em Apaga el ventilador. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_cooler_a54cf52e0b8387e17b5ec130aad7e479d}{get\+\_\+rotation}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la cantidad de rotaciones desde el último llamado de la función. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cooler_a9802a2d1e34a4b377280fd3369f68d58}{count\+\_\+rotation}} ()
+\begin{DoxyCompactList}\small\item\em Incrementa el contador de mediciones. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cooler_a5bb33d816baacab07096456f524ac24a}{is\+\_\+on}} ()
+\begin{DoxyCompactList}\small\item\em Estado del ventilador. No utiliza la medición de velocidad si no que, si se llamó a la función \mbox{\hyperlink{class_cooler_aa98fd302dc7933fc21c046ca3ea48346}{turn\+\_\+on()}}, el estado del ventilador será true independientemente de si este está rotando o no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_cooler_ad32b9257d45acdef4197ac43bd2727c2}\label{class_cooler_ad32b9257d45acdef4197ac43bd2727c2}} 
-{\bfseries Cooler} (Pin\+Name power\+\_\+pin, Pin\+Name speed\+\_\+measurement\+\_\+pin)
-\item 
-\mbox{\Hypertarget{class_cooler_aa98fd302dc7933fc21c046ca3ea48346}\label{class_cooler_aa98fd302dc7933fc21c046ca3ea48346}} 
-void {\bfseries turn\+\_\+on} (float duty\+\_\+cycle=1.\+0)
-\item 
-\mbox{\Hypertarget{class_cooler_a3aa26bc227fa7a2bdcff9fe607990104}\label{class_cooler_a3aa26bc227fa7a2bdcff9fe607990104}} 
-void {\bfseries turn\+\_\+off} ()
-\item 
-\mbox{\Hypertarget{class_cooler_a54cf52e0b8387e17b5ec130aad7e479d}\label{class_cooler_a54cf52e0b8387e17b5ec130aad7e479d}} 
-size\+\_\+t {\bfseries get\+\_\+rotation} ()
-\item 
+\index{Cooler@{Cooler}!Cooler@{Cooler}}
+\index{Cooler@{Cooler}!Cooler@{Cooler}}
+\doxysubsubsection{\texorpdfstring{Cooler()}{Cooler()}}
+{\footnotesize\ttfamily Cooler\+::\+Cooler (\begin{DoxyParamCaption}\item[{Pin\+Name}]{power\+\_\+pin,  }\item[{Pin\+Name}]{speed\+\_\+measurement\+\_\+pin }\end{DoxyParamCaption})}
+
+
+
+Construye un nuevo objecto \mbox{\hyperlink{class_cooler}{Cooler}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em power\+\_\+pin} & Pin de control de velocidad, con PWM \\
+\hline
+{\em speed\+\_\+measurement\+\_\+pin} & Pin de medición de velocidad, salida digital. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_cooler_ad32b9257d45acdef4197ac43bd2727c2_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_cooler_a9802a2d1e34a4b377280fd3369f68d58}\label{class_cooler_a9802a2d1e34a4b377280fd3369f68d58}} 
-void {\bfseries count\+\_\+rotation} ()
-\item 
+\index{Cooler@{Cooler}!count\_rotation@{count\_rotation}}
+\index{count\_rotation@{count\_rotation}!Cooler@{Cooler}}
+\doxysubsubsection{\texorpdfstring{count\_rotation()}{count\_rotation()}}
+{\footnotesize\ttfamily void Cooler\+::count\+\_\+rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Incrementa el contador de mediciones. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_cooler_a9802a2d1e34a4b377280fd3369f68d58_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cooler_a54cf52e0b8387e17b5ec130aad7e479d}\label{class_cooler_a54cf52e0b8387e17b5ec130aad7e479d}} 
+\index{Cooler@{Cooler}!get\_rotation@{get\_rotation}}
+\index{get\_rotation@{get\_rotation}!Cooler@{Cooler}}
+\doxysubsubsection{\texorpdfstring{get\_rotation()}{get\_rotation()}}
+{\footnotesize\ttfamily size\+\_\+t Cooler\+::get\+\_\+rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve la cantidad de rotaciones desde el último llamado de la función. 
+
+\begin{DoxyReturn}{Returns}
+Rotaciones desde último llamado. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_cooler_a5bb33d816baacab07096456f524ac24a}\label{class_cooler_a5bb33d816baacab07096456f524ac24a}} 
-bool {\bfseries is\+\_\+on} ()
-\end{DoxyCompactItemize}
+\index{Cooler@{Cooler}!is\_on@{is\_on}}
+\index{is\_on@{is\_on}!Cooler@{Cooler}}
+\doxysubsubsection{\texorpdfstring{is\_on()}{is\_on()}}
+{\footnotesize\ttfamily bool Cooler\+::is\+\_\+on (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Estado del ventilador. No utiliza la medición de velocidad si no que, si se llamó a la función \mbox{\hyperlink{class_cooler_aa98fd302dc7933fc21c046ca3ea48346}{turn\+\_\+on()}}, el estado del ventilador será true independientemente de si este está rotando o no. 
+
+\begin{DoxyReturn}{Returns}
+true El ventilador esta encendido. 
+
+false El ventilador está apagado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cooler_a3aa26bc227fa7a2bdcff9fe607990104}\label{class_cooler_a3aa26bc227fa7a2bdcff9fe607990104}} 
+\index{Cooler@{Cooler}!turn\_off@{turn\_off}}
+\index{turn\_off@{turn\_off}!Cooler@{Cooler}}
+\doxysubsubsection{\texorpdfstring{turn\_off()}{turn\_off()}}
+{\footnotesize\ttfamily void Cooler\+::turn\+\_\+off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apaga el ventilador. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cooler_a3aa26bc227fa7a2bdcff9fe607990104_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cooler_aa98fd302dc7933fc21c046ca3ea48346}\label{class_cooler_aa98fd302dc7933fc21c046ca3ea48346}} 
+\index{Cooler@{Cooler}!turn\_on@{turn\_on}}
+\index{turn\_on@{turn\_on}!Cooler@{Cooler}}
+\doxysubsubsection{\texorpdfstring{turn\_on()}{turn\_on()}}
+{\footnotesize\ttfamily void Cooler\+::turn\+\_\+on (\begin{DoxyParamCaption}\item[{float}]{duty\+\_\+cycle = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+
+
+Enciende el ventilador. Si el ciclo de trabajo deseado es menor que FAN\+\_\+\+MINIMUM\+\_\+\+DUTY\+\_\+\+CYCLE apaga el ventilador. Si el ciclo de trabajo es mayor al umbral mínimo pero menor a FAN\+\_\+\+AUTONOMOUS\+\_\+\+DUTY\+\_\+\+CYCLE enciende el ventilador durante DEFAULT\+\_\+\+DELAY milisegundos a máximo ciclo de trabajo (bloqueante) y luego reduce la velocidad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em duty\+\_\+cycle} & Ciclo de trabajo \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{class_cooler_aa98fd302dc7933fc21c046ca3ea48346_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cooler_aa98fd302dc7933fc21c046ca3ea48346_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/drivers/\mbox{\hyperlink{_cooler_8h}{Cooler.\+h}}\item 
-C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/drivers/Cooler.\+cpp\end{DoxyCompactItemize}
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/drivers/\mbox{\hyperlink{_cooler_8cpp}{Cooler.\+cpp}}\end{DoxyCompactItemize}

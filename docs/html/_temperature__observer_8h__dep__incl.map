@@ -1,4 +1,5 @@
 <map id="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/observer_pattern/observers/Temperature_observer.h" name="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/observer_pattern/observers/Temperature_observer.h">
-<area shape="rect" id="node1" title="Observador del sensor de temperatura." coords="5,5,228,89"/>
-<area shape="rect" id="node2" href="$main_8h.html" title="Archivo principal del programa." coords="12,137,221,207"/>
+<area shape="rect" id="node1" title="Observador del sensor de temperatura." coords="120,5,343,89"/>
+<area shape="rect" id="node2" href="$main_8h.html" title="Archivo principal del programa." coords="5,145,215,214"/>
+<area shape="rect" id="node3" href="$_temperature__observer_8cpp.html" title="Implementación de Temperature_observer.h." coords="239,137,466,221"/>
 </map>

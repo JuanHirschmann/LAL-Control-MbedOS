@@ -1,4 +1,10 @@
 <map id="Digital_dual_LED::turn_red" name="Digital_dual_LED::turn_red">
-<area shape="rect" id="node1" title="Fija el color del led, no enciende el led,." coords="216,13,392,38"/>
-<area shape="rect" id="node2" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Método que se llama al ingresar al estado." coords="5,5,168,45"/>
+<area shape="rect" id="node1" title="Fija el color del led, no enciende el led,." coords="639,63,815,89"/>
+<area shape="rect" id="node2" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Método que se llama al ingresar al estado." coords="229,5,392,45"/>
+<area shape="rect" id="node3" href="$class_control__system.html#aeb1d67b1383d77bd11276f0eef97228b" title="Resetea las variables de contexto." coords="440,120,591,160"/>
+<area shape="rect" id="node8" href="$class_control__system.html#a46298a6a5f4ba43857baa6ae23d00dbc" title="Fija el valor de velocidad del ventilador." coords="446,56,585,96"/>
+<area shape="rect" id="node4" href="$class_shutdown__state.html#accbc4c856709e26453e2e23c5c1e4f8e" title="Salida del estado, resetea las variables del sistema e incializa la pantalla." coords="239,78,383,103"/>
+<area shape="rect" id="node6" href="$class_control__system.html#a660ab5ac86df7cdefbbfe0942b00e13b" title="Inicializa el sistema con el estado de apagado." coords="241,127,380,153"/>
+<area shape="rect" id="node7" href="$class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2" title="Método para actualizar el estado." coords="229,177,392,217"/>
+<area shape="rect" id="node5" href="$class_shutdown__state.html#ae02b2fd80173aa50afcd73faba01b9be" title="Transicion de estados." coords="5,78,181,103"/>
 </map>

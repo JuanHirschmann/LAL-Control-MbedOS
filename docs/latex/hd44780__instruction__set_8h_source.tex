@@ -1,61 +1,62 @@
 \hypertarget{hd44780__instruction__set_8h_source}{}\doxysection{hd44780\+\_\+instruction\+\_\+set.\+h}
 \label{hd44780__instruction__set_8h_source}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/hd44780\_instruction\_set.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/hd44780\_instruction\_set.h}}
-
+\mbox{\hyperlink{hd44780__instruction__set_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_HD44780\_INSTRUCTION\_SET\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_HD44780\_INSTRUCTION\_SET\_H}}
-\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <mbed.h>}}
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#define DISPLAY\_IR\_CLEAR\_DISPLAY 0b00000001}}
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#define DISPLAY\_IR\_ENTRY\_MODE\_SET 0b00000100}}
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL 0b00001000}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET 0b00100000}}
-\DoxyCodeLine{8 \textcolor{preprocessor}{\#define DISPLAY\_IR\_SET\_DDRAM\_ADDR 0b10000000}}
-\DoxyCodeLine{9 }
-\DoxyCodeLine{10 \textcolor{preprocessor}{\#define DISPLAY\_IR\_ENTRY\_MODE\_SET\_INCREMENT 0b00000010}}
-\DoxyCodeLine{11 \textcolor{preprocessor}{\#define DISPLAY\_IR\_ENTRY\_MODE\_SET\_DECREMENT 0b00000000}}
-\DoxyCodeLine{12 \textcolor{preprocessor}{\#define DISPLAY\_IR\_ENTRY\_MODE\_SET\_SHIFT 0b00000001}}
-\DoxyCodeLine{13 \textcolor{preprocessor}{\#define DISPLAY\_IR\_ENTRY\_MODE\_SET\_NO\_SHIFT 0b00000000}}
-\DoxyCodeLine{14 }
-\DoxyCodeLine{15 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_DISPLAY\_ON 0b00000100}}
-\DoxyCodeLine{16 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_DISPLAY\_OFF 0b00000000}}
-\DoxyCodeLine{17 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_CURSOR\_ON 0b00000010}}
-\DoxyCodeLine{18 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_CURSOR\_OFF 0b00000000}}
-\DoxyCodeLine{19 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_BLINK\_ON 0b00000001}}
-\DoxyCodeLine{20 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_BLINK\_OFF 0b00000000}}
-\DoxyCodeLine{21 }
-\DoxyCodeLine{22 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_8BITS 0b00010000}}
-\DoxyCodeLine{23 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_4BITS 0b00000000}}
-\DoxyCodeLine{24 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_2LINES 0b00001000}}
-\DoxyCodeLine{25 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_1LINE 0b00000000}}
-\DoxyCodeLine{26 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_5x10DOTS 0b00000100}}
-\DoxyCodeLine{27 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_5x8DOTS 0b00000000}}
-\DoxyCodeLine{28 }
-\DoxyCodeLine{29 \textcolor{preprocessor}{\#define DISPLAY\_20x4\_LINE1\_FIRST\_CHARACTER\_ADDRESS 0}}
-\DoxyCodeLine{30 \textcolor{preprocessor}{\#define DISPLAY\_20x4\_LINE2\_FIRST\_CHARACTER\_ADDRESS 64}}
-\DoxyCodeLine{31 \textcolor{preprocessor}{\#define DISPLAY\_20x4\_LINE3\_FIRST\_CHARACTER\_ADDRESS 20}}
-\DoxyCodeLine{32 \textcolor{preprocessor}{\#define DISPLAY\_20x4\_LINE4\_FIRST\_CHARACTER\_ADDRESS 84}}
-\DoxyCodeLine{33 }
-\DoxyCodeLine{34 \textcolor{preprocessor}{\#define DISPLAY\_RS\_INSTRUCTION 0}}
-\DoxyCodeLine{35 \textcolor{preprocessor}{\#define DISPLAY\_RS\_DATA 1}}
-\DoxyCodeLine{36 }
-\DoxyCodeLine{37 \textcolor{preprocessor}{\#define DISPLAY\_RW\_WRITE 0}}
-\DoxyCodeLine{38 \textcolor{preprocessor}{\#define DISPLAY\_RW\_READ 1}}
-\DoxyCodeLine{39 }
-\DoxyCodeLine{40 \textcolor{preprocessor}{\#define I2C1\_SDA D14}}
-\DoxyCodeLine{41 \textcolor{preprocessor}{\#define I2C1\_SCL D15}}
-\DoxyCodeLine{42 \textcolor{preprocessor}{\#define PCF8574\_I2C\_BUS\_8BIT\_WRITE\_ADDRESS 0x4E }\textcolor{comment}{// 0x27}}
-\DoxyCodeLine{43 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_A\_PCF8574 3}}
-\DoxyCodeLine{44 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_RS 4}}
-\DoxyCodeLine{45 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_RW 5}}
-\DoxyCodeLine{46 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_EN 6}}
-\DoxyCodeLine{47 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D0 7}}
-\DoxyCodeLine{48 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D1 8}}
-\DoxyCodeLine{49 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D2 9}}
-\DoxyCodeLine{50 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D3 10}}
-\DoxyCodeLine{51 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D4 11}}
-\DoxyCodeLine{52 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D5 12}}
-\DoxyCodeLine{53 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D6 13}}
-\DoxyCodeLine{54 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D7 14}}
-\DoxyCodeLine{55 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef \_HD44780\_INSTRUCTION\_SET\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define \_HD44780\_INSTRUCTION\_SET\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <mbed.h>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define DISPLAY\_IR\_CLEAR\_DISPLAY 0b00000001}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define DISPLAY\_IR\_ENTRY\_MODE\_SET 0b00000100}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL 0b00001000}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET 0b00100000}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define DISPLAY\_IR\_SET\_DDRAM\_ADDR 0b10000000}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define DISPLAY\_IR\_ENTRY\_MODE\_SET\_INCREMENT 0b00000010}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define DISPLAY\_IR\_ENTRY\_MODE\_SET\_DECREMENT 0b00000000}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define DISPLAY\_IR\_ENTRY\_MODE\_SET\_SHIFT 0b00000001}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define DISPLAY\_IR\_ENTRY\_MODE\_SET\_NO\_SHIFT 0b00000000}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_DISPLAY\_ON 0b00000100}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_DISPLAY\_OFF 0b00000000}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_CURSOR\_ON 0b00000010}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_CURSOR\_OFF 0b00000000}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_BLINK\_ON 0b00000001}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define DISPLAY\_IR\_DISPLAY\_CONTROL\_BLINK\_OFF 0b00000000}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_8BITS 0b00010000}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_4BITS 0b00000000}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_2LINES 0b00001000}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_1LINE 0b00000000}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_5x10DOTS 0b00000100}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#define DISPLAY\_IR\_FUNCTION\_SET\_5x8DOTS 0b00000000}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define DISPLAY\_20x4\_LINE1\_FIRST\_CHARACTER\_ADDRESS 0}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#define DISPLAY\_20x4\_LINE2\_FIRST\_CHARACTER\_ADDRESS 64}}
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#define DISPLAY\_20x4\_LINE3\_FIRST\_CHARACTER\_ADDRESS 20}}
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#define DISPLAY\_20x4\_LINE4\_FIRST\_CHARACTER\_ADDRESS 84}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define DISPLAY\_RS\_INSTRUCTION 0}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#define DISPLAY\_RS\_DATA 1}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#define DISPLAY\_RW\_WRITE 0}}
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#define DISPLAY\_RW\_READ 1}}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#define I2C1\_SDA D14}}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#define I2C1\_SCL D15}}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#define PCF8574\_I2C\_BUS\_8BIT\_WRITE\_ADDRESS 0x4E }\textcolor{comment}{// 0x27}}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_A\_PCF8574 3}}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_RS 4}}
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_RW 5}}
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_EN 6}}
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D0 7}}
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D1 8}}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D2 9}}
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D3 10}}
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D4 11}}
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D5 12}}
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D6 13}}
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#define DISPLAY\_PIN\_D7 14}}
+\DoxyCodeLine{65 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

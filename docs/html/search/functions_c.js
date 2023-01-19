@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['update_0',['update',['../class_display.html#ad2740b779d61e461c4dcaaf34f1fcd8f',1,'Display::update()'],['../class_abstract__state.html#a993232854cd166a601b6c5b4ba7befcc',1,'Abstract_state::update()'],['../class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2',1,'Check_instruction_state::update()'],['../class_idle__state.html#a92217c98eda8e3bd47eb3a8ff602efc2',1,'Idle_state::update()'],['../class_motor__control__state.html#a958e3393b9937ddea35e85efdd21e342',1,'Motor_control_state::update()'],['../class_shutdown__state.html#abcd870b0687903912a3df5151464236f',1,'Shutdown_state::update()'],['../class_cooler__observer.html#aca9bdbbc11981c1ec178090622caaee4',1,'Cooler_observer::update()'],['../class_instruction__observer.html#abd22a87de99f1de4f236f7a4b2710f86',1,'Instruction_observer::update()'],['../class_moisture__observer.html#a84cf4888942ad6ce66a9baaf337d9994',1,'Moisture_observer::update()'],['../class_observer.html#ad4d0ac3f205a60258fab7b5099dbfbc4',1,'Observer::update()'],['../class_observer__interface.html#abbc07c9eddf709e2ed7c950b0e64421b',1,'Observer_interface::update()'],['../class_temperature__observer.html#ab90488fcff2880baae583cfe7aefb3d8',1,'Temperature_observer::update()']]]
+  ['read_0',['read',['../class_p_c__serial__interface.html#a5921c585d7a5930774b83f738536313e',1,'PC_serial_interface']]],
+  ['request_5falarm_1',['request_alarm',['../class_control__system.html#a2f7771547e0b22acc6da22340fed6f50',1,'Control_system']]],
+  ['request_5fwarning_2',['request_warning',['../class_control__system.html#a3385a8c58aec4675347b495c4a8b63f1',1,'Control_system']]],
+  ['reset_5fcontext_3',['reset_context',['../class_control__system.html#aeb1d67b1383d77bd11276f0eef97228b',1,'Control_system']]]
 ];

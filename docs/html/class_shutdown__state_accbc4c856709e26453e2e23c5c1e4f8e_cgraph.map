@@ -1,11 +1,13 @@
 <map id="Shutdown_state::exit" name="Shutdown_state::exit">
-<area shape="rect" id="node1" title="Salida del estado, resetea las variables del sistema e incializa la pantalla." coords="5,56,149,81"/>
-<area shape="rect" id="node2" href="$class_control__system.html#aad36c88c9e5589336213848de7837091" title="Inicializa el display lcd del sistema." coords="203,9,342,49"/>
-<area shape="rect" id="node4" href="$class_control__system.html#a4704fee6ca6fe180a5dc292315ec3b31" title="Apaga todos los periféricos a excepción del display. Asigna false a solictudes de alarma,..." coords="197,84,348,109"/>
-<area shape="rect" id="node3" href="$class_display.html#aacbf91b9f8c57fc2cb892c45fd44e655" title="Método para inicializar el objeto, sólo se puede luego o en setup()." coords="418,5,509,31"/>
-<area shape="rect" id="node5" href="$class_cooler.html#a3aa26bc227fa7a2bdcff9fe607990104" title="Apaga el ventilador." coords="409,55,518,80"/>
-<area shape="rect" id="node6" href="$class_dual___l_e_d.html#a4226b64f8b1c00f3e4c649a8be2e64c9" title="Apaga el LED." coords="398,104,529,129"/>
-<area shape="rect" id="node7" href="$class_dual___l_e_d.html#a8734a816df04661d86e3ccbf88159eb0" title="Enciende el LED en rojo." coords="396,153,531,179"/>
-<area shape="rect" id="node8" href="$class_dual___l_e_d.html#aeb163748acf071a1652c56ae1dff9d52" title="Fija el color del led, no enciende el led,." coords="579,128,720,153"/>
-<area shape="rect" id="node9" href="$class_dual___l_e_d.html#a8b13294b883897eb83f91bf90a3a11cd" title="Enciende el LED en el color actual." coords="584,177,715,203"/>
+<area shape="rect" id="node1" title="Salida del estado, resetea las variables del sistema e incializa la pantalla." coords="5,104,149,129"/>
+<area shape="rect" id="node2" href="$class_control__system.html#aad36c88c9e5589336213848de7837091" title="Inicializa el display lcd del sistema." coords="203,57,342,97"/>
+<area shape="rect" id="node8" href="$class_control__system.html#aeb1d67b1383d77bd11276f0eef97228b" title="Resetea las variables de contexto." coords="197,129,348,169"/>
+<area shape="rect" id="node3" href="$class_display.html#aacbf91b9f8c57fc2cb892c45fd44e655" title="Método para inicializar el objeto, sólo se puede luego o en setup()." coords="439,55,529,80"/>
+<area shape="rect" id="node4" href="$classhd44780___i2_cexp.html#a54aa9784edbb1d73b80951e2f0c061fa" title="Ejecuta la secuencia de inicialización del display." coords="630,5,787,31"/>
+<area shape="rect" id="node5" href="$classhd44780___i2_cexp.html#ab25b744a9de62f700d5736864640d21b" title="Lleva el cursor al origen de coordenadas." coords="629,55,788,80"/>
+<area shape="rect" id="node7" href="$classhd44780___i2_cexp.html#afa96f48e955041cedc9cb4ccc7dc1c6c" title="Habilita la envoltura de líneas automática. Cualquier oración que sea demasiado larga como para mostr..." coords="620,104,797,129"/>
+<area shape="rect" id="node6" href="$classhd44780___i2_cexp.html#a13020db13c26b6d7ba6ff2ebb42e4053" title="Mueve el cursor." coords="845,55,1008,80"/>
+<area shape="rect" id="node9" href="$class_cooler.html#a3aa26bc227fa7a2bdcff9fe607990104" title="Apaga el ventilador." coords="429,104,539,129"/>
+<area shape="rect" id="node10" href="$class_dual___l_e_d.html#a4226b64f8b1c00f3e4c649a8be2e64c9" title="Apaga el LED." coords="419,153,549,179"/>
+<area shape="rect" id="node11" href="$class_digital__dual___l_e_d.html#a601fc70878c221a056d74dc643806a91" title="Fija el color del led, no enciende el led,." coords="396,203,572,228"/>
 </map>

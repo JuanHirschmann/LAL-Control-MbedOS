@@ -1,19 +1,29 @@
 <map id="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/system_settings.h" name="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/system_settings.h">
-<area shape="rect" id="node1" title="Archivo para la definición de constantes del sistema." coords="233,5,466,75"/>
-<area shape="rect" id="node2" href="$_cooler_8h.html" title="Controlador de ventilador de 12 volts y 5 milímteros." coords="572,130,786,199"/>
-<area shape="rect" id="node8" href="$main_8h.html" title="Archivo principal del programa." coords="432,680,641,749"/>
-<area shape="rect" id="node12" href="$_moisture__observer_8h.html" title="Observador del sensor de temperatura." coords="51,533,272,617"/>
-<area shape="rect" id="node14" href="$_temperature__observer_8h.html" title="Observador del sensor de temperatura." coords="297,533,520,617"/>
-<area shape="rect" id="node15" href="$_dual___l_e_d_8h.html" title="Controlador de LED RG." coords="810,130,1046,199"/>
-<area shape="rect" id="node16" href="$_temperature__sensor_8h.html" title="Controlador para sensor de temperatura DS18B20." coords="309,123,548,207"/>
-<area shape="rect" id="node3" href="$_control__system_8h_source.html" title=" " coords="689,262,917,331"/>
-<area shape="rect" id="node4" href="$_check__instruction__state_8h_source.html" title=" " coords="1250,387,1460,485"/>
-<area shape="rect" id="node5" href="$_idle__state_8h.html" title="Clase de estado de reposo." coords="1161,533,1397,617"/>
-<area shape="rect" id="node6" href="$_motor__control__state_8h.html" title="Clase de estado de control del motor." coords="1342,665,1552,764"/>
-<area shape="rect" id="node7" href="$_shutdown__state_8h.html" title="Clase de estado de apagado del sistema." coords="1009,673,1282,757"/>
-<area shape="rect" id="node9" href="$_cooler__observer_8h_source.html" title=" " coords="544,533,766,617"/>
-<area shape="rect" id="node10" href="$_instruction__observer_8h.html" title="Observador de instrucciones." coords="840,533,1062,617"/>
-<area shape="rect" id="node13" href="$_system__observer_8h.html" title="Clase observador del sistema de control." coords="494,394,715,478"/>
-<area shape="rect" id="node11" href="$_instruction__observer_8cpp.html" title=" " coords="758,673,984,757"/>
-<area shape="rect" id="node17" href="$_temperature__sensor_8cpp.html" title=" " coords="309,255,553,339"/>
+<area shape="rect" id="node1" title="Archivo para la definición de constantes del sistema." coords="401,5,634,75"/>
+<area shape="rect" id="node2" href="$_cooler_8h.html" title="Controlador de ventilador de 12 volts y 5 milímteros." coords="286,130,501,199"/>
+<area shape="rect" id="node12" href="$main_8h.html" title="Archivo principal del programa." coords="507,673,717,742"/>
+<area shape="rect" id="node17" href="$_moisture__observer_8h.html" title="Observador del sensor de temperatura." coords="995,526,1216,610"/>
+<area shape="rect" id="node20" href="$_temperature__observer_8h.html" title="Observador del sensor de temperatura." coords="106,526,329,610"/>
+<area shape="rect" id="node24" href="$_dual___l_e_d_8h.html" title="Controlador de LED RG con PWM." coords="525,130,761,199"/>
+<area shape="rect" id="node26" href="$_temperature__sensor_8h.html" title="Controlador para sensor de temperatura DS18B20." coords="787,123,1026,207"/>
+<area shape="rect" id="node3" href="$_control__system_8h_source.html" title=" " coords="793,262,1021,331"/>
+<area shape="rect" id="node23" href="$_cooler_8cpp.html" title="Implementación de Cooler.h." coords="255,262,489,331"/>
+<area shape="rect" id="node4" href="$_alarm__state_8h.html" title="Clase de estado de control del motor." coords="1475,387,1725,471"/>
+<area shape="rect" id="node5" href="$_check__instruction__state_8h_source.html" title=" " coords="1317,519,1528,617"/>
+<area shape="rect" id="node6" href="$_idle__state_8h.html" title="Clase de estado de reposo." coords="1699,665,1935,749"/>
+<area shape="rect" id="node7" href="$_shutdown__state_8h.html" title="Clase de estado de apagado del sistema." coords="1131,797,1405,881"/>
+<area shape="rect" id="node13" href="$_cooler__observer_8h_source.html" title=" " coords="747,526,968,610"/>
+<area shape="rect" id="node15" href="$_instruction__observer_8h.html" title="Observador de instrucciones." coords="353,526,575,610"/>
+<area shape="rect" id="node19" href="$_system__observer_8h.html" title="Clase observador del sistema de control." coords="809,387,1031,471"/>
+<area shape="rect" id="node22" href="$_control__system_8cpp.html" title="Implementación de Control_system.h." coords="538,394,785,463"/>
+<area shape="rect" id="node11" href="$_alarm_8cpp.html" title="Implementación de Alarm_state.h." coords="1552,526,1768,610"/>
+<area shape="rect" id="node10" href="$_check__instruction__state_8cpp.html" title="Implementación de Check_instruction_state.h." coords="1318,665,1557,749"/>
+<area shape="rect" id="node9" href="$_idle__state_8cpp.html" title="Implementación de Idle_state.h." coords="1709,797,1925,881"/>
+<area shape="rect" id="node8" href="$_shutdown__state_8cpp.html" title="Implementación de Shutdown_state.h." coords="1160,929,1376,1013"/>
+<area shape="rect" id="node14" href="$_cooler__observer_8cpp.html" title="Implementación de Cooler_observer.h." coords="741,665,968,749"/>
+<area shape="rect" id="node16" href="$_instruction__observer_8cpp.html" title="Implementación de Instruction_observer.h." coords="256,665,483,749"/>
+<area shape="rect" id="node18" href="$_moisture__observer_8cpp.html" title="Implementación de Moisture_observer.h." coords="992,665,1219,749"/>
+<area shape="rect" id="node21" href="$_temperature__observer_8cpp.html" title="Implementación de Temperature_observer.h." coords="5,665,232,749"/>
+<area shape="rect" id="node25" href="$_dual___l_e_d_8cpp.html" title="Implementación de Dual_LED.h." coords="514,262,769,331"/>
+<area shape="rect" id="node27" href="$_temperature__sensor_8cpp.html" title="Implementación de Temperature_sensor.h." coords="1045,255,1289,339"/>
 </map>

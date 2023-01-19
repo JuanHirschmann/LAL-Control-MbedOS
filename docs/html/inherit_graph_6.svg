@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="class_digital__dual___l_e_d.html" target="_top" xlink:title="Clase para el manejo de un indicador LED RG.">
+<g id="a_node1"><a xlink:href="class_digital__dual___l_e_d.html" target="_top" xlink:title="Clase para el manejo de un indicador LED RG sin PWM.">
 <polygon fill="white" stroke="#666666" points="91,-19 0,-19 0,0 91,0 91,-19"/>
 <text text-anchor="middle" x="45.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Digital_dual_LED</text>
 </a>

@@ -3,34 +3,34 @@
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 }
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef PC\_SERIAL\_INTERFACE}}
-\DoxyCodeLine{3 \textcolor{preprocessor}{\#define PC\_SERIAL\_INTERFACE}}
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <mbed.h>}}
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}config.h"{}}}
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <string.h>}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}utils.h"{}}}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_p_c__serial__interface}{PC\_serial\_interface}}}
-\DoxyCodeLine{10 \{}
-\DoxyCodeLine{11 \textcolor{keyword}{public}:}
-\DoxyCodeLine{12     \mbox{\hyperlink{class_p_c__serial__interface}{PC\_serial\_interface}}(PinName tx, PinName rx, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} baud\_rate);}
-\DoxyCodeLine{13     \mbox{\hyperlink{class_p_c__serial__interface}{PC\_serial\_interface}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_p_c__serial__interface}{PC\_serial\_interface}} \&target\_interface);}
-\DoxyCodeLine{14     \mbox{\hyperlink{class_p_c__serial__interface}{\string~PC\_serial\_interface}}();}
-\DoxyCodeLine{15     \textcolor{keywordtype}{void} print(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *string\_out);}
-\DoxyCodeLine{16     \textcolor{keywordtype}{void} print(\textcolor{keyword}{const} \textcolor{keywordtype}{int} int\_out);}
-\DoxyCodeLine{17     \textcolor{keywordtype}{void} print(\textcolor{keyword}{const} \textcolor{keywordtype}{float} float\_out, \textcolor{keywordtype}{int} sig\_figures = 1);}
-\DoxyCodeLine{18     \textcolor{keywordtype}{void} println(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *string\_out);}
-\DoxyCodeLine{19     \textcolor{keywordtype}{void} println(\textcolor{keyword}{const} \textcolor{keywordtype}{int} int\_out);}
-\DoxyCodeLine{20     \textcolor{keywordtype}{void} println(\textcolor{keyword}{const} \textcolor{keywordtype}{float} float\_out, \textcolor{keywordtype}{int} sig\_figures = 1);}
-\DoxyCodeLine{21     \textcolor{keywordtype}{void} read(\textcolor{keywordtype}{char} *\textcolor{keywordtype}{string}, \textcolor{keywordtype}{int} length);}
-\DoxyCodeLine{22     \textcolor{keywordtype}{void} echo();}
-\DoxyCodeLine{23 }
-\DoxyCodeLine{24 \textcolor{keyword}{private}:}
-\DoxyCodeLine{25     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} baud\_rate = 0;}
-\DoxyCodeLine{26     PinName tx\_pin;}
-\DoxyCodeLine{27     PinName rx\_pin;}
-\DoxyCodeLine{28     UnbufferedSerial *uart\_interface = \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{29 \};}
-\DoxyCodeLine{30 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef PC\_SERIAL\_INTERFACE}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define PC\_SERIAL\_INTERFACE}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <mbed.h>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}utils.h"{}}}
+\DoxyCodeLine{12 \textcolor{keyword}{const} \textcolor{keywordtype}{int} STRING\_BUFFER\_SIZE = 60;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_p_c__serial__interface}{PC\_serial\_interface}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_p_c__serial__interface}{PC\_serial\_interface}}(PinName tx, PinName rx, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} baud\_rate);}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_p_c__serial__interface}{PC\_serial\_interface}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_p_c__serial__interface}{PC\_serial\_interface}} \&target\_interface);}
+\DoxyCodeLine{35     \mbox{\hyperlink{class_p_c__serial__interface_a2fc3548eda1aa93370292b8a80ae1538}{\string~PC\_serial\_interface}}();}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_p_c__serial__interface_a52ab40d5831945344a22e6ef117d8b3f}{print}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *string\_out);}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_p_c__serial__interface_a52ab40d5831945344a22e6ef117d8b3f}{print}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} int\_out);}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_p_c__serial__interface_ad7c7d6bf178e7e5b01dcbd40e079a044}{println}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} float\_out, \textcolor{keywordtype}{int} sig\_figures = 1);}
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_p_c__serial__interface_ad7c7d6bf178e7e5b01dcbd40e079a044}{println}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *string\_out);}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_p_c__serial__interface_ad7c7d6bf178e7e5b01dcbd40e079a044}{println}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} int\_out);}
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_p_c__serial__interface_a52ab40d5831945344a22e6ef117d8b3f}{print}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} float\_out, \textcolor{keywordtype}{int} sig\_figures = 1);}
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_p_c__serial__interface_a5921c585d7a5930774b83f738536313e}{read}}(\textcolor{keywordtype}{char} *\textcolor{keywordtype}{string}, \textcolor{keywordtype}{int} length);}
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_p_c__serial__interface_a50cc073af9e536c694c50e178842ac09}{echo}}();}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 \textcolor{keyword}{private}:}
+\DoxyCodeLine{88     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} baud\_rate = 0;}
+\DoxyCodeLine{89     PinName tx\_pin;}
+\DoxyCodeLine{90     PinName rx\_pin;}
+\DoxyCodeLine{91     UnbufferedSerial *uart\_interface = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{92 \};}
+\DoxyCodeLine{93 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

@@ -1,4 +1,5 @@
 <map id="Check_instruction_state::transition" name="Check_instruction_state::transition">
-<area shape="rect" id="node1" title="Método para cambiar de estado." coords="5,5,168,45"/>
+<area shape="rect" id="node1" title="Método para cambiar de estado." coords="5,37,168,77"/>
 <area shape="rect" id="node2" href="$class_check__instruction__state.html#afeb2e9157050c1c98616340af2e3f8ec" title="Método que se llama al salir del estado." coords="216,5,379,45"/>
+<area shape="rect" id="node3" href="$class_control__system.html#a8b637df1ff92042b105b0ff0b607ffd3" title="Devuelve el estado de solicitud de próxima instrucción." coords="222,69,373,109"/>
 </map>

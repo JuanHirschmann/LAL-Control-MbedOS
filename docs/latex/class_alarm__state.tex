@@ -2,8 +2,7 @@
 \label{class_alarm__state}\index{Alarm\_state@{Alarm\_state}}
 
 
-Inheritance diagram for Alarm\+\_\+state\+:
-\nopagebreak
+Inheritance diagram for Alarm\+\_\+state\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,8 +11,7 @@ Inheritance diagram for Alarm\+\_\+state\+:
 \end{figure}
 
 
-Collaboration diagram for Alarm\+\_\+state\+:
-\nopagebreak
+Collaboration diagram for Alarm\+\_\+state\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -72,16 +70,14 @@ Salida del estado, apaga LEDs y \mbox{\hyperlink{class_buzzer}{Buzzer}}.
 
 Implements \mbox{\hyperlink{class_abstract__state_ae91c3148b1f2337e1f9465bc27f7ef63}{Abstract\+\_\+state}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=292pt]{class_alarm__state_acf39d27a3ccd1c25ade55e08918650f8_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -104,14 +100,13 @@ Transición de estados.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Abstract\+\_\+state$\ast$ Transiciones posibles\+: Si existe una alarma el sistema transiciona hacia \mbox{\hyperlink{class_shutdown__state}{Shutdown\+\_\+state}}. Si no existe alarama, cuando se supere el paso de enfriamiento del motor o no haya advertencia el sistema transiciona hacia \mbox{\hyperlink{class_idle__state}{Idle\+\_\+state}}. 
+Abstract\+\_\+state$\ast$ Transiciones posibles\+: Si no existe alarma y hay solicitud de nuevo paso el sistema transiciona hacia Check\+\_\+instruction. 
 \end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_abstract__state_a130d61765e2fcdf3bb0500943221efbe}{Abstract\+\_\+state}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -149,5 +144,5 @@ Here is the call graph for this function\+:
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Facultad/\+Beca/\+Proyecto/\+LAL Control Arduino/include/machine\+\_\+state\+\_\+pattern/machine\+\_\+states/\mbox{\hyperlink{_alarm__state_8h}{Alarm\+\_\+state.\+h}}\item 
-C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Facultad/\+Beca/\+Proyecto/\+LAL Control Arduino/src/machine\+\_\+state\+\_\+pattern/Alarm\+\_\+state.\+cpp\end{DoxyCompactItemize}
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/machine\+\_\+state\+\_\+pattern/machine\+\_\+states/\mbox{\hyperlink{_alarm__state_8h}{Alarm\+\_\+state.\+h}}\item 
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/machine\+\_\+state\+\_\+pattern/\mbox{\hyperlink{_alarm_8cpp}{Alarm.\+cpp}}\end{DoxyCompactItemize}

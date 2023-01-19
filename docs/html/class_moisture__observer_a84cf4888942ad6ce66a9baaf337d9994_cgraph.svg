@@ -53,7 +53,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="class_control__system.html#af5985ea3ad848a1631ff6c12ef4b3941" target="_top" xlink:title="Solicita una alarma.">
+<g id="a_node5"><a xlink:href="class_control__system.html#a2f7771547e0b22acc6da22340fed6f50" target="_top" xlink:title="Solicita una alarma.">
 <polygon fill="white" stroke="#666666" points="262.5,-30 139.5,-30 139.5,0 262.5,0 262.5,-30"/>
 <text text-anchor="start" x="147.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Control_system::request</text>
 <text text-anchor="middle" x="201" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">_alarm</text>
@@ -69,7 +69,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="class_moisture__sensor.html#acd72c51f63ca144ecb419b7cca849974" target="_top" xlink:title="Devuelve la lectura realizada.">
+<g id="a_node4"><a xlink:href="class_moisture__sensor.html#a8d58285011777c1d6c0596032e46448b" target="_top" xlink:title="Devuelve la lectura realizada.">
 <polygon fill="white" stroke="#666666" points="409,-78 301,-78 301,-48 409,-48 409,-78"/>
 <text text-anchor="start" x="309" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Moisture_sensor::get</text>
 <text text-anchor="middle" x="355" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">_reading</text>

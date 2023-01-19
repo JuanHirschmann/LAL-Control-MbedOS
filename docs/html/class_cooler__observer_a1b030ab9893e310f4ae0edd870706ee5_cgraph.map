@@ -1,0 +1,5 @@
+<map id="Cooler_observer::update_speed" name="Cooler_observer::update_speed">
+<area shape="rect" id="node1" title="Actualiza la medición de velocidad." coords="5,5,167,45"/>
+<area shape="rect" id="node2" href="$class_control__system.html#a914b54af513cf38a2600b3c710ab5c87" title="Fija velocidades en el display de los ventiladores." coords="215,5,377,45"/>
+<area shape="rect" id="node3" href="$class_display.html#a4c22cf2f0125cb737bf93136caa32de3" title="Fija el valor del porcentaje de velocidad, no lo imprie en pantalla. La ubicación se da con las const..." coords="425,13,608,38"/>
+</map>

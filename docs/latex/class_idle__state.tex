@@ -65,6 +65,13 @@ Método llamado al ingresar al estado. Actualiza la pantalla con el paso del pro
 
 Implements \mbox{\hyperlink{class_abstract__state_a1c001b0cb46c11126cb9ff77f8ad3016}{Abstract\+\_\+state}}.
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_idle__state_ad6d70e591dd39da724656a4261013e4f_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_idle__state_aad83cf5a4d37cbb4b45b64dd6d632c53}\label{class_idle__state_aad83cf5a4d37cbb4b45b64dd6d632c53}} 
 \index{Idle\_state@{Idle\_state}!exit@{exit}}
 \index{exit@{exit}!Idle\_state@{Idle\_state}}
@@ -101,7 +108,7 @@ Here is the caller graph for this function\+:\nopagebreak
 
 Transición hacia nuevo estado. 
 
-Transiciones posibles\+: Si se solicito una advertencia, una alarma o el sistema se encuentra entre los pasos MOTOR\+\_\+\+ON\+\_\+\+STEP y MOTOR\+\_\+\+COOLDOWN\+\_\+\+STEP la transición es hacia \mbox{\hyperlink{class_motor__control__state}{Motor\+\_\+control\+\_\+state}}. Si se solicitó un apagado del sistema y no se transiciona hacia \mbox{\hyperlink{class_motor__control__state}{Motor\+\_\+control\+\_\+state}}, la transición es hacia \mbox{\hyperlink{class_shutdown__state}{Shutdown\+\_\+state}}. 
+Transiciones posibles\+: Si se solicito una advertencia, una alarma o el sistema se encuentra entre los pasos MOTOR\+\_\+\+ON\+\_\+\+STEP y MOTOR\+\_\+\+COOLDOWN\+\_\+\+STEP la transición es hacia \mbox{\hyperlink{class_alarm__state}{Alarm\+\_\+state}}. Si se solicitó un apagado del sistema y no se transiciona hacia \mbox{\hyperlink{class_alarm__state}{Alarm\+\_\+state}}, la transición es hacia \mbox{\hyperlink{class_shutdown__state}{Shutdown\+\_\+state}}. 
 \begin{DoxyParams}{Parameters}
 {\em machine} & máquina de estados. \\
 \hline
@@ -139,11 +146,12 @@ Método para actualizar el sistema cuando está en estado de reposo. Actualiza l
 
 Implements \mbox{\hyperlink{class_abstract__state_a993232854cd166a601b6c5b4ba7befcc}{Abstract\+\_\+state}}.
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=324pt]{class_idle__state_a92217c98eda8e3bd47eb3a8ff602efc2_cgraph}
+\includegraphics[width=350pt]{class_idle__state_a92217c98eda8e3bd47eb3a8ff602efc2_cgraph}
 \end{center}
 \end{figure}
 
@@ -151,4 +159,4 @@ Here is the call graph for this function\+:\nopagebreak
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/machine\+\_\+state\+\_\+pattern/machine\+\_\+states/\mbox{\hyperlink{_idle__state_8h}{Idle\+\_\+state.\+h}}\item 
-C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/machine\+\_\+state\+\_\+pattern/Idle\+\_\+state.\+cpp\end{DoxyCompactItemize}
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/machine\+\_\+state\+\_\+pattern/\mbox{\hyperlink{_idle__state_8cpp}{Idle\+\_\+state.\+cpp}}\end{DoxyCompactItemize}

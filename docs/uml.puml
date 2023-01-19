@@ -1,0 +1,717 @@
+@startuml LAL Control Mbed OS
+class Control_system
+{
+    + init()
+    + handle_alarm()
+    + update()
+    + wake()
+    + is_off()
+    + reset_context()
+    + get_cooler_rotation(int cooler)
+    + get_context()
+    + is_cooler_on(int cooler)
+    + display_cooler_speed(float rear_cooler_speed, float front_cooler_speed)
+    + set_cooler_speed(float rear_cooler_speed, float front_cooler_speed)
+    + show_current_step()
+    + show_error_msg()
+    + next_step()
+    + init_display()
+    + notify_observers()
+    + measure_temperature()
+    + measure_moisture()
+    + set_next_step_flag(bool new_state)
+    + is_next_step_requested()
+    + set_poll_sensor_flag(bool new_state)
+    + is_poll_sensors_requested()
+    + set_alarm_flag(bool new_state)
+    + is_alarm_requested()
+    + request_alarm(Alarm_types type_of_alarm)
+    + request_warning(Alarm_types type_of_warning)
+    + set_warning_flag(bool new_state)
+    + is_warning_requested()
+    + transition_state()
+    + is_next_step_overriden()
+    + ~Control_system()
+    -Context_t context
+    -Display display
+    -Temperature_sensor temp_sensor
+    -Buzzer buzzer
+    -Motor motor
+    -Moisture_sensor mois_sensor
+    -Cooler front_cooler
+    -Cooler rear_cooler
+    -Dual_LED motor_status_led
+    -Digital_dual_LED water_intake_led
+    -Digital_dual_LED rear_cooler_led
+    -Digital_dual_LED front_cooler_led
+
+}
+class Subject
+{
+    + notify_observers()
+    + attach(Observer_interface *obs)
+    - int current_observers
+}
+class Machine
+{
+    +{virtual} transition_state()
+    # Abstract_state * current_state
+}
+
+class Context_t <<(D,orchid)>>
+{
+    float temperature;
+    bool shutdown_request;
+    bool warning_request;
+    bool alarm_request;
+    bool next_step_request;
+    bool poll_sensors_request;
+    bool override_next_step;
+    Alarm_types current_alarm;
+    Steps current_step;
+
+}
+class Cooler_observer
+class Instruction_observer
+class Moisture_observer
+class Temperature_observer
+class System_observer
+{
+    {virtual} update(Control_system* subject)
+}
+class Buzzer
+{
+    +Buzzer(PinName buzzer_pin, unsigned int frequency)
+    +turn_on(unsigned long duration)
+    +turn_off()
+    +toggle(unsigned int duration)
+    +set_frequency(unsigned int new_frequency)
+    +is_active()
+    -DigitalOut buzzer
+    -bool is_ringing 
+    -PinName buzzer_pin
+    -float frequency 
+}
+class Cooler
+{
+    +Cooler(PinName power_pin, PinName speed_measurement_pin)
+    +turn_on(float duty_cycle)
+    +turn_off()
+    +get_rotation()
+    +count_rotation()
+    +is_on()
+    -bool _is_on 
+    -unsigned long int rotations_in_sample_period 
+    -PwmOut power_pin
+    -InterruptIn speed_measurement_pin
+    -float current_duty_cycle 
+    -float current_RPS
+}
+
+class Digital_dual_LED
+{
+    +Digital_dual_LED(PinName green_led_pin, PinName red_led_pin)
+    +turn_red()
+    +turn_green()
+    +turn_off()
+    -bool is_on
+    -DigitalOut green_led
+    -DigitalOut red_led
+}
+class Temperature_sensor
+{
+    +Temperature_sensor(PinName one_wire_bus)
+    +get_reading()
+    -init_sensors()
+    -update_readings()
+    -int available_ds18_devices
+    -float reading;
+    -DS1820 DS18B20_sensor
+}
+class Motor
+{
+    +Motor(PinName motor_pin)
+    +turn_on()
+    +turn_off()
+    +is_active()
+    -bool is_on 
+    -DigitalOut motor_pin
+}
+class Moisture_sensor
+{
+    +Moisture_sensor(PinName analog_pin)
+    +get_reading()
+    -update_reading()
+    -AnalogIn sensor_pin
+    -float reading
+}
+class Dual_LED
+{
+    +Dual_LED(PinName green_led_pin, PinName red_led_pin)
+    +set_color(COLOR_TYPES new_color)
+    +turn_red()
+    +turn_green()
+    +turn_yellow()
+    +turn_on()
+    +turn_off()
+    -bool is_on
+    -Color_types current_color
+    -float green_led_duty_cycle
+    -float red_led_duty_cycle
+    -PwmOut green_led
+    -PwmOut red_led
+}
+class Display
+{
+    +init()
+    +Display()
+    +set_temp(float new_temperature)
+    +set_fan_speed_pct(float back_speed_pct, float front_speed_pct)
+    +set_text(const char *string_out)
+    +update()
+    +turn_off()
+    +turn_on()
+    -hd44780_I2Cexp screen_interface
+    -bool update_needed
+    -char on_screen_text[]
+    -float on_screen_temp
+    -float on_screen_fan_speed_pct[2]
+
+}
+abstract Abstract_state
+{
+    +{virtual} update(Control_system *machine)
+    +{virtual} enter(Control_system *machine)
+    +{virtual} exit(Control_system *machine)
+    +{virtual} Abstract_state *transition(Control_system *machine)
+}
+System_observer --|>Observer :hereda
+Observer --|>Observer_interface :hereda
+Subject --|>Subject_interface :hereda
+Subject_interface"1" --> "MAX_OBSERVERS" Observer_interface: apunta 
+Control_system--|>Subject :hereda
+Control_system--|>Machine :hereda
+
+Cooler_observer--|>System_observer: hereda
+Instruction_observer--|>System_observer: hereda
+Moisture_observer--|>System_observer: hereda
+Temperature_observer--|>System_observer: hereda
+
+
+Machine"1" --> "1" Abstract_state: apunta 
+Check_instruction_state--|> Abstract_state:hereda
+Alarm_state--|>Abstract_state:hereda
+Idle_state--|>Abstract_state:hereda
+Shutdown_state --|>Abstract_state:hereda
+
+Context_t --* "1" Steps :contiene
+Context_t --* "1" Alarm_types :contiene
+
+Display --* "1" hd44780_I2Cexp: contiene
+
+Control_system --* "1"Context_t:contiene
+Control_system --* "1"Buzzer:contiene
+Control_system --* "1"Display:contiene
+Control_system --* "1"Dual_LED:contiene
+Control_system --* "3"Digital_dual_LED:contiene
+Control_system --* "2"Cooler:contiene
+Control_system --* "1"Temperature_sensor:contiene
+Control_system --* "1"Moisture_sensor:contiene
+Control_system --* "1"Motor:contiene
+
+Digital_dual_LED--*"1" Color_types:contiene
+Dual_LED--*"1" Color_types:contiene
+Display --*"1" pcf8574_t: contiene
+pcf8574_t --*"1" Coordinates_t: contiene 
+newpage
+interface Subject_interface
+{
+    + {virtual} attach(Observer_interface *obs)
+    + {virtual} notify_observers()
+    # Observer_interface *observers
+}
+interface Observer_interface
+{
+    + {virtual} update(Subject_interface *subject_interface)
+
+}
+class Observer
+{
+    + {virtual} update(Subject_interface *subject_interface)
+}
+
+enum Alarm_types
+{
+    NO_ALARM,
+    OVERTEMP_ALARM,
+    HUMIDITY_ALARM,
+    HALTED_FAN_ALARM,
+    NO_TEMP_SENSOR_ALARM,
+    OVERTEMP_WARNING,
+    SLOW_FAN_WARNING,
+}
+enum Steps
+{
+    WELCOME_STEP ,
+    WATER_ON_STEP ,
+    OPEN_FAUCET_STEP ,
+    MOTOR_ON_STEP ,
+    MOTOR_OFF_STEP ,
+    MOTOR_COOLDOWN_STEP ,
+    WATER_OFF_STEP ,
+    LAST_STEP ,
+}
+enum Color_types
+{
+    RED,
+    YELLOW,
+    GREEN,
+}
+
+
+
+class Check_instruction_state
+class Alarm_state
+class Idle_state
+class Shutdown_state
+
+
+class Coordinates_t <<(D,orchid)>>
+{
+    int x_pos
+    int y_pos
+}
+class pcf8574_t <<(D,orchid)>>
+{
+    int address
+    char data
+    bool displayPinRs
+    bool displayPinRw
+    bool displayPinEn
+    bool displayPinA
+    bool displayPinD4
+    bool displayPinD5
+    bool displayPinD6
+    bool displayPinD7
+}
+class hd44780_I2Cexp
+{
+    +lineWrap()
+    +home()
+    +clear()
+    +turn_on()
+    +turn_off()
+    +begin()
+    +print(const char *str)
+    +print(const int value)
+    +print(const float value, int precision)
+    +cursor(uint8_t charPositionX, uint8_t charPositionY)
+    +hd44780_I2Cexp(PinName sda, PinName scl)
+    -bool is_initial_8bit_complete
+    -bool line_wrap
+    -coordinates_t cursor_position
+    -pcf8574_t pcf8574_data
+    -I2C pcf8574_i2c
+    -send_command(bool type, uint8_t dataBus)
+    -write_data_bus(uint8_t dataBus)
+    -pin_write(int pin, int value)
+
+}
+System_observer --|>Observer :hereda
+Observer --|>Observer_interface :hereda
+Subject --|>Subject_interface :hereda
+Subject_interface"1" --> "MAX_OBSERVERS" Observer_interface: apunta 
+Control_system--|>Subject :hereda
+Control_system--|>Machine :hereda
+
+Cooler_observer--|>System_observer: hereda
+Instruction_observer--|>System_observer: hereda
+Moisture_observer--|>System_observer: hereda
+Temperature_observer--|>System_observer: hereda
+
+
+Machine"1" --> "1" Abstract_state: apunta 
+Check_instruction_state--|> Abstract_state:hereda
+Alarm_state--|>Abstract_state:hereda
+Idle_state--|>Abstract_state:hereda
+Shutdown_state --|>Abstract_state:hereda
+
+Context_t --* "1" Steps :contiene
+Context_t --* "1" Alarm_types :contiene
+
+Display --* "1" hd44780_I2Cexp: contiene
+
+Control_system --* "1"Context_t:contiene
+Control_system --* "1"Buzzer:contiene
+Control_system --* "1"Display:contiene
+Control_system --* "1"Dual_LED:contiene
+Control_system --* "3"Digital_dual_LED:contiene
+Control_system --* "2"Cooler:contiene
+Control_system --* "1"Temperature_sensor:contiene
+Control_system --* "1"Moisture_sensor:contiene
+Control_system --* "1"Motor:contiene
+
+Digital_dual_LED--*"1" Color_types:contiene
+Dual_LED--*"1" Color_types:contiene
+Display --*"1" pcf8574_t: contiene
+pcf8574_t --*"1" Coordinates_t: contiene 
+newpage
+class Control_system
+{
+    + init()
+    + handle_alarm()
+    + update()
+    + wake()
+    + is_off()
+    + reset_context()
+    + get_cooler_rotation(int cooler)
+    + get_context()
+    + is_cooler_on(int cooler)
+    + display_cooler_speed(float rear_cooler_speed, float front_cooler_speed)
+    + set_cooler_speed(float rear_cooler_speed, float front_cooler_speed)
+    + show_current_step()
+    + show_error_msg()
+    + next_step()
+    + init_display()
+    + notify_observers()
+    + measure_temperature()
+    + measure_moisture()
+    + set_next_step_flag(bool new_state)
+    + is_next_step_requested()
+    + set_poll_sensor_flag(bool new_state)
+    + is_poll_sensors_requested()
+    + set_alarm_flag(bool new_state)
+    + is_alarm_requested()
+    + request_alarm(Alarm_types type_of_alarm)
+    + request_warning(Alarm_types type_of_warning)
+    + set_warning_flag(bool new_state)
+    + is_warning_requested()
+    + transition_state()
+    + is_next_step_overriden()
+    + ~Control_system()
+    -Context_t context
+    -Display display
+    -Temperature_sensor temp_sensor
+    -Buzzer buzzer
+    -Motor motor
+    -Moisture_sensor mois_sensor
+    -Cooler front_cooler
+    -Cooler rear_cooler
+    -Dual_LED motor_status_led
+    -Digital_dual_LED water_intake_led
+    -Digital_dual_LED rear_cooler_led
+    -Digital_dual_LED front_cooler_led
+
+}
+class Subject
+{
+    + notify_observers()
+    + attach(Observer_interface *obs)
+    - int current_observers
+}
+class Machine
+{
+    +{virtual} transition_state()
+    # Abstract_state * current_state
+}
+
+class Context_t <<(D,orchid)>>
+{
+    float temperature;
+    bool shutdown_request;
+    bool warning_request;
+    bool alarm_request;
+    bool next_step_request;
+    bool poll_sensors_request;
+    bool override_next_step;
+    Alarm_types current_alarm;
+    Steps current_step;
+
+}
+class Cooler_observer
+class Instruction_observer
+class Moisture_observer
+class Temperature_observer
+class System_observer
+{
+    {virtual} update(Control_system* subject)
+}
+class Buzzer
+{
+    +Buzzer(PinName buzzer_pin, unsigned int frequency)
+    +turn_on(unsigned long duration)
+    +turn_off()
+    +toggle(unsigned int duration)
+    +set_frequency(unsigned int new_frequency)
+    +is_active()
+    -DigitalOut buzzer
+    -bool is_ringing 
+    -PinName buzzer_pin
+    -float frequency 
+}
+class Cooler
+{
+    +Cooler(PinName power_pin, PinName speed_measurement_pin)
+    +turn_on(float duty_cycle)
+    +turn_off()
+    +get_rotation()
+    +count_rotation()
+    +is_on()
+    -bool _is_on 
+    -unsigned long int rotations_in_sample_period 
+    -PwmOut power_pin
+    -InterruptIn speed_measurement_pin
+    -float current_duty_cycle 
+    -float current_RPS
+}
+
+class Digital_dual_LED
+{
+    +Digital_dual_LED(PinName green_led_pin, PinName red_led_pin)
+    +turn_red()
+    +turn_green()
+    +turn_off()
+    -bool is_on
+    -DigitalOut green_led
+    -DigitalOut red_led
+}
+class Temperature_sensor
+{
+    +Temperature_sensor(PinName one_wire_bus)
+    +get_reading()
+    -init_sensors()
+    -update_readings()
+    -int available_ds18_devices
+    -float reading;
+    -DS1820 DS18B20_sensor
+}
+class Motor
+{
+    +Motor(PinName motor_pin)
+    +turn_on()
+    +turn_off()
+    +is_active()
+    -bool is_on 
+    -DigitalOut motor_pin
+}
+class Moisture_sensor
+{
+    +Moisture_sensor(PinName analog_pin)
+    +get_reading()
+    -update_reading()
+    -AnalogIn sensor_pin
+    -float reading
+}
+class Dual_LED
+{
+    +Dual_LED(PinName green_led_pin, PinName red_led_pin)
+    +set_color(COLOR_TYPES new_color)
+    +turn_red()
+    +turn_green()
+    +turn_yellow()
+    +turn_on()
+    +turn_off()
+    -bool is_on
+    -Color_types current_color
+    -float green_led_duty_cycle
+    -float red_led_duty_cycle
+    -PwmOut green_led
+    -PwmOut red_led
+}
+class Display
+{
+    +init()
+    +Display()
+    +set_temp(float new_temperature)
+    +set_fan_speed_pct(float back_speed_pct, float front_speed_pct)
+    +set_text(const char *string_out)
+    +update()
+    +turn_off()
+    +turn_on()
+    -hd44780_I2Cexp screen_interface
+    -bool update_needed
+    -char on_screen_text[]
+    -float on_screen_temp
+    -float on_screen_fan_speed_pct[2]
+
+}
+abstract Abstract_state
+{
+    +{virtual} update(Control_system *machine)
+    +{virtual} enter(Control_system *machine)
+    +{virtual} exit(Control_system *machine)
+    +{virtual} Abstract_state *transition(Control_system *machine)
+}
+
+interface Subject_interface
+{
+    + {virtual} attach(Observer_interface *obs)
+    + {virtual} notify_observers()
+    # Observer_interface *observers
+}
+interface Observer_interface
+{
+    + {virtual} update(Subject_interface *subject_interface)
+
+}
+class Observer
+{
+    + {virtual} update(Subject_interface *subject_interface)
+}
+
+enum Alarm_types
+{
+    NO_ALARM,
+    OVERTEMP_ALARM,
+    HUMIDITY_ALARM,
+    HALTED_FAN_ALARM,
+    NO_TEMP_SENSOR_ALARM,
+    OVERTEMP_WARNING,
+    SLOW_FAN_WARNING,
+}
+enum Steps
+{
+    WELCOME_STEP ,
+    WATER_ON_STEP ,
+    OPEN_FAUCET_STEP ,
+    MOTOR_ON_STEP ,
+    MOTOR_OFF_STEP ,
+    MOTOR_COOLDOWN_STEP ,
+    WATER_OFF_STEP ,
+    LAST_STEP ,
+}
+enum Color_types
+{
+    RED,
+    YELLOW,
+    GREEN,
+}
+
+
+
+class Check_instruction_state
+class Alarm_state
+class Idle_state
+class Shutdown_state
+
+
+class Coordinates_t <<(D,orchid)>>
+{
+    int x_pos
+    int y_pos
+}
+class pcf8574_t <<(D,orchid)>>
+{
+    int address
+    char data
+    bool displayPinRs
+    bool displayPinRw
+    bool displayPinEn
+    bool displayPinA
+    bool displayPinD4
+    bool displayPinD5
+    bool displayPinD6
+    bool displayPinD7
+}
+class hd44780_I2Cexp
+{
+    +lineWrap()
+    +home()
+    +clear()
+    +turn_on()
+    +turn_off()
+    +begin()
+    +print(const char *str)
+    +print(const int value)
+    +print(const float value, int precision)
+    +cursor(uint8_t charPositionX, uint8_t charPositionY)
+    +hd44780_I2Cexp(PinName sda, PinName scl)
+    -bool is_initial_8bit_complete
+    -bool line_wrap
+    -coordinates_t cursor_position
+    -pcf8574_t pcf8574_data
+    -I2C pcf8574_i2c
+    -send_command(bool type, uint8_t dataBus)
+    -write_data_bus(uint8_t dataBus)
+    -pin_write(int pin, int value)
+
+}
+System_observer --|>Observer :hereda
+Observer --|>Observer_interface :hereda
+Subject --|>Subject_interface :hereda
+Subject_interface"1" --> "MAX_OBSERVERS" Observer_interface: apunta 
+Control_system--|>Subject :hereda
+Control_system--|>Machine :hereda
+
+Cooler_observer--|>System_observer: hereda
+Instruction_observer--|>System_observer: hereda
+Moisture_observer--|>System_observer: hereda
+Temperature_observer--|>System_observer: hereda
+
+
+Machine"1" --> "1" Abstract_state: apunta 
+Check_instruction_state--|> Abstract_state:hereda
+Alarm_state--|>Abstract_state:hereda
+Idle_state--|>Abstract_state:hereda
+Shutdown_state --|>Abstract_state:hereda
+
+Context_t --* "1" Steps :contiene
+Context_t --* "1" Alarm_types :contiene
+
+Display --* "1" hd44780_I2Cexp: contiene
+
+Control_system --* "1"Context_t:contiene
+Control_system --* "1"Buzzer:contiene
+Control_system --* "1"Display:contiene
+Control_system --* "1"Dual_LED:contiene
+Control_system --* "3"Digital_dual_LED:contiene
+Control_system --* "2"Cooler:contiene
+Control_system --* "1"Temperature_sensor:contiene
+Control_system --* "1"Moisture_sensor:contiene
+Control_system --* "1"Motor:contiene
+
+Digital_dual_LED--*"1" Color_types:contiene
+Dual_LED--*"1" Color_types:contiene
+Display --*"1" pcf8574_t: contiene
+pcf8574_t --*"1" Coordinates_t: contiene 
+newpage
+
+System_observer --|>Observer :hereda
+Observer --|>Observer_interface :hereda
+Subject --|>Subject_interface :hereda
+Subject_interface"1" --> "MAX_OBSERVERS" Observer_interface: apunta 
+Control_system--|>Subject :hereda
+Control_system--|>Machine :hereda
+
+Cooler_observer--|>System_observer: hereda
+Instruction_observer--|>System_observer: hereda
+Moisture_observer--|>System_observer: hereda
+Temperature_observer--|>System_observer: hereda
+
+
+Machine"1" --> "1" Abstract_state: apunta 
+Check_instruction_state--|> Abstract_state:hereda
+Alarm_state--|>Abstract_state:hereda
+Idle_state--|>Abstract_state:hereda
+Shutdown_state --|>Abstract_state:hereda
+
+Context_t --* "1" Steps :contiene
+Context_t --* "1" Alarm_types :contiene
+
+Display --* "1" hd44780_I2Cexp: contiene
+
+Control_system --* "1"Context_t:contiene
+Control_system --* "1"Buzzer:contiene
+Control_system --* "1"Display:contiene
+Control_system --* "1"Dual_LED:contiene
+Control_system --* "3"Digital_dual_LED:contiene
+Control_system --* "2"Cooler:contiene
+Control_system --* "1"Temperature_sensor:contiene
+Control_system --* "1"Moisture_sensor:contiene
+Control_system --* "1"Motor:contiene
+
+Digital_dual_LED--*"1" Color_types:contiene
+Dual_LED--*"1" Color_types:contiene
+Display --*"1" pcf8574_t: contiene
+pcf8574_t --*"1" Coordinates_t: contiene 
+@enduml

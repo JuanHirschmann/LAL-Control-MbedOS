@@ -30,7 +30,7 @@ enum STEPS
  * @brief Tipos de alarmas y advertencias del sistema
  *
  */
-enum ALARM_TYPES
+enum Alarm_types
 {
     NO_ALARM = 0,
     OVERTEMP_ALARM,
@@ -63,7 +63,7 @@ typedef struct
     bool next_step_request;
     bool poll_sensors_request;
     bool override_next_step;
-    ALARM_TYPES current_alarm;
+    Alarm_types current_alarm;
 
 } Context_t;
 

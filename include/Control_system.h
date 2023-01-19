@@ -164,13 +164,13 @@ public:
      *
      * @param type_of_alarm Tipo de alarma a solicitar.
      */
-    void request_alarm(ALARM_TYPES type_of_alarm);
+    void request_alarm(Alarm_types type_of_alarm);
     /**
      * @brief Solicita una advertencia.
      *
      * @param type_of_alarm Tipo de advertencia a solicitar.
      */
-    void request_warning(ALARM_TYPES type_of_warning);
+    void request_warning(Alarm_types type_of_warning);
     /**
      * @brief Fija el valor del indicador de advertencia
      *

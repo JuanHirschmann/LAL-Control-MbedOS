@@ -1,5 +1,17 @@
 <map id="Idle_state::update" name="Idle_state::update">
-<area shape="rect" id="node1" title="Método para actualizar el sistema cuando está en estado de reposo. Actualiza la pantalla y los observ..." coords="5,42,131,67"/>
-<area shape="rect" id="node2" href="$class_control__system.html#ab7912068a11d44b07eef3b3f56ce0598" title="Método virtual puro para que las clases herederas implementen la actualización de observadores." coords="179,5,331,45"/>
-<area shape="rect" id="node3" href="$class_display.html#ad2740b779d61e461c4dcaaf34f1fcd8f" title="Actualiza los valores en pantalla con los parámetros previamente fijados. Solo actualiza la pantalla ..." coords="199,70,311,95"/>
+<area shape="rect" id="node1" title="Método para actualizar el sistema cuando está en estado de reposo. Actualiza la pantalla y los observ..." coords="5,130,131,155"/>
+<area shape="rect" id="node2" href="$class_control__system.html#ab7912068a11d44b07eef3b3f56ce0598" title="Itera sobre todos los observadores, llamando a su método de actualización." coords="179,59,331,99"/>
+<area shape="rect" id="node9" href="$class_control__system.html#ac1cd148e897c5ce2ef405dd45ddf964f" title="Muestra en pantalla el paso del procedimientoa actual." coords="179,123,330,163"/>
+<area shape="rect" id="node11" href="$class_display.html#ad2740b779d61e461c4dcaaf34f1fcd8f" title="Actualiza los valores en pantalla con los parámetros previamente fijados. Solo actualiza la pantalla ..." coords="199,226,311,251"/>
+<area shape="rect" id="node3" href="$class_control__system.html#a251677ee7c18269d85579da7a000ceab" title="Fija el valor del flag de muestro de sensores." coords="389,5,528,45"/>
+<area shape="rect" id="node4" href="$class_control__system.html#a4bfd2d8427f35a8cd4e4e10573aa5604" title="Realiza la transición de estados y actualiza el estado." coords="379,70,539,95"/>
+<area shape="rect" id="node5" href="$class_control__system.html#ab3a3e36bda029f2a5d0c4ffdf8ff984c" title="Realiza la transición de estados en caso de ser necesario." coords="587,35,761,75"/>
+<area shape="rect" id="node8" href="$class_abstract__state.html#a993232854cd166a601b6c5b4ba7befcc" title="Método para actualizar el estado." coords="597,99,751,125"/>
+<area shape="rect" id="node6" href="$class_abstract__state.html#a1c001b0cb46c11126cb9ff77f8ad3016" title="Método que se llama al ingresar al estado." coords="821,18,965,43"/>
+<area shape="rect" id="node7" href="$class_abstract__state.html#a130d61765e2fcdf3bb0500943221efbe" title="Método para cambiar de estado." coords="809,67,977,93"/>
+<area shape="rect" id="node10" href="$class_display.html#a87d1e7bf73a1d14b5e76c9ab647a9e93" title="Fija el el texto a actualizar, no lo imprime en pantalla. La ubicación se da con las constantes de of..." coords="399,126,519,151"/>
+<area shape="rect" id="node12" href="$classhd44780___i2_cexp.html#a9f885fdf91ca52fd05158387ee4bedcd" title="Borra el texto de la pantalla." coords="381,175,536,201"/>
+<area shape="rect" id="node13" href="$classhd44780___i2_cexp.html#a13020db13c26b6d7ba6ff2ebb42e4053" title="Mueve el cursor." coords="593,277,755,302"/>
+<area shape="rect" id="node14" href="$classhd44780___i2_cexp.html#ab25b744a9de62f700d5736864640d21b" title="Lleva el cursor al origen de coordenadas." coords="379,277,538,302"/>
+<area shape="rect" id="node15" href="$classhd44780___i2_cexp.html#a284e20a480ae9d5ae529fc4676d14dd3" title="Imprime una cadena de texto en la posición actual del cursor." coords="383,326,534,351"/>
 </map>

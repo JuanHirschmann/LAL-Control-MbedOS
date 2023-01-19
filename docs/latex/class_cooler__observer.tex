@@ -2,7 +2,7 @@
 \label{class_cooler__observer}\index{Cooler\_observer@{Cooler\_observer}}
 
 
-Clase heredera de \mbox{\hyperlink{class_system__observer}{System\+\_\+observer}}, creada para observar el estado de las instrucciones.  
+Clase heredera de \mbox{\hyperlink{class_system__observer}{System\+\_\+observer}}, creada para observar la velocidad de los ventiladores.  
 
 
 
@@ -11,7 +11,8 @@ Clase heredera de \mbox{\hyperlink{class_system__observer}{System\+\_\+observer}
 
 
 
-Inheritance diagram for Cooler\+\_\+observer\+:\nopagebreak
+Inheritance diagram for Cooler\+\_\+observer\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,8 @@ Inheritance diagram for Cooler\+\_\+observer\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Cooler\+\_\+observer\+:\nopagebreak
+Collaboration diagram for Cooler\+\_\+observer\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -32,13 +34,12 @@ Collaboration diagram for Cooler\+\_\+observer\+:\nopagebreak
 \item 
 void \mbox{\hyperlink{class_cooler__observer_aca9bdbbc11981c1ec178090622caaee4}{update}} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$subject)
 \begin{DoxyCompactList}\small\item\em Si el indicador de próximo paso del usuario está activo y el acceso a la próxima instrucción no esté bloqueado, avanza hacia la siguiente instrucción. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_cooler__observer_a1b030ab9893e310f4ae0edd870706ee5}\label{class_cooler__observer_a1b030ab9893e310f4ae0edd870706ee5}} 
-void {\bfseries update\+\_\+speed} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$subject)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_cooler__observer_a1b030ab9893e310f4ae0edd870706ee5}{update\+\_\+speed}} (\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$subject)
+\begin{DoxyCompactList}\small\item\em Actualiza la medición de velocidad. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Clase heredera de \mbox{\hyperlink{class_system__observer}{System\+\_\+observer}}, creada para observar el estado de las instrucciones. 
+Clase heredera de \mbox{\hyperlink{class_system__observer}{System\+\_\+observer}}, creada para observar la velocidad de los ventiladores. 
 
 
 
@@ -62,9 +63,48 @@ Si el indicador de próximo paso del usuario está activo y el acceso a la próx
 
 Implements \mbox{\hyperlink{class_system__observer}{System\+\_\+observer}}.
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cooler__observer_aca9bdbbc11981c1ec178090622caaee4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cooler__observer_a1b030ab9893e310f4ae0edd870706ee5}\label{class_cooler__observer_a1b030ab9893e310f4ae0edd870706ee5}} 
+\index{Cooler\_observer@{Cooler\_observer}!update\_speed@{update\_speed}}
+\index{update\_speed@{update\_speed}!Cooler\_observer@{Cooler\_observer}}
+\doxysubsubsection{\texorpdfstring{update\_speed()}{update\_speed()}}
+{\footnotesize\ttfamily void Cooler\+\_\+observer\+::update\+\_\+speed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_control__system}{Control\+\_\+system}} $\ast$}]{subject }\end{DoxyParamCaption})}
+
+
+
+Actualiza la medición de velocidad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subject} & sujeto a observar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cooler__observer_a1b030ab9893e310f4ae0edd870706ee5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cooler__observer_a1b030ab9893e310f4ae0edd870706ee5_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/observer\+\_\+pattern/observers/Cooler\+\_\+observer.\+h\item 
-C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/observer\+\_\+pattern/Cooler\+\_\+observer.\+cpp\end{DoxyCompactItemize}
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/observer\+\_\+pattern/\mbox{\hyperlink{_cooler__observer_8cpp}{Cooler\+\_\+observer.\+cpp}}\end{DoxyCompactItemize}

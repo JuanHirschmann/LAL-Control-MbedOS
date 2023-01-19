@@ -3,39 +3,258 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_p_c__serial__interface_ac48789051e54631541efe8ad11a2bbdb}{PC\+\_\+serial\+\_\+interface}} (Pin\+Name tx, Pin\+Name rx, unsigned int baud\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em Construye un nuevo objecto pc serial interface. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_p_c__serial__interface_abe1d8a222d26a5855544eb71baa3ab25}{PC\+\_\+serial\+\_\+interface}} (const \mbox{\hyperlink{class_p_c__serial__interface}{PC\+\_\+serial\+\_\+interface}} \&target\+\_\+interface)
+\begin{DoxyCompactList}\small\item\em Construye un nuevo objecto pc serial interface. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_p_c__serial__interface_a2fc3548eda1aa93370292b8a80ae1538}{$\sim$\+PC\+\_\+serial\+\_\+interface}} ()
+\begin{DoxyCompactList}\small\item\em Destruye el objecto pc serial interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_p_c__serial__interface_a52ab40d5831945344a22e6ef117d8b3f}{print}} (const char $\ast$string\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Imprime en la interfaz serie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_p_c__serial__interface_abc6ccaaafa3fe87d88f8ebe531f097f1}{print}} (const int int\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Imprime en la interfaz serie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_p_c__serial__interface_ad7c7d6bf178e7e5b01dcbd40e079a044}{println}} (const float float\+\_\+out, int sig\+\_\+figures=1)
+\begin{DoxyCompactList}\small\item\em Imprime en la interfaz serie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_p_c__serial__interface_a7c76b1743a1a960646597ced4a4e697d}{println}} (const char $\ast$string\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Imprime en la interfaz serie con salto de línea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_p_c__serial__interface_ad85c884e7d5b96c2ff98f85c531d1c2c}{println}} (const int int\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Imprime en la interfaz serie con salto de línea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_p_c__serial__interface_a01c58610c5e5c77a1050ae60d3a77fc3}{print}} (const float float\+\_\+out, int sig\+\_\+figures=1)
+\begin{DoxyCompactList}\small\item\em Imprime en la interfaz serie con salto de línea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_p_c__serial__interface_a5921c585d7a5930774b83f738536313e}{read}} (char $\ast$string, int length)
+\begin{DoxyCompactList}\small\item\em Lee una cadena de texto de la interfaz serie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_p_c__serial__interface_a50cc073af9e536c694c50e178842ac09}{echo}} ()
+\begin{DoxyCompactList}\small\item\em repite caracter a caracter lo leido de la interfaz serie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_p_c__serial__interface_ac48789051e54631541efe8ad11a2bbdb}\label{class_p_c__serial__interface_ac48789051e54631541efe8ad11a2bbdb}} 
-{\bfseries PC\+\_\+serial\+\_\+interface} (Pin\+Name tx, Pin\+Name rx, unsigned int baud\+\_\+rate)
-\item 
+\index{PC\_serial\_interface@{PC\_serial\_interface}!PC\_serial\_interface@{PC\_serial\_interface}}
+\index{PC\_serial\_interface@{PC\_serial\_interface}!PC\_serial\_interface@{PC\_serial\_interface}}
+\doxysubsubsection{\texorpdfstring{PC\_serial\_interface()}{PC\_serial\_interface()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily PC\+\_\+serial\+\_\+interface\+::\+PC\+\_\+serial\+\_\+interface (\begin{DoxyParamCaption}\item[{Pin\+Name}]{tx,  }\item[{Pin\+Name}]{rx,  }\item[{unsigned int}]{baud\+\_\+rate }\end{DoxyParamCaption})}
+
+
+
+Construye un nuevo objecto pc serial interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tx} & Pin de transmisión \\
+\hline
+{\em rx} & Pin de recepción \\
+\hline
+{\em baud\+\_\+rate} & Velocidad de interfaz \mbox{[}Baudios\mbox{]} \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_p_c__serial__interface_abe1d8a222d26a5855544eb71baa3ab25}\label{class_p_c__serial__interface_abe1d8a222d26a5855544eb71baa3ab25}} 
-{\bfseries PC\+\_\+serial\+\_\+interface} (const \mbox{\hyperlink{class_p_c__serial__interface}{PC\+\_\+serial\+\_\+interface}} \&target\+\_\+interface)
-\item 
-\mbox{\Hypertarget{class_p_c__serial__interface_a52ab40d5831945344a22e6ef117d8b3f}\label{class_p_c__serial__interface_a52ab40d5831945344a22e6ef117d8b3f}} 
-void {\bfseries print} (const char $\ast$string\+\_\+out)
-\item 
-\mbox{\Hypertarget{class_p_c__serial__interface_abc6ccaaafa3fe87d88f8ebe531f097f1}\label{class_p_c__serial__interface_abc6ccaaafa3fe87d88f8ebe531f097f1}} 
-void {\bfseries print} (const int int\+\_\+out)
-\item 
-\mbox{\Hypertarget{class_p_c__serial__interface_a01c58610c5e5c77a1050ae60d3a77fc3}\label{class_p_c__serial__interface_a01c58610c5e5c77a1050ae60d3a77fc3}} 
-void {\bfseries print} (const float float\+\_\+out, int sig\+\_\+figures=1)
-\item 
-\mbox{\Hypertarget{class_p_c__serial__interface_a7c76b1743a1a960646597ced4a4e697d}\label{class_p_c__serial__interface_a7c76b1743a1a960646597ced4a4e697d}} 
-void {\bfseries println} (const char $\ast$string\+\_\+out)
-\item 
-\mbox{\Hypertarget{class_p_c__serial__interface_ad85c884e7d5b96c2ff98f85c531d1c2c}\label{class_p_c__serial__interface_ad85c884e7d5b96c2ff98f85c531d1c2c}} 
-void {\bfseries println} (const int int\+\_\+out)
-\item 
-\mbox{\Hypertarget{class_p_c__serial__interface_ad7c7d6bf178e7e5b01dcbd40e079a044}\label{class_p_c__serial__interface_ad7c7d6bf178e7e5b01dcbd40e079a044}} 
-void {\bfseries println} (const float float\+\_\+out, int sig\+\_\+figures=1)
-\item 
-\mbox{\Hypertarget{class_p_c__serial__interface_a5921c585d7a5930774b83f738536313e}\label{class_p_c__serial__interface_a5921c585d7a5930774b83f738536313e}} 
-void {\bfseries read} (char $\ast$string, int length)
-\item 
+\index{PC\_serial\_interface@{PC\_serial\_interface}!PC\_serial\_interface@{PC\_serial\_interface}}
+\index{PC\_serial\_interface@{PC\_serial\_interface}!PC\_serial\_interface@{PC\_serial\_interface}}
+\doxysubsubsection{\texorpdfstring{PC\_serial\_interface()}{PC\_serial\_interface()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily PC\+\_\+serial\+\_\+interface\+::\+PC\+\_\+serial\+\_\+interface (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_p_c__serial__interface}{PC\+\_\+serial\+\_\+interface}} \&}]{target\+\_\+interface }\end{DoxyParamCaption})}
+
+
+
+Construye un nuevo objecto pc serial interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+\_\+interface} & objeto tipo \mbox{\hyperlink{class_p_c__serial__interface}{PC\+\_\+serial\+\_\+interface}} a copiar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_c__serial__interface_a2fc3548eda1aa93370292b8a80ae1538}\label{class_p_c__serial__interface_a2fc3548eda1aa93370292b8a80ae1538}} 
+\index{PC\_serial\_interface@{PC\_serial\_interface}!````~PC\_serial\_interface@{$\sim$PC\_serial\_interface}}
+\index{````~PC\_serial\_interface@{$\sim$PC\_serial\_interface}!PC\_serial\_interface@{PC\_serial\_interface}}
+\doxysubsubsection{\texorpdfstring{$\sim$PC\_serial\_interface()}{~PC\_serial\_interface()}}
+{\footnotesize\ttfamily PC\+\_\+serial\+\_\+interface\+::$\sim$\+PC\+\_\+serial\+\_\+interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruye el objecto pc serial interface. 
+
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_p_c__serial__interface_a50cc073af9e536c694c50e178842ac09}\label{class_p_c__serial__interface_a50cc073af9e536c694c50e178842ac09}} 
-void {\bfseries echo} ()
-\end{DoxyCompactItemize}
+\index{PC\_serial\_interface@{PC\_serial\_interface}!echo@{echo}}
+\index{echo@{echo}!PC\_serial\_interface@{PC\_serial\_interface}}
+\doxysubsubsection{\texorpdfstring{echo()}{echo()}}
+{\footnotesize\ttfamily void PC\+\_\+serial\+\_\+interface\+::echo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+repite caracter a caracter lo leido de la interfaz serie. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_p_c__serial__interface_a50cc073af9e536c694c50e178842ac09_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_p_c__serial__interface_a52ab40d5831945344a22e6ef117d8b3f}\label{class_p_c__serial__interface_a52ab40d5831945344a22e6ef117d8b3f}} 
+\index{PC\_serial\_interface@{PC\_serial\_interface}!print@{print}}
+\index{print@{print}!PC\_serial\_interface@{PC\_serial\_interface}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void PC\+\_\+serial\+\_\+interface\+::print (\begin{DoxyParamCaption}\item[{const char $\ast$}]{string\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Imprime en la interfaz serie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+\_\+out} & Cadena de texto a imprimir \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_p_c__serial__interface_a52ab40d5831945344a22e6ef117d8b3f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_p_c__serial__interface_a01c58610c5e5c77a1050ae60d3a77fc3}\label{class_p_c__serial__interface_a01c58610c5e5c77a1050ae60d3a77fc3}} 
+\index{PC\_serial\_interface@{PC\_serial\_interface}!print@{print}}
+\index{print@{print}!PC\_serial\_interface@{PC\_serial\_interface}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void PC\+\_\+serial\+\_\+interface\+::print (\begin{DoxyParamCaption}\item[{const float}]{float\+\_\+out,  }\item[{int}]{sig\+\_\+figures = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Imprime en la interfaz serie con salto de línea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float\+\_\+out} & número flotante a imprimir \\
+\hline
+{\em sig\+\_\+figures} & decimales despues de la coma \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_c__serial__interface_abc6ccaaafa3fe87d88f8ebe531f097f1}\label{class_p_c__serial__interface_abc6ccaaafa3fe87d88f8ebe531f097f1}} 
+\index{PC\_serial\_interface@{PC\_serial\_interface}!print@{print}}
+\index{print@{print}!PC\_serial\_interface@{PC\_serial\_interface}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void PC\+\_\+serial\+\_\+interface\+::print (\begin{DoxyParamCaption}\item[{const int}]{int\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Imprime en la interfaz serie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int\+\_\+out} & número entero a imprimir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_c__serial__interface_a7c76b1743a1a960646597ced4a4e697d}\label{class_p_c__serial__interface_a7c76b1743a1a960646597ced4a4e697d}} 
+\index{PC\_serial\_interface@{PC\_serial\_interface}!println@{println}}
+\index{println@{println}!PC\_serial\_interface@{PC\_serial\_interface}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void PC\+\_\+serial\+\_\+interface\+::println (\begin{DoxyParamCaption}\item[{const char $\ast$}]{string\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Imprime en la interfaz serie con salto de línea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+\_\+out} & Cadena de texto a imprimir \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_p_c__serial__interface_a7c76b1743a1a960646597ced4a4e697d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_p_c__serial__interface_ad7c7d6bf178e7e5b01dcbd40e079a044}\label{class_p_c__serial__interface_ad7c7d6bf178e7e5b01dcbd40e079a044}} 
+\index{PC\_serial\_interface@{PC\_serial\_interface}!println@{println}}
+\index{println@{println}!PC\_serial\_interface@{PC\_serial\_interface}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void PC\+\_\+serial\+\_\+interface\+::println (\begin{DoxyParamCaption}\item[{const float}]{float\+\_\+out,  }\item[{int}]{sig\+\_\+figures = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Imprime en la interfaz serie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float\+\_\+out} & número flotante a imprimir \\
+\hline
+{\em sig\+\_\+figures} & decimales despues de la coma \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_p_c__serial__interface_ad7c7d6bf178e7e5b01dcbd40e079a044_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_p_c__serial__interface_ad7c7d6bf178e7e5b01dcbd40e079a044_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_p_c__serial__interface_ad85c884e7d5b96c2ff98f85c531d1c2c}\label{class_p_c__serial__interface_ad85c884e7d5b96c2ff98f85c531d1c2c}} 
+\index{PC\_serial\_interface@{PC\_serial\_interface}!println@{println}}
+\index{println@{println}!PC\_serial\_interface@{PC\_serial\_interface}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void PC\+\_\+serial\+\_\+interface\+::println (\begin{DoxyParamCaption}\item[{const int}]{int\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Imprime en la interfaz serie con salto de línea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int\+\_\+out} & número entero a imprimir \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_p_c__serial__interface_ad85c884e7d5b96c2ff98f85c531d1c2c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_p_c__serial__interface_a5921c585d7a5930774b83f738536313e}\label{class_p_c__serial__interface_a5921c585d7a5930774b83f738536313e}} 
+\index{PC\_serial\_interface@{PC\_serial\_interface}!read@{read}}
+\index{read@{read}!PC\_serial\_interface@{PC\_serial\_interface}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void PC\+\_\+serial\+\_\+interface\+::read (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Lee una cadena de texto de la interfaz serie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & cadena de texto donde almacenar lo leido \\
+\hline
+{\em length} & Largo de la cadena a leer. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_p_c__serial__interface_a5921c585d7a5930774b83f738536313e_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/PC\+\_\+serial\+\_\+interface.\+h\item 
-C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/PC\+\_\+serial\+\_\+interface.\+cpp\end{DoxyCompactItemize}
+C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/src/\+Port/\mbox{\hyperlink{_p_c__serial__interface_8cpp}{PC\+\_\+serial\+\_\+interface.\+cpp}}\end{DoxyCompactItemize}

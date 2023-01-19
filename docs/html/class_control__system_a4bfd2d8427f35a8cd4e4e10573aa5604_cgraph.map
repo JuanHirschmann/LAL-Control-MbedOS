@@ -1,4 +1,7 @@
 <map id="Control_system::update" name="Control_system::update">
-<area shape="rect" id="node1" title="Actualización del sistema. De ser necesario realiza la transición de estados y actualiza el estado ac..." coords="5,5,165,31"/>
-<area shape="rect" id="node2" href="$class_abstract__state.html#a993232854cd166a601b6c5b4ba7befcc" title="Método para actualizar el estado." coords="213,5,368,31"/>
+<area shape="rect" id="node1" title="Realiza la transición de estados y actualiza el estado." coords="5,59,165,84"/>
+<area shape="rect" id="node2" href="$class_control__system.html#ab3a3e36bda029f2a5d0c4ffdf8ff984c" title="Realiza la transición de estados en caso de ser necesario." coords="213,22,388,62"/>
+<area shape="rect" id="node5" href="$class_abstract__state.html#a993232854cd166a601b6c5b4ba7befcc" title="Método para actualizar el estado." coords="223,87,378,112"/>
+<area shape="rect" id="node3" href="$class_abstract__state.html#a1c001b0cb46c11126cb9ff77f8ad3016" title="Método que se llama al ingresar al estado." coords="448,5,592,31"/>
+<area shape="rect" id="node4" href="$class_abstract__state.html#a130d61765e2fcdf3bb0500943221efbe" title="Método para cambiar de estado." coords="436,55,604,80"/>
 </map>

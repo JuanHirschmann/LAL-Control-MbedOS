@@ -1,0 +1,5 @@
+<map id="PC_serial_interface::print" name="PC_serial_interface::print">
+<area shape="rect" id="node1" title="Imprime en la interfaz serie." coords="188,37,323,77"/>
+<area shape="rect" id="node2" href="$class_p_c__serial__interface.html#a50cc073af9e536c694c50e178842ac09" title="repite caracter a caracter lo leido de la interfaz serie." coords="5,5,140,45"/>
+<area shape="rect" id="node3" href="$class_p_c__serial__interface.html#a7c76b1743a1a960646597ced4a4e697d" title="Imprime en la interfaz serie con salto de línea." coords="5,69,140,109"/>
+</map>

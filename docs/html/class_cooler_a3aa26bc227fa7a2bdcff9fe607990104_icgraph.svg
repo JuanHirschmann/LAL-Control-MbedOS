@@ -48,7 +48,7 @@ if (edges && edges.length) {
 <script type="text/javascript">
 var viewWidth = 565;
 var viewHeight = 240;
-var sectionId = 'dynsection-4';
+var sectionId = 'dynsection-2';
 </script>
 <script xlink:href="svgpan.js"/>
 <svg id="graph" class="graph">
@@ -66,7 +66,7 @@ var sectionId = 'dynsection-4';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" target="_top" xlink:title="Entrada del estado, resuelve las instrucciones a realizar en cada paso: &#45;WELCOME_STEP: Primer paso,...">
+<g id="a_node2"><a xlink:href="class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" target="_top" xlink:title="Método que se llama al ingresar al estado.">
 <polygon fill="white" stroke="#666666" points="127,-222 5,-222 5,-192 127,-192 127,-222"/>
 <text text-anchor="start" x="13" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00">Check_instruction_state</text>
 <text text-anchor="middle" x="66" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00">::enter</text>
@@ -98,17 +98,18 @@ var sectionId = 'dynsection-4';
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="class_control__system.html#a4704fee6ca6fe180a5dc292315ec3b31" target="_top" xlink:title="Apaga todos los periféricos a excepción del display. Asigna false a solictudes de alarma,...">
-<polygon fill="white" stroke="#666666" points="439,-86.5 326,-86.5 326,-67.5 439,-67.5 439,-86.5"/>
-<text text-anchor="middle" x="382.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">Control_system::reset</text>
+<g id="a_node5"><a xlink:href="class_control__system.html#aeb1d67b1383d77bd11276f0eef97228b" target="_top" xlink:title="Resetea las variables de contexto.">
+<polygon fill="white" stroke="#666666" points="439,-90 326,-90 326,-60 439,-60 439,-90"/>
+<text text-anchor="start" x="334" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">Control_system::reset</text>
+<text text-anchor="middle" x="382.5" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">_context</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#63b8ff" d="M488.37,-138.4C462.05,-123 422.61,-99.9 400.36,-86.87"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="486.37,-141.29 496.77,-143.33 489.91,-135.25 486.37,-141.29"/>
+<path fill="none" stroke="#63b8ff" d="M488.79,-138.25C465.65,-124.35 432.12,-104.21 409.15,-90.41"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="486.94,-141.23 497.31,-143.37 490.54,-135.22 486.94,-141.23"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
@@ -152,13 +153,13 @@ var sectionId = 'dynsection-4';
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#63b8ff" d="M314.41,-84.97C304.06,-86.2 293.49,-87.46 283.49,-88.65"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="314.5,-88.49 324.01,-83.83 313.67,-81.53 314.5,-88.49"/>
+<path fill="none" stroke="#63b8ff" d="M314.41,-83.86C304.06,-85.22 293.49,-86.62 283.49,-87.94"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="314.56,-87.37 324.02,-82.59 313.64,-80.43 314.56,-87.37"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="class_control__system.html#a660ab5ac86df7cdefbbfe0942b00e13b" target="_top" xlink:title="Inicializa el sistema en estado apagado.">
+<g id="a_node8"><a xlink:href="class_control__system.html#a660ab5ac86df7cdefbbfe0942b00e13b" target="_top" xlink:title="Inicializa el sistema con el estado de apagado.">
 <polygon fill="white" stroke="#666666" points="281,-67.5 177,-67.5 177,-48.5 281,-48.5 281,-67.5"/>
 <text text-anchor="middle" x="229" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">Control_system::init</text>
 </a>
@@ -167,13 +168,13 @@ var sectionId = 'dynsection-4';
 <!-- Node5&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node5&#45;&gt;Node8</title>
-<path fill="none" stroke="#63b8ff" d="M314.14,-68.55C303.09,-67.17 291.81,-65.75 281.24,-64.43"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="313.66,-72.02 324.02,-69.79 314.53,-65.07 313.66,-72.02"/>
+<path fill="none" stroke="#63b8ff" d="M314.14,-67.44C303.09,-66.2 291.81,-64.94 281.24,-63.75"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="313.69,-70.91 324.01,-68.55 314.47,-63.96 313.69,-70.91"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2" target="_top" xlink:title="Actualización de estado, si existe una solicitud de apagado el sistema se resetea.">
+<g id="a_node9"><a xlink:href="class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2" target="_top" xlink:title="Método para actualizar el estado.">
 <polygon fill="white" stroke="#666666" points="290,-30 168,-30 168,0 290,0 290,-30"/>
 <text text-anchor="start" x="176" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Check_instruction_state</text>
 <text text-anchor="middle" x="229" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::update</text>
@@ -183,8 +184,8 @@ var sectionId = 'dynsection-4';
 <!-- Node5&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node5&#45;&gt;Node9</title>
-<path fill="none" stroke="#63b8ff" d="M346.56,-62.7C322.94,-53.03 291.76,-40.28 267.6,-30.39"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="345.18,-65.92 355.76,-66.47 347.83,-59.44 345.18,-65.92"/>
+<path fill="none" stroke="#63b8ff" d="M331.79,-55.31C311.35,-47.22 288.04,-37.99 268.88,-30.4"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="330.49,-58.56 341.08,-58.99 333.07,-52.05 330.49,-58.56"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">

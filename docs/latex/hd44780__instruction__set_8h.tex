@@ -1,0 +1,176 @@
+\hypertarget{hd44780__instruction__set_8h}{}\doxysection{C\+:/\+Users/juanh/\+One\+Drive/\+Escritorio/\+Sistemas Embebidos/\+Proyecto final/\+LAL Control Mbed\+OS/include/drivers/hd44780\+\_\+instruction\+\_\+set.h File Reference}
+\label{hd44780__instruction__set_8h}\index{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/hd44780\_instruction\_set.h@{C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/hd44780\_instruction\_set.h}}
+
+
+Set de instrucciones del LCD HD44780.  
+
+
+{\ttfamily \#include $<$mbed.\+h$>$}\newline
+Include dependency graph for hd44780\+\_\+instruction\+\_\+set.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{hd44780__instruction__set_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hd44780__instruction__set_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a7f03b13989f5583ce164112e189f9157}\label{hd44780__instruction__set_8h_a7f03b13989f5583ce164112e189f9157}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+CLEAR\+\_\+\+DISPLAY}~0b00000001
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a7a2365f6e0e3391892981bc5e3f6dce2}\label{hd44780__instruction__set_8h_a7a2365f6e0e3391892981bc5e3f6dce2}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+ENTRY\+\_\+\+MODE\+\_\+\+SET}~0b00000100
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_af34d1aa2e2e171ef2af5062fb260bf1f}\label{hd44780__instruction__set_8h_af34d1aa2e2e171ef2af5062fb260bf1f}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+DISPLAY\+\_\+\+CONTROL}~0b00001000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a3e02749a8c5a99984ac945e3a54df487}\label{hd44780__instruction__set_8h_a3e02749a8c5a99984ac945e3a54df487}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+FUNCTION\+\_\+\+SET}~0b00100000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a9f75aca90a7dace66976e56e90526a5f}\label{hd44780__instruction__set_8h_a9f75aca90a7dace66976e56e90526a5f}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+SET\+\_\+\+DDRAM\+\_\+\+ADDR}~0b10000000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a8e0d6c2b1b783e6962aa2b9d028d5252}\label{hd44780__instruction__set_8h_a8e0d6c2b1b783e6962aa2b9d028d5252}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+ENTRY\+\_\+\+MODE\+\_\+\+SET\+\_\+\+INCREMENT}~0b00000010
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a09c4898509283e0c3b1cf83215065824}\label{hd44780__instruction__set_8h_a09c4898509283e0c3b1cf83215065824}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+ENTRY\+\_\+\+MODE\+\_\+\+SET\+\_\+\+DECREMENT}~0b00000000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_aad858325202db0cb3d47b61feb3dd0f7}\label{hd44780__instruction__set_8h_aad858325202db0cb3d47b61feb3dd0f7}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+ENTRY\+\_\+\+MODE\+\_\+\+SET\+\_\+\+SHIFT}~0b00000001
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a2f845a89815c66475345c32167eb175e}\label{hd44780__instruction__set_8h_a2f845a89815c66475345c32167eb175e}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+ENTRY\+\_\+\+MODE\+\_\+\+SET\+\_\+\+NO\+\_\+\+SHIFT}~0b00000000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_ab6179677900c7daf72ec40dbcdea032c}\label{hd44780__instruction__set_8h_ab6179677900c7daf72ec40dbcdea032c}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+DISPLAY\+\_\+\+CONTROL\+\_\+\+DISPLAY\+\_\+\+ON}~0b00000100
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a55759df0d654ea19f0f9b34e75e6cf8e}\label{hd44780__instruction__set_8h_a55759df0d654ea19f0f9b34e75e6cf8e}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+DISPLAY\+\_\+\+CONTROL\+\_\+\+DISPLAY\+\_\+\+OFF}~0b00000000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a29a01d1359da9469b197e4cc6be0bcbe}\label{hd44780__instruction__set_8h_a29a01d1359da9469b197e4cc6be0bcbe}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+DISPLAY\+\_\+\+CONTROL\+\_\+\+CURSOR\+\_\+\+ON}~0b00000010
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a9d1195d7ca3d3fa378c07af5e45d1fb0}\label{hd44780__instruction__set_8h_a9d1195d7ca3d3fa378c07af5e45d1fb0}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+DISPLAY\+\_\+\+CONTROL\+\_\+\+CURSOR\+\_\+\+OFF}~0b00000000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_ab9415f43dcf0afdf85ea8fa8d2ccbd61}\label{hd44780__instruction__set_8h_ab9415f43dcf0afdf85ea8fa8d2ccbd61}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+DISPLAY\+\_\+\+CONTROL\+\_\+\+BLINK\+\_\+\+ON}~0b00000001
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a969fa946b4d7296f4d812f09c3899db5}\label{hd44780__instruction__set_8h_a969fa946b4d7296f4d812f09c3899db5}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+DISPLAY\+\_\+\+CONTROL\+\_\+\+BLINK\+\_\+\+OFF}~0b00000000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a0b3cad8369cef4e3809ef6fc75e6d0f8}\label{hd44780__instruction__set_8h_a0b3cad8369cef4e3809ef6fc75e6d0f8}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+FUNCTION\+\_\+\+SET\+\_\+8\+BITS}~0b00010000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a0b92436082ad93d088ee62dac83c0d13}\label{hd44780__instruction__set_8h_a0b92436082ad93d088ee62dac83c0d13}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+FUNCTION\+\_\+\+SET\+\_\+4\+BITS}~0b00000000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a441eadba7b0bcd1368c4d6d6e95f8f0d}\label{hd44780__instruction__set_8h_a441eadba7b0bcd1368c4d6d6e95f8f0d}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+FUNCTION\+\_\+\+SET\+\_\+2\+LINES}~0b00001000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a0d242126b71b5e10d624fad4354afe99}\label{hd44780__instruction__set_8h_a0d242126b71b5e10d624fad4354afe99}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+FUNCTION\+\_\+\+SET\+\_\+1\+LINE}~0b00000000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a0af92d6b1a20fcc638d421074918b389}\label{hd44780__instruction__set_8h_a0af92d6b1a20fcc638d421074918b389}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+FUNCTION\+\_\+\+SET\+\_\+5x10\+DOTS}~0b00000100
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a8c438d1995d96b1df9ec0c38cc660978}\label{hd44780__instruction__set_8h_a8c438d1995d96b1df9ec0c38cc660978}} 
+\#define {\bfseries DISPLAY\+\_\+\+IR\+\_\+\+FUNCTION\+\_\+\+SET\+\_\+5x8\+DOTS}~0b00000000
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a6ef964c68698d520f17d73571a831ae3}\label{hd44780__instruction__set_8h_a6ef964c68698d520f17d73571a831ae3}} 
+\#define {\bfseries DISPLAY\+\_\+20x4\+\_\+\+LINE1\+\_\+\+FIRST\+\_\+\+CHARACTER\+\_\+\+ADDRESS}~0
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a082ed3e9e1e50aa1bdc4f4fa35e2da6a}\label{hd44780__instruction__set_8h_a082ed3e9e1e50aa1bdc4f4fa35e2da6a}} 
+\#define {\bfseries DISPLAY\+\_\+20x4\+\_\+\+LINE2\+\_\+\+FIRST\+\_\+\+CHARACTER\+\_\+\+ADDRESS}~64
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a50bfc171520f25caf540986275d5d903}\label{hd44780__instruction__set_8h_a50bfc171520f25caf540986275d5d903}} 
+\#define {\bfseries DISPLAY\+\_\+20x4\+\_\+\+LINE3\+\_\+\+FIRST\+\_\+\+CHARACTER\+\_\+\+ADDRESS}~20
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a06b794c1cd137d4492bf52e6a32bbec0}\label{hd44780__instruction__set_8h_a06b794c1cd137d4492bf52e6a32bbec0}} 
+\#define {\bfseries DISPLAY\+\_\+20x4\+\_\+\+LINE4\+\_\+\+FIRST\+\_\+\+CHARACTER\+\_\+\+ADDRESS}~84
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a742dea07e2d1321edbc1ce9c6a31a609}\label{hd44780__instruction__set_8h_a742dea07e2d1321edbc1ce9c6a31a609}} 
+\#define {\bfseries DISPLAY\+\_\+\+RS\+\_\+\+INSTRUCTION}~0
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a865140be12850ffcf6096f4bff039a9a}\label{hd44780__instruction__set_8h_a865140be12850ffcf6096f4bff039a9a}} 
+\#define {\bfseries DISPLAY\+\_\+\+RS\+\_\+\+DATA}~1
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a2549c16bbf0bc5578827c8c08c0c706a}\label{hd44780__instruction__set_8h_a2549c16bbf0bc5578827c8c08c0c706a}} 
+\#define {\bfseries DISPLAY\+\_\+\+RW\+\_\+\+WRITE}~0
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_aeb402bc451843d0c0519cae09a775635}\label{hd44780__instruction__set_8h_aeb402bc451843d0c0519cae09a775635}} 
+\#define {\bfseries DISPLAY\+\_\+\+RW\+\_\+\+READ}~1
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a8c91f3240413d91d202e16fdcb47614e}\label{hd44780__instruction__set_8h_a8c91f3240413d91d202e16fdcb47614e}} 
+\#define {\bfseries I2\+C1\+\_\+\+SDA}~D14
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a89fa4656e988e929608905e5de142558}\label{hd44780__instruction__set_8h_a89fa4656e988e929608905e5de142558}} 
+\#define {\bfseries I2\+C1\+\_\+\+SCL}~D15
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a843e48c7c616479e0d46163af7199bce}\label{hd44780__instruction__set_8h_a843e48c7c616479e0d46163af7199bce}} 
+\#define {\bfseries PCF8574\+\_\+\+I2\+C\+\_\+\+BUS\+\_\+8\+BIT\+\_\+\+WRITE\+\_\+\+ADDRESS}~0x4E
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_aa272938bb6e5a0d70eef82ea7ab5f1cc}\label{hd44780__instruction__set_8h_aa272938bb6e5a0d70eef82ea7ab5f1cc}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+A\+\_\+\+PCF8574}~3
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a02d9cfbb8d4207653482cd45cc134f59}\label{hd44780__instruction__set_8h_a02d9cfbb8d4207653482cd45cc134f59}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+RS}~4
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a508353695ec7b749dc519cbdf3417295}\label{hd44780__instruction__set_8h_a508353695ec7b749dc519cbdf3417295}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+RW}~5
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a31c7dfcb324472a98350adced412573e}\label{hd44780__instruction__set_8h_a31c7dfcb324472a98350adced412573e}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+EN}~6
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a34f36429e15e23524851169abe1db817}\label{hd44780__instruction__set_8h_a34f36429e15e23524851169abe1db817}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+D0}~7
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a1c12efbf4c2b39fda9da4a9c4a25125c}\label{hd44780__instruction__set_8h_a1c12efbf4c2b39fda9da4a9c4a25125c}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+D1}~8
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a43e7c0b1b9dd24354245fd16ddf5cf48}\label{hd44780__instruction__set_8h_a43e7c0b1b9dd24354245fd16ddf5cf48}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+D2}~9
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a77035fe1cffdbb502365ec88a6585218}\label{hd44780__instruction__set_8h_a77035fe1cffdbb502365ec88a6585218}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+D3}~10
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a01c78b06c3b659a3893c2b120d89b17f}\label{hd44780__instruction__set_8h_a01c78b06c3b659a3893c2b120d89b17f}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+D4}~11
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_ae1887970affb90bcb87e04283c6f011e}\label{hd44780__instruction__set_8h_ae1887970affb90bcb87e04283c6f011e}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+D5}~12
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a4e7cd1329a97bab0fe40eb0e4b387c7c}\label{hd44780__instruction__set_8h_a4e7cd1329a97bab0fe40eb0e4b387c7c}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+D6}~13
+\item 
+\mbox{\Hypertarget{hd44780__instruction__set_8h_a3cb8e62c076ebde2180e14a86ba784b0}\label{hd44780__instruction__set_8h_a3cb8e62c076ebde2180e14a86ba784b0}} 
+\#define {\bfseries DISPLAY\+\_\+\+PIN\+\_\+\+D7}~14
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Set de instrucciones del LCD HD44780. 
+
+\begin{DoxyAuthor}{Author}
+Juan Hirschmann (\href{mailto:jhirschmann@fi.uba.ar}{\texttt{ jhirschmann@fi.\+uba.\+ar}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/01-\/17
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}

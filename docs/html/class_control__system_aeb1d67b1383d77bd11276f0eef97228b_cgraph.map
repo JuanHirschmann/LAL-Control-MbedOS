@@ -1,0 +1,6 @@
+<map id="Control_system::reset_context" name="Control_system::reset_context">
+<area shape="rect" id="node1" title="Resetea las variables de contexto." coords="5,47,156,87"/>
+<area shape="rect" id="node2" href="$class_cooler.html#a3aa26bc227fa7a2bdcff9fe607990104" title="Apaga el ventilador." coords="237,5,347,31"/>
+<area shape="rect" id="node3" href="$class_dual___l_e_d.html#a4226b64f8b1c00f3e4c649a8be2e64c9" title="Apaga el LED." coords="227,55,357,80"/>
+<area shape="rect" id="node4" href="$class_digital__dual___l_e_d.html#a601fc70878c221a056d74dc643806a91" title="Fija el color del led, no enciende el led,." coords="204,104,380,129"/>
+</map>

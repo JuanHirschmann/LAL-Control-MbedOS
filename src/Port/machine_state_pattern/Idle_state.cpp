@@ -26,9 +26,8 @@ void Idle_state::exit(Control_system *machine)
 }
 Abstract_state *Idle_state::transition(Control_system *machine)
 {
-
     if (machine->context.warning_request || machine->context.alarm_request)
-    { /*Estado de warning*/
+    {
 
         this->exit(machine);
         return new Alarm_state();
@@ -38,10 +37,10 @@ Abstract_state *Idle_state::transition(Control_system *machine)
         this->exit(machine);
         return new Check_instruction_state();
     }
-    /* else if (machine->context.shutdown_request)
-    {
-        this->exit(machine);
-        return new Shutdown_state();
-    } */
     return nullptr;
 }
+/* else if (machine->context.shutdown_request)
+   {
+       this->exit(machine);
+       return new Shutdown_state();
+   } */

@@ -1,0 +1,11 @@
+<map id="hd44780_I2Cexp::home" name="hd44780_I2Cexp::home">
+<area shape="rect" id="node1" title="Lleva el cursor al origen de coordenadas." coords="792,75,951,101"/>
+<area shape="rect" id="node2" href="$class_display.html#aacbf91b9f8c57fc2cb892c45fd44e655" title="Método para inicializar el objeto, sólo se puede luego o en setup()." coords="643,31,733,57"/>
+<area shape="rect" id="node6" href="$class_display.html#ad2740b779d61e461c4dcaaf34f1fcd8f" title="Actualiza los valores en pantalla con los parámetros previamente fijados. Solo actualiza la pantalla ..." coords="632,99,744,125"/>
+<area shape="rect" id="node3" href="$class_control__system.html#aad36c88c9e5589336213848de7837091" title="Inicializa el display lcd del sistema." coords="433,5,572,45"/>
+<area shape="rect" id="node4" href="$class_shutdown__state.html#accbc4c856709e26453e2e23c5c1e4f8e" title="Salida del estado, resetea las variables del sistema e incializa la pantalla." coords="229,13,373,38"/>
+<area shape="rect" id="node5" href="$class_shutdown__state.html#ae02b2fd80173aa50afcd73faba01b9be" title="Transicion de estados." coords="5,13,181,38"/>
+<area shape="rect" id="node7" href="$class_alarm__state.html#acea6eee2b8d267b67192bbce9e495038" title="Actualización, cambia el color del LED según el estado del motor y hace sonar la alarma...." coords="433,70,572,95"/>
+<area shape="rect" id="node8" href="$class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2" title="Método para actualizar el estado." coords="421,120,584,160"/>
+<area shape="rect" id="node9" href="$class_idle__state.html#a92217c98eda8e3bd47eb3a8ff602efc2" title="Método para actualizar el sistema cuando está en estado de reposo. Actualiza la pantalla y los observ..." coords="440,185,565,210"/>
+</map>

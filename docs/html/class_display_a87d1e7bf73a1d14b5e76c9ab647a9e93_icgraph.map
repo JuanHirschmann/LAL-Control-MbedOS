@@ -7,5 +7,5 @@
 <area shape="rect" id="node5" href="$class_idle__state.html#ad6d70e591dd39da724656a4261013e4f" title="Método llamado al ingresar al estado. Actualiza la pantalla con el paso del procedimiento actual." coords="248,121,363,146"/>
 <area shape="rect" id="node6" href="$class_control__system.html#aa98b33b5c57a47fb55e211516e49088b" title="Enciende el buzzer por 100ms (bloqueante) y, si no esta anulado el próximo paso, avanza hacia la sigu..." coords="216,170,395,195"/>
 <area shape="rect" id="node8" href="$class_idle__state.html#a92217c98eda8e3bd47eb3a8ff602efc2" title="Método para actualizar el sistema cuando está en estado de reposo. Actualiza la pantalla y los observ..." coords="243,219,368,245"/>
-<area shape="rect" id="node7" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Entrada del estado, resuelve las instrucciones a realizar en cada paso: &#45;WELCOME_STEP: Primer paso,..." coords="5,163,168,203"/>
+<area shape="rect" id="node7" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Método que se llama al ingresar al estado." coords="5,163,168,203"/>
 </map>

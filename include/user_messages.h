@@ -23,7 +23,7 @@ static const char PROCEDURE_MESSAGES[MAX_PROCEDURE_STEPS][MAX_MESSAGE_LENGTH] = 
     {"Cierre la llave de agua\0"},
     {"CONFIRMAR APAGADO\0"},
 };
-/*enum ALARM_TYPES
+/*enum Alarm_types
 {
     NO_ALARM=0,
     OVERTEMP_ALARM,

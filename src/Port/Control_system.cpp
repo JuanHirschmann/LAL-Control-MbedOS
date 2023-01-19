@@ -241,12 +241,12 @@ bool Control_system::is_alarm_requested()
 {
     return this->context.alarm_request;
 }
-void Control_system::request_alarm(ALARM_TYPES type_of_alarm)
+void Control_system::request_alarm(Alarm_types type_of_alarm)
 {
     this->context.alarm_request = true;
     this->context.current_alarm = type_of_alarm;
 }
-void Control_system::request_warning(ALARM_TYPES type_of_warning)
+void Control_system::request_warning(Alarm_types type_of_warning)
 {
     this->context.warning_request = true;
     this->context.current_alarm = type_of_warning;
