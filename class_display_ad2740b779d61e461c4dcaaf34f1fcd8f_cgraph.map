@@ -1,0 +1,7 @@
+<map id="Display::update" name="Display::update">
+<area shape="rect" id="node1" title="Actualiza los valores en pantalla con los parámetros previamente fijados. Solo actualiza la pantalla ..." coords="5,81,117,107"/>
+<area shape="rect" id="node2" href="$classhd44780___i2_cexp.html#a9f885fdf91ca52fd05158387ee4bedcd" title="Borra el texto de la pantalla." coords="167,5,322,31"/>
+<area shape="rect" id="node3" href="$classhd44780___i2_cexp.html#a13020db13c26b6d7ba6ff2ebb42e4053" title="Mueve el cursor." coords="372,107,535,132"/>
+<area shape="rect" id="node4" href="$classhd44780___i2_cexp.html#ab25b744a9de62f700d5736864640d21b" title="Lleva el cursor al origen de coordenadas." coords="165,107,324,132"/>
+<area shape="rect" id="node5" href="$classhd44780___i2_cexp.html#a284e20a480ae9d5ae529fc4676d14dd3" title="Imprime una cadena de texto en la posición actual del cursor." coords="169,156,320,181"/>
+</map>

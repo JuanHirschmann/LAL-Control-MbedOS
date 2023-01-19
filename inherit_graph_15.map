@@ -1,9 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_observer__interface.html" title="Interfaz para implementar el patrón de diseño Observer." coords="5,80,135,105"/>
-<area shape="rect" id="node2" href="$class_observer.html" title="Clase Observer, utilizada como base del observador en una implementación del patrón de diseño Observe..." coords="183,80,256,105"/>
-<area shape="rect" id="node3" href="$class_system__observer.html" title="Clase interfaz para implementar observadores para sujetos de la clase Control_system." coords="304,80,427,105"/>
-<area shape="rect" id="node4" href="$class_cooler__observer.html" title="Clase heredera de System_observer, creada para observar el estado de las instrucciones." coords="492,5,607,31"/>
-<area shape="rect" id="node5" href="$class_instruction__observer.html" title="Clase heredera de System_observer, creada para observar el estado de las instrucciones." coords="481,55,618,80"/>
-<area shape="rect" id="node6" href="$class_moisture__observer.html" title="Clase heredera de System_observer, creada para observar el estado de los sensores de humedad." coords="486,104,613,129"/>
-<area shape="rect" id="node7" href="$class_temperature__observer.html" title="Clase heredera de System_observer, creada para observar el estado de los sensores de temperatura." coords="475,153,624,179"/>
+<area shape="rect" id="node1" href="$structpcf8574__t.html" title="Tipo de dato para el manejo del integrafo PCF8574." coords="5,5,84,31"/>
 </map>

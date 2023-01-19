@@ -1,0 +1,4 @@
+<map id="hd44780_I2Cexp::turn_on" name="hd44780_I2Cexp::turn_on">
+<area shape="rect" id="node1" title="Activa la retroiluminación." coords="5,5,175,31"/>
+<area shape="rect" id="node2" href="$classhd44780___i2_cexp.html#a9f885fdf91ca52fd05158387ee4bedcd" title="Borra el texto de la pantalla." coords="223,5,377,31"/>
+</map>

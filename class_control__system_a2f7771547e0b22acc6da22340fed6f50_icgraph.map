@@ -1,0 +1,6 @@
+<map id="Control_system::request_alarm" name="Control_system::request_alarm">
+<area shape="rect" id="node1" title="Solicita una alarma." coords="215,55,379,95"/>
+<area shape="rect" id="node2" href="$class_cooler__observer.html#aca9bdbbc11981c1ec178090622caaee4" title="Si el indicador de próximo paso del usuario está activo y el acceso a la próxima instrucción no esté ..." coords="5,5,167,31"/>
+<area shape="rect" id="node3" href="$class_moisture__observer.html#a84cf4888942ad6ce66a9baaf337d9994" title="Actualización del observador, mide la humedad y, si excede el umbral MOISTURE_ALARM_THRESHOLD,..." coords="19,55,153,95"/>
+<area shape="rect" id="node4" href="$class_temperature__observer.html#ab90488fcff2880baae583cfe7aefb3d8" title="Actualización del observador, mide la temperatura: si excede el umbral OVERTEMP_ALARM_TRESHOLD,..." coords="11,119,161,159"/>
+</map>

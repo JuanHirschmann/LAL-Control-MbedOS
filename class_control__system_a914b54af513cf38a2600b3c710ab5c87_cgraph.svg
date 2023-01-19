@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_display.html#a4c22cf2f0125cb737bf93136caa32de3" target="_top" xlink:title="Fija la velocidad en RPS, no lo imprie en pantalla excepto que la variación de velocidades sea lo suf...">
+<g id="a_node2"><a xlink:href="class_display.html#a4c22cf2f0125cb737bf93136caa32de3" target="_top" xlink:title="Fija el valor del porcentaje de velocidad, no lo imprie en pantalla. La ubicación se da con las const...">
 <polygon fill="white" stroke="#666666" points="295,-24.5 158,-24.5 158,-5.5 295,-5.5 295,-24.5"/>
 <text text-anchor="middle" x="226.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Display::set_fan_speed_pct</text>
 </a>

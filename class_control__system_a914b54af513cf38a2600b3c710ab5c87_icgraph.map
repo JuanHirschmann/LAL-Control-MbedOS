@@ -1,0 +1,5 @@
+<map id="Control_system::display_cooler_speed" name="Control_system::display_cooler_speed">
+<area shape="rect" id="node1" title="Fija velocidades en el display de los ventiladores." coords="424,5,587,45"/>
+<area shape="rect" id="node2" href="$class_cooler__observer.html#a1b030ab9893e310f4ae0edd870706ee5" title="Actualiza la medición de velocidad." coords="215,5,376,45"/>
+<area shape="rect" id="node3" href="$class_cooler__observer.html#aca9bdbbc11981c1ec178090622caaee4" title="Si el indicador de próximo paso del usuario está activo y el acceso a la próxima instrucción no esté ..." coords="5,13,167,38"/>
+</map>

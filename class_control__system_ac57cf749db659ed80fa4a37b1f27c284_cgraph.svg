@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_moisture__sensor.html#acd72c51f63ca144ecb419b7cca849974" target="_top" xlink:title="Devuelve la lectura realizada.">
+<g id="a_node2"><a xlink:href="class_moisture__sensor.html#a8d58285011777c1d6c0596032e46448b" target="_top" xlink:title="Devuelve la lectura realizada.">
 <polygon fill="white" stroke="#666666" points="272,-30 164,-30 164,0 272,0 272,-30"/>
 <text text-anchor="start" x="172" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Moisture_sensor::get</text>
 <text text-anchor="middle" x="218" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">_reading</text>

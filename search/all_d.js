@@ -1,21 +1,7 @@
 var searchData=
 [
-  ['set_5fcolor_0',['set_color',['../class_dual___l_e_d.html#aeb163748acf071a1652c56ae1dff9d52',1,'Dual_LED']]],
-  ['set_5ffan_5fspeed_5fpct_1',['set_fan_speed_pct',['../class_display.html#a4c22cf2f0125cb737bf93136caa32de3',1,'Display']]],
-  ['set_5ffrequency_2',['set_frequency',['../class_buzzer.html#a867957295569b6b67cd8266288f68fe7',1,'Buzzer']]],
-  ['set_5ftemp_3',['set_temp',['../class_display.html#abe8e63e4def12a48cde5679ce008f402',1,'Display']]],
-  ['set_5ftext_4',['set_text',['../class_display.html#a87d1e7bf73a1d14b5e76c9ab647a9e93',1,'Display']]],
-  ['setup_5fint0_5finterrupt_5',['setup_int0_interrupt',['../interrupts_8h.html#a7151cd85a371816bdc91bbf05ae1825f',1,'interrupts.h']]],
-  ['setup_5ftimer1_5finterrupt_6',['setup_timer1_interrupt',['../interrupts_8h.html#a7677b0aead77a2f0b17f45fca7f6b0c5',1,'interrupts.h']]],
-  ['shutdown_5fstate_7',['Shutdown_state',['../class_shutdown__state.html',1,'']]],
-  ['shutdown_5fstate_2eh_8',['Shutdown_state.h',['../_shutdown__state_8h.html',1,'']]],
-  ['steps_9',['STEPS',['../types_8h.html#a6a683993505efb97736f5eebe34f3206',1,'types.h']]],
-  ['subject_10',['Subject',['../class_subject.html',1,'']]],
-  ['subject_2ecpp_11',['Subject.cpp',['../_subject_8cpp.html',1,'']]],
-  ['subject_2eh_12',['Subject.h',['../_subject_8h.html',1,'']]],
-  ['subject_5finterface_13',['Subject_interface',['../class_subject__interface.html',1,'']]],
-  ['subject_5finterface_2eh_14',['Subject_interface.h',['../_subject__interface_8h.html',1,'']]],
-  ['system_5fobserver_15',['System_observer',['../class_system__observer.html',1,'']]],
-  ['system_5fobserver_2eh_16',['System_observer.h',['../_system__observer_8h.html',1,'']]],
-  ['system_5fsettings_2eh_17',['system_settings.h',['../system__settings_8h.html',1,'']]]
+  ['read_0',['read',['../class_p_c__serial__interface.html#a5921c585d7a5930774b83f738536313e',1,'PC_serial_interface']]],
+  ['request_5falarm_1',['request_alarm',['../class_control__system.html#a2f7771547e0b22acc6da22340fed6f50',1,'Control_system']]],
+  ['request_5fwarning_2',['request_warning',['../class_control__system.html#a3385a8c58aec4675347b495c4a8b63f1',1,'Control_system']]],
+  ['reset_5fcontext_3',['reset_context',['../class_control__system.html#aeb1d67b1383d77bd11276f0eef97228b',1,'Control_system']]]
 ];

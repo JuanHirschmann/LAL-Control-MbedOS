@@ -1,4 +1,6 @@
 <map id="Display::set_fan_speed_pct" name="Display::set_fan_speed_pct">
-<area shape="rect" id="node1" title="Fija la velocidad en RPS, no lo imprie en pantalla excepto que la variación de velocidades sea lo suf..." coords="216,13,399,38"/>
-<area shape="rect" id="node2" href="$class_control__system.html#a914b54af513cf38a2600b3c710ab5c87" title="Fija velocidades en el display de los ventiladores." coords="5,5,168,45"/>
+<area shape="rect" id="node1" title="Fija el valor del porcentaje de velocidad, no lo imprie en pantalla. La ubicación se da con las const..." coords="635,13,817,38"/>
+<area shape="rect" id="node2" href="$class_control__system.html#a914b54af513cf38a2600b3c710ab5c87" title="Fija velocidades en el display de los ventiladores." coords="424,5,587,45"/>
+<area shape="rect" id="node3" href="$class_cooler__observer.html#a1b030ab9893e310f4ae0edd870706ee5" title="Actualiza la medición de velocidad." coords="215,5,376,45"/>
+<area shape="rect" id="node4" href="$class_cooler__observer.html#aca9bdbbc11981c1ec178090622caaee4" title="Si el indicador de próximo paso del usuario está activo y el acceso a la próxima instrucción no esté ..." coords="5,13,167,38"/>
 </map>

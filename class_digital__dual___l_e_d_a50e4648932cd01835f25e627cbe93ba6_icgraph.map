@@ -1,4 +1,5 @@
 <map id="Digital_dual_LED::turn_green" name="Digital_dual_LED::turn_green">
-<area shape="rect" id="node1" title="Enciende el LED en verde." coords="216,5,367,45"/>
+<area shape="rect" id="node1" title="Enciende el LED en verde." coords="403,5,553,45"/>
 <area shape="rect" id="node2" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Método que se llama al ingresar al estado." coords="5,5,168,45"/>
+<area shape="rect" id="node3" href="$class_control__system.html#a46298a6a5f4ba43857baa6ae23d00dbc" title="Fija el valor de velocidad del ventilador." coords="216,33,355,73"/>
 </map>

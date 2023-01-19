@@ -48,7 +48,7 @@ if (edges && edges.length) {
 <script type="text/javascript">
 var viewWidth = 588;
 var viewHeight = 113;
-var sectionId = 'dynsection-2';
+var sectionId = 'dynsection-3';
 </script>
 <script xlink:href="svgpan.js"/>
 <svg id="graph" class="graph">
@@ -66,7 +66,7 @@ var sectionId = 'dynsection-2';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_control__system.html#a4bfd2d8427f35a8cd4e4e10573aa5604" target="_top" xlink:title="Actualización del sistema. De ser necesario realiza la transición de estados y actualiza el estado ac...">
+<g id="a_node2"><a xlink:href="class_control__system.html#a4bfd2d8427f35a8cd4e4e10573aa5604" target="_top" xlink:title="Realiza la transición de estados y actualiza el estado.">
 <polygon fill="white" stroke="#666666" points="428,-62 308,-62 308,-43 428,-43 428,-62"/>
 <text text-anchor="middle" x="368" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00">Control_system::update</text>
 </a>
@@ -112,7 +112,7 @@ var sectionId = 'dynsection-2';
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2" target="_top" xlink:title="Actualización de estado, si existe una solicitud de apagado el sistema se resetea.">
+<g id="a_node5"><a xlink:href="class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2" target="_top" xlink:title="Método para actualizar el estado.">
 <polygon fill="white" stroke="#666666" points="122,-67.5 0,-67.5 0,-37.5 122,-37.5 122,-67.5"/>
 <text text-anchor="start" x="8" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">Check_instruction_state</text>
 <text text-anchor="middle" x="61" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">::update</text>

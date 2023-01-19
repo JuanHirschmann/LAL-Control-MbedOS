@@ -1,0 +1,4 @@
+<map id="Cooler::Cooler" name="Cooler::Cooler">
+<area shape="rect" id="node1" title="Construye un nuevo objecto Cooler." coords="5,5,109,31"/>
+<area shape="rect" id="node2" href="$class_cooler.html#a9802a2d1e34a4b377280fd3369f68d58" title="Incrementa el contador de mediciones." coords="157,5,307,31"/>
+</map>

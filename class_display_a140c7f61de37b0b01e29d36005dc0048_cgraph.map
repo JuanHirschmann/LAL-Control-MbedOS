@@ -1,0 +1,5 @@
+<map id="Display::turn_off" name="Display::turn_off">
+<area shape="rect" id="node1" title="limpia los caracteres de la pantalla y apaga la retroiluminación, no inhibe la escritura en pantalla." coords="5,5,120,31"/>
+<area shape="rect" id="node2" href="$classhd44780___i2_cexp.html#af598cd1e4f7112c0b315db260d168e92" title="Desactiva la retroiluminación." coords="168,5,336,31"/>
+<area shape="rect" id="node3" href="$classhd44780___i2_cexp.html#a9f885fdf91ca52fd05158387ee4bedcd" title="Borra el texto de la pantalla." coords="384,5,539,31"/>
+</map>

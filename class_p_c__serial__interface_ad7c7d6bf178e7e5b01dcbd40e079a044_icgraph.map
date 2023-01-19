@@ -1,0 +1,4 @@
+<map id="PC_serial_interface::println" name="PC_serial_interface::println">
+<area shape="rect" id="node1" title="Imprime en la interfaz serie." coords="216,5,351,45"/>
+<area shape="rect" id="node2" href="$class_check__instruction__state.html#ae13ba3789ab274a7dddf19be0a413b55" title="Método que se llama al ingresar al estado." coords="5,5,168,45"/>
+</map>

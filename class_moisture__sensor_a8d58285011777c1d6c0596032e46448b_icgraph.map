@@ -1,0 +1,5 @@
+<map id="Moisture_sensor::get_reading" name="Moisture_sensor::get_reading">
+<area shape="rect" id="node1" title="Devuelve la lectura realizada." coords="407,5,551,45"/>
+<area shape="rect" id="node2" href="$class_control__system.html#ac57cf749db659ed80fa4a37b1f27c284" title="Obtiene la humedad del objeto mois_sensor." coords="188,5,359,45"/>
+<area shape="rect" id="node3" href="$class_moisture__observer.html#a84cf4888942ad6ce66a9baaf337d9994" title="Actualización del observador, mide la humedad y, si excede el umbral MOISTURE_ALARM_THRESHOLD,..." coords="5,5,140,45"/>
+</map>

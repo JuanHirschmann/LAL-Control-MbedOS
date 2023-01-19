@@ -52,7 +52,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2" target="_top" xlink:title="Actualización de estado, si existe una solicitud de apagado el sistema se resetea.">
+<g id="a_node4"><a xlink:href="class_check__instruction__state.html#a161d1ccae3db7c6ac372b56877dc05f2" target="_top" xlink:title="Método para actualizar el estado.">
 <polygon fill="white" stroke="#666666" points="122,-67.5 0,-67.5 0,-37.5 122,-37.5 122,-67.5"/>
 <text text-anchor="start" x="8" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">Check_instruction_state</text>
 <text text-anchor="middle" x="61" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">::update</text>

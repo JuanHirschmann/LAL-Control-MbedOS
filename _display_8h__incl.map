@@ -1,12 +1,12 @@
 <map id="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Display.h" name="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Display.h">
-<area shape="rect" id="node1" title="Controlador de LCD hd44780 por interfaz I2C." coords="45,5,266,75"/>
-<area shape="rect" id="node2" href="$display__settings_8h.html" title="Archivo de configuración de la pantalla." coords="5,123,132,148"/>
-<area shape="rect" id="node3" href="$hd44780___i2_cexp_8h_source.html" title=" " coords="157,123,327,148"/>
-<area shape="rect" id="node4" title=" " coords="101,284,167,309"/>
-<area shape="rect" id="node5" title=" " coords="243,284,307,309"/>
-<area shape="rect" id="node6" href="$hd44780__instruction__set_8h_source.html" title=" " coords="119,196,258,236"/>
-<area shape="rect" id="node7" href="$utils_8h_source.html" title=" " coords="335,203,392,229"/>
-<area shape="rect" id="node8" title=" " coords="332,284,395,309"/>
-<area shape="rect" id="node9" title=" " coords="419,284,481,309"/>
-<area shape="rect" id="node10" title=" " coords="505,284,571,309"/>
+<area shape="rect" id="node1" title="Controlador de LCD hd44780 por interfaz I2C." coords="62,5,283,75"/>
+<area shape="rect" id="node2" href="$display__settings_8h.html" title="Archivo de configuración de la pantalla." coords="5,203,132,229"/>
+<area shape="rect" id="node3" href="$hd44780___i2_cexp_8h.html" title="Adaptación de la biblioteca TextLCD de MbedOS 5. Permite utilizar un LCD hd44780 con un expansor de p..." coords="170,123,341,148"/>
+<area shape="rect" id="node4" title=" " coords="200,284,265,309"/>
+<area shape="rect" id="node5" title=" " coords="341,284,405,309"/>
+<area shape="rect" id="node6" href="$hd44780__instruction__set_8h.html" title="Set de instrucciones del LCD HD44780." coords="207,196,346,236"/>
+<area shape="rect" id="node7" href="$utils_8h_source.html" title=" " coords="432,203,489,229"/>
+<area shape="rect" id="node8" title=" " coords="429,284,492,309"/>
+<area shape="rect" id="node9" title=" " coords="517,284,578,309"/>
+<area shape="rect" id="node10" title=" " coords="603,284,668,309"/>
 </map>

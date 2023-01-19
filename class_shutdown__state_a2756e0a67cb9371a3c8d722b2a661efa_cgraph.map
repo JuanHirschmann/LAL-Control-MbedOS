@@ -2,6 +2,8 @@
 <area shape="rect" id="node1" title="Entrada al estado, apaga los LEDS, la pantalla y apaga el motor." coords="5,80,157,105"/>
 <area shape="rect" id="node2" href="$class_motor.html#a20180eb7ef0d0bce876ee0ab220451f0" title="Devuelve el estado del motor." coords="214,5,327,31"/>
 <area shape="rect" id="node3" href="$class_display.html#a140c7f61de37b0b01e29d36005dc0048" title="limpia los caracteres de la pantalla y apaga la retroiluminación, no inhibe la escritura en pantalla." coords="213,55,328,80"/>
-<area shape="rect" id="node4" href="$class_dual___l_e_d.html#a4226b64f8b1c00f3e4c649a8be2e64c9" title="Apaga el LED." coords="205,104,336,129"/>
-<area shape="rect" id="node5" href="$class_motor.html#a9a1613b24a5dd07a8c515e82d8e0edeb" title="Apaga el motor." coords="218,153,323,179"/>
+<area shape="rect" id="node6" href="$class_dual___l_e_d.html#a4226b64f8b1c00f3e4c649a8be2e64c9" title="Apaga el LED." coords="205,104,336,129"/>
+<area shape="rect" id="node7" href="$class_motor.html#a9a1613b24a5dd07a8c515e82d8e0edeb" title="Apaga el motor." coords="218,153,323,179"/>
+<area shape="rect" id="node4" href="$classhd44780___i2_cexp.html#af598cd1e4f7112c0b315db260d168e92" title="Desactiva la retroiluminación." coords="384,55,552,80"/>
+<area shape="rect" id="node5" href="$classhd44780___i2_cexp.html#a9f885fdf91ca52fd05158387ee4bedcd" title="Borra el texto de la pantalla." coords="600,55,755,80"/>
 </map>

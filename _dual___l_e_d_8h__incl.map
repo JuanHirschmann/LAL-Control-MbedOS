@@ -1,5 +1,5 @@
 <map id="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Dual_LED.h" name="C:/Users/juanh/OneDrive/Escritorio/Sistemas Embebidos/Proyecto final/LAL Control MbedOS/include/drivers/Dual_LED.h">
-<area shape="rect" id="node1" title="Controlador de LED RG." coords="9,5,245,75"/>
+<area shape="rect" id="node1" title="Controlador de LED RG con PWM." coords="9,5,245,75"/>
 <area shape="rect" id="node2" title=" " coords="5,123,71,148"/>
 <area shape="rect" id="node3" href="$types_8h.html" title="Archivo de definición de tipos de dato." coords="95,123,160,148"/>
 <area shape="rect" id="node4" href="$system__settings_8h.html" title="Archivo para la definición de constantes del sistema." coords="184,123,313,148"/>

@@ -1,0 +1,5 @@
+<map id="PC_serial_interface::echo" name="PC_serial_interface::echo">
+<area shape="rect" id="node1" title="repite caracter a caracter lo leido de la interfaz serie." coords="5,37,140,77"/>
+<area shape="rect" id="node2" href="$class_p_c__serial__interface.html#a52ab40d5831945344a22e6ef117d8b3f" title="Imprime en la interfaz serie." coords="188,5,323,45"/>
+<area shape="rect" id="node3" href="$class_p_c__serial__interface.html#a5921c585d7a5930774b83f738536313e" title="Lee una cadena de texto de la interfaz serie." coords="188,69,323,109"/>
+</map>
