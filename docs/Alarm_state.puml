@@ -1,0 +1,48 @@
+@startuml
+title Diagrama de flujo alarm_state
+partition alarm_state.enter {
+start 
+end 
+}
+partition alarm_state.update {
+start 
+:Deshabilitar pulsador;
+    if(¿Se solicitó una alarma?) then(No)
+        -> Entonces se solicitó una advertencia;
+        :Habilitar pulsador;
+        :Activar advertencia;
+        note right 
+        Para advertencias de exceso de temperatura
+        cambia la velocidad de los ventiladores al 75%
+        end note
+        :Mostrar paso actual;
+    else(Sí)
+        :Activar alarma;
+        note left 
+        Para alarmas de exceso de temperatura
+        cambia la velocidad de los ventiladores al 100%
+        end note
+        :Medir sensores;
+        :Actualizar pantalla;
+    endif
+end 
+}
+partition alarm_state.transition {
+start 
+:Apagar alarma;
+-> transición de estados;
+    if (¿Se solicitó una alarma?
+    ) then (No)
+        if (¿Botón pulsado?) then (No)    
+            :control_system.current_state:= Idle_state;
+            detach
+        else (Sí)
+            :control_system.current_state:= Check_instruction_state;
+            detach
+        endif
+    else (Sí)
+    endif
+end 
+}
+
+@enduml

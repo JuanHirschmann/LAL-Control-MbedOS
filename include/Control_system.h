@@ -1,3 +1,14 @@
+/**
+ * @file Control_system.h
+ * @author Juan Hirschmann (jhirschmann@fi.uba.ar)
+ * @brief Clase Control_system, utilizada como clase central para
+ * el sistema de control.
+ * @version 0.1
+ * @date 2023-01-20
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
 #ifndef CONTROL_SYSTEM_H
 #define CONTROL_SYSTEM_H
 #include "observer_pattern/subjects/Subject.h"

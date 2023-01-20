@@ -1,0 +1,35 @@
+@startuml
+title Diagrama de flujo idle_state
+partition idle_state.enter {
+start 
+:Mostrar paso actual;
+end 
+}
+partition idle_state.update {
+start 
+:Medir sensores;
+:Actualizar pantalla;
+end 
+}
+partition idle_state.transition {
+start 
+-> transición de estados;
+if (¿Sensores detectados?
+¿Temperatura> WARNING_TEMPERATURE_THRESHOLD ?
+¿Humedad>HUMIDITY_THRESHOLD?
+) then (No)
+else (Sí)
+:control_system.current_state:= Alarm_state;
+detach
+endif
+if (¿Botón pulsado?) then(No)
+else(Sí)
+:control_system.current_state:=Check_instruction_state;
+detach
+endif
+
+end 
+}
+
+
+@enduml

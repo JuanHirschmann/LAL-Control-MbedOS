@@ -1,0 +1,25 @@
+@startuml
+title Diagrama de flujo shutdown_state
+partition shutdown_state.enter {
+start 
+:Apagar periféricos;
+end 
+}
+partition shutdown_state.update {
+start 
+
+end 
+}
+partition shutdown_state.transition {
+start 
+if (¿Botón pulsado?) then(Sí)
+:Resetear variables de sistema;
+:Iniciar pantalla;
+:control_system.current_state=Idle_state;
+else(No)
+endif
+end 
+}
+
+
+@enduml

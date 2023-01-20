@@ -1,0 +1,61 @@
+@startuml
+title Diagrama de flujo check_instruction_state
+partition check_instruction_state.enter {
+start 
+switch (¿Paso actual?)
+case ( Paso inicial )
+  :Apagar ventiladores;
+  :Luz de ingreso de agua en rojo;
+case ( Paso de apertura de válvula de ingreso de agua ) 
+  :Luz de ingreso de agua en verde;
+case ( Paso de encendido de motor )
+  if (¿Se solictó una advertencia?) then (No)
+    : Velocidad de ventiladores al 25%;
+    else (Sí)
+  endif
+  if(¿Se solicitó una alarma?) then(Sí)
+      else(No)
+          :Encender motor;
+  endif
+  
+
+case ( Paso de apagado de motor )
+  if (¿Se solictó una advertencia?) then (No)
+    : Velocidad de ventiladores al 50%;
+    else (Sí)
+  endif
+  :apagar motor;
+case ( Paso de enfriamiento de motor )
+  :Deshabilitar pulsador;
+  if (¿Se solictó una advertencia?) then (No)
+    :Habilitar pulsador;
+    else (Sí)
+  endif
+case ( Paso de cierre de válvula de ingreso de agua ) 
+  :Apagar ventiladores;
+  :Luz de ingreso de agua en rojo;
+endswitch
+if (¿Pulsador deshabilitado?) then (No)
+    :mostrar siguiente paso;
+else(Si)
+endif
+end 
+}
+partition check_instruction_state.update {
+start 
+:Medir sensores;
+:Actualizar pantalla;
+end 
+}
+partition check_instruction_state.transition {
+start 
+ if (¿Botón pulsado?) then(si)
+    :Paso actual:=Paso actual+1;
+ else(no)
+    :control_system.current_state:= idle_state;
+    detach
+ endif
+end 
+}
+
+@enduml
